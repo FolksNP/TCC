@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+$cor-primaria: #25BE71;
+$cor-secundaria:#24f48c;
+$margin-total:60px;
+$font-primaria: 'Fira Sans', sans-serif;
+
+//Aqui começa o estilo da NavBar
+body{
+    background-color: #2f2f2f;
+}
+.linha-superior{
+    width: 100%;
+    height: 10px;
+}
+.topo{
+    color: white;
+
+    .header{
+        
+        .lista{
+            display: flex;
+            margin-left: $margin-total;
+            margin-right: $margin-total;
+            justify-content: space-between;
+            background-color: $cor-primaria;
+            padding:10px 25px 15px 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            
+            p{
+                border-top:solid 2px black ;
+                width: 90px;
+                cursor: pointer;
+                font-family: $font-primaria;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+   
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $cor-primaria;
+        margin-left:$margin-total;
+        margin-right: $margin-total;
+        border-top-right-radius:  20px;
+        border-top-left-radius:  20px;
+        margin-top: 6px;
+        height: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        .btnLogin{
+            display: flex;
+            p{
+               margin: 10px; 
+               padding: 5px;
+               font-family: $font-primaria;
+            }
+            p:hover{
+                background-color: $cor-secundaria;
+                border-radius: 6px;
+                transition: 0.3s;
+                cursor: pointer;
+               }
+        }
+        input[type=text]{
+            border-radius: 8px;
+            height: 25px;
+            width: 300px;
+            border: solid 1px #000000;
+            padding-left: 5px;
+            
+        }
+        
+    }
+
+
+    .logo{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-family: $font-primaria;
+        
+        img{
+            width: 50px;
+        }
+    
+    
+        
+    }
+}
+
+//aqui termina o estilo da navbar
+//Aqui começa o estilo do banner
+.banner{
+    -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    margin-left: $margin-total;
+    margin-right: $margin-total;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    background-color: $cor-primaria;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 400px;
+    
+    font-family: $font-primaria;
+
+    .banner-titulo{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+        .titulo{
+            >p{
+                color: white;
+                font-size: 30px;
+                
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .titulo-btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            img{
+                max-width: 400px;
+                max-height: 200px;
+            }
+         /*   input[type=button]{
+                border-radius: 15px;
+                height: 50px;
+                width: 100px;
+                font-size: 20px;
+                cursor: pointer;
+                margin-top: 30px;
+            }
+*/
+        }
+
+    
+}
+.multi{
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: $margin-total;
+    margin-right: $margin-total;
+   // padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    
+    .conteudo-infs{
+    font-family: $font-primaria;
+    background-color: $cor-primaria;
+    width: 100%;
+    margin-left: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+
+    
+        p:nth-child(1){
+            font-size: 25px;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 18px;
+            
+    
+    }
+    p:nth-child(2){
+        font-size: 18px;
+        font-style: italic;
+        margin-top: 10px;
+       
+}
+    p:nth-child(3){
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    
+
+
+}
+p:nth-child(4){
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+   
+
+}
+}
+
+.video{
+
+    background-color: $cor-primaria;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+}
+//Aqui termina o conteudo da tela inicial
+
+
+//Aqui começa o footer
+
+.footer-all{
+    margin-top: 20px;
+    font-family: $font-primaria;
+    background: $cor-primaria;
+    color: white;
+   // margin-left: $margin-total;
+    //margin-right: $margin-total;
+    .sobre{
+        display: flex;
+        justify-content: space-around;
+        >p{
+            border-bottom: solid 1px black;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        >P{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .informacoes{
+        display: flex;
+        justify-content: space-around;
+        .local{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+        .central-relacionamento{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+    }
+    .direitos{
+        border-top: solid 1px black;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+//tentativa de carrossel
