@@ -38,6 +38,7 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
                 width: 90px;
                 cursor: pointer;
                 font-family: $font-primaria;
+                
                 a{
                     text-decoration: none;
                     color: white;
@@ -66,10 +67,11 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
                margin: 10px; 
                padding: 5px;
                font-family: $font-primaria;
+               border-radius: 6px;
             }
             p:hover{
-                background-color: $cor-secundaria;
-                border-radius: 6px;
+                background: rgb(9,106,86);
+               
                 transition: 0.3s;
                 cursor: pointer;
                }
@@ -308,10 +310,14 @@ p:nth-child(4){
  
         .esquerda-txt{
             max-width: 50%;
+
         }
         img{
-            width: 60px;
-            height: 60px;
+            width: 90px;
+            height: 90px;
+            border-radius: 5px;
+            margin: 5px;
+            margin-right: 20px;
         }
         .esquerda-cima{
             display: flex;
@@ -319,6 +325,37 @@ p:nth-child(4){
             margin-top: 20px;
             background-color: $cor-primaria;
             padding: 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            .inf{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: 10px;
+            }
+                input[type=button]{
+                    width: 100%;
+                    margin-left: 10px;
+                    height: 35px;
+                    font-family: $font-primaria;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    background: rgb(37,190,113);
+                   // background: linear-gradient(54deg, rgba(37,190,113,1) 0%, rgba(9,106,86,1) 100%);
+                    color: rgb(255, 255, 255);
+                    border: solid 1px rgb(0, 0, 0);
+                    -webkit-box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    transition: 0.3s ;
+                }
+                input[type=button]:hover{
+                    
+                    background: rgb(9,106,86);
+               // background: linear-gradient(54deg, rgba(9,106,86,1) 0%, rgba(37,190,113,1) 100%);
+                
+                }
         }
         .esquerda-baixo{
             margin-left: $margin-total;
@@ -326,6 +363,9 @@ p:nth-child(4){
             background-color: $cor-primaria;
             padding: 10px;
             border-bottom-left-radius: 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
 
         }
     }
@@ -340,6 +380,9 @@ p:nth-child(4){
         flex-direction: column;
         border-bottom-right-radius: 10px;
         padding: 10px;
+        -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
         .direita-txt{
 
             text-align: center;
@@ -367,13 +410,14 @@ p:nth-child(4){
             width: 150px;
             height: 150px;
             margin-right: 10px;
+            border-radius: 5px;
+            margin-bottom: 2px;
             
         }
     }
     }
     .estrela{
         display: flex;
-
         font-size: large;
         //width: 90px;
         //height: 90px;
