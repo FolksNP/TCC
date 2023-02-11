@@ -4,11 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Patrono Neves</title>
-    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.5.2/css/bootstrap.css">
 </head>
-<body>
+<body class="bg-dark">
     
     <?php
         include('header.php');
@@ -40,7 +39,7 @@
                         </div>
                     </div>
                     <div class="bottom  text-center mb-5">
-                        <p href="#" class="sm-text mx-auto mb-3">Não tem conta?<button class="btn btn-white ml-2">Cadastre!</button></p>
+                        <p href="#" class="sm-text mx-auto mb-3">Não tem conta?><a href="cadastro-cliente.php"><button class="btn btn-white ml-2">Cadastre!</button></a></p>
                     </div>
                 </div>
                 <div class="bg-success card card2">
