@@ -227,4 +227,73 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 5px;
+}
+
+.tudo-sugest {
+  display: flex;
+  font-family: "Fira Sans", sans-serif;
+  color: white;
+  justify-content: space-between;
+}
+.tudo-sugest .esquerda {
+  max-width: 50%;
+  border-bottom-left-radius: 10px;
+}
+.tudo-sugest .esquerda .esquerda-txt {
+  max-width: 50%;
+}
+.tudo-sugest .esquerda img {
+  width: 60px;
+  height: 60px;
+}
+.tudo-sugest .esquerda .esquerda-cima {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: #25BE71;
+  padding: 10px;
+}
+.tudo-sugest .esquerda .esquerda-baixo {
+  margin-left: 60px;
+  margin-top: 20px;
+  background-color: #25BE71;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+}
+.tudo-sugest .direita {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 60px;
+  background-color: #25BE71;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.tudo-sugest .direita .direita-txt {
+  text-align: center;
+}
+.tudo-sugest .direita .direita-curso {
+  align-items: center;
+  font-size: 25px;
+}
+.tudo-sugest .direita .direita-curso .img-curso {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: solid 1px rgb(255, 255, 255);
+}
+.tudo-sugest .direita .direita-curso .img-curso .avaliacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tudo-sugest .direita .direita-curso img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+.tudo-sugest .estrela {
+  display: flex;
+  font-size: large;
 }/*# sourceMappingURL=style.css.map */

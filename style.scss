@@ -293,4 +293,89 @@ p:nth-child(4){
 
 
 
-//tentativa de carrossel
+//aqui começa a sugestão de cursos
+.tudo-sugest{
+    display: flex;
+
+    font-family: $font-primaria;
+    color: white;
+    justify-content: space-between;
+    .esquerda{
+
+        max-width: 50%;
+ 
+        border-bottom-left-radius: 10px;
+ 
+        .esquerda-txt{
+            max-width: 50%;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        .esquerda-cima{
+            display: flex;
+            margin-left: $margin-total;
+            margin-top: 20px;
+            background-color: $cor-primaria;
+            padding: 10px;
+        }
+        .esquerda-baixo{
+            margin-left: $margin-total;
+            margin-top: 20px;
+            background-color: $cor-primaria;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+
+        }
+    }
+
+    .direita{
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: $margin-total;
+        background-color: $cor-primaria;
+        display: flex;
+        flex-direction: column;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        .direita-txt{
+
+            text-align: center;
+        }
+        .direita-curso{
+            align-items: center;
+            font-size: 25px;
+
+
+            
+            .img-curso{
+                display: flex;
+                margin-top: 10px;
+                border-bottom: solid 1px rgb(255, 255, 255);
+                .avaliacao{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                  
+                    
+                }
+            }
+            
+        img{
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            
+        }
+    }
+    }
+    .estrela{
+        display: flex;
+
+        font-size: large;
+        //width: 90px;
+        //height: 90px;
+    }
+}

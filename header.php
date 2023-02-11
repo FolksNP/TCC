@@ -20,8 +20,8 @@
                 
             </div>
             <div class="lista">
-                    <p>Inicial</p>
-                    <p><a href="cursos.php">Cursos</a></p>
+                    <p><a href="inicial.php">Inicial</a></p>
+                    <p><a href="sugestCurso.php">Cursos</a></p>
                     <p>Suporte</p>
                     <p>Doações</p>
                     <p>Sobre Nós</p>
