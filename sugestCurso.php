@@ -19,19 +19,30 @@
 
                 <div class="esquerda-cima">
                             <div class="esquerda-img">
-                                <img src="imgs/php.jpg" alt="">
+                                <img src="imgs/html.jpg" alt="">
                             </div>
                             <div class="esquerda-txt">
-                                    <p><h2>CURSO DE PHP</h2></p>
+                                    <p><h2>CURSO DE HTML</h2></p>
                                     <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni animi nobis accusantium perspiciatis natus dicta,
                                          amet repellat exercitationem aliquid id. Perspiciatis optio adipisci recusandae est nihil nemo labore nisi eius!</P>
                                          <div class="estrela">☆☆☆☆☆</div>
+                            </div>
+                            <div class="inf">
+                                <div class="inf-turmas">
+                                <p><input type="button" value="Ver Turmas"></p>
+                                </div>
+                              <div class="inf-cursos">
+                                    <p><input type="button" value="Grade Currícular"></p>
+                                </div>
+                                <div class="inf-fav">
+                                <p><input type="button" value="Adicionar Aos Favoritos"></p>
+                                </div>
                             </div>
                     </div>
 
                  <div class="esquerda-baixo">
                         <h2>Avaliações </h2>
-                        <P>Muito bom (50%)</P>
+                        <P>Muito bom (50%) </P>
                         <p>Ótimo (40%)</p>
                         <p>Regular (9%)</p>
                         <P>Ruim (1%)</P>
