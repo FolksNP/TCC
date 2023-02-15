@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.5.2/css/bootstrap.css">
 </head>
-<body class="bg-dark">
+<body style="background: var(--bs-gray-800);">
     
     <?php
         include('header.php');

@@ -6,8 +6,21 @@
 
 $cor-primaria: #25BE71;
 $cor-secundaria:#24f48c;
+$cor-base-website: #1a1a1a;
 $margin-total:60px;
 $font-primaria: 'Fira Sans', sans-serif;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
 
 //Aqui começa o estilo da NavBar
 body{
@@ -229,11 +242,10 @@ p:nth-child(4){
 
 
 //Aqui começa o footer
-
 .footer-all{
     margin-top: 20px;
     font-family: $font-primaria;
-    background: $cor-primaria;
+    background: $cor-base-website;
     color: white;
    // margin-left: $margin-total;
     //margin-right: $margin-total;
@@ -241,7 +253,7 @@ p:nth-child(4){
         display: flex;
         justify-content: space-around;
         >p{
-            border-bottom: solid 1px black;
+            border-bottom: solid 1px green;
             margin-top: 8px;
             margin-bottom: 5px;
         }
@@ -250,7 +262,7 @@ p:nth-child(4){
     .redes{
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid green;
         >P{
             margin-left: 5px;
             margin-right: 5px;
@@ -281,7 +293,7 @@ p:nth-child(4){
         }
     }
     .direitos{
-        border-top: solid 1px black;
+        border-top: solid 1px green;
         display: flex;
         justify-content: center;
         padding-top: 5px;

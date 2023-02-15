@@ -18,8 +18,8 @@
 
     <br>
 
-<body style="background: var(--bs-gray-900);">
-    <section class="py-4 py-xl-5" style="background: var(--bs-dark);">
+<body style="background: var(--bs-gray-800);">
+    <section class="py-4 py-xl-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col">
@@ -32,9 +32,9 @@
                     <h1 class="pulse animated" style="color: var(--bs-green);">Queremos educar, cada dia mais!</h1>
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                    <div class="card mb-5">
-                        <div class="card-body p-sm-5" style="height: 634.15px;width: 455px;background: var(--bs-teal);">
-                            <h2 class="text-center mb-4" style="background: var(--bs-card-cap-bg);color: var(--bs-card-bg);">Cadastre-se</h2>
+                    <div class="card mb-5" style="background: var(--bs-success);">
+                        <div class="card-body p-sm-5" style="height: 634.15px;width: 455px;background: var(--bs-success);">
+                            <h2 class="text-center mb-4" style="background: var(--bs-success);color: var(--bs-card-bg);">Cadastre-se</h2>
                             <form method="post">
                                 <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Nome"></div><input class="form-control" type="email" id="email-2" name="email" placeholder="Email"><input class="form-control" type="email" placeholder="Confirme Email" name="conEmail" style="margin-bottom: 7px;margin-top: 15px;"><input class="form-control" type="email" placeholder="Senha" name="conSenha" style="margin-bottom: 7px;margin-top: 15px;"><input class="form-control" type="email" placeholder="Confirme Senha" name="conSenha" style="margin-bottom: 7px;margin-top: 15px;"><input class="form-control" type="email" placeholder="Usuário (Opcional)" name="usuario" style="margin-bottom: 7px;margin-top: 15px;">
                                 <div class="mb-3"></div>

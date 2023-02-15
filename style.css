@@ -56,10 +56,10 @@ body {
   margin: 10px;
   padding: 5px;
   font-family: "Fira Sans", sans-serif;
+  border-radius: 6px;
 }
 .topo .nav .btnLogin p:hover {
-  background-color: #24f48c;
-  border-radius: 6px;
+  background: rgb(9, 106, 86);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -177,7 +177,7 @@ body {
 .footer-all {
   margin-top: 20px;
   font-family: "Fira Sans", sans-serif;
-  background: #25BE71;
+  background: #1a1a1a;
   color: white;
 }
 .footer-all .sobre {
@@ -185,14 +185,14 @@ body {
   justify-content: space-around;
 }
 .footer-all .sobre > p {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px green;
   margin-top: 8px;
   margin-bottom: 5px;
 }
 .footer-all .redes {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid green;
 }
 .footer-all .redes > P {
   margin-left: 5px;
@@ -223,7 +223,7 @@ body {
   font-style: italic;
 }
 .footer-all .direitos {
-  border-top: solid 1px black;
+  border-top: solid 1px green;
   display: flex;
   justify-content: center;
   padding-top: 5px;
@@ -243,8 +243,11 @@ body {
   max-width: 50%;
 }
 .tudo-sugest .esquerda img {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  margin: 5px;
+  margin-right: 20px;
 }
 .tudo-sugest .esquerda .esquerda-cima {
   display: flex;
@@ -252,6 +255,29 @@ body {
   margin-top: 20px;
   background-color: #25BE71;
   padding: 10px;
+  box-shadow: 0px 15px 12px -1px rgba(0, 0, 0, 0.58);
+}
+.tudo-sugest .esquerda .esquerda-cima .inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+.tudo-sugest .esquerda .esquerda-cima input[type=button] {
+  width: 100%;
+  margin-left: 10px;
+  height: 35px;
+  font-family: "Fira Sans", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgb(37, 190, 113);
+  color: rgb(255, 255, 255);
+  border: solid 1px rgb(0, 0, 0);
+  box-shadow: 6px 7px 0px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
+}
+.tudo-sugest .esquerda .esquerda-cima input[type=button]:hover {
+  background: rgb(9, 106, 86);
 }
 .tudo-sugest .esquerda .esquerda-baixo {
   margin-left: 60px;
@@ -259,6 +285,7 @@ body {
   background-color: #25BE71;
   padding: 10px;
   border-bottom-left-radius: 10px;
+  box-shadow: 0px 15px 12px -1px rgba(0, 0, 0, 0.58);
 }
 .tudo-sugest .direita {
   width: 50%;
@@ -270,6 +297,7 @@ body {
   flex-direction: column;
   border-bottom-right-radius: 10px;
   padding: 10px;
+  box-shadow: 0px 15px 12px -1px rgba(0, 0, 0, 0.58);
 }
 .tudo-sugest .direita .direita-txt {
   text-align: center;
@@ -292,6 +320,8 @@ body {
   width: 150px;
   height: 150px;
   margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 2px;
 }
 .tudo-sugest .estrela {
   display: flex;
