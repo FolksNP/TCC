@@ -22,20 +22,22 @@
                             <div class="row justify-content-center px-3 mb-3"> <img src="imgs/logoTCC.png" alt="" srcset=""> </div>
                             <h3 class="mb-5 text-center heading">Patrono neves</h3>
                             <h4 class="msg-info">Acesse sua conta aqui!</h4>
-                            <div class="form-group"> 
-                                <label class="form-control-label text-muted">Usuario/Email</label> 
-                                <input type="text" id="email" name="email" placeholder="Email@mail.com" class="form-control"> 
-                            </div>
-                            <div class="form-group"> 
-                                <label class="form-control-label text-muted">Senha</label> 
-                                <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> 
-                            </div>
-                            <div class="row justify-content-center my-3 px-3"> 
-                                <button class="btn-block btn-color">Login</button> 
-                            </div>
-                            <div class="row justify-content-center my-2"> 
-                                <a href="#"><p class="text-muted">Esqueceu sua senha?</p></a> 
-                            </div>
+                            <form action="login.act.php" method="post">
+                                <div class="form-group"> 
+                                    <label class="form-control-label text-muted">Usuario/Email</label> 
+                                    <input type="text" id="email" name="email" placeholder="Email@mail.com" class="form-control"> 
+                                </div>
+                                <div class="form-group"> 
+                                    <label class="form-control-label text-muted">Senha</label> 
+                                    <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> 
+                                </div>
+                                <div class="row justify-content-center my-3 px-3"> 
+                                    <button type="submit" class="btn-block btn-color">Login</button> 
+                                </div>
+                                <div class="row justify-content-center my-2"> 
+                                    <a href="#"><p class="text-muted">Esqueceu sua senha?</p></a> 
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="bottom  text-center mb-5">
