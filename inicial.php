@@ -21,9 +21,9 @@ include ('banner.php');
             </div>
             <div class="conteudo-infs">
                 <p>Informações</p>
-                <p>Próximos Cursos</p>
-                <p>&hearts;Desenvolvimento De Sistemas</p>
-                <p>&hearts;Contabilidade</p>
+                <p>&hearts; Próximos Cursos</p>
+                <p>&hearts; Desenvolvimento De Sistemas</p>
+                <p>&hearts; Contabilidade</p>
 
             </div>
             

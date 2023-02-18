@@ -23,52 +23,42 @@
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #002</h3>
+                <input type="checkbox" name="" class="checkin"><h3>2. Javascript - Aula #002</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #003</h3>
+                <input type="checkbox" name="" class="checkin"><h3>3. Javascript - Aula #003</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #004</h3>
+                <input type="checkbox" name="" class="checkin"><h3>4. Javascript - Aula #004</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #005</h3>
+                <input type="checkbox" name="" class="checkin"><h3>5. Javascript - Aula #005</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #006</h3>
+                <input type="checkbox" name="" class="checkin"><h3>6. Javascript - Aula #006</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #007</h3>
+                <input type="checkbox" name="" class="checkin"><h3>7. Javascript - Aula #007</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #008</h3>
+                <input type="checkbox" name="" class="checkin"><h3>8. Javascript - Aula #008</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #009</h3>
+                <input type="checkbox" name="" class="checkin"><h3>9. Javascript - Aula #009</h3>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #010</h3>
+                <input type="checkbox" name="" class="checkin"><h3>10. Javascript - Aula #010</h3>
                 </div>
 
-                <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #000</h3>
-                </div>
-
-                <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #000</h3>
-                </div>
-
-                <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #000</h3>
-                </div>
+                
 
             </div>
         </div>

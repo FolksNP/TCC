@@ -61,22 +61,26 @@
                     <img src="imgs/php" alt="">
                    <div class="avaliacao">
                     <p>Curso PHP</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <p> ☆☆☆☆☆</p></div>
                    </div> 
                    <div class="img-curso">
                     <img src="imgs/java.jpg" alt="">
                    <div class="avaliacao">
                     <p>Curso JavaScript</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <p> ☆☆☆☆☆</p></div>
                    </div> <div class="img-curso">
                     <img src="imgs/html.jpg" alt="">
                    <div class="avaliacao">
                     <p>Curso HTML 5</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <p> ☆☆☆☆☆</p></div>
                    </div> <div class="img-curso">
                     <img src="imgs/php" alt="">
                    <div class="avaliacao">
                     <p>Curso PHP</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                    <p> ☆☆☆☆☆</p></div>
                    </div>
                 </div>

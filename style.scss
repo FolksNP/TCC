@@ -4,7 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
-$cor-primaria: #25BE71;
+$cor-primaria: #495057;
 $cor-secundaria:#24f48c;
 $cor-base-website: #1a1a1a;
 $margin-total:60px;
@@ -21,6 +21,20 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
+
+//início da estilização da barra de rolagem
+body::-webkit-scrollbar{
+  width: 12px;          
+}
+
+body::-webkit-scrollbar-track{
+  background: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #24F48C;
+    border-radius: 10px;
+}
+//fim da estilização da barra de rolagem
 
 //Aqui começa o estilo da NavBar
 body{
@@ -110,9 +124,6 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
         img{
             width: 50px;
         }
-    
-    
-        
     }
 }
 
@@ -128,11 +139,8 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
-    background-color: $cor-primaria;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 400px;
-    
+    background-color: #495057;
+    border-radius: 5px;
     font-family: $font-primaria;
 
     .banner-titulo{
@@ -158,6 +166,10 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
             align-items: center;
             color: white;
             max-width: 50%;
+            border: 3px solid rgb(3, 76, 3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
             img{
                 max-width: 400px;
                 max-height: 200px;
@@ -191,12 +203,10 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
     
     .conteudo-infs{
     font-family: $font-primaria;
-    background-color: $cor-primaria;
+    background-color: #495057;
     width: 100%;
     margin-left: 20px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
+    border-radius: 5px;
 
     
         p:nth-child(1){
@@ -204,38 +214,28 @@ box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
             font-style: italic;
             font-weight: bold;
             margin-top: 18px;
-            
-    
     }
     p:nth-child(2){
         font-size: 18px;
         font-style: italic;
-        margin-top: 10px;
-       
+        margin-top: 10px;  
 }
     p:nth-child(3){
     font-size: 18px;
     font-style: italic;
     margin-top: 20px;
-    
-
-
 }
 p:nth-child(4){
     font-size: 18px;
     font-style: italic;
     margin-top: 20px;
-   
-
 }
 }
 
 .video{
-
-    background-color: $cor-primaria;
+    background-color: #495057;
     padding: 5px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 5px;
 }
 }
 //Aqui termina o conteudo da tela inicial
@@ -335,7 +335,7 @@ p:nth-child(4){
             display: flex;
             margin-left: $margin-total;
             margin-top: 20px;
-            background-color: $cor-primaria;
+            background-color: #434343;
             padding: 10px;
             -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
             -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
@@ -352,7 +352,7 @@ p:nth-child(4){
                     height: 35px;
                     font-family: $font-primaria;
                     cursor: pointer;
-                    border-radius: 10px;
+                    border-radius: 4px;
                     background: rgb(37,190,113);
                    // background: linear-gradient(54deg, rgba(37,190,113,1) 0%, rgba(9,106,86,1) 100%);
                     color: rgb(255, 255, 255);
@@ -372,9 +372,8 @@ p:nth-child(4){
         .esquerda-baixo{
             margin-left: $margin-total;
             margin-top: 20px;
-            background-color: $cor-primaria;
+            background-color: #434343;
             padding: 10px;
-            border-bottom-left-radius: 10px;
             -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
             -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
             box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
@@ -387,14 +386,13 @@ p:nth-child(4){
         margin-left: 20px;
         margin-top: 20px;
         margin-right: $margin-total;
-        background-color: $cor-primaria;
+        background-color: #434343;
         display: flex;
         flex-direction: column;
-        border-bottom-right-radius: 10px;
         padding: 10px;
         -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
--moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+        box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
         .direita-txt{
 
             text-align: center;
