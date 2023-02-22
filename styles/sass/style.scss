@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+@import 'variables';
+
+//início da estilização da barra de rolagem
+body::-webkit-scrollbar{
+  width: 12px;          
+}
+
+body::-webkit-scrollbar-track{
+  background: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #24F48C;
+    border-radius: 10px;
+}
+//fim da estilização da barra de rolagem
+
+//Aqui começa o estilo da NavBar
+body{
+    background-color: #2f2f2f;
+}
+.linha-superior{
+    width: 100%;
+    height: 10px;
+}
+.topo{
+    color: white;
+
+    .header{
+        
+        .lista{
+            display: flex;
+            margin-left: $margin-total;
+            margin-right: $margin-total;
+            justify-content: space-between;
+            background-color: $cor-primaria;
+            padding:10px 25px 15px 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            
+            p{
+                border-top:solid 2px black ;
+                width: 90px;
+                cursor: pointer;
+                font-family: $font-primaria;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+   
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $cor-primaria;
+        margin-left:$margin-total;
+        margin-right: $margin-total;
+        border-top-right-radius:  20px;
+        border-top-left-radius:  20px;
+        margin-top: 6px;
+        height: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        .btnLogin{
+            display: flex;
+            p{
+               margin: 10px; 
+               padding: 5px;
+               font-family: $font-primaria;
+               border-radius: 6px;
+            }
+            p:hover{
+                background: rgb(9,106,86);
+               
+                transition: 0.3s;
+                cursor: pointer;
+               }
+        }
+        input[type=text]{
+            border-radius: 8px;
+            height: 25px;
+            width: 300px;
+            border: solid 1px #000000;
+            padding-left: 5px;
+            
+        }
+        
+    }
+
+
+    .logo{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-family: $font-primaria;
+        
+        img{
+            width: 50px;
+        }
+    }
+}
+
+//aqui termina o estilo da navbar
+//Aqui começa o estilo do banner
+.banner{
+    -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    margin-left: $margin-total;
+    margin-right: $margin-total;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    background-color: #495057;
+    border-radius: 5px;
+    font-family: $font-primaria;
+
+    .banner-titulo{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+        .titulo{
+            >p{
+                color: white;
+                font-size: 30px;
+                
+            }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .titulo-btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            border: 3px solid rgb(3, 76, 3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            img{
+                max-width: 400px;
+                max-height: 200px;
+            }
+        }
+
+    
+}
+.multi{
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: $margin-total;
+    margin-right: $margin-total;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+    
+    .conteudo-infs{
+    font-family: $font-primaria;
+    background-color: #495057;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 5px;
+
+        p:nth-child(1){
+            font-size: 25px;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+        p:nth-child(2){
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 10px;  
+        }
+
+        p:nth-child(3){
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        
+        p:nth-child(4){
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    }
+
+    .video{
+        background-color: #495057;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+//Aqui termina o conteudo da tela inicial
+
+//Aqui começa o footer
+.footer-all{
+    margin-top: 20px;
+    font-family: $font-primaria;
+    background: $cor-base-website;
+    color: white;
+   // margin-left: $margin-total;
+    //margin-right: $margin-total;
+    .sobre{
+        display: flex;
+        justify-content: space-around;
+        >p{
+            border-bottom: solid 1px green;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid green;
+        >P{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .informacoes{
+        display: flex;
+        justify-content: space-around;
+        .local{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+        .central-relacionamento{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+    }
+    .direitos{
+        border-top: solid 1px green;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+}
+
+//aqui começa a sugestão de cursos
+.tudo-sugest{
+    display: flex;
+    font-family: $font-primaria;
+    color: white;
+    justify-content: space-between;
+    .esquerda{
+        max-width: 50%;
+        border-bottom-left-radius: 10px;
+        .esquerda-txt{
+            max-width: 50%;
+
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 5px;
+            margin: 5px;
+            margin-right: 20px;
+        }
+        .esquerda-cima{
+            display: flex;
+            margin-left: $margin-total;
+            margin-top: 20px;
+            background-color: #434343;
+            padding: 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            .inf{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: 10px;
+            }
+                input[type=button]{
+                    width: 100%;
+                    margin-left: 10px;
+                    height: 35px;
+                    font-family: $font-primaria;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: rgb(37,190,113);
+                    color: rgb(255, 255, 255);
+                    border: solid 1px rgb(0, 0, 0);
+                    -webkit-box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+                    transition: 0.3s ;
+                }
+                input[type=button]:hover{
+                    background: rgb(9,106,86);
+                }
+        }
+        .esquerda-baixo{
+            margin-left: $margin-total;
+            margin-top: 20px;
+            background-color: #434343;
+            padding: 10px;
+            -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+            box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+
+        }
+    }
+
+    .direita{
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: $margin-total;
+        background-color: #434343;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        -webkit-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+        box-shadow: 0px 15px 12px -1px rgba(0,0,0,0.58);
+        .direita-txt{
+
+            text-align: center;
+        }
+        .direita-curso{
+            align-items: center;
+            font-size: 25px; 
+            .img-curso{
+                display: flex;
+                margin-top: 10px;
+                border-bottom: solid 1px rgb(255, 255, 255);
+                .avaliacao{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                  
+                    
+                }
+            }
+            
+        img{
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+            border-radius: 5px;
+            margin-bottom: 2px;
+            
+        }
+    }
+    }
+    .estrela{
+        display: flex;
+        font-size: large;
+    }
+}

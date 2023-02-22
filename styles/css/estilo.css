@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    height: 75px;
+    background-color: rgb(60, 153, 122);
+}
+
+ul{
+    margin: 0px 60px;
+    display: flex;
+    list-style-type: none;
+    width: 700px;
+}
+
+@keyframes botao{
+    from{
+        padding: 1px;
+        text-decoration: none;
+        font-weight: bold;
+        color: aliceblue;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+        border-color: green;
+    }
+    to{
+        padding: 1px;
+        color: black;
+        text-decoration: none;
+        background-color: green;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+        border-color: green;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    margin: 22px 15px;
+    font-size: 25px;
+}
+
+nav ul a{
+    padding: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    border-color: green;
+}
+
+nav ul a:hover{
+    /* cursor: pointer;
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+    background-color: green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    border-color: green; */
+    animation-name: botao;
+    animation-duration: 0.5s;
+    transition: 0.3ms;
+    animation-fill-mode: alternate;
+}
+
