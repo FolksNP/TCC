@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Patrono Neves</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="stylesheet" href="bootstrap.5.2/css/bootstrap.css">
 </head>
 <body style="background: var(--bs-gray-800);">
@@ -20,7 +20,7 @@
                     <div class="row justify-content-center my-auto">
                         <div class="col-md-8 col-10 my-5">
                             <form action="login.act.php" method="post">
-                            <div class="row justify-content-center px-3 mb-3"> <img src="../images/logoTCC.png" alt="" srcset=""> </div>
+                            <div class="row justify-content-center px-3 mb-3"> <img src="../imgs/logoTCC.png" alt="" srcset=""> </div>
                             <h3 class="mb-5 text-center heading">Patrono neves</h3>
                             <h4 class="msg-info">Acesse sua conta aqui!</h4>
                             <div class="form-group"> 

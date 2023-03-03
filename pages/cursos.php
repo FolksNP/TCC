@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="script" href="carrossel.js">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/css/style.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="../bootstrap.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
