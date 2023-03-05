@@ -7,23 +7,11 @@
     <link rel="stylesheet" href="../styles/css/main.css">
     <title>Document</title>
 </head>
-<body>
-        
-    <?php
-        include('header.php');
-    ?>
-
     <body>
-        <div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-        </div>
-    </body>
+    <?php include('header.php') ?>
 
-    <?php
-        include('footer.php');
-    ?>
+    <?php include('footer.php') ?>
 
+ 
 </body>
 </html>

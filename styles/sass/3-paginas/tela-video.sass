@@ -1,4 +1,4 @@
-
+@import '../1-modulos/variables'
 //início da formartação padrão
 *
     padding: 0
@@ -8,25 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap')
 $font-primaria: 'Fira Sans', sans-serif
 
-$cor-base-cinza: #343a40
-$cor-secundaria-cinza: #434343
+
 
 body
     font-family: $font-primaria
 
 //fim da formartação padrão
-//início da estilização da barra de rolagem
-body::-webkit-scrollbar 
-  width: 12px           
-
-
-body::-webkit-scrollbar-track 
-  background: black
-
-body::-webkit-scrollbar-thumb 
-    background-color: #24F48C
-    border-radius: 10px
-//fim da estilização da barra de rolagem
     
 //conteudo da página
 // conteiner = caixa geral
@@ -37,26 +24,26 @@ body::-webkit-scrollbar-thumb
     width: 100%
     .lado-esquerdo // conteudos do lado esquerdo da pagina
         margin-top: 50px
-        background-color: $cor-base-cinza
+        background-color: $cor-base-website
         width: 35%
-        border: 4px solid gray
-        background-color: #212121
+        border: 2px solid $cor-primaria 
+        background-color: #fff
         border-radius: 5px
         .conteudo
-            padding: 1px
             h1
-                background-color: #6c757d
+                background-color: $cor-primaria
                 color: white
                 text-align: center
                 padding: 10px
                 border-radius: 0px 0px 15px 15px
-                border-bottom: 2px solid green
+                border-bottom: 2px solid $cor-primaria
             .caixa-cont
                 padding: 10px
                 margin: 20px 10px
-                color: white
-                border: 2px solid #24F48C
+                color: black
+                border: 2px solid $cor-primaria
                 border-radius: 4px
+                font-size: 20px
                 text-align: center
                 .checkin
                     margin-right: 10px
@@ -68,7 +55,7 @@ body::-webkit-scrollbar-thumb
                     display: inline
         
     .lado-direito // conteudos do lado esquerdo da pagina
-        background-color: $cor-base-cinza
+        background-color: transparent
         width: 100%
         .conteudo
             margin: 0 auto
@@ -76,7 +63,7 @@ body::-webkit-scrollbar-thumb
             width: 990px
             padding: 30px
             h1
-                color: white
+                color: black
                 padding: 10px
         .links-inferiores // links abaixo do vídeo
             ul
@@ -88,7 +75,7 @@ body::-webkit-scrollbar-thumb
                     font-size: 25px
                     
         .conteudo-inferior   
-            background-color: $cor-secundaria-cinza
+            background-color: $cor-primaria
             border-radius: 5px
             padding: 20px   
             p

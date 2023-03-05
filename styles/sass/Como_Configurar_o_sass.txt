@@ -13,4 +13,8 @@ seleciona a seguinte opção => Open in Integrated Terminal
 após isso digite o seguinte comando:
 
 sass --watch sass/main.scss css/main.css
+
+após isso o sass deve estar compilando o arquivo.
+
+lembrando que a partir de agora, iremos compilar apenas o arquivo main.scss, e nenhum outro arquivo.
  
