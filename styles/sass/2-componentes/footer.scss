@@ -1,0 +1,57 @@
+.footer-all{
+    margin-top: 20px;
+    font-family: $font-primaria;
+    background: $cor-base-website;
+    color: white;
+   // margin-left: $margin-total;
+    //margin-right: $margin-total;
+    .sobre{
+        display: flex;
+        justify-content: space-around;
+        >p{
+            border-bottom: solid 1px green;
+            margin-top: 8px;
+            margin-bottom: 5px;
+        }
+
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid green;
+        >P{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    .informacoes{
+        display: flex;
+        justify-content: space-around;
+        .local{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+        .central-relacionamento{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            :nth-child(1){
+                font-size: 20px;
+                font-weight: bolder;
+                font-style: italic;
+            }
+        }
+    }
+    .direitos{
+        border-top: solid 1px green;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+}

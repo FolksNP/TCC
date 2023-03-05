@@ -4,10 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Patrono Neves</title>
-    <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
     <link rel="stylesheet" href="bootstrap.5.2/css/bootstrap.css">
 </head>
-<body style="background: var(--bs-gray-800);">
+<body>
     
     <?php
         include('header.php');
