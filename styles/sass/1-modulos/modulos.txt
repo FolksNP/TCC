@@ -1,4 +1,0 @@
-P: O que é a pasta modulo?
-R: A pasta de modulos possui cada elemento html estilizado, por exemplo:
-botões, inputs e entre outros.
-## a barra de rolagem tambem está incluida.
