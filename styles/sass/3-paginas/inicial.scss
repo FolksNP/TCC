@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+$azul : #116798;
+$font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap');
+
+//navbar
+
+.navbarAzul{
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    background-color: white;
+    width: 100%;
+    
+    .logoPesquisa{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Fira Sans', sans-serif;
+       // font-family: 'Genos', sans-serif;
+         font-size: 25px;
+        input[type=text]{
+            height: 10px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 50px;
+            border: solid 2px $azul;
+        }
+        .logoImg {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            color: $azul;
+            
+            img{
+            margin-right: 40px;
+            max-width: 70px;
+            max-height: 70px;
+        }
+        }
+    }
+
+.perfilImg img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+    border: solid 2px $azul;
+    }
+
+.catNavbar{
+    ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    :nth-child(1) a{
+        border-bottom: 2px solid $azul;
+        color: $azul;
+    }
+        li {
+            font-size: 15px;
+            margin-bottom: 10px;
+            
+            a{
+                text-decoration: none;
+                color: $azul;
+            }
+            }
+    }
+
+}
+}
+
+//aq acaba a navbar
+
+
+body{
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(
+    315deg,
+    #C9FBFA 3%,
+    rgba(60, 132, 206, 1) 38%,
+    rgba(48, 238, 226, 1) 68%,
+    #002B5C 98%,
+   
+    );
+    
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    
+}@keyframes gradient {
+    0%{
+        background-position: 0% 0%;
+
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+
+}
+
+//imagens de cursos na tela inicial começa aqui
+

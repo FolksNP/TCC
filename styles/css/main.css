@@ -1,0 +1,917 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  margin-top: 30px;
+}
+.container .pn {
+  color: gray;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #116798;
+}
+.container .superior {
+  margin: 10px;
+  padding: 1em;
+}
+.container .superior .conteudos {
+  display: flex;
+  justify-content: space-between;
+}
+.container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
+  width: 20%;
+  margin: 0px 10px;
+}
+.container .superior .conteudos .sobre h2, .container .superior .conteudos .listagem h2, .container .superior .conteudos .links h2, .container .superior .conteudos .endereco h2 {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.container .superior .conteudos .sobre ul, .container .superior .conteudos .listagem ul, .container .superior .conteudos .links ul, .container .superior .conteudos .endereco ul {
+  list-style-type: none;
+}
+.container .superior .conteudos .sobre ul li, .container .superior .conteudos .listagem ul li, .container .superior .conteudos .links ul li, .container .superior .conteudos .endereco ul li {
+  margin: 5px 0;
+}
+.container .superior .conteudos .sobre ul a, .container .superior .conteudos .listagem ul a, .container .superior .conteudos .links ul a, .container .superior .conteudos .endereco ul a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid transparent;
+}
+.container .superior .conteudos .sobre ul a:hover, .container .superior .conteudos .listagem ul a:hover, .container .superior .conteudos .links ul a:hover, .container .superior .conteudos .endereco ul a:hover {
+  border-bottom: 3px solid #116798;
+}
+.container .superior .conteudos .sobre p {
+  text-align: justify;
+}
+.container .inferior {
+  padding: 3em;
+  border-top: 2px solid #116798;
+  text-align: center;
+}
+
+.navbarAzul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+.navbarAzul .logoPesquisa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+}
+@media (max-width: 455px) {
+  .navbarAzul .logoPesquisa {
+    flex-direction: column;
+  }
+}
+.navbarAzul .logoPesquisa input[type=text] {
+  height: 10px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid 2px #116798;
+}
+.navbarAzul .logoPesquisa .logoImg {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #116798;
+}
+.navbarAzul .logoPesquisa .logoImg img {
+  margin-right: 40px;
+  max-width: 70px;
+  max-height: 70px;
+}
+.navbarAzul .perfilImg img {
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 100%;
+  border: solid 2px #116798;
+}
+.navbarAzul .catNavbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navbarAzul .catNavbar ul :nth-child(1) {
+  border-bottom: 2px solid #116798;
+  color: #116798;
+}
+.navbarAzul .catNavbar ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #116798;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+button {
+  background-color: #116798;
+  color: #fff;
+  border: 3px solid transparent;
+  padding: 10px;
+  border-radius: 20px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 3px solid #116798;
+  color: #116798;
+}
+
+.button {
+  background-color: #116798;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #116798;
+  color: #116798;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.fundoCinza {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: #495057;
+  height: 70vh;
+}
+.fundoCinza .txt {
+  color: white;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+  margin: 30px;
+  border-bottom: solid 1px #05a052;
+}
+.fundoCinza .txt p {
+  font-size: 15px;
+}
+.fundoCinza .txt h2 {
+  font-size: 30px;
+  border-bottom: solid 1px #05a052;
+}
+.fundoCinza .btnInscrevase input[type=button] {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #05a052;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #05a052;
+  bottom: 10px;
+}
+.fundoCinza .btnInscrevase input[type=button]:hover {
+  color: #05a052;
+  transform: scale(1.1);
+  outline: 2px solid #05a052;
+  box-shadow: 4px 5px 17px -4px #05a052;
+}
+.fundoCinza .btnInscrevase input[type=button]::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #05a052;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.fundoCinza .btnInscrevase input[type=button]:hover::before {
+  width: 250%;
+}
+
+.videoCurso {
+  position: absolute;
+  left: 33%;
+  bottom: 0%;
+}
+.videoCurso > img {
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 5px;
+  border: solid 2px #05a052;
+}
+
+.fundoPreto {
+  border-top: solid 2px #05a052;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(27, 27, 27);
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.fundoPreto .interatividades {
+  justify-content: center;
+  align-items: center;
+}
+.fundoPreto .interatividades .imgTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fundoPreto .interatividades .txtInt {
+  display: flex;
+  flex-direction: column;
+}
+.fundoPreto .interatividades .txtInt > p {
+  padding-left: 10px;
+  max-width: 800px;
+}
+.fundoPreto .interatividades img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.fundoPreto .txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.fundoPreto .txt h2 {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.fundoCinza2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #495057;
+  border-top: solid 2px #05a052;
+  height: 80vh;
+  border-bottom: solid 2px #05a052;
+}
+.fundoCinza2 h3 {
+  margin-top: 40px;
+  color: white;
+}
+.fundoCinza2 .coment {
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  max-width: 50%;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  padding: 5px 5px 5px 20px;
+  border-radius: 5px;
+}
+.fundoCinza2 .coment .perfilComent {
+  display: flex;
+}
+.fundoCinza2 .coment .perfilComent > p {
+  margin-left: 15px;
+}
+.fundoCinza2 .coment img {
+  border-radius: 100%;
+  height: 33px;
+  width: 33px;
+}
+
+.fundoPreto2 {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fundoPreto2 .btnEntrar input[type=button] {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #05a052;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #05a052;
+  bottom: 10px;
+}
+.fundoPreto2 .btnEntrar input[type=button]:hover {
+  color: #05a052;
+  transform: scale(1.1);
+  outline: 2px solid #05a052;
+  box-shadow: 4px 5px 17px -4px #05a052;
+}
+.fundoPreto2 .btnEntrar input[type=button]::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #05a052;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+.fundoPreto2 .btnEntrar input[type=button]:hover::before {
+  width: 250%;
+}
+.fundoPreto2 img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.conteiner {
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+}
+.conteiner .lado-esquerdo {
+  margin-top: 50px;
+  background-color: #fff;
+  width: 35%;
+  border: 2px solid #116798;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.conteiner .lado-esquerdo .conteudo h1 {
+  background-color: #116798;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0px 0px 15px 15px;
+  border-bottom: 2px solid #116798;
+}
+.conteiner .lado-esquerdo .conteudo .caixa-cont {
+  padding: 10px;
+  margin: 20px 10px;
+  color: black;
+  border: 2px solid #116798;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+}
+.conteiner .lado-esquerdo .conteudo .caixa-cont .checkin {
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 25px;
+  width: 25px;
+}
+.conteiner .lado-esquerdo .conteudo .caixa-cont h3 {
+  display: inline;
+}
+.conteiner .lado-direito {
+  background-color: transparent;
+  width: 100%;
+}
+.conteiner .lado-direito .conteudo {
+  margin: 0 auto;
+  margin-top: 0px;
+  width: 990px;
+  padding: 30px;
+}
+.conteiner .lado-direito .conteudo h1 {
+  color: black;
+  padding: 10px;
+}
+.conteiner .lado-direito .links-inferiores ul {
+  display: flex;
+  list-style-type: none;
+}
+.conteiner .lado-direito .links-inferiores ul li {
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+.conteiner .lado-direito .conteudo-inferior {
+  background-color: #116798;
+  border-radius: 5px;
+  padding: 20px;
+}
+.conteiner .lado-direito .conteudo-inferior p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 5px;
+  color: white;
+}
+
+.footer {
+  height: 1000px;
+  color: orange;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbarAzul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+  width: 100%;
+}
+.navbarAzul .logoPesquisa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+}
+.navbarAzul .logoPesquisa input[type=text] {
+  height: 10px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid 2px #116798;
+}
+.navbarAzul .logoPesquisa .logoImg {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #116798;
+}
+.navbarAzul .logoPesquisa .logoImg img {
+  margin-right: 40px;
+  max-width: 70px;
+  max-height: 70px;
+}
+.navbarAzul .perfilImg img {
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 100%;
+  border: solid 2px #116798;
+}
+.navbarAzul .catNavbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navbarAzul .catNavbar ul :nth-child(1) a {
+  border-bottom: 2px solid #116798;
+  color: #116798;
+}
+.navbarAzul .catNavbar ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.navbarAzul .catNavbar ul li a {
+  text-decoration: none;
+  color: #116798;
+}
+
+body {
+  margin: auto;
+  overflow: auto;
+  background: linear-gradient(315deg, #C9FBFA 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, #002B5C 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.continuarAssistindo {
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.recomendados {
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.rolagemHorizontal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+.rolagemHorizontal .imgDescCurso {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.rolagemHorizontal .imgDescCurso p {
+  max-width: 200px;
+}
+.rolagemHorizontal .navegacaoCursos {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 95%;
+  margin-right: 50px;
+  display: flex;
+}
+.rolagemHorizontal .navegacaoCursos img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbarAzul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: white;
+  width: 100%;
+}
+.navbarAzul .logoPesquisa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 25px;
+}
+.navbarAzul .logoPesquisa input[type=text] {
+  height: 10px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid 2px #116798;
+}
+.navbarAzul .logoPesquisa .logoImg {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #116798;
+}
+.navbarAzul .logoPesquisa .logoImg img {
+  margin-right: 40px;
+  max-width: 70px;
+  max-height: 70px;
+}
+.navbarAzul .perfilImg img {
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 100%;
+  border: solid 2px #116798;
+}
+.navbarAzul .catNavbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navbarAzul .catNavbar ul :nth-child(1) a {
+  border-bottom: 2px solid #116798;
+  color: #116798;
+}
+.navbarAzul .catNavbar ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.navbarAzul .catNavbar ul li a {
+  text-decoration: none;
+  color: #116798;
+}
+
+body {
+  margin: auto;
+  overflow: auto;
+  background: linear-gradient(315deg, #C9FBFA 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, #002B5C 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.login-container .content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 455px) {
+  .login-container .content {
+    flex-direction: column;
+  }
+}
+.login-container .content .description, .login-container .content .formulario {
+  width: 40%;
+  color: #fff;
+}
+.login-container .content .description {
+  margin-top: 70px;
+}
+.login-container .content .description #pn, .login-container .content .description #descubra {
+  text-align: center;
+}
+.login-container .content .description #pn {
+  font-size: 80px;
+}
+.login-container .content .description #descubra {
+  font-size: 50px;
+}
+@media (max-width: 455px) {
+  .login-container .content .description {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.login-container .content .formulario {
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(226, 255, 207, 0.15);
+}
+@media (max-width: 455px) {
+  .login-container .content .formulario {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+.login-container .content .formulario h2 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #116798;
+  padding: 0.5rem;
+  border-radius: 20px;
+  width: 70%;
+}
+.login-container .content .formulario form {
+  margin: 0 auto;
+  width: 70%;
+}
+.login-container .content .formulario form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-top: 10px;
+  border: 2px solid #116798;
+}
+.login-container .content .formulario form button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.pagTodaPerfilAluno {
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno {
+  width: 35%;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno {
+  padding: 10px;
+  background-color: #f3f3f3;
+  margin: 10px;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding-bottom: 5px;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno > p {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  border-bottom: solid 1px #156aaa;
+  width: 100%;
+}
+.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.direitaPerfilAluno {
+  margin: 10px;
+  margin-left: 30px;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.direitaPerfilAluno .nomeEmailAluno {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(1) {
+  margin-left: 5px;
+}
+.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(2) {
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-radius: 10px;
+}
+.direitaPerfilAluno .emailPerfilAluno :nth-child(1) {
+  margin-left: 5px;
+}
+.direitaPerfilAluno .emailPerfilAluno :nth-child(2) {
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-radius: 10px;
+}
+.direitaPerfilAluno .estudosAluno {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.direitaPerfilAluno .estudosAluno .estudosAlunoTxt {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.direitaPerfilAluno .estudosAluno .cursandoTerminados {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.direitaPerfilAluno .estudosAluno .cursandoTerminados p {
+  margin-bottom: 10px;
+}
+.direitaPerfilAluno .estudosAluno .cursando {
+  text-align: center;
+}
+.direitaPerfilAluno .estudosAluno .cursando img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.direitaPerfilAluno .estudosAluno .terminados {
+  text-align: center;
+}
+.direitaPerfilAluno .estudosAluno .terminados img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.direitaPerfilAluno .estatAluno .estatAlunoTxt {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe {
+  background-color: white;
+  columns: 2;
+  gap: 120px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno p {
+  margin-top: 5px;
+}
+.direitaPerfilAluno .descAluno :nth-child(1) {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.direitaPerfilAluno .descAluno :nth-child(2) {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.direitaPerfilAluno .redeSociaisAluno {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.direitaPerfilAluno .redeSociaisAluno img {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

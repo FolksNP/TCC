@@ -1,0 +1,62 @@
+@import "../1-modulos/variables"
+
+.login-container
+  .content
+    display: flex
+    justify-content: center
+
+    @include mobile
+      flex-direction: column
+
+    .description, .formulario
+      width: 40%
+      color: #fff
+
+    .description
+      margin-top: 70px
+      #pn, #descubra
+        text-align: center
+      #pn
+        font-size: 80px
+      #descubra
+        font-size: 50px
+      @include mobile
+        width: 100%
+        margin-bottom: 10px
+
+
+
+    .formulario
+      margin: 0 auto
+      margin-top: 30px
+      justify-content: center
+      padding: 1rem
+      background-color: rgba(226,255,207,0.15)
+
+      @include mobile
+        width: 100%
+        justify-content: center
+        margin-bottom: 30px
+
+      h2
+        margin: 0 auto
+        text-align: center
+        background-color: $cor-primaria
+        padding: .5rem
+        border-radius: 20px
+        width: 70%
+      form
+        margin: 0 auto
+        width: 70%
+        input
+          display: block
+          width: 100%
+          padding: .5rem
+          border-radius: 25px
+          font-size: 15px
+          margin-top: 10px
+          border: 2px solid $cor-primaria
+        button
+          width: 100%
+          margin-top: 10px
+          font-size: 20px
