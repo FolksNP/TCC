@@ -11,17 +11,17 @@
 
     <div class="navbarAzul">
         <div class="logoPesquisa">
-            <div class="logoImg"><img src="../imgs/logoTCC.png" alt=""><p>Patrono Neves</p></div>  
+            <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.jpg" alt=""></a><p>Patrono Neves</p></div>
             <p><input type="text" placeholder="Digite aqui sua pesquisa"></p>
-            <p class="perfilImg"><img src="../imgs/rony.jpg" alt=""></p>
+            <p class="perfilImg"><a href=""><img src="../imgs/rony.jpg" alt=""></a></p>
         </div>
 
-        <div class="catNavbar"> 
+        <div class="catNavbar"">
             <ul>
-                <li>Inicio</li>
-                <li>Cursos</li>
-                <li>Sobre nós</li>
-                <li>Suporte</li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Cursos</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Suporte</a></li>
             </ul>
                 
         </div>
