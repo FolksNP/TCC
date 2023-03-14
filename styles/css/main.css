@@ -14,6 +14,11 @@
   background-color: #fff;
   margin-top: 30px;
 }
+@media (max-width: 455px) {
+  .container {
+    width: 100%;
+  }
+}
 .container .pn {
   color: gray;
   padding: 1rem;
@@ -28,9 +33,20 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 455px) {
+  .container .superior .conteudos {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
   width: 20%;
   margin: 0px 10px;
+}
+@media (max-width: 455px) {
+  .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
+    width: 70%;
+  }
 }
 .container .superior .conteudos .sobre h2, .container .superior .conteudos .listagem h2, .container .superior .conteudos .links h2, .container .superior .conteudos .endereco h2 {
   font-style: normal;
@@ -551,6 +567,11 @@ body {
   border-radius: 20px;
   align-items: center;
 }
+@media (max-width: 455px) {
+  .banner {
+    flex-direction: column;
+  }
+}
 .banner > img {
   width: 550px;
   height: 550px;
@@ -559,6 +580,12 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+@media (max-width: 455px) {
+  .banner .beneficios {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .card {
@@ -617,6 +644,12 @@ body {
   justify-content: space-around;
   margin-bottom: 5%;
 }
+@media (max-width: 455px) {
+  .cursosAreas {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .cardCurso {
   width: 190px;
@@ -628,6 +661,13 @@ body {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+}
+@media (max-width: 455px) {
+  .cardCurso {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+  }
 }
 
 .cardCurso h2 {
@@ -803,6 +843,11 @@ body {
   border-radius: 20px;
   align-items: center;
 }
+@media (max-width: 455px) {
+  .banner {
+    flex-direction: column;
+  }
+}
 .banner > img {
   width: 550px;
   height: 550px;
@@ -811,6 +856,12 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+}
+@media (max-width: 455px) {
+  .banner .beneficios {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .card {
@@ -869,6 +920,12 @@ body {
   justify-content: space-around;
   margin-bottom: 5%;
 }
+@media (max-width: 455px) {
+  .cursosAreas {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .cardCurso {
   width: 190px;
@@ -880,6 +937,13 @@ body {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+}
+@media (max-width: 455px) {
+  .cardCurso {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+  }
 }
 
 .cardCurso h2 {

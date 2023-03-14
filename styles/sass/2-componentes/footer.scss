@@ -2,6 +2,10 @@
     background-color: $cor-base-website;
     margin-top: 30px;
 
+    @include mobile{
+        width: 100%;
+    }
+
     .pn{
         color: gray;
         padding: 1rem;
@@ -16,10 +20,18 @@
         .conteudos{
             display: flex;
             justify-content: space-between;
-            
+
+            @include mobile{
+                flex-direction: column;
+                justify-content: center;
+            }
+
             .sobre, .listagem, .links, .endereco{
                 width: 20%;
                 margin: 0px 10px;
+                @include mobile{
+                    width: 70%;
+                }
                 h2{
                     font-style: normal;
                     margin-bottom: 10px;
