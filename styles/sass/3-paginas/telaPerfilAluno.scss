@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.pagTodaPerfilAluno{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    .colunaEsquerdaPerfilAluno{
+        width: 35%;
+        background-color: white;
+        margin: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fotoPerfilAluno{
+            padding: 10px;
+            background-color: #f3f3f3;
+            margin: 10px;
+            border-radius: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .listaAcoesAluno{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #f3f3f3;
+            
+            padding-bottom: 5px;
+            >p{
+                align-items: center;
+                display: flex;
+                margin-top: 10px;
+                border-bottom: solid 1px #156aaa;
+                width: 100%;
+                
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+
+
+    
+    }
+}
+
+.direitaPerfilAluno{
+   // display: flex;
+   margin: 10px;
+   margin-left: 30px;
+   border-radius: 20px;
+  // background-color: white;
+   padding: 10px;
+   
+   display: flex;
+   flex-direction: column;
+
+   .nomeEmailAluno{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    .nomePerfilAluno{
+        :nth-child(1){
+            margin-left: 5px;
+        }
+    
+    :nth-child(2){
+        background-color: #f3f3f3;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    }
+   }
+   .emailPerfilAluno{
+    :nth-child(1){
+        margin-left: 5px;
+    }
+
+:nth-child(2){
+    background-color: #f3f3f3;
+    padding: 5px;
+    border-radius: 10px;
+}
+}
+
+
+
+
+.estudosAluno{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .estudosAlunoTxt{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .cursandoTerminados{
+        display: flex;
+      justify-content: space-around;
+        width: 100%;
+      background-color: white;
+      border-radius: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .cursando{
+        
+        text-align: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+    .terminados{
+        text-align: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+.estatAluno{
+    
+    .estatAlunoTxt{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        
+    }
+    .resp-perg-aulas-exe{
+        background-color: white;
+        columns: 2;
+        gap: 120px;
+        padding: 20px;
+        border-radius: 20px;
+        .estPerfilAluno{
+            display: flex;
+            justify-content: space-between;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            margin:5px;
+            padding: 5px;
+           p{
+            margin-top: 5px;
+           }
+        }
+    }
+}
+.descAluno{
+    :nth-child(1){
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    :nth-child(2){
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+}
+.redeSociaisAluno{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+}

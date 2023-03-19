@@ -1,0 +1,89 @@
+@import '../1-modulos/variables'
+//início da formartação padrão
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap')
+$font-primaria: 'Fira Sans', sans-serif
+
+
+
+body
+    font-family: $font-primaria
+
+//fim da formartação padrão
+    
+//conteudo da página
+// conteiner = caixa geral
+.conteiner
+    padding: 15px
+    margin-top: 10px
+    display: flex
+    width: 100%
+    .lado-esquerdo // conteudos do lado esquerdo da pagina
+        margin-top: 50px
+        background-color: $cor-base-website
+        width: 35%
+        border: 2px solid $cor-primaria 
+        background-color: #fff
+        border-radius: 5px
+        .conteudo
+            h1
+                background-color: $cor-primaria
+                color: white
+                text-align: center
+                padding: 10px
+                border-radius: 0px 0px 15px 15px
+                border-bottom: 2px solid $cor-primaria
+            .caixa-cont
+                padding: 10px
+                margin: 20px 10px
+                color: black
+                border: 2px solid $cor-primaria
+                border-radius: 4px
+                font-size: 20px
+                text-align: center
+                .checkin
+                    margin-right: 10px
+                    border: 1px solid white
+                    border-radius: 10px
+                    height: 25px
+                    width: 25px
+                h3
+                    display: inline
+        
+    .lado-direito // conteudos do lado esquerdo da pagina
+        background-color: transparent
+        width: 100%
+        .conteudo
+            margin: 0 auto
+            margin-top: 0px
+            width: 990px
+            padding: 30px
+            h1
+                color: black
+                padding: 10px
+        .links-inferiores // links abaixo do vídeo
+            ul
+                display: flex
+                list-style-type: none
+                li
+                    color: white
+                    padding: 10px
+                    font-size: 25px
+                    
+        .conteudo-inferior   
+            background-color: $cor-primaria
+            border-radius: 5px
+            padding: 20px   
+            p
+                font-size: 20px
+                text-align: justify
+                padding: 5px
+                color: white
+
+.footer
+    height: 1000px
+    color: orange

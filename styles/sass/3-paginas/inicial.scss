@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+$azul : #116798;
+$font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap');
+
+//navbar
+
+.navbarAzul{
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    background-color: white;
+    width: 100%;
+    
+    .logoPesquisa{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Fira Sans', sans-serif;
+       // font-family: 'Genos', sans-serif;
+         font-size: 25px;
+        input[type=text]{
+            height: 35px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 50px;
+            border: solid 2px $azul;
+        }
+        .logoImg {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            color: $azul;
+            
+            img{
+            margin-right: 40px;
+            max-width: 70px;
+            max-height: 70px;
+        }
+        }
+    }
+
+.perfilImg img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+    border: solid 2px $azul;
+    }
+
+.catNavbar{
+    ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+    :nth-child(1) a{
+        border-bottom: 2px solid $azul;
+        color: $azul;
+    }
+        li {
+            font-size: 15px;
+            margin-bottom: 10px;
+            
+            a{
+                text-decoration: none;
+                color: $azul;
+            }
+            }
+    }
+
+}
+}
+
+//aq acaba a navbar
+
+
+body{
+    margin: auto;
+    overflow: auto;
+    background: linear-gradient(
+    315deg,
+    #C9FBFA 3%,
+    rgba(60, 132, 206, 1) 38%,
+    rgba(48, 238, 226, 1) 68%,
+    #002B5C 98%,
+   
+    );
+    
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    
+}@keyframes gradient {
+    0%{
+        background-position: 0% 0%;
+
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+
+}
+
+//imagens de cursos na tela inicial começa aqui
+
+.banner{
+    display: flex;
+    margin: 50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+
+  @include mobile{
+    flex-direction: column;
+  }
+    
+    >img{
+        width: 550px;
+        height: 550px;
+        
+
+    }
+    .beneficios{
+        display: flex; 
+        width: 100%;
+        justify-content: space-evenly;
+      @include mobile{
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+}
+.card {
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(163deg, rgba(48, 238, 226, 1) 0%, #006eff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 250px;
+    height: 300px;
+    background-color: rgb(238, 238, 238);
+    border: solid 2px rgba(48, 238, 226, 1);
+    border-radius: 20px;
+    transition: all .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    >img{
+        margin-top: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    :nth-child(2){
+        font-style: italic;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 19px;
+        
+
+    }
+    :nth-child(3){
+        margin: 10px;
+    }
+   }
+   
+   .card2:hover {
+    //transform: scale(0.98);
+    border-radius: 20px;
+    
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(60, 132, 206, 1);
+     cursor: pointer;
+   }
+   
+.txtCursos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 10%;
+}
+.cursosAreas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    @include mobile{
+      flex-direction: column;
+      justify-content: center;
+    }
+}
+
+   .cardCurso {
+    width: 190px;
+    height: 254px;
+    background: rgb(238, 238, 238);;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
+box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
+     @include mobile{
+       margin: 0 auto;
+       margin-top: 10px;
+       width: 80%;
+     }
+  }
+  
+  .cardCurso h2 {
+
+    z-index: 1;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+    
+  }
+  
+  .cardCurso::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(0, 247, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cardCurso::after {
+    content: '';
+    position: absolute;
+    background: #3094ce;;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+  .perguntasFrequentesTudo{
+   // border-top: solid 2px white;
+    margin-top: 10%px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img{
+      max-width: 500px;
+    }
+
+  .perguntasFAQ{
+    color: white;
+   // background-color: $azul;
+    padding: 20px;
+    border-radius: 20px;
+    .perguntasTxt{
+      width: 100%;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      
+    }
+    p{
+      //background-color: #006eff;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 5px;
+      
+      
+      a{
+      text-decoration: none;
+      font-style: italic;
+      color: white; 
+      font-size: 20px;
+      }
+    }
+    a:hover{
+      color: $azul;
+      transition: 0.3s;
+      border-bottom: solid 2px white;
+    }
+  }
+}
+.busqueCursos{
+  width: 100%;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  >p{
+    margin-top: 30px;
+    a{
+   color: $azul;
+    }
+  }
+  .busqueCursosTxt{
+    :nth-child(1){
+      font-size: 30px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    :nth-child(2){
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+    }
+  }
+  .inputPesquisaInicial{
+    img{
+      width: 40px;
+      height: 40px;
+      background-color: #f3f3f3;
+      padding: 5px;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    >div{
+      -webkit-box-shadow: 1px 1px 28px -8px rgba(0,0,0,0.75);
+      -moz-box-shadow: 1px 1px 28px -8px rgba(0,0,0,0.75);
+       box-shadow: 1px 1px 28px -8px rgba(0,0,0,0.75);
+       display: flex;
+       align-items: center;
+       background-color: $azul;
+       
+       color: white;
+       border-radius: 20px;
+    }
+    p{
+      margin: 10px;
+    }
+
+    input[type=text]{
+      height: 40px;
+      width: 300px;
+      border: none;
+      padding-left: 10px;
+      outline: none;
+    }
+   
+  }
+}

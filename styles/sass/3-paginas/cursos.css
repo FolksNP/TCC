@@ -1,0 +1,46 @@
+.continuarAssistindo {
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.recomendados {
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.rolagemHorizontal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+.rolagemHorizontal .imgDescCurso {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.rolagemHorizontal .imgDescCurso p {
+  max-width: 200px;
+}
+.rolagemHorizontal .navegacaoCursos {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 95%;
+  margin-right: 50px;
+  display: flex;
+}
+.rolagemHorizontal .navegacaoCursos img {
+  max-width: 200px;
+  border-radius: 10px;
+}/*# sourceMappingURL=cursos.css.map */

@@ -1,0 +1,30 @@
+@import '../1-modulos/variables.scss';
+
+button{
+    background-color: $cor-primaria;
+    color: $white;
+    border: 3px solid transparent;
+    padding: 10px;
+    border-radius: 20px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $white;
+        border: 3px solid $cor-primaria;
+        color: $cor-primaria;
+    }
+}
+
+.button{
+    background-color: $cor-primaria;
+    color: $white;
+    border: 2px solid transparent;
+    padding: 10px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $white;
+        border: 2px solid $cor-primaria;
+        color: $cor-primaria;
+    }
+}

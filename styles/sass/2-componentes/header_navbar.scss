@@ -1,0 +1,64 @@
+
+.navbarAzul{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    
+    .logoPesquisa{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Fira Sans', sans-serif;
+       // font-family: 'Genos', sans-serif;
+         font-size: 25px;
+        @include mobile{
+            flex-direction: column;
+        }
+        input[type=text]{
+            height: 10px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 50px;
+            border: solid 2px #116798;
+        }
+        .logoImg {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            color: #116798;
+            
+            img{
+            margin-right: 40px;
+            max-width: 70px;
+            max-height: 70px;
+        }
+        }
+    }
+
+.perfilImg img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+    border: solid 2px #116798;
+    }
+
+.catNavbar{
+    ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-top: 2px solid $cor-primaria;
+    padding-top: 12px;
+    :nth-child(1){
+        border-bottom: 2px solid #116798;
+        color: #116798;
+    }
+        li {
+            font-size: 15px;
+                margin-bottom: 10px;
+            }
+    }
+
+}
+}
