@@ -16,7 +16,7 @@
             flex-direction: column;
         }
         input[type=text]{
-            height: 10px;
+            height: 40px;
             width: 300px;
             padding: 10px;
             border-radius: 50px;
@@ -29,10 +29,16 @@
             color: #116798;
             
             img{
-            margin-right: 40px;
-            max-width: 70px;
-            max-height: 70px;
-        }
+                margin-right: 40px;
+                max-width: 70px;
+                max-height: 70px;
+            }
+
+            a{
+                display: inline;
+                text-decoration: none;
+                color: #156aaa;
+            }
         }
     }
 
@@ -41,7 +47,31 @@
     max-height: 35px;
     border-radius: 100%;
     border: solid 2px #116798;
+
+}
+
+.login-perfil{
+    display: flex;
+
+    .link-cadastrar{
+
+        a{
+            text-decoration: none;
+            color: #156aaa;
+            padding: 5px 15px;
+            margin-left: 10px;
+            line-height: 35px;
+
+            &:hover{
+                background-color: #156aaa;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 10px;
+            }
+        }
     }
+
+}
 
 .catNavbar{
     ul{
@@ -56,9 +86,13 @@
     }
         li {
             font-size: 15px;
-                margin-bottom: 10px;
-            }
+            margin-bottom: 10px;
+
+        }
     }
 
+    a{
+        text-decoration: none;
+    }
 }
 }

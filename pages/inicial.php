@@ -11,8 +11,11 @@
     <?php include('header.php') ?>
 
     <div class="tudoInicial">
+
         <div class="banner">
+
         <img src="../imgs/logoTCC.png" alt="">
+
         <div class="beneficios">
             <div class="card">
                 <div class="card2"> 
@@ -73,7 +76,7 @@
     </div>
     <div class="inputPesquisaInicial">
         <div>
-        <img src="../imgs/lupa.png" alt="lupa" ><input type="text" name="pesquisaCurso" placeholder="Procure um curso" id="lupa"><p><label for="lupa">Buscar</label></p>
+            <img src="../imgs/lupa.png" alt="lupa" ><input type="text" name="pesquisaCurso" placeholder="Procure um curso" id="lupa"><p><label for="lupa">Buscar</label></p>
         </div>
     </div>
     <p><a href="">Ver todos os cursos</a></p>
@@ -81,7 +84,7 @@
 
         <div class="perguntasFrequentesTudo">
             <div class="perguntasImg">
-            <img src="../imgs/faq (4).png" alt="">
+                <img src="../imgs/faq (4).png" alt="">
             </div>
             
             <div class="perguntasFAQ">

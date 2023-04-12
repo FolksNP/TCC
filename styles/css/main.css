@@ -46,6 +46,7 @@
 @media (max-width: 455px) {
   .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
     width: 70%;
+    margin-top: 10px;
   }
 }
 .container .superior .conteudos .sobre h2, .container .superior .conteudos .listagem h2, .container .superior .conteudos .links h2, .container .superior .conteudos .endereco h2 {
@@ -94,7 +95,7 @@
   }
 }
 .navbarAzul .logoPesquisa input[type=text] {
-  height: 10px;
+  height: 40px;
   width: 300px;
   padding: 10px;
   border-radius: 50px;
@@ -111,11 +112,32 @@
   max-width: 70px;
   max-height: 70px;
 }
+.navbarAzul .logoPesquisa .logoImg a {
+  display: inline;
+  text-decoration: none;
+  color: #156aaa;
+}
 .navbarAzul .perfilImg img {
   max-width: 35px;
   max-height: 35px;
   border-radius: 100%;
   border: solid 2px #116798;
+}
+.navbarAzul .login-perfil {
+  display: flex;
+}
+.navbarAzul .login-perfil .link-cadastrar a {
+  text-decoration: none;
+  color: #156aaa;
+  padding: 5px 15px;
+  margin-left: 10px;
+  line-height: 35px;
+}
+.navbarAzul .login-perfil .link-cadastrar a:hover {
+  background-color: #156aaa;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 .navbarAzul .catNavbar ul {
   display: flex;
@@ -131,6 +153,9 @@
 .navbarAzul .catNavbar ul li {
   font-size: 15px;
   margin-bottom: 10px;
+}
+.navbarAzul .catNavbar a {
+  text-decoration: none;
 }
 
 body::-webkit-scrollbar {
@@ -531,63 +556,6 @@ body {
   padding: 0;
 }
 
-.navbarAzul {
-  display: flex;
-  flex-direction: column;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: white;
-  min-width: 100%;
-}
-.navbarAzul .logoPesquisa {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 25px;
-}
-.navbarAzul .logoPesquisa input[type=text] {
-  height: 35px;
-  width: 300px;
-  padding: 10px;
-  border-radius: 20px;
-  border: solid 2px #116798;
-  outline: none;
-}
-.navbarAzul .logoPesquisa .logoImg {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  color: #116798;
-}
-.navbarAzul .logoPesquisa .logoImg img {
-  margin-right: 40px;
-  max-width: 70px;
-  max-height: 70px;
-}
-.navbarAzul .perfilImg img {
-  max-width: 35px;
-  max-height: 35px;
-  border-radius: 100%;
-  border: solid 2px #116798;
-}
-.navbarAzul .catNavbar ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.navbarAzul .catNavbar ul :nth-child(1) a {
-  border-bottom: 2px solid #116798;
-  color: #116798;
-}
-.navbarAzul .catNavbar ul li {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.navbarAzul .catNavbar ul li a {
-  text-decoration: none;
-  color: #116798;
-}
-
 body {
   margin: auto;
   overflow: auto;
@@ -625,27 +593,39 @@ body {
   width: 550px;
   height: 550px;
 }
-.banner .beneficios {
+@media (max-width: 455px) {
+  .banner > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.beneficios {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 @media (max-width: 455px) {
-  .banner .beneficios {
+  .beneficios {
     flex-direction: column;
+    justify-content: center;
     justify-content: center;
   }
 }
-
-.card {
+.beneficios .card {
   width: 250px;
   height: 300px;
   background-image: linear-gradient(163deg, rgb(48, 238, 226) 0%, #006eff 100%);
   border-radius: 20px;
   transition: all 0.3s;
 }
-
-.card2 {
+@media (max-width: 455px) {
+  .beneficios .card {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
+.beneficios .card2 {
   width: 250px;
   height: 300px;
   background-color: rgb(238, 238, 238);
@@ -657,26 +637,24 @@ body {
   align-items: center;
   text-align: center;
 }
-.card2 > img {
+.beneficios .card2 > img {
   margin-top: 10px;
   width: 80px;
   height: 80px;
 }
-.card2 :nth-child(2) {
+.beneficios .card2 :nth-child(2) {
   font-style: italic;
   font-weight: bold;
   margin-top: 10px;
   font-size: 19px;
 }
-.card2 :nth-child(3) {
+.beneficios .card2 :nth-child(3) {
   margin: 10px;
 }
-
-.card2:hover {
+.beneficios .card2:hover {
   border-radius: 20px;
 }
-
-.card:hover {
+.beneficios .card:hover {
   box-shadow: 0px 0px 30px 1px rgb(60, 132, 206);
   cursor: pointer;
 }
@@ -761,13 +739,18 @@ body {
   animation: rotBGimg 3.5s linear infinite;
 } */
 .perguntasFrequentesTudo {
-  margin-top: 10% px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .perguntasFrequentesTudo img {
   max-width: 500px;
+}
+@media (max-width: 455px) {
+  .perguntasFrequentesTudo img {
+    display: none;
+  }
 }
 .perguntasFrequentesTudo .perguntasFAQ {
   color: white;
@@ -833,6 +816,11 @@ body {
   padding: 5px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+}
+@media (max-width: 455px) {
+  .busqueCursos .inputPesquisaInicial {
+    width: 90%;
+  }
 }
 .busqueCursos .inputPesquisaInicial > div {
   -webkit-box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.75);

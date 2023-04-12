@@ -1,83 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-
 }
 $azul : #116798;
 $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap');
-
-//navbar
-// @media screen and (min-width: 1024px)  {
-.navbarAzul{
-    display: flex;
-    flex-direction: column;
-    font-family: $font;
-    background-color: white;
-    min-width: 100%;
-    
-    .logoPesquisa{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Fira Sans', sans-serif;
-       // font-family: 'Genos', sans-serif;
-         font-size: 25px;
-        input[type=text]{
-            height: 35px;
-            width: 300px;
-            padding: 10px;
-            border-radius: 20px;
-            border: solid 2px $azul;
-            outline: none;
-        }
-        .logoImg {
-            display: flex;
-            align-items: center;
-            font-size: 25px;
-            color: $azul;
-            
-            img{
-            margin-right: 40px;
-            max-width: 70px;
-            max-height: 70px;
-        }
-        }
-    }
-
-.perfilImg img{
-    max-width: 35px;
-    max-height: 35px;
-    border-radius: 100%;
-    border: solid 2px $azul;
-    }
-
-.catNavbar{
-    ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    
-    :nth-child(1) a{
-        border-bottom: 2px solid $azul;
-        color: $azul;
-    }
-        li {
-            font-size: 15px;
-            margin-bottom: 10px;
-            
-            a{
-                text-decoration: none;
-                color: $azul;
-            }
-            }
-    }
-
-}
-}
-
-//aq acaba a navbar
-
 
 body{
     margin: auto;
@@ -119,74 +46,83 @@ body{
     border-radius: 20px;
     align-items: center;
 
-  @include mobile{
-    flex-direction: column;
-  }
+    @include mobile{
+      flex-direction: column;
+    }
     
     >img{
         width: 550px;
         height: 550px;
-        
 
-    }
-    .beneficios{
-        display: flex; 
-        width: 100%;
-        justify-content: space-evenly;
-      @include mobile{
-        flex-direction: column;
-        justify-content: center;
-      }
+        @include mobile{
+          width: 100%;
+          height: 100%;
+        }
+
     }
 }
-.card {
-    width: 250px;
-    height: 300px;
-    background-image: linear-gradient(163deg, rgba(48, 238, 226, 1) 0%, #006eff 100%);
-    border-radius: 20px;
-    transition: all .3s;
-   }
-   
-   .card2 {
-    width: 250px;
-    height: 300px;
-    background-color: rgb(238, 238, 238);
-    border: solid 2px rgba(48, 238, 226, 1);
-    border-radius: 20px;
-    transition: all .2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    >img{
-        margin-top: 10px;
-        width: 80px;
-        height: 80px;
-    }
-    :nth-child(2){
-        font-style: italic;
-        font-weight: bold;
-        margin-top: 10px;
-        font-size: 19px;
-        
 
-    }
-    :nth-child(3){
-        margin: 10px;
-    }
-   }
-   
-   .card2:hover {
-    //transform: scale(0.98);
-    border-radius: 20px;
-    
-   }
-   
-   .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(60, 132, 206, 1);
-     cursor: pointer;
-   }
-   
+.beneficios{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  @include mobile{
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+  }
+
+  .card {
+      width: 250px;
+      height: 300px;
+      background-image: linear-gradient(163deg, rgba(48, 238, 226, 1) 0%, #006eff 100%);
+      border-radius: 20px;
+      transition: all .3s;
+
+      @include mobile{
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+  }
+
+     .card2 {
+      width: 250px;
+      height: 300px;
+      background-color: rgb(238, 238, 238);
+      border: solid 2px rgba(48, 238, 226, 1);
+      border-radius: 20px;
+      transition: all .2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      >img{
+          margin-top: 10px;
+          width: 80px;
+          height: 80px;
+      }
+      :nth-child(2){
+          font-style: italic;
+          font-weight: bold;
+          margin-top: 10px;
+          font-size: 19px;
+
+      }
+      :nth-child(3){
+          margin: 10px;
+      }
+     }
+     .card2:hover {
+      //transform: scale(0.98);
+      border-radius: 20px;
+
+     }
+     .card:hover {
+      box-shadow: 0px 0px 30px 1px rgba(60, 132, 206, 1);
+       cursor: pointer;
+     }
+}
+
 .txtCursos{
     width: 100%;
     text-align: center;
@@ -267,13 +203,16 @@ body{
   } */
   .perguntasFrequentesTudo{
    // border-top: solid 2px white;
-    margin-top: 10%px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     img{
       max-width: 500px;
+        @include mobile{
+          display: none;
+        }
     }
 
   .perguntasFAQ{
@@ -347,6 +286,11 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @include mobile{
+      width: 90%;
+    }
+
     >div{
       -webkit-box-shadow: 1px 1px 28px -8px rgba(0,0,0,0.75);
       -moz-box-shadow: 1px 1px 28px -8px rgba(0,0,0,0.75);
