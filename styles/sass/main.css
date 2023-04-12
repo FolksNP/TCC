@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
+@import '3-paginas/inicial.css';
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
-@import '3-paginas/login.css';
 * {
   margin: 0;
   padding: 0;
@@ -480,235 +479,6 @@ body {
   color: orange;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.navbarAzul {
-  display: flex;
-  flex-direction: column;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: white;
-  width: 100%;
-}
-.navbarAzul .logoPesquisa {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 25px;
-}
-.navbarAzul .logoPesquisa input[type=text] {
-  height: 35px;
-  width: 300px;
-  padding: 10px;
-  border-radius: 50px;
-  border: solid 2px #116798;
-}
-.navbarAzul .logoPesquisa .logoImg {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  color: #116798;
-}
-.navbarAzul .logoPesquisa .logoImg img {
-  margin-right: 40px;
-  max-width: 70px;
-  max-height: 70px;
-}
-.navbarAzul .perfilImg img {
-  max-width: 35px;
-  max-height: 35px;
-  border-radius: 100%;
-  border: solid 2px #116798;
-}
-.navbarAzul .catNavbar ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.navbarAzul .catNavbar ul :nth-child(1) a {
-  border-bottom: 2px solid #116798;
-  color: #116798;
-}
-.navbarAzul .catNavbar ul li {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.navbarAzul .catNavbar ul li a {
-  text-decoration: none;
-  color: #116798;
-}
-
-body {
-  margin: auto;
-  overflow: auto;
-  background: linear-gradient(315deg, #C9FBFA 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, #002B5C 98%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-.banner {
-  display: flex;
-  margin: 50px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 20px;
-  align-items: center;
-}
-@media (max-width: 455px) {
-  .banner {
-    flex-direction: column;
-  }
-}
-.banner > img {
-  width: 550px;
-  height: 550px;
-}
-.banner .beneficios {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-@media (max-width: 455px) {
-  .banner .beneficios {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.card {
-  width: 250px;
-  height: 300px;
-  background-image: linear-gradient(163deg, rgb(48, 238, 226) 0%, #006eff 100%);
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.card2 {
-  width: 250px;
-  height: 300px;
-  background-color: rgb(238, 238, 238);
-  border: solid 2px rgb(48, 238, 226);
-  border-radius: 20px;
-  transition: all 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.card2 > img {
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
-}
-.card2 :nth-child(2) {
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 19px;
-}
-.card2 :nth-child(3) {
-  margin: 10px;
-}
-
-.card2:hover {
-  border-radius: 20px;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 30px 1px rgb(60, 132, 206);
-  cursor: pointer;
-}
-
-.txtCursos {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 50px;
-  color: white;
-}
-
-.cursosAreas {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 5%;
-}
-@media (max-width: 455px) {
-  .cursosAreas {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.cardCurso {
-  width: 190px;
-  height: 254px;
-  background: rgb(238, 238, 238);
-  position: relative;
-  display: flex;
-  place-content: center;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-}
-@media (max-width: 455px) {
-  .cardCurso {
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 80%;
-  }
-}
-
-.cardCurso h2 {
-  z-index: 1;
-  color: white;
-  align-items: center;
-  font-size: 20px;
-}
-
-.cardCurso::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(0, 247, 255));
-  height: 130%;
-  animation: rotBGimg 3s linear infinite;
-  transition: all 0.2s linear;
-}
-
-@keyframes rotBGimg {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.cardCurso::after {
-  content: "";
-  position: absolute;
-  background: #3094ce;
-  inset: 5px;
-  border-radius: 15px;
-}
-
-/* .card:hover:before {
-  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-  animation: rotBGimg 3.5s linear infinite;
-} */
 .continuarAssistindo {
   background-color: white;
   padding-bottom: 10px;
@@ -915,6 +685,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
   color: white;
+  margin-top: 10%;
 }
 
 .cursosAreas {
@@ -939,6 +710,7 @@ body {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+  box-shadow: 10px 9px 20px -5px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 455px) {
   .cardCurso {
@@ -985,6 +757,99 @@ body {
   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
   animation: rotBGimg 3.5s linear infinite;
 } */
+.perguntasFrequentesTudo {
+  margin-top: 10% px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.perguntasFrequentesTudo img {
+  max-width: 500px;
+}
+.perguntasFrequentesTudo .perguntasFAQ {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.perguntasFrequentesTudo .perguntasFAQ .perguntasTxt {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+.perguntasFrequentesTudo .perguntasFAQ p {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+.perguntasFrequentesTudo .perguntasFAQ p a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  font-size: 20px;
+}
+.perguntasFrequentesTudo .perguntasFAQ a:hover {
+  color: #116798;
+  transition: 0.3s;
+  border-bottom: solid 2px white;
+}
+
+.busqueCursos {
+  width: 100%;
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.busqueCursos > p {
+  margin-top: 30px;
+}
+.busqueCursos > p a {
+  color: #116798;
+}
+.busqueCursos .busqueCursosTxt :nth-child(1) {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+.busqueCursos .busqueCursosTxt :nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.busqueCursos .inputPesquisaInicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.busqueCursos .inputPesquisaInicial img {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f3f3;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.busqueCursos .inputPesquisaInicial > div {
+  box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  background-color: #116798;
+  color: white;
+  border-radius: 20px;
+}
+.busqueCursos .inputPesquisaInicial p {
+  margin: 10px;
+}
+.busqueCursos .inputPesquisaInicial input[type=text] {
+  height: 40px;
+  width: 300px;
+  border: none;
+  padding-left: 10px;
+  outline: none;
+}
+
 .login-container .content {
   display: flex;
   justify-content: center;
@@ -1063,7 +928,7 @@ body {
   box-sizing: border-box;
 }
 
-.pagTodaPerfilAluno {
+.pagTodaPerfilProfessor {
   font-family: "Fira Sans", sans-serif;
   margin: 20px;
   border-radius: 20px;
@@ -1071,8 +936,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno {
-  width: 35%;
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+  width: 30%;
   background-color: white;
   margin: 10px;
   border-radius: 20px;
@@ -1080,7 +945,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor {
   padding: 10px;
   background-color: #f3f3f3;
   margin: 10px;
@@ -1091,71 +956,72 @@ body {
   justify-content: center;
   text-align: center;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno img {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor > img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #f3f3f3;
   padding-bottom: 5px;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno > p {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor > p {
   align-items: center;
   display: flex;
   margin-top: 10px;
   border-bottom: solid 1px #156aaa;
   width: 100%;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno img {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor img {
   width: 30px;
   height: 30px;
   margin: 5px;
 }
 
-.direitaPerfilAluno {
+.direitaPerfilProfessor {
   margin: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
   border-radius: 20px;
   padding: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.direitaPerfilAluno .nomeEmailAluno {
+.direitaPerfilProfessor .nomeEmailProfessor {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
 }
-.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(1) {
+.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(2) {
+.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .emailPerfilAluno :nth-child(1) {
+.direitaPerfilProfessor .emailPerfilProfessor :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilAluno .emailPerfilAluno :nth-child(2) {
+.direitaPerfilProfessor .emailPerfilProfessor :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estudosAluno {
+.direitaPerfilProfessor .estudosProfessor {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.direitaPerfilAluno .estudosAluno .estudosAlunoTxt {
+.direitaPerfilProfessor .estudosProfessor .estudosProfessorTxt {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .estudosAluno .cursandoTerminados {
+.direitaPerfilProfessor .estudosProfessor .cursandoTerminados {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -1164,33 +1030,33 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.direitaPerfilAluno .estudosAluno .cursandoTerminados p {
+.direitaPerfilProfessor .estudosProfessor .cursandoTerminados p {
   margin-bottom: 10px;
 }
-.direitaPerfilAluno .estudosAluno .cursando {
+.direitaPerfilProfessor .estudosProfessor .cursando {
   text-align: center;
 }
-.direitaPerfilAluno .estudosAluno .cursando img {
+.direitaPerfilProfessor .estudosProfessor .cursando img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estudosAluno .terminados {
+.direitaPerfilProfessor .estudosProfessor .terminados {
   text-align: center;
 }
-.direitaPerfilAluno .estudosAluno .terminados img {
+.direitaPerfilProfessor .estudosProfessor .terminados img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estatAluno .estatAlunoTxt {
+.direitaPerfilProfessor .estatProfessor .estatProfessorTxt {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe {
   background-color: white;
   -moz-columns: 2;
        columns: 2;
@@ -1198,7 +1064,7 @@ body {
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor {
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
@@ -1206,27 +1072,234 @@ body {
   margin: 5px;
   padding: 5px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno p {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor p {
   margin-top: 5px;
 }
-.direitaPerfilAluno .descAluno :nth-child(1) {
+.direitaPerfilProfessor .descProfessor :nth-child(1) {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .descAluno :nth-child(2) {
+.direitaPerfilProfessor .descProfessor :nth-child(2) {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilAluno .redeSociaisAluno {
+.direitaPerfilProfessor .redeSociaisProfessor {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.direitaPerfilAluno .redeSociaisAluno img {
+.direitaPerfilProfessor .redeSociaisProfessor img {
   width: 50px;
   height: 50px;
+}
+.direitaPerfilProfessor .cursoProfessorTopo {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-left: 30px;
+  color: black;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor :nth-child(1) {
+  border-bottom: solid 2px #116798;
+  background-color: #f3f3f3;
+  height: 100%;
+  width: 50%;
+  margin-left: -30px;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor p > img {
+  max-width: 35px;
+  margin: 5px;
+  margin-right: 40px;
+  border: solid 2px #116798;
+  border-radius: 5px;
+}
+.direitaPerfilProfessor .imgsCursosProfessor > img {
+  width: 100px;
+  margin: 10px;
+  height: 100px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .tudo-videos-atvd {
+  display: flex;
+}
+.direitaPerfilProfessor .tudo-videos-atvd :nth-child(1) {
+  border-bottom: solid 2px #116798;
+}
+.direitaPerfilProfessor .tudo-videos-atvd p {
+  margin: 10px 5px 5px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=text] {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  padding-left: 5px;
+  box-shadow: 3px 3px 0px 0px #116798;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=checkbox] {
+  height: 30px;
+  width: 30px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso > p {
+  background-color: #f3f3f3;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  border-left: solid 2px #116798;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso img {
+  max-width: 25px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  display: flex;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details .scrollCursos {
+  height: 200px;
+  overflow-y: scroll;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details p {
+  display: flex;
+  background-color: #116798;
+  margin: 10px 0px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details p input[type=checkbox] {
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details summary {
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.direitaPerfilProfessor .topoProfessorEst {
+  display: flex;
+  justify-content: space-between;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(1) {
+  font-size: 20px;
+  border-bottom: solid 2px #116798;
+}
+.direitaPerfilProfessor .topoProfessorEst img {
+  width: 20px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor :nth-child(1) {
+  font-size: 25px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.tudoLogin {
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tudoLogin .ladoDireitoLogin {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.tudoLogin .ladoEsquerdoLogin {
+  display: flex;
+  flex-direction: column;
+}
+.tudoLogin .imgLogin {
+  min-height: 100%;
+  width: 3px;
+  background-color: #116798;
+}
+.tudoLogin .loginTitulo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #116798;
+}
+.tudoLogin .inputLogin {
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+}
+.tudoLogin .inputLogin p {
+  margin-top: auto;
+}
+.tudoLogin .inputLogin input {
+  border-radius: 10px;
+  height: 35px;
+  padding-left: 10px;
+  margin-top: 5px;
+  border: solid 2px #116798;
+  width: 100%;
+}
+.tudoLogin .inputLogin input[type=submit] {
+  background-color: #116798;
+  border: solid 2px black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.tudoLogin .inputLogin input[type=checkbox] {
+  height: 20px;
+  max-width: 18px;
+  margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */

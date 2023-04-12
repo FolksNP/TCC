@@ -8,13 +8,13 @@ $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap');
 
 //navbar
-
+// @media screen and (min-width: 1024px)  {
 .navbarAzul{
     display: flex;
     flex-direction: column;
     font-family: $font;
     background-color: white;
-    width: 100%;
+    min-width: 100%;
     
     .logoPesquisa{
         display: flex;
@@ -27,8 +27,9 @@ $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
             height: 35px;
             width: 300px;
             padding: 10px;
-            border-radius: 50px;
+            border-radius: 20px;
             border: solid 2px $azul;
+            outline: none;
         }
         .logoImg {
             display: flex;
@@ -214,8 +215,8 @@ body{
     overflow: hidden;
     border-radius: 20px;
     -webkit-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
      @include mobile{
        margin: 0 auto;
        margin-top: 10px;
@@ -370,4 +371,58 @@ box-shadow: 10px 9px 20px -5px rgba(0,0,0,0.75);
     }
    
   }
+}
+//}fecha o media screen pra pc
+
+@media screen and (max-width: 740px) {
+ .navbarAzul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100%;
+  .logoPesquisa{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    img{
+      margin-left: 5px;
+    }
+    li{
+      display: none;
+    }
+    .logoImg {
+      font-size: 20px;
+      
+      img{
+      width: 80px;
+      height: 80px;
+      margin-right: 5px;
+    }
+  }
+  .listaMenu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px;
+    div{
+      display: flex;
+      height: 3px;
+      width: 25px;
+      margin: 3px 0px;
+      background-color: $azul;
+    }
+  }
+  }
+ input{
+  display: none;
+ }
+ ul li{
+  display: none;
+ }
+ }
+  
 }

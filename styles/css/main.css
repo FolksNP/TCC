@@ -536,7 +536,7 @@ body {
   flex-direction: column;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: white;
-  width: 100%;
+  min-width: 100%;
 }
 .navbarAzul .logoPesquisa {
   display: flex;
@@ -549,8 +549,9 @@ body {
   height: 35px;
   width: 300px;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 20px;
   border: solid 2px #116798;
+  outline: none;
 }
 .navbarAzul .logoPesquisa .logoImg {
   display: flex;
@@ -854,6 +855,55 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 740px) {
+  .navbarAzul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  .navbarAzul .logoPesquisa {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navbarAzul .logoPesquisa img {
+    margin-left: 5px;
+  }
+  .navbarAzul .logoPesquisa li {
+    display: none;
+  }
+  .navbarAzul .logoPesquisa .logoImg {
+    font-size: 20px;
+  }
+  .navbarAzul .logoPesquisa .logoImg img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+  }
+  .navbarAzul .logoPesquisa .listaMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px;
+  }
+  .navbarAzul .logoPesquisa .listaMenu div {
+    display: flex;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0px;
+    background-color: #116798;
+  }
+  .navbarAzul input {
+    display: none;
+  }
+  .navbarAzul ul li {
+    display: none;
+  }
+}
 .login-container .content {
   display: flex;
   justify-content: center;
@@ -932,7 +982,7 @@ body {
   box-sizing: border-box;
 }
 
-.pagTodaPerfilAluno {
+.pagTodaPerfilProfessor {
   font-family: "Fira Sans", sans-serif;
   margin: 20px;
   border-radius: 20px;
@@ -940,8 +990,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno {
-  width: 35%;
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+  width: 30%;
   background-color: white;
   margin: 10px;
   border-radius: 20px;
@@ -949,7 +999,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor {
   padding: 10px;
   background-color: #f3f3f3;
   margin: 10px;
@@ -960,71 +1010,74 @@ body {
   justify-content: center;
   text-align: center;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .fotoPerfilAluno img {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor > img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #f3f3f3;
   padding-bottom: 5px;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno > p {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor > div {
   align-items: center;
   display: flex;
+  flex-direction: row;
   margin-top: 10px;
   border-bottom: solid 1px #156aaa;
   width: 100%;
+  cursor: pointer;
 }
-.pagTodaPerfilAluno .colunaEsquerdaPerfilAluno .listaAcoesAluno img {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor img {
   width: 30px;
   height: 30px;
   margin: 5px;
 }
 
-.direitaPerfilAluno {
+.direitaPerfilProfessor {
   margin: 10px;
-  margin-left: 30px;
+  margin-left: 50px;
   border-radius: 20px;
   padding: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.direitaPerfilAluno .nomeEmailAluno {
+.direitaPerfilProfessor .nomeEmailProfessor {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
 }
-.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(1) {
+.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilAluno .nomeEmailAluno .nomePerfilAluno :nth-child(2) {
+.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .emailPerfilAluno :nth-child(1) {
+.direitaPerfilProfessor .emailPerfilProfessor :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilAluno .emailPerfilAluno :nth-child(2) {
+.direitaPerfilProfessor .emailPerfilProfessor :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estudosAluno {
+.direitaPerfilProfessor .estudosProfessor {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.direitaPerfilAluno .estudosAluno .estudosAlunoTxt {
+.direitaPerfilProfessor .estudosProfessor .estudosProfessorTxt {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .estudosAluno .cursandoTerminados {
+.direitaPerfilProfessor .estudosProfessor .cursandoTerminados {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -1033,40 +1086,40 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.direitaPerfilAluno .estudosAluno .cursandoTerminados p {
+.direitaPerfilProfessor .estudosProfessor .cursandoTerminados p {
   margin-bottom: 10px;
 }
-.direitaPerfilAluno .estudosAluno .cursando {
+.direitaPerfilProfessor .estudosProfessor .cursando {
   text-align: center;
 }
-.direitaPerfilAluno .estudosAluno .cursando img {
+.direitaPerfilProfessor .estudosProfessor .cursando img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estudosAluno .terminados {
+.direitaPerfilProfessor .estudosProfessor .terminados {
   text-align: center;
 }
-.direitaPerfilAluno .estudosAluno .terminados img {
+.direitaPerfilProfessor .estudosProfessor .terminados img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilAluno .estatAluno .estatAlunoTxt {
+.direitaPerfilProfessor .estatProfessor .estatProfessorTxt {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe {
   background-color: white;
-  columns: 2;
-  gap: 120px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor {
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
@@ -1074,31 +1127,352 @@ body {
   margin: 5px;
   padding: 5px;
 }
-.direitaPerfilAluno .estatAluno .resp-perg-aulas-exe .estPerfilAluno p {
+.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor p {
   margin-top: 5px;
 }
-.direitaPerfilAluno .descAluno :nth-child(1) {
+.direitaPerfilProfessor .descProfessor :nth-child(1) {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilAluno .descAluno :nth-child(2) {
+.direitaPerfilProfessor .descProfessor :nth-child(2) {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilAluno .redeSociaisAluno {
+.direitaPerfilProfessor .redeSociaisProfessor {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.direitaPerfilAluno .redeSociaisAluno img {
+.direitaPerfilProfessor .redeSociaisProfessor img {
   width: 50px;
   height: 50px;
 }
+.direitaPerfilProfessor .cursoProfessorTopo {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-left: 30px;
+  color: black;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor :nth-child(1) {
+  border-bottom: solid 2px #116798;
+  background-color: #f3f3f3;
+  height: 100%;
+  width: 50%;
+  margin-left: -30px;
+}
+.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor p > img {
+  max-width: 35px;
+  margin: 5px;
+  margin-right: 40px;
+  border: solid 2px #116798;
+  border-radius: 5px;
+}
+.direitaPerfilProfessor .imgsCursosProfessor > img {
+  width: 100px;
+  margin: 10px;
+  height: 100px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .tudo-videos-atvd {
+  display: flex;
+}
+.direitaPerfilProfessor .tudo-videos-atvd :nth-child(1) {
+  border-bottom: solid 2px #116798;
+}
+.direitaPerfilProfessor .tudo-videos-atvd p {
+  margin: 10px 5px 5px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=text] {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  padding-left: 5px;
+  -webkit-box-shadow: 3px 3px 0px 0px #116798;
+  -moz-box-shadow: 3px 3px 0px 0px #116798;
+  box-shadow: 3px 3px 0px 0px #116798;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=checkbox] {
+  height: 30px;
+  width: 30px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso > p {
+  background-color: #f3f3f3;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  border-left: solid 2px #116798;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso img {
+  max-width: 25px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details .scrollCursos {
+  height: 200px;
+  overflow-y: scroll;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details p {
+  display: flex;
+  background-color: #116798;
+  margin: 10px 0px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details p input[type=checkbox] {
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details summary {
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+.direitaPerfilProfessor .conteudosTelaCursosProfessor details a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.direitaPerfilProfessor .topoProfessorEst {
+  display: flex;
+  justify-content: space-between;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(1) p {
+  font-size: 20px;
+  border-bottom: solid 2px #116798;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) {
+  height: 30px;
+  align-items: center;
+  display: flex;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #d7d7d7;
+  margin-left: -3px;
+  border-radius: 5px;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) input {
+  border: none;
+  outline: none;
+  height: 100%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 5px;
+  width: 200px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor :nth-child(1) {
+  font-size: 20px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor .selecioneCursoProfessorImg {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor {
+  display: flex;
+  flex-direction: column;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorTxt {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs {
+  column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #f3f3f3;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorTxt {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs {
+  column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #f3f3f3;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorTxt {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs {
+  column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs > div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.direitaPerfilProfessor .graficosProfessor {
+  height: 100%;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.direitaPerfilProfessor .graficosProfessor p {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
 
+#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  .pagTodaPerfilProfessor {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
+    display: flex;
+    flex-direction: row;
+    background: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div {
+    border: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div p {
+    display: none;
+    border: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor a {
+    display: none;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados {
+    display: flex;
+    flex-direction: column;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .terminados img {
+    width: 80px;
+    height: 80px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .cursando img {
+    width: 80px;
+    height: 80px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .resp-perg-aulas-exe {
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+    gap: 0;
+  }
+}
 .tudoLogin {
   margin: 5%;
   margin-left: 10%;
