@@ -10,68 +10,13 @@
 </head>
 <body>
     <?php include('header.php'); ?>
+    <?php include('slider.php'); ?>
+    <?php include('slider.php'); ?>
     
-    <div class="tudoCarrosselCursos">
-        <div class="continuarAssistindo">
-<div class="rolagemHorizontal">
-        <p>Continue Aprendendo</p>
-    <div class="navegacaoCursos">
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-  </div>
-  </div>
-  </div>
-  <div class="recomendados">
-  <div class="rolagemHorizontal">
-        <p>Em alta</p>
-    <div class="navegacaoCursos">
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-  </div>
-  </div>
-  <div class="rolagemHorizontal">
-        <p>Com base no seu interesse</p>
-    <div class="navegacaoCursos">
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-  </div>
-  </div>
-  <div class="rolagemHorizontal">
-        <p>Novidades fresquinhas</p>
-    <div class="navegacaoCursos">
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-    <div class="imgDescCurso"><img src="../imgs/binladen.jpg"><p>ta tranquilo ta favorável </p></div>
-  </div>
-  </div>
-</div>
+    
+
+    
+    <script src="../scripts/cursos.js"></script>
 <?php include('footer.php'); ?>
 </body>
 </html>

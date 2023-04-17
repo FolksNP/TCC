@@ -1,66 +1,147 @@
 $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-
-
-
-.continuarAssistindo{
-    background-color: white;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    margin-top: 15px;
-    margin-bottom: 50px;
+.product {
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+    margin: 50px;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+  }
   
-}
-.recomendados{
-    background-color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
-}
-    .rolagemHorizontal{
-        
-        
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       // margin: 20px;
-        font-family: $font;
-        background-color: #f3f3f3;
-        border-radius: 30px;
-        padding: 10px;
-        margin: 5px;
-    
-        .imgDescCurso{
-            margin: 5px;
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            
-           
-            p{
-                
-               max-width: 200px;
-             
-            }   
-            
-        }
-    
-    
-    .navegacaoCursos{
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        max-width: 95%;
-        margin-right: 50px;
-        display: flex;
-        
-            img{
-                max-width: 200px;
-                border-radius: 10px;
-    
-            }
-        }
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    p{
+        margin: 0 10px;
     }
+    .linha{
+        width: 100%;
+        height: 5px;
+        background-color: $cor-primaria;
+        border-radius: 10px;
+    }
+  }
+  
+  .product-container {
+    padding: 0 100px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 250px;
+   img{
+    border-radius: 5px;
+   }
+  }
+  
+  .product-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+ 
+  
+
+  .product-brand {
+    text-transform: uppercase;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  
+  
+
+  .pre-btn,
+  .nxt-btn {
+    border: none !important;  
+    width: 10vw !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    border-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, #ffffff 100%) !important;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2 !important;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1 !important;
+  }
+  
+ 
+
+
+
 
