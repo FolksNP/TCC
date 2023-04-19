@@ -507,7 +507,8 @@ body {
 .product {
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
+  padding-left: 50px;
+  padding-top: 10px;
   margin: 50px;
   background-color: #f3f3f3;
   border-radius: 30px;
@@ -515,28 +516,28 @@ body {
 
 .product-category {
   padding: 0 10vw;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 10px;
   color: #000000;
   width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .product-category p {
-  margin: 0 10px;
+  margin-bottom: 10px;
 }
 .product-category .linha {
-  width: 100%;
+  width: 35%;
   height: 5px;
   background-color: #116798;
   border-radius: 10px;
 }
 
 .product-container {
-  padding: 0 100px;
+  padding: 0 50px;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -548,8 +549,8 @@ body {
 
 .product-card {
   flex: 0 0 auto;
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 180px;
 }
 .product-card img {
   border-radius: 5px;
@@ -557,8 +558,8 @@ body {
 
 .product-image {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   overflow: hidden;
 }
 
@@ -578,12 +579,8 @@ body {
   text-transform: capitalize;
 }
 
-.product-card:hover .card-btn {
-  opacity: 1;
-}
-
 .product-brand {
-  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .product-short-description {
@@ -1554,19 +1551,85 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+.tudoLogin #senhaInput {
+  border: solid 2px #116798;
+  border-radius: 10px;
+}
+.tudoLogin #senhaInput input {
+  border: none;
+}
+.tudoLogin #senhaInput2 {
+  border: solid 2px #116798;
+  border-radius: 10px;
+}
+.tudoLogin #senhaInput2 input {
+  border: none;
+  background: none;
+}
+.tudoLogin .floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+}
+.tudoLogin .floating-label-group > div {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+.tudoLogin .floating-label-group input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: solid 2px #116798;
+}
+.tudoLogin .floating-label-group input[type=submit] {
+  background-color: #116798;
+  border: solid 2px black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.tudoLogin .floating-label-group .floating-label {
+  font-size: 13px;
+  color: #b4b3b3;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+  width: 100%;
+  align-items: center;
+}
+.tudoLogin .floating-label-group input:focus ~ .floating-label,
+.tudoLogin .floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
+}
 .tudoLogin .ladoDireitoLogin {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+.tudoLogin .linhaLogin {
+  height: 600px;
+  width: 3px;
+  background-color: #116798;
+}
 .tudoLogin .ladoEsquerdoLogin {
   display: flex;
   flex-direction: column;
-}
-.tudoLogin .imgLogin {
-  min-height: 100%;
-  width: 3px;
-  background-color: #116798;
 }
 .tudoLogin .loginTitulo {
   margin-top: 20px;
@@ -1577,7 +1640,6 @@ body {
   color: #116798;
 }
 .tudoLogin .inputLogin {
-  padding: 10px;
   border-radius: 20px;
   width: 100%;
   display: flex;
@@ -1585,25 +1647,20 @@ body {
 .tudoLogin .inputLogin p {
   margin-top: auto;
 }
-.tudoLogin .inputLogin input {
-  border-radius: 10px;
-  height: 35px;
-  padding-left: 10px;
-  margin-top: 5px;
-  border: solid 2px #116798;
-  width: 100%;
-}
-.tudoLogin .inputLogin input[type=submit] {
-  background-color: #116798;
-  border: solid 2px black;
-  color: white;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
 .tudoLogin .inputLogin input[type=checkbox] {
   height: 20px;
   max-width: 18px;
   margin-right: 20px;
+}
+
+#myPassword {
+  padding-right: 20px;
+}
+
+.olho {
+  cursor: pointer;
+  left: 60px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

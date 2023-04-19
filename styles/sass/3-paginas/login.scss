@@ -1,3 +1,4 @@
+
 .tudoLogin{
     // margin-left: 10%;
     // margin-right: 10%;
@@ -11,21 +12,104 @@
    // flex-direction: column;
    // align-items: center;
   //align-items: center;
+  #senhaInput{
+    border: solid 2px $cor-primaria;
+    border-radius: 10px;
+    
+    input{
+        border: none;
+        
+    }
+    
+}  #senhaInput2{
+  border: solid 2px $cor-primaria;
+  border-radius: 10px;
+  
+  input{
+      border: none;
+      background:none;
+      
+  }
+  
+}
+  .floating-label-group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+   
+    >div{
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+
+        
+    }
+            input{
+                height: 35px;
+                width: 100% ; 
+                outline: none;
+                padding-left: 10px;
+                border-radius: 10px;
+                border: solid 2px $cor-primaria;
+               
+            }
+            input[type=submit]{
+                background-color: $cor-primaria;
+                border: solid 2px black;
+                color: white;
+                cursor: pointer;
+                margin-bottom: 20px;
+                width: 100%;
+                padding: 10px;
+                
+            } 
+            
+	.floating-label {
+		font-size: 13px;
+		color: #b4b3b3;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+        width: 100%;
+        align-items: center;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -15px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 11px;
+		opacity: 1;
+		color: #404040;
+        
+	}
+}
+
   .ladoDireitoLogin{
     align-items: center;
     display: flex;
     flex-direction: column;
+    
+   
+  }
+  .linhaLogin{
+    height: 600px;
+    width: 3px;
+    background-color: $cor-primaria;
   }
    .ladoEsquerdoLogin{
     display: flex;
     flex-direction: column;
    }
-   .imgLogin{
-    min-height: 100%;
-    width: 3px;
-    background-color: #116798;
-    
-   }
+
+   
 //  
     .loginTitulo{
         margin-top: 20px;
@@ -33,11 +117,11 @@
         width: 100%;
         text-align: center;
         font-size: 25px;
-        color: #116798;
+        color: $cor-primaria;
     }
     .inputLogin{
-      // background-color: #116798;
-        padding: 10px;
+      // background-color: $cor-primaria;
+        // padding: 10px;
        //margin: 20px;
         border-radius: 20px;
         width: 100%;
@@ -47,22 +131,9 @@
 p{
     margin-top: auto;
 }
-        input{
-            border-radius: 10px;
-            height: 35px;
-            padding-left: 10px;
-            margin-top: 5px;
-            border: solid 2px #116798;
-            width: 100%;
-            
-        }
-        input[type=submit]{
-            background-color: #116798;
-            border: solid 2px black;
-            color: white;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
+
+       
+       
         input[type=checkbox]{
          height: 20px;
           max-width: 18px;
@@ -81,3 +152,14 @@ p{
     //       }
     }
 }
+#myPassword {
+   
+    padding-right: 20px;
+  }
+  
+  .olho {
+    cursor: pointer;
+    left: 60px;
+   
+    width: 20px;
+  }
