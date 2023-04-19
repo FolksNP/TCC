@@ -35,7 +35,7 @@
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">PHP</h2>
-                    <p class="product-short-description">Front-end</p>
+                    <p class="product-short-description">Back-End</p>
                     
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">PHP</h2>
-                    <p class="product-short-description">Front-end</p>
+                    <p class="product-short-description">Back-End</p>
                     
                 </div>
             </div>
@@ -58,8 +58,8 @@
                     
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">PHP</h2>
-                    <p class="product-short-description">Front-end</p>
+                    <h2 class="product-brand">HTML</h2>
+                    <p class="product-short-description">Front-End</p>
                     
                 </div>
             </div>
@@ -70,8 +70,8 @@
                     
                 </div>
                 <div class="product-info">
-                    <h2 class="product-brand">PHP</h2>
-                    <p class="product-short-description">Front-end</p>
+                    <h2 class="product-brand">HTML</h2>
+                    <p class="product-short-description">Front-End</p>
                     
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="product-info">
                     <h2 class="product-brand">PHP</h2>
-                    <p class="product-short-description">Front-end</p>
+                    <p class="product-short-description">Back-End</p>
                     
                 </div>
             </div>
