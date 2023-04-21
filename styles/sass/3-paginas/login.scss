@@ -6,23 +6,21 @@
     margin-left: 10%;
     margin-right: 10%;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
    display: flex;
    justify-content: space-evenly;
    
 
   #senhaInput{
-    border: solid 2px $cor-primaria;
-    border-radius: 10px;
+    border-bottom: solid 2px $cor-primaria;
     input{
         border: none;
         
     }
     
 }  #senhaInput2{
-  border: solid 2px $cor-primaria;
-  border-radius: 10px;
-  
+  border-bottom: solid 2px $cor-primaria;
+
   input{
       border: none;
       background:none;
@@ -51,8 +49,8 @@
                 width: 100% ; 
                 outline: none;
                 padding-left: 10px;
-                border-radius: 10px;
-                border: solid 2px $cor-primaria;
+                border: none;
+                border-bottom: solid 2px $cor-primaria;
                 background: none;
                
             }

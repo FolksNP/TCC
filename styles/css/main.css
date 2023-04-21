@@ -1505,20 +1505,18 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
 }
 .tudoLogin #senhaInput {
-  border: solid 2px #116798;
-  border-radius: 10px;
+  border-bottom: solid 2px #116798;
 }
 .tudoLogin #senhaInput input {
   border: none;
 }
 .tudoLogin #senhaInput2 {
-  border: solid 2px #116798;
-  border-radius: 10px;
+  border-bottom: solid 2px #116798;
 }
 .tudoLogin #senhaInput2 input {
   border: none;
@@ -1543,8 +1541,8 @@ body {
   width: 100%;
   outline: none;
   padding-left: 10px;
-  border-radius: 10px;
-  border: solid 2px #116798;
+  border: none;
+  border-bottom: solid 2px #116798;
   background: none;
 }
 .tudoLogin .floating-label-group input[type=submit] {
