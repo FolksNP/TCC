@@ -5,72 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/css/main.css">
     <title>Login - Patrono Neves</title>
-    <script>
-        // função para mostrar e ocultar senha
-function myFunction(pass) {
-
-if(pass=='senha1'){
-        var a = document.getElementById("senha1");
-        if (a.type === "password") {
-            a.type = "text";
-            } else {
-                a.type = "password";
-            }
-
-}if(pass == 'senha2'){
-    var b = document.getElementById("senha2");
-if (b.type === "password") {
-  b.type = "text";
-} else {
-    b.type = "password";
-}
-}
-
-// Confirmação no login
-if(pass=='senhaLogin'){
-        var c = document.getElementById("senhaLogin");
-        if (c.type === "password") {
-            c.type = "text";
-            } else {
-                c.type = "password";
-            }
-
-}
-}
-
-
-
-
-// função para conferir se a senha está correta
-
-function validarSenha(name1, name2)
-{
-  document.getElementById("btnCad").disabled = true;
-    var senha1 = document.getElementById(name1).value;
-    var senha2 = document.getElementById(name2).value;
-		
-    if (senha1 != "" && senha2 != "" && senha1 === senha2)
-    {
-    	//alert('senha iguais');
-      document.getElementById("btnCad").disabled = false;
-      document.getElementById("btnCad").style.backgroundColor='#116798';
-      fundo.style.backgroundColor = 'white';
-      confira = document.querySelector('#confira');                
-      confira.style.display = 'none';
-      
-    }
-    else
-    {
-      fundo = document.querySelector('#senhaInput2');
-      confira = document.querySelector('#confira');                
-      confira.style.display = 'block';
-      fundo.style.backgroundColor = '#FF4343';      
-      document.getElementById("btnCad").disabled = true;
-      document.getElementById("btnCad").style.backgroundColor='red';
-    }
-}
-
-</script>
+    <script src="../scripts/login.js"> </script>
     
 </head>
 <body>
@@ -78,7 +13,7 @@ function validarSenha(name1, name2)
     <?php
         include('header.php');
     ?>
-        <div class="tudoLogin">
+        <div class="tudoLogin" id="tudoLogin">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <form class="ladoEsquerdoLogin">
 

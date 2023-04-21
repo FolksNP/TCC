@@ -11,9 +11,9 @@
     <?php
         include('header.php');
     ?>
-    <div class="pagTodaPerfilProfessor">
-        <div class="colunaEsquerdaPerfilProfessor">
-            <div class="fotoPerfilProfessor">
+    <div class="pagTodaPerfilProfessor" id="pagProf">
+        <div class="colunaEsquerdaPerfilProfessor" id="colEsq">
+            <div class="fotoPerfilProfessor" id="fotoPerfil">
                     <img src="../imgs/tiringa.jpg" alt="">
                     <p>Tiringa Pai Da Mentira</p>
                     <p>Desde 02/05/1965</p>

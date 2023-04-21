@@ -1,98 +1,161 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 
 .navbarAzul{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
-    
-    .logoPesquisa{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Fira Sans', sans-serif;
-       // font-family: 'Genos', sans-serif;
-         font-size: 25px;
-        @include mobile{
-            flex-direction: column;
-        }
-        input[type=text]{
-            height: 40px;
-            width: 300px;
-            padding: 10px;
-            border-radius: 50px;
-            border: solid 2px #116798;
-        }
-        .logoImg {
-            display: flex;
-            align-items: center;
-            font-size: 25px;
-            color: #116798;
-            
-            img{
-                margin-right: 40px;
-                max-width: 70px;
-                max-height: 70px;
-            }
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+  
+  .logoPesquisa{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Fira Sans', sans-serif;
+     // font-family: 'Genos', sans-serif;
+       font-size: 25px;
+      @include mobile{
+          flex-direction: column;
+      }
+      input[type=text]{
+          height: 40px;
+          width: 300px;
+          padding: 10px;
+          border-radius: 50px;
+          border: solid 2px #116798;
+      }
+      .logoImg {
+          display: flex;
+          align-items: center;
+          font-size: 25px;
+          color: #116798;
+          
+          img{
+              margin-right: 40px;
+              max-width: 70px;
+              max-height: 70px;
+          }
 
-            a{
-                display: inline;
-                text-decoration: none;
-                color: #156aaa;
-            }
-        }
-    }
+          a{
+              display: inline;
+              text-decoration: none;
+              color: #156aaa;
+          }
+      }
+  }
 
 .perfilImg img{
-    max-width: 35px;
-    max-height: 35px;
-    border-radius: 100%;
-    border: solid 2px #116798;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 100%;
+  border: solid 2px #116798;
 
 }
 
 .login-perfil{
-    display: flex;
+  display: flex;
 
-    .link-cadastrar{
+  .link-cadastrar{
 
-        a{
-            text-decoration: none;
-            color: #156aaa;
-            padding: 5px 15px;
-            margin-left: 10px;
-            line-height: 35px;
+      a{
+          text-decoration: none;
+          color: #156aaa;
+          padding: 5px 15px;
+          margin-left: 10px;
+          line-height: 35px;
 
-            &:hover{
-                background-color: #156aaa;
-                color: white;
-                padding: 5px 15px;
-                border-radius: 10px;
-            }
-        }
-    }
+          &:hover{
+              background-color: #156aaa;
+              color: white;
+              padding: 5px 15px;
+              border-radius: 10px;
+          }
+      }
+  }
 
 }
 
 .catNavbar{
-    ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    border-top: 2px solid $cor-primaria;
-    padding-top: 12px;
-    :nth-child(1){
-        border-bottom: 2px solid #116798;
-        color: #116798;
-    }
-        li {
-            font-size: 15px;
-            margin-bottom: 10px;
+  ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  border-top: 2px solid $cor-primaria;
+  padding-top: 12px;
+  :nth-child(1){
+      border-bottom: 2px solid #116798;
+      color: #116798;
+  }
+      li {
+          font-size: 15px;
+          margin-bottom: 10px;
 
-        }
-    }
+      }
+  }
 
-    a{
-        text-decoration: none;
-    }
+  a{
+      text-decoration: none;
+  }
 }
 }

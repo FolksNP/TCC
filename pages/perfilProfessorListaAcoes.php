@@ -21,7 +21,7 @@
         }
 }
 </script>
-    <div class="listaAcoesProfessor">
+    <div class="listaAcoesProfessor" id="listaAcoes">
                     <div onclick="alterar('perfil')" ><img src="../imgs/perfilAluno.png" alt=""><p>Perfil</p></div>
                     <div onclick="alterar()"><img src="../imgs/notificacaoAluno.png" alt=""><p>Notificações</p></div>
                     <div onclick="alterar('cursos')"><img src="../imgs/certificado.png" alt=""><p> Cursos</p></div>

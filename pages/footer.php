@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/css/main.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="footer">
 
         <div class="pn">
             Patrono Neves - #For Education
@@ -21,7 +21,7 @@
                 </div>
                 <div class="listagem">
                     <h2>Mapa da Plataforma</h2>
-                    <ul>
+                    <ul id="linkFooter" >
                         <li><a href="">Home</a></li>
                         <li><a href="">Cursos</a></li>
                         <li><a href="">Certificados</a></li>
@@ -31,14 +31,14 @@
                 </div>
                 <div class="links">
                     <h2>Links úteis</h2>
-                    <ul>
+                    <ul id="linksUteis">
                         <li><a href="">Trabalhe Conosco</a></li>
                         <li><a href="">Etec de Itaquera</a></li>
                         <li><a href="">Centro Paula Souza</a></li>
                         <li><a href="">Governo de São Paulo</a></li>
                     </ul>
                 </div>
-                <div class="endereco">
+                <div class="endereco" >
                     <h2>Endereço - Patrono Neves</h2>
                     <p>Etec de Itaquera</p>
                     <p>Rua Virgínia Ferni, 400.</p>

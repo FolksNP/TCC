@@ -1,17 +1,17 @@
 <div class="direitaPerfilProfessor" id="direitaPerfilProfessorInfs">
-            <div class="nomeEmailProfessor">
-                <div class="nomePerfilProfessor">
+            <div class="nomeEmailProfessor" id="nomeEmail">
+                <div class="nomePerfilProfessor" id="nomePerfil">
                     <p>Nome</p>
                     <p>Tiringa pai da mentira</p>
                 </div>
-                <div class="emailPerfilProfessor">
+                <div class="emailPerfilProfessor" id="emailPerfil">
                     <p>Email</p>
                     <p>Tiringamentiroso@mentira.com</p>
                 </div>
             </div>
-            <div class="estudosProfessor">
+            <div class="estudosProfessor" >
                 <div class="estudosProfessorTxt"><p>Estudos</p></div>
-                    <div class="cursandoTerminados">
+                    <div class="cursandoTerminados" id="estudos">
                     <div class="cursando">
                         <p>Cursando</p> 
                         <div class="cursandoImgs"> 
@@ -32,7 +32,7 @@
             </div>
             <div class="estatProfessor">
                 <div class="estatProfessorTxt">Estatísticas</div>
-                <div class="resp-perg-aulas-exe">
+                <div class="resp-perg-aulas-exe" id="resp-perg-aulas-exe" >
                     <div class="estPerfilProfessor">
                         <p>Respostas</p>
                         <p>0</p>
@@ -49,7 +49,7 @@
 
                     </div>
             </div>
-            <div class="descProfessor">
+            <div class="descProfessor" id="descPerfil">
                 <p>Descrição</p>
                 <p>Tiringa (apelido de Vicente) é um cabra da peste que mora em Serra Talhada, Pernambuco e que só vive com um pau palito na boca.
                     É gago, bruto e o maior mentiroso que já existiu, diz que já matou todo tipo de bicho (até um tal de "Chucupira") e já enfrentou

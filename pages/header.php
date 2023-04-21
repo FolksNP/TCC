@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+   <script src="../scripts/tema.js"></script>
 </head>
 <body>
-    <div class="navbarAzul">
+    <div class="navbarAzul" id="navbar">
         <div class="logoPesquisa">
             <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.png" alt=""></a><a href="inicial.php">Patrono Neves</a></div>
             <p><input type="text" placeholder="Digite aqui sua pesquisa"></p>
@@ -16,6 +17,10 @@
             </div>
 
             <div class="login-perfil">
+            <label class="switch">
+  <input type="checkbox" id="switch-shadow" onclick="darkMode()" >
+  <span class="slider round"></span>
+</label>
                 <div class="perfil">
                     <p class="perfilImg"><a href="../pages/telaPerfilProfessor.php"><img src="../imgs/rony.jpg" alt=""></a></p>
                 </div>

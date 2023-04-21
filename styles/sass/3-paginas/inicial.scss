@@ -1,40 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 $azul : #116798;
+$teste: #9b9b9b;
 $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap');
 
 body{
     margin: auto;
     overflow: auto;
-    background: linear-gradient(
-    315deg,
-    #C9FBFA 3%,
-    rgba(60, 132, 206, 1) 38%,
-    rgba(48, 238, 226, 1) 68%,
-    #002B5C 98%,
-   
-    );
-    
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-    
-}@keyframes gradient {
-    0%{
-        background-position: 0% 0%;
+    background: linear-gradient(50deg, #C9FBFA, rgba(48, 238, 226, 1), #002B5C );
 
-    }
-    50%{
-        background-position: 100% 100%;
-    }
-    100%{
-        background-position: 0% 0%;
-    }
-
+    
 }
+
+
 
 //imagens de cursos na tela inicial começa aqui
 
@@ -45,14 +27,19 @@ body{
     padding: 10px;
     border-radius: 20px;
     align-items: center;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 
     @include mobile{
       flex-direction: column;
+      
     }
     
     >img{
         width: 550px;
         height: 550px;
+
 
         @include mobile{
           width: 100%;
@@ -71,56 +58,120 @@ body{
     justify-content: center;
     justify-content: center;
   }
-
   .card {
-      width: 250px;
-      height: 300px;
-      background-image: linear-gradient(163deg, rgba(48, 238, 226, 1) 0%, #006eff 100%);
-      border-radius: 20px;
-      transition: all .3s;
-
-      @include mobile{
-        margin: 0 auto;
-        margin-top: 10px;
-      }
+    width: 190px;
+    height: 254px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
   }
-
-     .card2 {
-      width: 250px;
-      height: 300px;
-      background-color: rgb(238, 238, 238);
-      border: solid 2px rgba(48, 238, 226, 1);
-      border-radius: 20px;
-      transition: all .2s;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      >img{
-          margin-top: 10px;
-          width: 80px;
-          height: 80px;
+  
+  .card-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  
+    img{
+      max-width: 80px;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+    }
+    :nth-child(2){
+      padding-top: 100px;
+      p{
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
       }
-      :nth-child(2){
-          font-style: italic;
-          font-weight: bold;
-          margin-top: 10px;
-          font-size: 19px;
+    }
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgb(0, 98, 255), $azul);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);}}
+  // .card {
+  //     width: 200px;
+  //     height: 250px;
+  //     background-image: linear-gradient(163deg, $azul 0%, #006eff 100%);
+  //     border-radius: 20px;
+  //     transition: all .3s;
 
-      }
-      :nth-child(3){
-          margin: 10px;
-      }
-     }
-     .card2:hover {
-      //transform: scale(0.98);
-      border-radius: 20px;
+  //     @include mobile{
+  //       margin: 0 auto;
+  //       margin-top: 10px;
+  //     }
+  // }
 
-     }
-     .card:hover {
-      box-shadow: 0px 0px 30px 1px rgba(60, 132, 206, 1);
-       cursor: pointer;
-     }
+  //    .card2 {
+  //     width: 200px;
+  //     height: 250px;
+  //     background-color: rgb(238, 238, 238);
+  //     border: solid 2px $azul;
+  //     border-radius: 20px;
+  //     transition: all .2s;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     text-align: center;
+  //     >img{
+  //         margin-top: 10px;
+  //         width: 80px;
+  //         height: 80px;
+  //     }
+  //     :nth-child(2){
+  //         font-style: italic;
+  //         font-weight: bold;
+  //         margin-top: 10px;
+  //         font-size: 18px;
+
+  //     }
+  //     :nth-child(3){
+  //         margin: 10px;
+  //     }
+  //    }
+  //    .card2:hover {
+  //     //transform: scale(0.98);
+  //     border-radius: 20px;
+
+  //    }
+  //    .card:hover {
+  //     box-shadow: 0px 0px 30px 1px rgba(60, 132, 206, 1);
+  //      cursor: pointer;
+  //    }
 }
 
 .txtCursos{
@@ -128,7 +179,7 @@ body{
     text-align: center;
     margin-bottom: 50px;
     color: white;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .cursosAreas{
     display: flex;
@@ -143,7 +194,7 @@ body{
    .cardCurso {
     width: 190px;
     height: 254px;
-    background: rgb(238, 238, 238);;
+    background: rgb(255, 255, 255);
     position: relative;
     display: flex;
     place-content: center;
@@ -192,7 +243,7 @@ body{
   .cardCurso::after {
     content: '';
     position: absolute;
-    background: #3094ce;;
+    background: $azul;
     ;
     inset: 5px;
     border-radius: 15px;

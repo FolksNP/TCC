@@ -6,22 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/css/main.css">
     <title>Patrono Neves</title>
+    <script src="../scripts/tema.js"></script>
 </head>
     <body>
     <?php include('header.php') ?>
 
-    <div class="tudoInicial">
+  
 
-        <div class="banner">
+    <div class="tudoInicial">
+       
+        <div class="banner" id="banner">
 
         <img src="../imgs/logoTCC.png" alt="">
 
         <div class="beneficios">
-            <div class="card">
+        <div class="card">
+            <div class="circle"></div>
+            <div class="circle"></div>
+             <div class="card-inner">
+                <div><img src="../imgs/certificado.png" alt=""></div>
+                <div><p>Conquiste seu certificado</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card-inner">
+                <div><img src="../imgs/foguete.png" alt=""></div>
+                <div><p>Turbine seu Currículo</p></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <div class="circle"></div>
+             <div class="card-inner">
+                <div><img src="../imgs/real.png" alt=""></div>
+                <div><p>Educação que cabe no Bolso</p></div>
+            </div>
+        </div>
+            <!-- <div class="card">
                 <div class="card2"> 
                 <img src="../imgs/real.png" alt="">
-                <p>Estude de Graça</p>
-                <p>Tenha acesso aos melhores cursos da atualidade, descubra novos conhecimentos e adentre no mundo da educação pagando apenas pelo certificado</p>
+                <p>Educação que cabe <br> no bolso</p>
+                <p>Tenha acesso aos melhores cursos, descubra novos conhecimentos e adentre no mundo da educação </p>
                 
             </div>
             </div>
@@ -30,7 +57,7 @@
                 <div class="card2"> 
                 <img src="../imgs/foguete.png" alt="">
                 <p>Turbine seu Currículo</p>
-                <p>São mais de 90 cursos para você estudar, enriquecer seu currículo e aumentar suas chances de ingresso no mercado de trabalho.</p>
+                <p>Cursos para você estudar, enriquecer seu currículo e aumentar suas chances de ingresso no mercado de trabalho.</p>
                 
             </div>
          </div>
@@ -40,7 +67,7 @@
                 <p>Consquiste seu certificado</p>
                 <p>Ao ser aprovado nos cursos, você mesmo imprime o seu certificado!</p>
                 
-            </div>
+            </div> -->
          </div>
         </div>
            
@@ -50,26 +77,26 @@
         <div class="txtCursos">
             <h2>Cursos Nas Áreas de:</h2>
         </div>
-        <div class="cursosAreas">
+        <div class="cursosAreas" id="cursosArea">
             
-            <div class="cardCurso">
-        <h2>Todos Cursos</h2>
+            <div class="cardCurso" id="cardCurso0">
+        <h2>Logística</h2>
         </div>
-        <div class="cardCurso">
+        <div class="cardCurso" id="cardCurso1">
         <h2>Informática</h2>
         </div>
-        <div class="cardCurso">
+        <div class="cardCurso" id="cardCurso2">
         <h2>Gestão</h2>
         </div>
-        <div class="cardCurso">
-        <h2>Mecatronica</h2>
+        <div class="cardCurso" id="cardCurso3">
+        <h2>Elétronica</h2>
         </div>
-        <div class="cardCurso">
+        <div class="cardCurso" id="cardCurso4">
         <h2>Refrigeração </h2>
         </div>
         </div>
      
-        <div class="busqueCursos">
+        <div class="busqueCursos" id="buscaCurso">
     <div class="busqueCursosTxt">
         <p>Escolha Seu Futuro</p>
         <p>Busque por um curso de seu interesse</p>
@@ -82,7 +109,7 @@
     <p><a href="">Ver todos os cursos</a></p>
 </div>
 
-        <div class="perguntasFrequentesTudo">
+        <div class="perguntasFrequentesTudo" id="pergFreq">
             <div class="perguntasImg">
                 <img src="../imgs/faq (4).png" alt="">
             </div>

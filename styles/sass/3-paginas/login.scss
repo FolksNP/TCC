@@ -9,13 +9,11 @@
     border-radius: 10px;
    display: flex;
    justify-content: space-evenly;
-   // flex-direction: column;
-   // align-items: center;
-  //align-items: center;
+   
+
   #senhaInput{
     border: solid 2px $cor-primaria;
     border-radius: 10px;
-    
     input{
         border: none;
         
@@ -55,6 +53,7 @@
                 padding-left: 10px;
                 border-radius: 10px;
                 border: solid 2px $cor-primaria;
+                background: none;
                
             }
             input[type=submit]{
