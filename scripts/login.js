@@ -25,12 +25,8 @@ function myFunction(pass) {
                 } else {
                     c.type = "password";
                 }
-    
     }
     }
-    
-    
-    
     
     // função para conferir se a senha está correta
     
