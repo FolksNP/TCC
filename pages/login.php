@@ -15,22 +15,17 @@
     ?>
         <div class="tudoLogin" id="tudoLogin">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <form class="ladoEsquerdoLogin">
+            <form action="cadastro.act.php" method="post" class="ladoEsquerdoLogin">
 
             <div class="loginTitulo"><p>Crie sua Conta na Patrono Neves!</p></div>
             
             <div class="floating-label-group">
-			<input type="text" id="username" class="form-control" autocomplete="off"  required="required" />
+			    <input type="text" name="nome" id="username" class="form-control" autocomplete="off"  required="required" />
 				<label class="floating-label">Nome Completo</label>
 			</div>
 		
-        
             <div class="floating-label-group">
-			<input type="text" id="username" class="form-control" autocomplete="off"  required="required" />
-				<label class="floating-label">Usuário</label>
-			</div>
-            <div class="floating-label-group">
-			<input type="email" id="username" class="form-control" autocomplete="off"  required="required" />
+			    <input type="email" name="email" id="username" class="form-control" autocomplete="off"  required="required" />
 				<label class="floating-label">Email</label>
 			</div>
             <div class="floating-label-group" id="senhaInput">
@@ -59,30 +54,29 @@
 <div class="linhaLogin">
     
 </div>
+        <form action="login.act.php" method="post" class="ladoDireitoLogin">
+                <div class="loginTitulo"><p>Seja bem-vindo de volta!</p></div>
 
-            <form class="ladoDireitoLogin">
-            <div class="loginTitulo"><p>Seja bem-vindo de volta!</p></div>
-            <div class="floating-label-group">
-			<input type="text" id="usuario" class="form-control" autocomplete="off" required="required" />
-				<label class="floating-label">Usuário</label>
-			</div>
-            <div class="floating-label-group" id="senhaInput">
-                <input type="password" name="password" id="senhaLogin" class="form-control" autocomplete="off" required="required" />
-                <div>
-            <img src="../imgs/olho.png" onclick="myFunction('senhaLogin');"  id="olho" class="olho"/>
+                <div class="floating-label-group">
+                    <input type="email" name="email" id="usuario" class="form-control" autocomplete="off" required="required" />
+                    <label class="floating-label">Email:</label>
+                </div>
+
+                <div class="floating-label-group" id="senhaInput">
+                    <input type="password" name="password" id="senhaLogin" class="form-control" autocomplete="off" required="required" />
+                    <div>
+                <img src="../imgs/olho.png" onclick="myFunction('senhaLogin');"  id="olho" class="olho"/>
+                </div>
+                    <label class="floating-label">Senha</label>
+                </div>
+
+                <div class="floating-label-group">
+                    <input type="submit" value="Entrar" class="form-control"/>
+                </div>
+            <div class="redefinirSenha">
+                <a href="#"><p>Esqueci meu login</p></a>
             </div>
-				<label class="floating-label">Senha</label>
-			</div>
-    
-    <div class="floating-label-group">
-			<input type="submit" value="Entrar" class="form-control"/>
-				
-			</div>
-
-    <div class="redefinirSenha">
-        <a href="#"><p>Esqueci meu login</p></a>
-    </div>
-</form>
+        </form>
     
 
 </div>

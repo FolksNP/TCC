@@ -1,3 +1,4 @@
+<?php require('sec.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +31,6 @@
     <?php
     include('footer.php');
     ?>
-
 
 </body>
 </html>
