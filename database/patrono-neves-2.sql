@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Seccoes` (
   `secNome` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`codSeccao`),
   INDEX `curso_idx` (`curso` ASC),
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_Seccoes`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Conteudos` (
   `titulo` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`codConteudos`),
   INDEX `seccao_idx` (`seccao` ASC),
-  CONSTRAINT `fkSeccaoCod`
+  CONSTRAINT `fkSeccaoCod_Conteudos`
     FOREIGN KEY (`seccao`)
     REFERENCES `PatronoNeves`.`Seccoes` (`codSeccao`)
     ON DELETE NO ACTION
@@ -126,12 +126,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Matriculas` (
   INDEX `matriculaCursos_idx` (`matriculaCursos` ASC),
   PRIMARY KEY (`codMatricula`),
   UNIQUE INDEX `Matriculascol_UNIQUE` (`codMatricula` ASC),
-  CONSTRAINT `fkAlunoCod`
+  CONSTRAINT `fkAlunoCod_Matriculas`
     FOREIGN KEY (`matriculaAlunos`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_Matriculas`
     FOREIGN KEY (`matriculaCursos`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Professores` (
   `numAgencia` VARCHAR(4) NOT NULL,
   `numConta` VARCHAR(8) NOT NULL,
   PRIMARY KEY (`codProfessor`),
-  CONSTRAINT `fkAlunoCod`
+  CONSTRAINT `fkAlunoCod_Professores`
     FOREIGN KEY (`codProfessor`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
@@ -166,12 +166,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProfessorCurso` (
   INDEX `professorCursos_idx` (`curso` ASC),
   PRIMARY KEY (`codProfCurso`),
   INDEX `professor_idx` (`professor` ASC),
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_ProfessorCurso`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkProfessorCod`
+  CONSTRAINT `fkProfessorCod_ProfessorCurso`
     FOREIGN KEY (`professor`)
     REFERENCES `PatronoNeves`.`Professores` (`codProfessor`)
     ON DELETE NO ACTION
@@ -191,7 +191,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Questoes` (
   `imagem` VARCHAR(32) NULL,
   PRIMARY KEY (`codQuestao`),
   INDEX `fk_codAtividade_idx` (`atividade` ASC),
-  CONSTRAINT `fkCodAtividade`
+  CONSTRAINT `fkCodAtividade_Questoes`
     FOREIGN KEY (`atividade`)
     REFERENCES `PatronoNeves`.`Atividades` (`codAtividade`)
     ON DELETE NO ACTION
@@ -210,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Respostas` (
   `respostaCorreta` TINYINT NOT NULL,
   PRIMARY KEY (`codRespostas`),
   INDEX `questao_idx` (`questao` ASC),
-  CONSTRAINT `fkQuestaoCod`
+  CONSTRAINT `fkQuestaoCod_Respostas`
     FOREIGN KEY (`questao`)
     REFERENCES `PatronoNeves`.`Questoes` (`codQuestao`)
     ON DELETE NO ACTION
@@ -231,12 +231,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Mensagens` (
   PRIMARY KEY (`codMensagem`),
   INDEX `aluno_idx` (`aluno` ASC),
   INDEX `professor_idx` (`professor` ASC),
-  CONSTRAINT `fkAlunoCod`
+  CONSTRAINT `fkAlunoCod_Mensagens`
     FOREIGN KEY (`aluno`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkProfessorCod`
+  CONSTRAINT `fkProfessorCod_Mensagens`
     FOREIGN KEY (`professor`)
     REFERENCES `PatronoNeves`.`Professores` (`codProfessor`)
     ON DELETE NO ACTION
@@ -258,12 +258,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Avaliacoes` (
   PRIMARY KEY (`codComentario`),
   INDEX `curso_idx` (`curso` ASC),
   INDEX `aluno_idx` (`aluno` ASC),
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_Avaliacoes`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkAlunoCod`
+  CONSTRAINT `fkAlunoCod_Avaliacoes`
     FOREIGN KEY (`aluno`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
@@ -295,12 +295,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Suportes` (
   PRIMARY KEY (`codSuporte`),
   INDEX `mod_idx` (`moderador` ASC),
   INDEX `usuario_idx` (`usuario` ASC),
-  CONSTRAINT `fkModCod`
+  CONSTRAINT `fkModCod_Suportes`
     FOREIGN KEY (`moderador`)
     REFERENCES `PatronoNeves`.`Moderadores` (`codMod`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkUsuarioCod`
+  CONSTRAINT `fkUsuarioCod_Suportes`
     FOREIGN KEY (`usuario`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
@@ -329,12 +329,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`AlocacoesTags` (
   PRIMARY KEY (`codAlocacaoTag`),
   INDEX `tag_idx` (`tag` ASC),
   INDEX `curso_idx` (`curso` ASC),
-  CONSTRAINT `fkTagCod`
+  CONSTRAINT `fkTagCod_AlocacoesTags`
     FOREIGN KEY (`tag`)
     REFERENCES `PatronoNeves`.`Tags` (`codTag`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_AlocacoesTags`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
@@ -363,12 +363,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`AlocacoesPacotes` (
   PRIMARY KEY (`codAlocacaoCurso`),
   INDEX `curso_idx` (`curso` ASC),
   INDEX `pacote_idx` (`pacote` ASC),
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_AlocacoesPacotes`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkPacoteCod`
+  CONSTRAINT `fkPacoteCod_AlocacoesPacotes`
     FOREIGN KEY (`pacote`)
     REFERENCES `PatronoNeves`.`Pacotes` (`codPacotes`)
     ON DELETE NO ACTION
@@ -387,12 +387,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Certificados` (
   PRIMARY KEY (`codCertificado`),
   INDEX `aluno_idx` (`aluno` ASC),
   INDEX `curso_idx` (`curso` ASC),
-  CONSTRAINT `fkAlunoCod`
+  CONSTRAINT `fkAlunoCod_Certificados`
     FOREIGN KEY (`aluno`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkCursoCod`
+  CONSTRAINT `fkCursoCod_Certificados`
     FOREIGN KEY (`curso`)
     REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
     ON DELETE NO ACTION
@@ -411,12 +411,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Progressos` (
   PRIMARY KEY (`codProgresso`),
   INDEX `matricula_idx` (`matricula` ASC),
   INDEX `seccao_idx` (`seccao` ASC),
-  CONSTRAINT `fkMatriculaCod`
+  CONSTRAINT `fkMatriculaCod_Progressos`
     FOREIGN KEY (`matricula`)
     REFERENCES `PatronoNeves`.`Matriculas` (`codMatricula`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkSeccaoCod`
+  CONSTRAINT `fkSeccaoCod_Progressos`
     FOREIGN KEY (`seccao`)
     REFERENCES `PatronoNeves`.`Seccoes` (`codSeccao`)
     ON DELETE NO ACTION
@@ -434,17 +434,17 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAtividades` (
   PRIMARY KEY (`codProgressoAtividade`),
   INDEX `fkAtividadeCod_idx` (`atividade` ASC),
   INDEX `fkRespostaCod_idx` (`resposta` ASC),
-  CONSTRAINT `fkProgressoAtividadeCod`
+  CONSTRAINT `fkProgressoAtividadeCod_ProgessosAtividades`
     FOREIGN KEY (`codProgressoAtividade`)
     REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkAtividadeCod`
+  CONSTRAINT `fkAtividadeCod_ProgessosAtividades`
     FOREIGN KEY (`atividade`)
     REFERENCES `PatronoNeves`.`Atividades` (`codAtividade`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkRespostaCod`
+  CONSTRAINT `fkRespostaCod_ProgessosAtividades`
     FOREIGN KEY (`resposta`)
     REFERENCES `PatronoNeves`.`Respostas` (`codRespostas`)
     ON DELETE NO ACTION
@@ -461,12 +461,12 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAulas` (
   `progressaoVideo` FLOAT ZEROFILL NOT NULL,
   PRIMARY KEY (`codProgressoAula`),
   INDEX `fkAulasCod_idx` (`aula` ASC),
-  CONSTRAINT `fkProgressoAulaCod`
+  CONSTRAINT `fkProgressoAulaCod_ProgressosAulas`
     FOREIGN KEY (`codProgressoAula`)
     REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fkAulasCod`
+  CONSTRAINT `fkAulasCod_ProgressosAulas`
     FOREIGN KEY (`aula`)
     REFERENCES `PatronoNeves`.`Aulas` (`codAula`)
     ON DELETE NO ACTION
