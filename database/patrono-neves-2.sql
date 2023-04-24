@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Aulas` (
   `referencias` VARCHAR(100) NULL,
   PRIMARY KEY (`codAula`),
   INDEX `fk_Aulas_Conteudos1_idx` (`codAula` ASC),
-  CONSTRAINT `fkConteudoCod`
+  CONSTRAINT `fkConteudoCod_Aulas`
     FOREIGN KEY (`codAula`)
     REFERENCES `PatronoNeves`.`Conteudos` (`codConteudos`)
     ON DELETE NO ACTION
@@ -99,16 +99,18 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `PatronoNeves`.`Atividades`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `patrono-neves`.`Atividades` (
-  `codAtividade` INT PRIMARY KEY NOT NULL,
+CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Atividades` (
+  `codAtividade` INT NOT NULL,
   `corTema` VARCHAR(45) NOT NULL,
-  INDEX `fk_Atividades_Conteudos1_idx` (`codAtividade` ASC) ,
-  CONSTRAINT `ConteudoCod`
+  PRIMARY KEY (`codAtividade`),
+  INDEX `fk_Atividades_Conteudos1_idx` (`codAtividade` ASC),
+  CONSTRAINT `fkConteudoCod_Atividades`
     FOREIGN KEY (`codAtividade`)
-    REFERENCES `patrono-neves`.`Conteudos` (`codConteudos`)
+    REFERENCES `PatronoNeves`.`Conteudos` (`codConteudos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
 
 
 -- -----------------------------------------------------
