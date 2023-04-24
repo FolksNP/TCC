@@ -10,7 +10,7 @@
     <div class="container" id="footer">
 
         <div class="pn">
-            Patrono Neves - #For Education
+            Patrono Neves - #For_Education
         </div>
 
         <div class="superior">
