@@ -1,5 +1,15 @@
 
 .tudoLogin{
+  .imgLogin{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  img{
+    width: 100px;
+    height: 100px;
+  } 
+}
     // margin-left: 10%;
     // margin-right: 10%;
     margin: 5%;
@@ -27,6 +37,7 @@
       
   }
   
+ 
 }
   .floating-label-group {
 	position: relative;

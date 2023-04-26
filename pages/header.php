@@ -1,3 +1,4 @@
+<?php @session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,10 +24,33 @@
   <span class="slider round"></span>
 </label>
                 <div class="perfil">
-                    <p class="perfilImg"><a href="../pages/telaPerfilProfessor.php"><img src="../imgs/rony.jpg" alt=""></a></p>
+                <?php  require('connect.php');
+                @$cod= $_SESSION['cod'];
+                @$nome= $_SESSION['nome'];
+        
+              $perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
+              $perfil =mysqli_fetch_array($perfil);
+
+             if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
+               //echo" <p class=perfilImg> <img src=../imgs/logoTCC.png class=perfil> </p>";
+            }
+               else{
+                   
+                echo "<a href=telaPerfilProfessor.php?cod=$perfil[codAluno]> <p class=perfilImg> <img src= $_SESSION[foto] class=perfil> </p></a>";
+                
+            }
+             ?>
+                    <!-- <p class="perfilImg"><a href="../pages/telaPerfilProfessor.php"><img src="../imgs/rony.jpg" alt=""></a></p> -->
                 </div>
                 <div class="link-cadastrar">
-                    <a href="login.php">Entrar</a>
+                <?php
+                    if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
+                        echo "<a href=login.php>Login</a>";
+                    }else{
+                        echo "<a href=logoff.php>Sair</a>";
+                    }
+                ?>
+
                 </div>
             </div>
 

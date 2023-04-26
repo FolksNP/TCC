@@ -12,17 +12,27 @@
 <body>
     <?php
         include('header.php');
-    ?>
+        @session_start();
+        $cod= $_SESSION['cod'];
+        $nome= $_SESSION['nome'];
+
+        require('connect.php');
+        $perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
+        $perfil=mysqli_fetch_array($perfil);
+    ?></a>
     <div class="pagTodaPerfilProfessor" id="pagProf">
         <div class="colunaEsquerdaPerfilProfessor" id="colEsq">
+
+            
             <div class="fotoPerfilProfessor" id="fotoPerfil">
-                    <img src="../imgs/tiringa.jpg" alt="">
-                    <p>Tiringa Pai Da Mentira</p>
-                    <p>Desde 02/05/1965</p>
+                    <?php echo "<img src= $_SESSION[foto]>";?>
+                    <?php echo "<p>$_SESSION[nome]</p>";?>
+                    <p>Desde 01/06/2004</p>
             </div>
             <?php include('perfilProfessorListaAcoes.php') ?>
         </div>
         <!-- <div class="direitaPerfilProfessor"> -->
+       <?php include('alterarPerfil.php'); ?>
        <?php include('perfilProfessorEst.php'); ?>
        <?php include('perfilProfessorInfs.php'); ?>
        <?php include('perfilProfessorCursos.php'); ?>

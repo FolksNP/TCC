@@ -1072,6 +1072,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
+}
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit img {
+  max-width: 20px;
+}
 .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor {
   padding: 10px;
   background-color: #f3f3f3;
@@ -1118,6 +1126,75 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.direitaPerfilProfessor .alterLogin {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  border-radius: 20px;
+}
+.direitaPerfilProfessor .alterLogin h2 {
+  margin: 30px 0px;
+}
+.direitaPerfilProfessor .alterLogin .cardsEdit {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -100px;
+}
+.direitaPerfilProfessor .alterLogin .card {
+  width: 190px;
+  height: 254px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+.direitaPerfilProfessor .alterLogin .card-inner {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.direitaPerfilProfessor .alterLogin .card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+.direitaPerfilProfessor .alterLogin .infsEdit p {
+  margin: 15px 10px;
+}
+.direitaPerfilProfessor .alterLogin .infsEdit input {
+  width: 100%;
+}
+.direitaPerfilProfessor .alterLogin .infsEdit input[type=text], .direitaPerfilProfessor .alterLogin .infsEdit input[type=email], .direitaPerfilProfessor .alterLogin .infsEdit input[type=password] {
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 5px;
+  background: none;
+}
+.direitaPerfilProfessor .alterLogin .infsEdit input[type=submit] {
+  background-color: #116798;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.direitaPerfilProfessor .alterLogin img {
+  border-radius: 100%;
+  max-height: 150px;
+  margin: 10px;
+}
+.direitaPerfilProfessor .alterLogin .arquivoPerfil {
+  display: none;
 }
 .direitaPerfilProfessor .nomeEmailProfessor {
   padding: 20px;
@@ -1480,7 +1557,7 @@ body {
   font-size: 20px;
 }
 
-#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos {
+#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos, #direitaPerfilAlterar {
   display: none;
 }
 
@@ -1554,6 +1631,16 @@ body {
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
+}
+.tudoLogin .imgLogin {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.tudoLogin .imgLogin img {
+  width: 100px;
+  height: 100px;
 }
 .tudoLogin #senhaInput {
   border-bottom: solid 2px #116798;

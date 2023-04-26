@@ -4,6 +4,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
 .pagTodaPerfilProfessor{
     font-family: 'Fira Sans', sans-serif;
     margin: 20px;
@@ -19,6 +20,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+       .edit{
+           display: flex;
+           flex-direction: row;
+           margin: 5px 0px;
+           img{
+               max-width: 20px;
+           }
+       }
         .fotoPerfilProfessor{
             padding: 10px;
             background-color: #f3f3f3;
@@ -74,7 +83,90 @@
    width: 100%;
    display: flex;
    flex-direction: column;
-
+   .alterLogin{
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        border-radius: 20px;
+        //padding: 10px;
+        //gap: 180px;
+        //padding-left: -400px;
+        h2{
+            margin: 30px 0px;
+        }
+        .cardsEdit{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: -100px;
+        }
+        .card {
+            width: 190px;
+            height: 254px;
+            transition: all 0.2s;
+            position: relative;
+            cursor: pointer;
+            //background-color: #156aaa;
+            
+          }
+          
+          .card-inner {
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          
+          
+            
+          }
+          
+          .card:hover {
+            transform: scale(1.04) rotate(1deg);
+          }
+          
+         
+        .infsEdit{
+            p{
+                margin: 15px 10px;
+            }
+            input{
+                width: 100%;
+            }
+            input[type=text], input[type=email], input[type=password]{
+                height: 30px;
+                border-radius: 10px;
+                outline: none;
+                padding-left: 5px;
+                background: none;
+                
+            }
+            input[type=submit]{
+                background-color: $cor-primaria;
+                color: white;
+                height: 30px;
+                border-radius: 10px;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        img{
+            border-radius: 100%;
+            max-height: 150px;
+            margin: 10px;
+        }
+        .arquivoPerfil{
+            display: none;
+        }
+   }
    .nomeEmailProfessor{
     padding: 20px;
     background-color: white;
@@ -501,7 +593,7 @@ p{
     }
 }
 }
-#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos{
+#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos, #direitaPerfilAlterar{
     display: none;
     
 }

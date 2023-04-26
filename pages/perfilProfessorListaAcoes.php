@@ -1,26 +1,6 @@
-<script> function alterar(alterar){
-            alter = document.querySelector('#direitaPerfilProfessorInfs') ;
-            alterCursos = document.querySelector('#direitaPerfilProfessorCursos');
-            alterEstatisticas = document.querySelector('#direitaPerfilProfessorEst');
-
-
-        if(alterar == 'cursos'){
-            alterCursos.style.display = "block";
-            alter.style.display = "none";
-            alterEstatisticas.style.display = "none";
-        }
-        if(alterar == 'perfil'){          
-            alterCursos.style.display = "none";
-            alterEstatisticas.style.display = "none";
-            alter.style.display = "block";
-        }
-        if(alterar == 'est'){           
-            alterCursos.style.display = "none";
-            alter.style.display = "none";
-            alterEstatisticas.style.display = "block";
-        }
-}
+<script src="../scripts/DOM.js"> 
 </script>
+<div class="edit" onclick="alterar('alterPerfil')" ><img src="../imgs/edit.png" alt=""><p>Alterar</p></div>
     <div class="listaAcoesProfessor" id="listaAcoes">
                     <div onclick="alterar('perfil')" ><img src="../imgs/perfilAluno.png" alt=""><p>Perfil</p></div>
                     <div onclick="alterar()"><img src="../imgs/notificacaoAluno.png" alt=""><p>Notificações</p></div>

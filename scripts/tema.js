@@ -124,7 +124,7 @@ else{
 
         document.getElementById("resp-perg-aulas-exe").style.backgroundColor= 'white';
         document.getElementById("descPerfil").children[1].style.backgroundColor= 'white';
-        document.getElementById("descPerfil").children[1].style.color= 'white';
+        document.getElementById("descPerfil").children[1].style.color= 'black';
         document.querySelectorAll(".estPerfilProfessor")[0].style.backgroundColor = corLight;
         document.querySelectorAll(".estPerfilProfessor")[1].style.backgroundColor = corLight;
         document.querySelectorAll(".estPerfilProfessor")[2].style.backgroundColor = corLight;

@@ -2,11 +2,11 @@
             <div class="nomeEmailProfessor" id="nomeEmail">
                 <div class="nomePerfilProfessor" id="nomePerfil">
                     <p>Nome</p>
-                    <p>Tiringa pai da mentira</p>
+                    <?php echo "<p>$_SESSION[nome]</p>";?>
                 </div>
                 <div class="emailPerfilProfessor" id="emailPerfil">
                     <p>Email</p>
-                    <p>Tiringamentiroso@mentira.com</p>
+                    <?php echo "<p>$_SESSION[email]</p>";?>
                 </div>
             </div>
             <div class="estudosProfessor" >
