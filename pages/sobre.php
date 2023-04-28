@@ -1,14 +1,15 @@
-fortre<html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Reglus Neves Freire</title>
     <link rel="stylesheet" href="sobre.css">
-    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
 </head>
 <body>
     
+    <?php include('header.php');?>
 
     <!-- 
         
@@ -23,7 +24,7 @@ fortre<html lang="en">
 
         <div class="paulo-freire">
             <div class="lado-esquerdo">
-                <img src="images/freire3.144301-CLÓVIS-CRANCHI-SOBRINHO-AE.png" class="imagem" alt="">
+                <img src="../imgs/paulo-freire.png" class="imagem" alt="imagem-paulo-freire">
             </div>
             <div class="lado-direito">
                 <h1 id="paulo-freire-texto">Paulo Reglus Neves Freire - Quem era?</h1>
@@ -56,5 +57,10 @@ fortre<html lang="en">
 
         </div>
     </div>
+
+
+    <?php include('footer.php');?>
+
+
 </body>
 </html>

@@ -34,9 +34,9 @@
                     <h2>Links úteis</h2>
                     <ul id="linksUteis">
                         <li><a href="">Trabalhe Conosco</a></li>
-                        <li><a href="">Etec de Itaquera</a></li>
-                        <li><a href="">Centro Paula Souza</a></li>
-                        <li><a href="">Governo de São Paulo</a></li>
+                        <li><a href="https://www.etecitaquera.com.br">Etec de Itaquera</a></li>
+                        <li><a href="https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/">Centro Paula Souza</a></li>
+                        <li><a href="https://www.saopaulo.sp.gov.br">Governo de São Paulo</a></li>
                     </ul>
                 </div>
                 <div class="endereco" >
