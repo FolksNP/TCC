@@ -32,19 +32,19 @@ function myFunction(pass) {
     
     function validarSenha(name1, name2)
     {
-      document.getElementById("btnCad").disabled = true;
+      document.getElementById("cadastroBtn").disabled = true;
         var senha1 = document.getElementById(name1).value;
         var senha2 = document.getElementById(name2).value;
             
         if (senha1 != "" && senha2 != "" && senha1 === senha2)
         {
             //alert('senha iguais');
-          document.getElementById("btnCad").disabled = false;
-          document.getElementById("btnCad").style.backgroundColor='#116798';
-          fundo.style.border = 'solid 2px #116798';
+          document.getElementById("cadastroBtn").disabled = false;
+          document.getElementById("cadastroBtn").style.backgroundColor='#116798';
+          fundo.style.border = 'none';
           confira = document.querySelector('#confira');                
           confira.style.display = 'none';
-          document.getElementById("btnCad").style.cursor='pointer';
+          document.getElementById("cadastroBtn").style.cursor='pointer';
         }
         else
         {
@@ -52,8 +52,8 @@ function myFunction(pass) {
           confira = document.querySelector('#confira');                
           confira.style.display = 'block';
           fundo.style.border = 'solid 3px red';      
-          document.getElementById("btnCad").disabled = true;
-          document.getElementById("btnCad").style.backgroundColor='rgb(113, 113, 113)';
-          document.getElementById("btnCad").style.cursor='not-allowed';
+          document.getElementById("cadastroBtn").disabled = true;
+          document.getElementById("cadastroBtn").style.backgroundColor='rgb(113, 113, 113)';
+          document.getElementById("cadastroBtn").style.cursor='not-allowed';
         }
     }

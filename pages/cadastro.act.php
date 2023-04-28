@@ -1,5 +1,6 @@
 <?php
 require('connect.php');
+
 extract($_POST);
 extract($_FILES);
 

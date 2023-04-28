@@ -23,6 +23,8 @@
 
   #senhaInput{
     border-bottom: solid 2px $cor-primaria;
+    background-color: #404040;
+
     input{
         border: none;
         
@@ -52,7 +54,7 @@
         display: flex;
         justify-content: center;
         margin-right: 5px;
-
+      
         
     }
             input{

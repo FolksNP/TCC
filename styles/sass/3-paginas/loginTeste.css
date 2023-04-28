@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.bodyRegistro {
+  font-family: "Montserrat", sans-serif;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vH;
+  transition: 580ms ease-in;
+}
+.bodyRegistro a {
+  color: #ffbf00;
+  font-size: 18x;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.tituloInform {
+  font-size: 24px;
+}
+
+.tituloForm {
+  color: #ffbf00;
+}
+
+.texto2 {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.texto {
+  font-size: 12px;
+  color: black;
+}
+
+.containerRegistro {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.content1 form {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.socialMedia {
+  margin: 20px 0;
+}
+
+.socialMedia a {
+  border: 1px solid #ffbf00;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  transition: all 580ms ease-in-out;
+}
+
+.socialMedia a:hover {
+  transition: all 580ms ease-in-out;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: #ffbf00;
+  border: 1px solid white;
+  color: white;
+}
+
+form input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.label-input {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.icon-modificado {
+  color: #7f8c8d;
+  padding: 0 6px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-tex-fill-color: #000 !important;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid white;
+  background: #ffbf00;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1PX;
+  text-transform: uppercase;
+  transition: 580ms ease-in;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 580ms ease-in-out;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffbf00;
+  border: rgba(255, 255, 255, 0.1);
+}
+
+button:active {
+  transform: scale(0.5);
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn2 {
+  background: white;
+  color: #ffbf00;
+}
+
+.btn2:hover {
+  border: 1px solid white;
+  background: #ffbf00;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.content1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-containerRegistro {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-containerRegistro {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.overlay-containerRegistro {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background: #ffbf00;
+  color: white;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  transition: 580ms ease-in;
+}
+
+.content2 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.contentDir {
+  right: 0;
+  transform: translateX(0);
+}
+
+.contentEsq {
+  transform: translateX(-20%);
+}
+
+.containerRegistro.right-panel-active .contentDir {
+  transform: translateX(20%);
+}
+
+.containerRegistro.right-panel-active .contentEsq {
+  transform: translateX(0%);
+}
+
+.containerRegistro.right-panel-active .sign-in-containerRegistro {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.containerRegistro.right-panel-active .sign-up-containerRegistro {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+.containerRegistro.right-panel-active .overlay-containerRegistro {
+  transform: translateX(-100%);
+}
+
+.containerRegistro.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  height: 26px;
+  width: 56px;
+  background-color: #E6E6E6;
+  display: flex;
+  border-radius: 50px;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 3px 10px rgba(1, 1, 1, 0.3);
+  cursor: pointer;
+}
+
+.ball {
+  background-color: #E6E6E6;
+  position: absolute;
+  top: 2px;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+  box-shadow: inset 2px 0px 6px 1px rgba(0, 0, 0, 0.54);
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(28px);
+}
+
+.fa-moon {
+  color: #ff9800;
+}
+
+fa-sun .fa-sun {
+  color: #b57629;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+@keyframes show {
+  0%, 49.99% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50%, 100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+.bodyRegistro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(164deg, rgb(212, 159, 0) 24%, rgb(210, 129, 102) 91%);
+  -webkit-clip-path: circle(30% at right 70%);
+          clip-path: circle(30% at right 70%);
+}
+
+.bodyRegistro::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(212, 159, 0);
+  background: linear-gradient(164deg, rgb(212, 159, 0) 24%, rgb(210, 129, 102) 91%);
+  -webkit-clip-path: circle(20% at 10% 10%);
+          clip-path: circle(20% at 10% 10%);
+}/*# sourceMappingURL=loginTeste.css.map */

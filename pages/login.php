@@ -87,7 +87,7 @@ document.getElementById("img-input").addEventListener("change", readImage, false
         
             
             <div class="floating-label-group">
-			<input type="submit" value="Cadastrar-se" id="btnCad" class="form-control" onclick="btnDisable()"/>
+			<input type="submit" value="Cadastrar-se" class="form-control" id="btnCad"  onclick="btnDisable()"/>
 				
 			</div>
     

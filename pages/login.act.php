@@ -6,8 +6,7 @@ $busca = mysqli_query($con, "Select * from `alunos` where `emailAluno` = '$email
 //$cod= $_SESSION['cod'];
 
 session_start();
-$perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
-$perfil =mysqli_fetch_array($perfil);
+
 
     if($busca-> num_rows == 1){
     $cadastro = mysqli_fetch_array($busca);
@@ -19,13 +18,18 @@ $perfil =mysqli_fetch_array($perfil);
       $_SESSION['nome'] = $cadastro['nomeAluno'];
       $_SESSION['email'] = $cadastro['emailAluno'];
       $target = "location:inicial.php";
+      $msg = "logado";
       }else{
         $msg = "Email ou senha incorretos!";
-        $target = "location:login.php";
+        $target = "location:loginTeste.php";
+        $msg = "ndeu";
       }
       }else{
         $msg = "Email ou senha incorretos!";
-        $target = "location:login.php";
+        $target = "location:loginTeste.php";
+        $msg = "errou";
       }
+
       $_SESSION['msg'] = $msg;
+      
       header($target);

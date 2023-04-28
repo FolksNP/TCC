@@ -13,12 +13,13 @@ function darkMode(){
     linkFooter = document.getElementById("linkFooter");
     linksUteis = document.getElementById("linksUteis");
     product = document.getElementById("product");
+
     if(btnTema.checked){
 
+        document.getElementById("navbar").style.backgroundColor= corDark;
         document.querySelector('body').style.background = 'linear-gradient(50deg, '+corDark2+', black )';
         document.getElementById("footer").style.color='white';  
         document.getElementById("footer").style.backgroundColor= corDark;
-        document.getElementById("navbar").style.backgroundColor= corDark;
         
         if(banner){
 
@@ -30,6 +31,7 @@ function darkMode(){
          if(loginPag){
             document.getElementById("tudoLogin").style.backgroundColor= corDark;
          }
+      
          if(product){
             document.getElementById("product").style.backgroundColor= corDark;
             document.getElementById("product").style.color= 'white';

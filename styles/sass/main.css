@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import '3-paginas/inicial.css';
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +48,7 @@
 @media (max-width: 455px) {
   .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
     width: 70%;
+    margin-top: 10px;
   }
 }
 .container .superior .conteudos .sobre h2, .container .superior .conteudos .listagem h2, .container .superior .conteudos .links h2, .container .superior .conteudos .endereco h2 {
@@ -75,6 +78,65 @@
   text-align: center;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .navbarAzul {
   display: flex;
   flex-direction: column;
@@ -94,7 +156,7 @@
   }
 }
 .navbarAzul .logoPesquisa input[type=text] {
-  height: 10px;
+  height: 40px;
   width: 300px;
   padding: 10px;
   border-radius: 50px;
@@ -111,11 +173,32 @@
   max-width: 70px;
   max-height: 70px;
 }
+.navbarAzul .logoPesquisa .logoImg a {
+  display: inline;
+  text-decoration: none;
+  color: #156aaa;
+}
 .navbarAzul .perfilImg img {
   max-width: 35px;
   max-height: 35px;
   border-radius: 100%;
   border: solid 2px #116798;
+}
+.navbarAzul .login-perfil {
+  display: flex;
+}
+.navbarAzul .login-perfil .link-cadastrar a {
+  text-decoration: none;
+  color: #156aaa;
+  padding: 5px 15px;
+  margin-left: 10px;
+  line-height: 35px;
+}
+.navbarAzul .login-perfil .link-cadastrar a:hover {
+  background-color: #156aaa;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
 }
 .navbarAzul .catNavbar ul {
   display: flex;
@@ -125,12 +208,14 @@
   padding-top: 12px;
 }
 .navbarAzul .catNavbar ul :nth-child(1) {
-  border-bottom: 2px solid #116798;
   color: #116798;
 }
 .navbarAzul .catNavbar ul li {
   font-size: 15px;
   margin-bottom: 10px;
+}
+.navbarAzul .catNavbar a {
+  text-decoration: none;
 }
 
 body::-webkit-scrollbar {
@@ -172,6 +257,52 @@ button:hover {
   background-color: #fff;
   border: 2px solid #116798;
   color: #116798;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.container-carrossel {
+  padding: 5px;
+}
+.container-carrossel img {
+  width: 100%;
+}
+.container-carrossel p {
+  padding: 10px;
+  text-align: justify;
 }
 
 * {
@@ -479,51 +610,25 @@ body {
   color: orange;
 }
 
-.continuarAssistindo {
-  background-color: white;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  margin-top: 15px;
-  margin-bottom: 50px;
-}
-
-.recomendados {
-  background-color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.rolagemHorizontal {
-  align-items: center;
+/* Estilos para o slider */
+.cardes-sliders {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #f3f3f3;
-  border-radius: 30px;
-  padding: 10px;
-  margin: 5px;
-}
-.rolagemHorizontal .imgDescCurso {
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-}
-.rolagemHorizontal .imgDescCurso p {
-  max-width: 200px;
-}
-.rolagemHorizontal .navegacaoCursos {
   overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  max-width: 95%;
-  margin-right: 50px;
-  display: flex;
+  scrollbar-width: none; /* Oculta a barra de rolagem do navegador */
+  -ms-overflow-style: none; /* Oculta a barra de rolagem do IE/Edge */
+  white-space: nowrap; /* Impede que os cartões se quebrem em várias linhas */
 }
-.rolagemHorizontal .navegacaoCursos img {
-  max-width: 200px;
-  border-radius: 10px;
+
+.cardes-sliders::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem do Chrome/Safari */
+}
+
+.cardes {
+  flex: 0 0 300px; /* Largura de cada cartão */
+  margin-right: 16px; /* Espaçamento entre os cartões */
+  padding: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
 }
 
 * {
@@ -531,82 +636,12 @@ body {
   padding: 0;
 }
 
-.navbarAzul {
-  display: flex;
-  flex-direction: column;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: white;
-  width: 100%;
-}
-.navbarAzul .logoPesquisa {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 25px;
-}
-.navbarAzul .logoPesquisa input[type=text] {
-  height: 35px;
-  width: 300px;
-  padding: 10px;
-  border-radius: 50px;
-  border: solid 2px #116798;
-}
-.navbarAzul .logoPesquisa .logoImg {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  color: #116798;
-}
-.navbarAzul .logoPesquisa .logoImg img {
-  margin-right: 40px;
-  max-width: 70px;
-  max-height: 70px;
-}
-.navbarAzul .perfilImg img {
-  max-width: 35px;
-  max-height: 35px;
-  border-radius: 100%;
-  border: solid 2px #116798;
-}
-.navbarAzul .catNavbar ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-.navbarAzul .catNavbar ul :nth-child(1) a {
-  border-bottom: 2px solid #116798;
-  color: #116798;
-}
-.navbarAzul .catNavbar ul li {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.navbarAzul .catNavbar ul li a {
-  text-decoration: none;
-  color: #116798;
-}
-
 body {
   margin: auto;
   overflow: auto;
-  background: linear-gradient(315deg, #C9FBFA 3%, rgb(60, 132, 206) 38%, rgb(48, 238, 226) 68%, #002B5C 98%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
+  background: linear-gradient(50deg, #C9FBFA, rgb(48, 238, 226), #002B5C);
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
 .banner {
   display: flex;
   margin: 50px;
@@ -614,6 +649,7 @@ body {
   padding: 10px;
   border-radius: 20px;
   align-items: center;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 455px) {
   .banner {
@@ -624,60 +660,84 @@ body {
   width: 550px;
   height: 550px;
 }
-.banner .beneficios {
+@media (max-width: 455px) {
+  .banner > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.beneficios {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 @media (max-width: 455px) {
-  .banner .beneficios {
+  .beneficios {
     flex-direction: column;
+    justify-content: center;
     justify-content: center;
   }
 }
-
-.card {
-  width: 250px;
-  height: 300px;
-  background-image: linear-gradient(163deg, rgb(48, 238, 226) 0%, #006eff 100%);
-  border-radius: 20px;
-  transition: all 0.3s;
-}
-
-.card2 {
-  width: 250px;
-  height: 300px;
-  background-color: rgb(238, 238, 238);
-  border: solid 2px rgb(48, 238, 226);
-  border-radius: 20px;
+.beneficios .card {
+  width: 190px;
+  height: 254px;
   transition: all 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.card2 > img {
-  margin-top: 10px;
-  width: 80px;
-  height: 80px;
-}
-.card2 :nth-child(2) {
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 19px;
-}
-.card2 :nth-child(3) {
-  margin: 10px;
-}
-
-.card2:hover {
-  border-radius: 20px;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 30px 1px rgb(60, 132, 206);
+  position: relative;
   cursor: pointer;
+}
+.beneficios .card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.beneficios .card-inner img {
+  max-width: 80px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+.beneficios .card-inner :nth-child(2) {
+  padding-top: 100px;
+}
+.beneficios .card-inner :nth-child(2) p {
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.beneficios .card:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+.beneficios .circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(rgb(0, 98, 255), #116798);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+.beneficios .circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+.beneficios .circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
 }
 
 .txtCursos {
@@ -685,7 +745,7 @@ body {
   text-align: center;
   margin-bottom: 50px;
   color: white;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .cursosAreas {
@@ -703,7 +763,7 @@ body {
 .cardCurso {
   width: 190px;
   height: 254px;
-  background: rgb(238, 238, 238);
+  background: rgb(255, 255, 255);
   position: relative;
   display: flex;
   place-content: center;
@@ -748,7 +808,7 @@ body {
 .cardCurso::after {
   content: "";
   position: absolute;
-  background: #3094ce;
+  background: #116798;
   inset: 5px;
   border-radius: 15px;
 }
@@ -758,13 +818,18 @@ body {
   animation: rotBGimg 3.5s linear infinite;
 } */
 .perguntasFrequentesTudo {
-  margin-top: 10% px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .perguntasFrequentesTudo img {
   max-width: 500px;
+}
+@media (max-width: 455px) {
+  .perguntasFrequentesTudo img {
+    display: none;
+  }
 }
 .perguntasFrequentesTudo .perguntasFAQ {
   color: white;
@@ -831,6 +896,11 @@ body {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
+@media (max-width: 455px) {
+  .busqueCursos .inputPesquisaInicial {
+    width: 90%;
+  }
+}
 .busqueCursos .inputPesquisaInicial > div {
   box-shadow: 1px 1px 28px -8px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -850,6 +920,55 @@ body {
   outline: none;
 }
 
+@media screen and (max-width: 740px) {
+  .navbarAzul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  .navbarAzul .logoPesquisa {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navbarAzul .logoPesquisa img {
+    margin-left: 5px;
+  }
+  .navbarAzul .logoPesquisa li {
+    display: none;
+  }
+  .navbarAzul .logoPesquisa .logoImg {
+    font-size: 20px;
+  }
+  .navbarAzul .logoPesquisa .logoImg img {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+  }
+  .navbarAzul .logoPesquisa .listaMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 25px;
+  }
+  .navbarAzul .logoPesquisa .listaMenu div {
+    display: flex;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0px;
+    background-color: #116798;
+  }
+  .navbarAzul input {
+    display: none;
+  }
+  .navbarAzul ul li {
+    display: none;
+  }
+}
 .login-container .content {
   display: flex;
   justify-content: center;
@@ -945,6 +1064,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
+}
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit img {
+  max-width: 20px;
+}
 .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor {
   padding: 10px;
   background-color: #f3f3f3;
@@ -968,12 +1095,14 @@ body {
   background-color: #f3f3f3;
   padding-bottom: 5px;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor > p {
+.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor > div {
   align-items: center;
   display: flex;
+  flex-direction: row;
   margin-top: 10px;
   border-bottom: solid 1px #156aaa;
   width: 100%;
+  cursor: pointer;
 }
 .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor img {
   width: 30px;
@@ -989,6 +1118,17 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.direitaPerfilProfessor .alterLogin {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.direitaPerfilProfessor .alterLogin .arquivoPerfil {
+  display: none;
 }
 .direitaPerfilProfessor .nomeEmailProfessor {
   padding: 20px;
@@ -1058,9 +1198,8 @@ body {
 }
 .direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe {
   background-color: white;
-  -moz-columns: 2;
-       columns: 2;
-  gap: 120px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 20px;
 }
@@ -1222,12 +1361,31 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.direitaPerfilProfessor .topoProfessorEst :nth-child(1) {
+.direitaPerfilProfessor .topoProfessorEst :nth-child(1) p {
   font-size: 20px;
   border-bottom: solid 2px #116798;
 }
-.direitaPerfilProfessor .topoProfessorEst img {
-  width: 20px;
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) {
+  height: 30px;
+  align-items: center;
+  display: flex;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) img {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #d7d7d7;
+  margin-left: -3px;
+  border-radius: 5px;
+}
+.direitaPerfilProfessor .topoProfessorEst :nth-child(2) input {
+  border: none;
+  outline: none;
+  height: 100%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 5px;
+  width: 200px;
 }
 .direitaPerfilProfessor .selecioneCursoProfessor {
   display: flex;
@@ -1235,36 +1393,267 @@ body {
   margin-top: 20px;
 }
 .direitaPerfilProfessor .selecioneCursoProfessor :nth-child(1) {
-  font-size: 25px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .selecioneCursoProfessor .selecioneCursoProfessorImg {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
 }
 .direitaPerfilProfessor .selecioneCursoProfessor img {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor {
+  display: flex;
+  flex-direction: column;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorTxt {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs {
+  -moz-column-count: 2;
+       column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #f3f3f3;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorTxt {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs {
+  -moz-column-count: 2;
+       column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs div {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  background-color: #f3f3f3;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorTxt {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs {
+  -moz-column-count: 2;
+       column-count: 2;
+  gap: 150px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs > div {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.direitaPerfilProfessor .graficosProfessor {
+  height: 100%;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.direitaPerfilProfessor .graficosProfessor p {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
 }
 
+#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos, #direitaPerfilAlterar {
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+  .pagTodaPerfilProfessor {
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
+    display: flex;
+    flex-direction: row;
+    background: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div {
+    border: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div p {
+    display: none;
+    border: none;
+  }
+  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor a {
+    display: none;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados {
+    display: flex;
+    flex-direction: column;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .terminados img {
+    width: 80px;
+    height: 80px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .cursando img {
+    width: 80px;
+    height: 80px;
+  }
+  .pagTodaPerfilProfessor .cursandoTerminados .resp-perg-aulas-exe {
+    display: flex;
+    flex-direction: column;
+    -moz-columns: 1;
+         columns: 1;
+    gap: 0;
+  }
+}
 .tudoLogin {
   margin: 5%;
   margin-left: 10%;
   margin-right: 10%;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
+}
+.tudoLogin .imgLogin {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.tudoLogin .imgLogin img {
+  width: 100px;
+  height: 100px;
+}
+.tudoLogin #senhaInput {
+  border-bottom: solid 2px #116798;
+}
+.tudoLogin #senhaInput input {
+  border: none;
+}
+.tudoLogin #senhaInput2 {
+  border-bottom: solid 2px #116798;
+}
+.tudoLogin #senhaInput2 input {
+  border: none;
+  background: none;
+}
+.tudoLogin .floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+}
+.tudoLogin .floating-label-group > div {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+.tudoLogin .floating-label-group input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  border-bottom: solid 2px #116798;
+  background: none;
+}
+.tudoLogin .floating-label-group input[type=submit] {
+  background-color: #116798;
+  border: solid 2px black;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.tudoLogin .floating-label-group .floating-label {
+  font-size: 13px;
+  color: #b4b3b3;
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 12px;
+  transition: all 0.1s ease;
+  width: 100%;
+  align-items: center;
+}
+.tudoLogin .floating-label-group input:focus ~ .floating-label,
+.tudoLogin .floating-label-group input:not(:focus):valid ~ .floating-label {
+  top: -15px;
+  bottom: 0px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+  color: #404040;
 }
 .tudoLogin .ladoDireitoLogin {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+.tudoLogin .linhaLogin {
+  height: 600px;
+  width: 3px;
+  background-color: #116798;
+}
 .tudoLogin .ladoEsquerdoLogin {
   display: flex;
   flex-direction: column;
-}
-.tudoLogin .imgLogin {
-  min-height: 100%;
-  width: 3px;
-  background-color: #116798;
 }
 .tudoLogin .loginTitulo {
   margin-top: 20px;
@@ -1275,7 +1664,6 @@ body {
   color: #116798;
 }
 .tudoLogin .inputLogin {
-  padding: 10px;
   border-radius: 20px;
   width: 100%;
   display: flex;
@@ -1283,23 +1671,416 @@ body {
 .tudoLogin .inputLogin p {
   margin-top: auto;
 }
-.tudoLogin .inputLogin input {
-  border-radius: 10px;
-  height: 35px;
-  padding-left: 10px;
-  margin-top: 5px;
-  border: solid 2px #116798;
-  width: 100%;
-}
-.tudoLogin .inputLogin input[type=submit] {
-  background-color: #116798;
-  border: solid 2px black;
-  color: white;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
 .tudoLogin .inputLogin input[type=checkbox] {
   height: 20px;
   max-width: 18px;
   margin-right: 20px;
+}
+
+#myPassword {
+  padding-right: 20px;
+}
+
+.olho {
+  cursor: pointer;
+  left: 60px;
+  width: 20px;
+}
+
+* {
+  margin: 0px;
+  font-family: Rubik;
+}
+
+.LoginPageContainer {
+  height: 100vh;
+  overflow: auto;
+}
+
+.LoginPageInnerContainer {
+  display: flex;
+  min-height: 100%;
+}
+
+.LoginPageInnerContainer .ImageContianer {
+  width: 25%;
+  background-color: #e1dfec;
+  min-height: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPageInnerContainer .ImageContianer .GroupImage {
+  width: 100%;
+  display: block;
+}
+
+.LoginPageInnerContainer .LoginFormContainer {
+  flex-grow: 2;
+  background-color: white;
+  min-height: 100%;
+  padding: 5%;
+  background: url(https://i.imgur.com/BKyjjFa.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .LogoContainer .logo {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .header {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .subHeader {
+  color: #9aa4ad;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer {
+  color: #3f3f45;
+  margin: 20px 0px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .label {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .label .labelIcon {
+  width: 20px;
+  margin-right: 10px;
+  display: block;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .inputContainer .input {
+  display: block;
+  width: calc(100% - 20px);
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #d6d7db;
+  border-radius: 5px;
+  margin-top: 5px;
+  outline: 0px !important;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .OptionsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LoginFormContainer {
+  display: flex;
+  align-items: center;
+}
+
+.LoginFormInnerContainer {
+  max-width: 500px;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  display: block;
+  border: 1px solid #d6d7db;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkboxContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .checkboxContainer label {
+  display: block;
+  padding: 0px 5px;
+  color: #9aa4ad;
+}
+
+.LoginPageInnerContainer .LoginFormContainer .ForgotPasswordLink {
+  color: #e7483b;
+  text-decoration: none;
+}
+
+.LoginFormContainer .LoginFormInnerContainer .LoginButton {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #2e1f7a;
+  border: 0px;
+  outline: 0px;
+  cursor: pointer;
+}
+
+.LoginFormContainer .LoginFormInnerContainer .LoginButton:active {
+  background-color: #4520ff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .LoginPageInnerContainer .ImageContianer {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .LoginPageInnerContainer .ImageContianer {
+    display: none;
+  }
+  .LoginFormContainer {
+    justify-content: center;
+  }
+}
+.LoginPageContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.LoginPageContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.LoginPageContainer::-webkit-scrollbar-thumb {
+  background: #2e1f7a;
+}
+
+.LoginPageContainer::-webkit-scrollbar-thumb:hover {
+  background: #4520ff;
+}
+
+.pagCadCurso {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.check {
+  align-items: center;
+}
+.check img {
+  max-width: 25px;
+  margin-top: 5px;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #116798;
+}
+
+::selection {
+  color: #fff;
+  background: #116798;
+}
+
+.containerCurso {
+  width: 60%;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+  margin-top: 40px;
+}
+
+.containerCurso header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+
+.containerCurso .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.containerCurso .form-outer form {
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.form-outer form .page .field {
+  width: 100%;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+
+form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #116798;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+form .page .field button:hover {
+  background: #000;
+}
+
+form .page .btns button {
+  margin-top: -20px !important;
+}
+
+form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+form .page .btns button.next {
+  margin-left: 3px;
+}
+
+.containerCurso .progress-bar {
+  display: flex;
+  margin: 40px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.containerCurso .progress-bar .step {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.containerCurso .progress-bar .step p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+.progress-bar .step p.active {
+  color: blue;
+}
+
+.progress-bar .step .bullet {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.progress-bar .step .bullet.active {
+  border-color: #116798;
+  background: #116798;
+}
+
+.progress-bar .step .bullet span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progress-bar .step .bullet.active span {
+  display: none;
+}
+
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after {
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  right: -120px;
+  height: 3px;
+  width: 100px;
+  background: #262626;
+}
+
+.progress-bar .step .bullet.active:after {
+  background: #116798;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+  display: none;
+}
+
+.progress-bar .step p.active {
+  color: #116798;
+  transition: 0.2s linear;
+}
+
+.progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.progress-bar .step .check.active {
+  display: block;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
