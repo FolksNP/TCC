@@ -46,7 +46,7 @@
                 <div class="link-cadastrar">
                 <?php
                     if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
-                        echo "<a href=loginTeste.php>Login</a>";
+                        echo "<a href=login.php>Login</a>";
                     }else{
                         echo "<a href=logoff.php>Sair</a>";
                     }
