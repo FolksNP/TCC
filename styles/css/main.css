@@ -664,11 +664,32 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1280px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1400px) {
+  .banner {
+    flex-direction: column;
+  }
+}
 .banner > img {
   width: 550px;
   height: 550px;
 }
 @media (max-width: 500px) {
+  .banner > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 900px) {
   .banner > img {
     width: 100%;
     height: 100%;
@@ -684,7 +705,17 @@ body {
   .beneficios {
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .beneficios {
+    flex-direction: column;
     justify-content: center;
+  }
+}
+@media (max-width: 1280px) {
+  .beneficios {
+    margin-bottom: 40px;
   }
 }
 .beneficios .card {
@@ -693,6 +724,24 @@ body {
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .beneficios .card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .beneficios .card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  .beneficios .card {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 }
 .beneficios .card-inner {
   width: inherit;
@@ -766,6 +815,18 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 900px) {
+  .cursosAreas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 1280px) {
+  .cursosAreas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .cardCurso {
   width: 190px;
@@ -786,6 +847,20 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     width: 80%;
+  }
+}
+@media (max-width: 900px) {
+  .cardCurso {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40%;
+  }
+}
+@media (max-width: 1280px) {
+  .cardCurso {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 40%;
   }
 }
 
@@ -838,6 +913,12 @@ body {
 @media (max-width: 500px) {
   .perguntasFrequentesTudo img {
     display: none;
+  }
+}
+@media (max-width: 900px) {
+  .perguntasFrequentesTudo img {
+    display: none;
+    color: #002b5c;
   }
 }
 .perguntasFrequentesTudo .perguntasFAQ {
