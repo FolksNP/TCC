@@ -2309,39 +2309,37 @@ form .page .btns button.next {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Trebuchet MS", Tahoma, sans-serif;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: transparent;
 }
 
 .paulo-freire, .patrono-neves, .projeto {
   margin: 0 auto;
   display: flex;
   width: 1280px;
-  border: 3px solid blue;
+  background-color: white;
+  border-top: 25px solid #020d3f;
+  border-radius: 20px;
 }
 
 .paulo-freire {
   margin: 0 auto;
   display: flex;
   width: 1280px;
-  border: 3px solid blue;
+  margin-bottom: 10px;
 }
 .paulo-freire .lado-esquerdo {
   width: 40%;
   padding: 10px;
-  background-color: lightblue;
+  background-color: #116798;
+  border-bottom-left-radius: 20px;
 }
 .paulo-freire .lado-esquerdo img {
   width: 100%;
+  border-radius: 10px;
 }
 .paulo-freire .lado-direito {
   padding: 15px;
@@ -2362,12 +2360,11 @@ form .page .btns button.next {
   margin: 0 auto;
   display: flex;
   width: 1280px;
-  border: 3px solid blue;
 }
 .patrono-neves .lado-direito {
   width: 40%;
   padding: 10px;
-  background-color: lightblue;
+  background-color: #116798;
 }
 .patrono-neves .lado-direito img {
   width: 100%;

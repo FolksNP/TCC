@@ -38,10 +38,10 @@
             <h3>Patrono Neves - #For_education</h3>
             <div class="cards">
                 <div class="missao">
-
+                    <h2>Nossa missão</h2>
                 </div>
                 <div class="visao">
-
+                    h2
                 </div>
                 <div class="valores">
 
@@ -49,7 +49,7 @@
             </div>
             </div>
             <div class="lado-direito">
-                <img src="images/freire3.144301-CLÓVIS-CRANCHI-SOBRINHO-AE.png" alt="">
+                <img src="../imgs/logoTCC.png" alt="">
             </div>
         </div>
 

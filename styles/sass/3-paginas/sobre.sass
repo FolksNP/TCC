@@ -1,32 +1,32 @@
-*
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    font-family: "Trebuchet MS", Tahoma, sans-serif
 .container
     display: flex
     flex-direction: column
     justify-content: center
+    background-color: transparent
 
 .paulo-freire, .patrono-neves, .projeto
     margin: 0 auto
     display: flex
     width: 1280px
-    border: 3px solid blue
+    background-color: white
+    border-top: 25px solid #020d3f
+    border-radius: 20px
 
 .paulo-freire
     margin: 0 auto
     display: flex
     width: 1280px
-    border: 3px solid blue
+    margin-bottom: 10px
 
     .lado-esquerdo
         width: 40%
         padding: 10px
-        background-color: lightblue
+        background-color: $cor-primaria
+        border-bottom-left-radius: 20px 
         img
             width: 100%
-
+            border-radius: 10px
+            
 
     .lado-direito
         padding: 15px
@@ -46,12 +46,12 @@
     margin: 0 auto
     display: flex
     width: 1280px
-    border: 3px solid blue
+
 
     .lado-direito
         width: 40%
         padding: 10px
-        background-color: lightblue
+        background-color: $cor-primaria
         img
             width: 100%
 
