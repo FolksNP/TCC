@@ -21,12 +21,12 @@ session_start();
       $msg = "logado";
       }else{
         $msg = "Email ou senha incorretos!";
-        $target = "location:loginTeste.php";
+        $target = "location:login.php";
         $msg = "ndeu";
       }
       }else{
         $msg = "Email ou senha incorretos!";
-        $target = "location:loginTeste.php";
+        $target = "location:login.php";
         $msg = "errou";
       }
 
