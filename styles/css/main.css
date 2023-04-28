@@ -14,11 +14,25 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #116798;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
 .container {
   background-color: #fff;
   margin-top: 30px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .container {
     width: 100%;
   }
@@ -37,7 +51,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .container .superior .conteudos {
     flex-direction: column;
     justify-content: center;
@@ -47,7 +61,7 @@
   width: 20%;
   margin: 0px 10px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
     width: 70%;
     margin-top: 10px;
@@ -156,7 +170,7 @@ input:checked + .slider:before {
   font-family: "Fira Sans", sans-serif;
   font-size: 25px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .navbarAzul .logoPesquisa {
     flex-direction: column;
   }
@@ -222,20 +236,6 @@ input:checked + .slider:before {
 }
 .navbarAzul .catNavbar a {
   text-decoration: none;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-}
-
-body::-webkit-scrollbar-track {
-  background: black;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #116798;
-  border-radius: 10px;
-  border: 1px solid black;
 }
 
 button {
@@ -659,7 +659,7 @@ body {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .banner {
     flex-direction: column;
   }
@@ -668,7 +668,7 @@ body {
   width: 550px;
   height: 550px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .banner > img {
     width: 100%;
     height: 100%;
@@ -680,7 +680,7 @@ body {
   width: 100%;
   justify-content: space-evenly;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .beneficios {
     flex-direction: column;
     justify-content: center;
@@ -760,7 +760,7 @@ body {
   justify-content: space-around;
   margin-bottom: 5%;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .cursosAreas {
     flex-direction: column;
     justify-content: center;
@@ -781,7 +781,7 @@ body {
   -moz-box-shadow: 10px 9px 20px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 9px 20px -5px rgba(0, 0, 0, 0.75);
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .cardCurso {
     margin: 0 auto;
     margin-top: 10px;
@@ -835,7 +835,7 @@ body {
 .perguntasFrequentesTudo img {
   max-width: 500px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .perguntasFrequentesTudo img {
     display: none;
   }
@@ -905,7 +905,7 @@ body {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .busqueCursos .inputPesquisaInicial {
     width: 90%;
   }
@@ -984,7 +984,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .login-container .content {
     flex-direction: column;
   }
@@ -1005,7 +1005,7 @@ body {
 .login-container .content .description #descubra {
   font-size: 50px;
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .login-container .content .description {
     width: 100%;
     margin-bottom: 10px;
@@ -1018,7 +1018,7 @@ body {
   padding: 1rem;
   background-color: rgba(226, 255, 207, 0.15);
 }
-@media (max-width: 455px) {
+@media (max-width: 500px) {
   .login-container .content .formulario {
     width: 100%;
     justify-content: center;

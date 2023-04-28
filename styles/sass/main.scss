@@ -1,10 +1,10 @@
 @import '1-modulos/variables';
 @import '1-modulos/base-scss.scss';
-@import "1-modulos/mobile";
+@import "1-modulos/responsividade-geral";
+@import '1-modulos/scrollbar.scss';
 
 @import '2-componentes/footer.scss';
 @import '2-componentes/header_navbar.scss';
-@import '1-modulos/scrollbar.scss';
 @import '2-componentes/buttons.scss';
 @import '2-componentes/carrossel.scss';
 
