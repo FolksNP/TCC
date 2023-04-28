@@ -11,7 +11,7 @@
     <div class="container" id="footer">
 
         <div class="pn">
-            Patrono Neves - #ForEducation
+            <i>Patrono Neves - A educação é o princípio da evolução e da nossa disciplina.</i>
         </div>
 
         <div class="superior">

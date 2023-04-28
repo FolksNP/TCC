@@ -1,16 +1,18 @@
-.container
+.container-sobre
     display: flex
     flex-direction: column
     justify-content: center
     background-color: transparent
+    margin-top: 20px
 
-.paulo-freire, .patrono-neves, .projeto
+.paulo-freire, .patrono-neves
     margin: 0 auto
     display: flex
     width: 1280px
     background-color: white
     border-top: 25px solid #020d3f
     border-radius: 20px
+    box-shadow: 10px 10px 50px #001242
 
 .paulo-freire
     margin: 0 auto
@@ -35,7 +37,7 @@
         
         #paulo-freire-texto
             position: relative
-            top: 20%
+            top: 10%
             margin-top: 15px
             font-size: 20px
             text-align: justify
@@ -46,14 +48,23 @@
     margin: 0 auto
     display: flex
     width: 1280px
+    margin-bottom: 10px
 
 
     .lado-direito
         width: 40%
         padding: 10px
         background-color: $cor-primaria
+        align-content: center
+        align-items: center
+        border-bottom-right-radius: 20px
+
+
         img
+            position: relative
+            top: 20%
             width: 100%
+
 
 
     .lado-esquerdo
@@ -69,4 +80,22 @@
             text-align: justify
             line-height: 1.8rem
             text-indent: 4rem
+
+        .cards
+            justify-content: space-between
+
+
+            .missao, .visao, .valores
+                text-align: justify
+                line-height: 1.8rem
+                font-size: 18px
+                margin: 10px
+                border: 3px solid #0d3254
+                padding: 10px   
+                border-radius: 15px
+
+            h2
+                margin-bottom: 10px
+                
+
 
