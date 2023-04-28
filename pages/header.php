@@ -61,7 +61,7 @@
             <ul>
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
-                <li><a href="../pages/inicial.php">Sobre nós</a></li>
+                <li><a href="../pages/sobre.html">Sobre nós</a></li>
                 <li><a href="../pages/telaPerfilProfessor.php">Suporte</a></li>
             </ul>
         </div>
