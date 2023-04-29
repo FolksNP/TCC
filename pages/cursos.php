@@ -19,28 +19,28 @@
       <div class="swiper-slide">
         <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
@@ -55,28 +55,28 @@
       <div class="swiper-slide">
         <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/php.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/php.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/php.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/php.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
@@ -91,28 +91,28 @@
       <div class="swiper-slide">
         <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/java.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/java.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/java.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/ben10.jpg" alt="" class="card-imagem">
+            <img src="../imgs/java.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
