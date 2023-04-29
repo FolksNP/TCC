@@ -91,7 +91,7 @@ function darkMode(){
 
 }
 else{
-    document.querySelector('body').style.background = 'linear-gradient(50deg, #C9FBFA , rgba(48, 238, 226, 1), #002B5C )';
+    document.querySelector('body').style.background = 'linear-gradient(50deg, #C9FBFA, #116798, #002B5C )';
     document.getElementById("navbar").style.backgroundColor='white';
     document.getElementById("footer").style.backgroundColor='white';
     document.getElementById("footer").style.color='black';
