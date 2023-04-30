@@ -1,47 +1,356 @@
-
-.tudoLogin{
-  .imgLogin{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  img{
-    width: 100px;
-    height: 100px;
-  } 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+*{
+    box-sizing: border-box;
 }
-    // margin-left: 10%;
-    // margin-right: 10%;
-    margin: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background: white;
-    border-radius: 5px;
-   display: flex;
-   justify-content: space-evenly;
-   
 
-  #senhaInput{
-    border-bottom: solid 2px $cor-primaria;
-    background-color: #404040;
-
+.bodyRegistro{
+    font-family: 'Montserrat', sans-serif;
+    background:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vH;
+    //margin: -20px 0 50px;
+    transition:  580ms ease-in;
+    .voltar{
+        position: absolute;
+        z-index: 99;
+        left: 1%;
+        top: 1%;
+        img{
+            max-width: 30px;
+        }
+    }
+    a{
+        color:$cor-primaria;
+        font-size: 18x;
+        text-decoration: none;
+        margin:15px 0;
+    }
+    h2{
+        font-weight: bold;
+        margin: 0;
+    }
+    form input{
+        height:40px;
+        width:100%;
+        border:none;
+        background-color: #ecf0f1;
+        
+    
+    }
     input{
-        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    button{
+        border-radius: 20px;
+        border: 1px solid  white;
+        background:  $cor-primaria;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1PX;
+        text-transform: uppercase;
+        transition:  580ms ease-in;
+        color:white;
+       cursor:pointer;
+    }
+    button:hover {
+      
+       transition: all 580ms ease-in-out;
+      box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+      //background: rgb(190, 244, 255);
+      color: white;
+      border:rgba(255,255,255,0.1);
+    }
+    button:active{
+        transform: scale(0.5);
+    }
+    button:focus{
+        outline: none;
+    }
+}
+
+
+.tituloInform{
+    font-size: 24px;
+   
+}
+.tituloForm1{
+    color: $cor-primaria;
+   
+    
+}
+.tituloForm2{
+    color: $cor-primaria;
+    
+}
+.texto2{
+    font-size:14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 50px;
+    margin-bottom: 10px;
+}
+.texto{
+    font-size: 12px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.containerRegistro{
+    position: relative;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius:15px;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    min-height: 500px;
+    
+}
+.content1 form {
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.socialMedia{
+    margin: 20px 0 ;
+}
+.socialMedia a{
+    border: 1px solid $cor-primaria;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height:40px;
+    width:40px;
+    transition: all 580ms ease-in-out;
+}
+.socialMedia a:hover{
+    transition: all 580ms ease-in-out;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: $cor-primaria;
+    border:  1px solid white;
+    color: white;
+}
+
+.label-input{
+    background-color:#ecf0f1;
+    display: flex;
+    align-items: center;
+    margin:8px;
+    border-radius: 10px;
+}
+.icon-modificado{
+    color: #7f8c8d;
+    padding: 0 6px;
+
+}
+
+
+ .btn2{
+    background: white;
+    color: $cor-primaria;
+     
+
+}
+.btn2:hover{
+    border: 1px solid white;
+    background: $cor-primaria;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    color: white;
+}
+.content1{
+    position: absolute;
+    top:0;
+    height:100%;
+    transition: all 0.6s ease-in-out;
+
+    
+}
+.sign-in-containerRegistro{
+    left:0;
+    width:50%;
+    z-index: 2;
+}
+.sign-up-containerRegistro{
+    left:0;
+    width:50%;
+    opacity: 0;
+    z-index: 1;
+}
+.overlay-containerRegistro{
+    position: absolute;
+    top:0;
+    left: 50%;
+    width: 50%;
+    height:100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.overlay{
+    background: $cor-primaria;
+
+color:white;
+position: relative;
+left: -100%;
+height:100%;
+width: 200%;
+transform: translateX(0);
+transition: transform 0.6s ease-in-out;
+transition:  580ms ease-in;
+}
+.content2{
+    position:absolute;
+    top: 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out
+}
+.contentDir{
+    right: 0;
+    transform: translateX(0);
+    
+
+}
+.contentEsq{
+    transform: translateX(-20%);
+    
+}
+.containerRegistro.right-panel-active .contentDir {
+	transform: translateX(20%);
+}
+.containerRegistro.right-panel-active .contentEsq {
+	transform: translateX(0%);
+}
+.containerRegistro.right-panel-active .sign-in-containerRegistro {
+	transform: translateX(100%);
+    opacity: 0;
+}
+.containerRegistro.right-panel-active .sign-up-containerRegistro {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+.containerRegistro.right-panel-active .overlay-containerRegistro{
+	transform: translateX(-100%);
+}
+.containerRegistro.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.label{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:3px;
+    height:26px;
+    width:56px;
+    background-color:#E6E6E6;
+    display:flex;
+    border-radius:50px;
+    position: relative;
+        top:10px;
+        right:10px;
+        box-shadow: 0 3px 10px rgba(1, 1, 1, 0.3);
+   cursor:pointer;
         
     }
     
-}  #senhaInput2{
-  border-bottom: solid 2px $cor-primaria;
+    .ball{
+        background-color: #E6E6E6;
+        position: absolute;
+        top:2px;
+        border-radius:50%;
+        height: 22px;
+        width: 22px;
+        
+        transition:transform 0.2s linear;
+        -webkit-box-shadow: inset 2px 0px 6px 1px rgba(0,0,0,0.54); 
+    box-shadow: inset 2px 0px 6px 1px rgba(0,0,0,0.54);
+    }
+    
+    
+    .checkbox:checked + .label .ball{
+        transform: translateX(28px);
+        
+    }
+    .fa-moon {
+	
+        color:blue;
+    }
+    
+     fa-sun
+    .fa-sun {
+        color:$cor-primaria;
+    }
+    
+   
+    .checkbox{
+        opacity:0;
+        position:absolute;
+    }
+    
 
-  input{
-      border: none;
-      background:none;
-      
-  }
-  
- 
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
 }
-  .floating-label-group {
+
+.bodyRegistro:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+background: linear-gradient(164deg, rgb(32, 136, 255) 24%, $cor-primaria 91%);
+    clip-path: circle(30% at right 70%);
+}
+  .bodyRegistro::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    //background: rgb(212,159,0);
+    background: linear-gradient(114deg, $cor-primaria 50%, rgb(16, 17, 88) 61%);
+    clip-path: circle(20% at 10% 10%);
+}
+.floating-label-group {
 	position: relative;
 	margin-top: 15px;
 	margin-bottom: 25px;
@@ -54,7 +363,8 @@
         display: flex;
         justify-content: center;
         margin-right: 5px;
-      
+       
+
         
     }
             input{
@@ -65,11 +375,12 @@
                 border: none;
                 border-bottom: solid 2px $cor-primaria;
                 background: none;
+                
                
             }
             input[type=submit]{
                 background-color: $cor-primaria;
-                border: solid 2px black;
+                //border: solid 2px black;
                 color: white;
                 cursor: pointer;
                 margin-bottom: 20px;
@@ -88,6 +399,7 @@
 		transition: all 0.1s ease;
         width: 100%;
         align-items: center;
+        
 	}
 
 	input:focus ~ .floating-label,
@@ -101,75 +413,206 @@
         
 	}
 }
-
-  .ladoDireitoLogin{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+#senhaInput{
+    // border-bottom: solid 2px $cor-primaria;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    img{
+      max-width: 20px;
+    }
+    input{
+        border: none;
+        
+    }
     
-   
-  }
-  .linhaLogin{
-    height: 600px;
-    width: 3px;
-    background-color: $cor-primaria;
-  }
-   .ladoEsquerdoLogin{
-    display: flex;
-    flex-direction: column;
-   }
-
-   
-//  
-    .loginTitulo{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 100%;
-        text-align: center;
-        font-size: 25px;
-        color: $cor-primaria;
+}  #senhaInput2{
+//   border-bottom: solid 2px $cor-primaria;
+background-color: #ecf0f1;
+border-radius: 5px;
+img{
+      max-width: 20px;
     }
-    .inputLogin{
-      // background-color: $cor-primaria;
-        // padding: 10px;
-       //margin: 20px;
-        border-radius: 20px;
-        width: 100%;
-        //align-items: center;
-        display: flex;
-       ;// text-align: center;
-p{
-    margin-top: auto;
-}
-
-       
-       
-        input[type=checkbox]{
-         height: 20px;
-          max-width: 18px;
-          margin-right: 20px;
-            
-           
-        }
-    //     input:not(:placeholder-shown) {
-    //      border-color: green;
-    // }
-    // input:focus{
-    //     outline: 0;
-    // }
-    //     input:placeholder-shown {
-    //         border-color: rgb(36, 71, 198);
-    //       }
-    }
-}
-#myPassword {
-   
-    padding-right: 20px;
+  input{
+      border: none;
+      background:none;
+      
   }
   
-  .olho {
-    cursor: pointer;
-    left: 60px;
+ 
+}
+
+// .tudoLogin{
+//   .imgLogin{
+//     width: 100%;
+//     align-items: center;
+//     display: flex;
+//     justify-content: center;
+//   img{
+//     width: 100px;
+//     height: 100px;
+//   } 
+// }
+//     // margin-left: 10%;
+//     // margin-right: 10%;
+//     margin: 5%;
+//     margin-left: 10%;
+//     margin-right: 10%;
+//     background: white;
+//     border-radius: 5px;
+//    display: flex;
+//    justify-content: space-evenly;
    
-    width: 20px;
-  }
+
+//   #senhaInput{
+//     border-bottom: solid 2px $cor-primaria;
+//     background-color: #404040;
+
+//     input{
+//         border: none;
+        
+//     }
+    
+// }  #senhaInput2{
+//   border-bottom: solid 2px $cor-primaria;
+
+//   input{
+//       border: none;
+//       background:none;
+      
+//   }
+  
+ 
+// }
+//   .floating-label-group {
+// 	position: relative;
+// 	margin-top: 15px;
+// 	margin-bottom: 25px;
+//     width: 100%;
+//     display: flex;
+   
+//     >div{
+//         height: 100%;
+//         //align-items: center;
+//         display: flex;
+//         justify-content: center;
+//         margin-right: 5px;
+      
+        
+//     }
+//             input{
+//                 height: 35px;
+//                 width: 100% ; 
+//                 outline: none;
+//                 padding-left: 10px;
+//                 border: none;
+//                 border-bottom: solid 2px $cor-primaria;
+//                 background: none;
+                
+               
+//             }
+//             input[type=submit]{
+//                 background-color: $cor-primaria;
+//                 border: solid 2px black;
+//                 color: white;
+//                 cursor: pointer;
+//                 margin-bottom: 20px;
+//                 width: 100%;
+//                 padding: 10px;
+                
+//             } 
+            
+// 	.floating-label {
+// 		font-size: 50px;
+// 		color: #282828;
+// 		position: absolute;
+// 		pointer-events: none;
+// 		top: 9px;
+// 		left: 12px;
+// 		transition: all 0.1s ease;
+//         width: 100%;
+//         align-items: center;
+// 	}
+
+// 	input:focus ~ .floating-label,
+// 	input:not(:focus):valid ~ .floating-label {
+// 		top: -15px;
+// 		bottom: 0px;
+// 		left: 0px;
+// 		font-size: 20px;
+// 		opacity: 1;
+// 		color: #272727;
+        
+// 	}
+// }
+
+//   .ladoDireitoLogin{
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+    
+   
+//   }
+//   .linhaLogin{
+//     height: 600px;
+//     width: 3px;
+//     background-color: $cor-primaria;
+//   }
+//    .ladoEsquerdoLogin{
+//     display: flex;
+//     flex-direction: column;
+//    }
+
+   
+// //  
+//     .loginTitulo{
+//         margin-top: 20px;
+//         margin-bottom: 20px;
+//         width: 100%;
+//         text-align: center;
+//         font-size: 25px;
+//         color: $cor-primaria;
+//     }
+//     .inputLogin{
+//       // background-color: $cor-primaria;
+//         // padding: 10px;
+//        //margin: 20px;
+//         border-radius: 20px;
+//         width: 100%;
+//         //align-items: center;
+//         display: flex;
+//        ;// text-align: center;
+// p{
+//     margin-top: auto;
+// }
+
+       
+       
+//         input[type=checkbox]{
+//          height: 20px;
+//           max-width: 18px;
+//           margin-right: 20px;
+            
+           
+//         }
+//     //     input:not(:placeholder-shown) {
+//     //      border-color: green;
+//     // }
+//     // input:focus{
+//     //     outline: 0;
+//     // }
+//     //     input:placeholder-shown {
+//     //         border-color: rgb(36, 71, 198);
+//     //       }
+//     }
+// }
+// #myPassword {
+   
+//     padding-right: 20px;
+//   }
+  
+//   .olho {
+//     cursor: pointer;
+//     left: 60px;
+   
+//     width: 20px;
+//   }

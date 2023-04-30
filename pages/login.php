@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,15 @@
                 </div>
                     <label class="floating-label">Senha</label>
                 </div>
+                    <?php  
+                    session_start();
+                @$cod= $_SESSION['cod'];
+                if(isset($_SESSION['msg'])){
+                echo "<p class=alert>$_SESSION[msg]</p>";
+                unset($_SESSION['msg']);          
+        } 
+
+                         ?>
 
                 <div class="floating-label-group">
                     <input type="submit" value="Entrar" class="form-control"/>

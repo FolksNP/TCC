@@ -3,7 +3,7 @@ require('connect.php');
 extract($_POST);
 $password = md5($password);
 $busca = mysqli_query($con, "Select * from `alunos` where `emailAluno` = '$email'");
-//$cod= $_SESSION['cod'];
+$cod= $_SESSION['cod'];
 
 session_start();
 
@@ -22,12 +22,12 @@ session_start();
       }else{
         $msg = "Email ou senha incorretos!";
         $target = "location:login.php";
-        $msg = "ndeu";
+        
       }
       }else{
         $msg = "Email ou senha incorretos!";
         $target = "location:login.php";
-        $msg = "errou";
+        
       }
 
       $_SESSION['msg'] = $msg;

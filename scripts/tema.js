@@ -1,6 +1,6 @@
 function darkMode(){
 
-    corDark = "rgb(34, 34, 34)";
+    corDark = "rgb(0, 16, 23)";
     corDark2 = "#686868";
     corLight = "#f3f3f3";
 
@@ -16,8 +16,8 @@ function darkMode(){
 
     if(btnTema.checked){
 
-        document.getElementById("navbar").style.backgroundColor= corDark;
-        document.querySelector('body').style.background = 'linear-gradient(50deg, '+corDark2+', black )';
+        document.getElementById("navbar").style.backgroundColor='#001017';
+        document.querySelector('body').style.background = '#293342';
         document.getElementById("footer").style.color='white';  
         document.getElementById("footer").style.backgroundColor= corDark;
         
@@ -68,6 +68,7 @@ function darkMode(){
             for (i = 0; i < 5; i++) {
 
                 document.getElementById("cursosArea").children[i].style.backgroundColor= corDark;
+                
                 
             }
            

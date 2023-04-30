@@ -11,7 +11,7 @@ $font:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unic
 body{
     margin: auto;
     overflow: auto;
-    background: linear-gradient(50deg, #C9FBFA, rgba(48, 238, 226, 1), #002B5C );
+    background: linear-gradient(50deg, #C9FBFA, $azul, #002B5C );
 
     
 }

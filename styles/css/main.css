@@ -645,7 +645,7 @@ body {
 body {
   margin: auto;
   overflow: auto;
-  background: linear-gradient(50deg, #C9FBFA, rgb(48, 238, 226), #002B5C);
+  background: linear-gradient(50deg, #C9FBFA, #116798, #002B5C);
 }
 
 .banner {
@@ -1649,137 +1649,6 @@ body {
     gap: 0;
   }
 }
-.tudoLogin {
-  margin: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
-  background: white;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-evenly;
-}
-.tudoLogin .imgLogin {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.tudoLogin .imgLogin img {
-  width: 100px;
-  height: 100px;
-}
-.tudoLogin #senhaInput {
-  border-bottom: solid 2px #116798;
-  background-color: #404040;
-}
-.tudoLogin #senhaInput input {
-  border: none;
-}
-.tudoLogin #senhaInput2 {
-  border-bottom: solid 2px #116798;
-}
-.tudoLogin #senhaInput2 input {
-  border: none;
-  background: none;
-}
-.tudoLogin .floating-label-group {
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  width: 100%;
-  display: flex;
-}
-.tudoLogin .floating-label-group > div {
-  height: 100%;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-right: 5px;
-}
-.tudoLogin .floating-label-group input {
-  height: 35px;
-  width: 100%;
-  outline: none;
-  padding-left: 10px;
-  border: none;
-  border-bottom: solid 2px #116798;
-  background: none;
-}
-.tudoLogin .floating-label-group input[type=submit] {
-  background-color: #116798;
-  border: solid 2px black;
-  color: white;
-  cursor: pointer;
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 10px;
-}
-.tudoLogin .floating-label-group .floating-label {
-  font-size: 13px;
-  color: #b4b3b3;
-  position: absolute;
-  pointer-events: none;
-  top: 9px;
-  left: 12px;
-  transition: all 0.1s ease;
-  width: 100%;
-  align-items: center;
-}
-.tudoLogin .floating-label-group input:focus ~ .floating-label,
-.tudoLogin .floating-label-group input:not(:focus):valid ~ .floating-label {
-  top: -15px;
-  bottom: 0px;
-  left: 0px;
-  font-size: 11px;
-  opacity: 1;
-  color: #404040;
-}
-.tudoLogin .ladoDireitoLogin {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.tudoLogin .linhaLogin {
-  height: 600px;
-  width: 3px;
-  background-color: #116798;
-}
-.tudoLogin .ladoEsquerdoLogin {
-  display: flex;
-  flex-direction: column;
-}
-.tudoLogin .loginTitulo {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 25px;
-  color: #116798;
-}
-.tudoLogin .inputLogin {
-  border-radius: 20px;
-  width: 100%;
-  display: flex;
-}
-.tudoLogin .inputLogin p {
-  margin-top: auto;
-}
-.tudoLogin .inputLogin input[type=checkbox] {
-  height: 20px;
-  max-width: 18px;
-  margin-right: 20px;
-}
-
-#myPassword {
-  padding-right: 20px;
-}
-
-.olho {
-  cursor: pointer;
-  left: 60px;
-  width: 20px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -1852,7 +1721,11 @@ body {
   font-size: 24px;
 }
 
-.tituloForm {
+.tituloForm1 {
+  color: #116798;
+}
+
+.tituloForm2 {
   color: #116798;
 }
 
@@ -1861,12 +1734,14 @@ body {
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
-  margin: 20px 0 30px;
+  margin: 20px 0 50px;
+  margin-bottom: 10px;
 }
 
 .texto {
   font-size: 12px;
   color: black;
+  margin-bottom: 10px;
 }
 
 .containerRegistro {
@@ -1877,9 +1752,9 @@ body {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   overflow: hidden;
-  width: 768px;
+  width: 800px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 500px;
 }
 
 .content1 form {
@@ -2143,7 +2018,6 @@ fa-sun .fa-sun {
 }
 .floating-label-group input[type=submit] {
   background-color: #116798;
-  border: solid 2px black;
   color: white;
   cursor: pointer;
   margin-bottom: 20px;
@@ -2175,6 +2049,9 @@ fa-sun .fa-sun {
   background-color: #ecf0f1;
   border-radius: 5px;
 }
+#senhaInput img {
+  max-width: 20px;
+}
 #senhaInput input {
   border: none;
 }
@@ -2182,6 +2059,9 @@ fa-sun .fa-sun {
 #senhaInput2 {
   background-color: #ecf0f1;
   border-radius: 5px;
+}
+#senhaInput2 img {
+  max-width: 20px;
 }
 #senhaInput2 input {
   border: none;
