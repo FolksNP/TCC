@@ -74,6 +74,7 @@
             </div>
 				<label class="floating-label">Confirme Sua Senha</label>
 			</div><p id="confira" style="display: none; color:#FF4343">CONFIRA SUA SENHA</p>
+            <input type="file" name="foto">
             <div class="floating-label-group">
 			<input type="submit" value="Cadastrar-se" class="form-control" id="cadastroBtn"  onclick="btnDisable()"/>
 				

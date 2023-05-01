@@ -3,12 +3,13 @@ extract($_POST);
 extract($_FILES);
 $password = md5($password);
 require('connect.php');
-
+session_start();
 
 if($foto['size']> 0){
 
    if($foto_anterior   == "") {
-        $arquivo = "imgs/".md5(time()).".jpg";
+       $arquivo = "../imgs/".md5(time()).".jpg";
+      
     }else{
         $arquivo = $foto_anterior;
     }
@@ -19,14 +20,15 @@ if($foto['size']> 0){
              
 
 if(mysqli_query($con,"UPDATE `alunos` SET  `nomeAluno` = '$nome', `fotoAluno` = '$arquivo', `emailAluno` = '$email',
- `senhaAluno` = '$password' WHERE `alunos`.`codAluno` = '$codigo';
-")){
+ `senhaAluno` = '$password' WHERE `alunos`.`codAluno` = '$codigo';")){
     $msg = "Informações alteradas com sucesso!";
 }else{
         $msg = "Erro ao gravar";
 }
-    
+echo $arquivo;
 
-session_start();
+echo $msg;
+var_dump($arquivo);
 $_SESSION['msg'] = $msg;
+$_SESSION['arquivo'] = $arquivo;
 header("location:telaPerfilProfessor.php");

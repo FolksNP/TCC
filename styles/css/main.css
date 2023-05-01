@@ -7,7 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -199,8 +198,8 @@ input:checked + .slider:before {
   color: #156aaa;
 }
 .navbarAzul .perfilImg img {
-  max-width: 35px;
-  max-height: 35px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   border: solid 2px #116798;
 }
@@ -2068,206 +2067,52 @@ fa-sun .fa-sun {
   background: none;
 }
 
-::selection {
-  color: #fff;
-  background: #d43f8d;
-}
-
-.containerCurso {
-  width: 330px;
-  background: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 50px 35px 10px 35px;
-}
-
-.containerCurso header {
-  font-size: 35px;
-  font-weight: 600;
-  margin: 0 0 30px 0;
-}
-
-.containerCurso .form-outer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.containerCurso .form-outer form {
-  display: flex;
-  width: 400%;
-}
-
-.form-outer form .page {
-  width: 25%;
-  transition: margin-left 0.3s ease-in-out;
-}
-
-.form-outer form .page .title {
-  text-align: left;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.form-outer form .page .field {
-  width: 330px;
-  height: 45px;
-  margin: 45px 0;
-  display: flex;
-  position: relative;
-}
-
-form .page .field .label {
-  position: absolute;
-  top: -30px;
-  font-weight: 500;
-}
-
-form .page .field input {
-  height: 100%;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-left: 15px;
-  font-size: 18px;
-}
-
-form .page .field select {
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-form .page .field button {
-  width: 100%;
-  height: calc(100% + 5px);
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
   border: none;
-  background: #d33f8d;
-  margin-top: -20px;
-  border-radius: 5px;
-  color: #fff;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.5s ease;
 }
 
-form .page .field button:hover {
-  background: #000;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-form .page .btns button {
-  margin-top: -20px !important;
-}
-
-form .page .btns button.prev {
-  margin-right: 3px;
-  font-size: 17px;
-}
-
-form .page .btns button.next {
-  margin-left: 3px;
-}
-
-.containerCurso .progress-bar {
-  display: flex;
-  margin: 40px 0;
-  user-select: none;
-}
-
-.containerCurso .progress-bar .step {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
   position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-.containerCurso .progress-bar .step p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #000;
-  margin-bottom: 8px;
-  transition: 0.2s;
-}
-
-.progress-bar .step p.active {
-  color: blue;
-}
-
-.progress-bar .step .bullet {
-  height: 25px;
-  width: 25px;
-  border: 2px solid #000;
   display: inline-block;
-  border-radius: 50%;
-  position: relative;
-  transition: 0.2s;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
 }
 
-.progress-bar .step .bullet.active {
-  border-color: #d43f8d;
-  background: #d43f8d;
-}
-
-.progress-bar .step .bullet span {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.progress-bar .step .bullet.active span {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
   display: none;
-}
-
-.progress-bar .step .bullet:before,
-.progress-bar .step .bullet:after {
   position: absolute;
-  content: "";
-  bottom: 11px;
-  right: -51px;
-  height: 3px;
-  width: 44px;
-  background: #262626;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.progress-bar .step .bullet.active:after {
-  background: #d43f8d;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: animate 0.3s linear forwards;
-}
-
-@keyframes animate {
-  100% {
-    transform: scaleX(1);
-  }
-}
-.progress-bar .step:last-child .bullet:before,
-.progress-bar .step:last-child .bullet:after {
-  display: none;
-}
-
-.progress-bar .step p.active {
-  color: #d43f8d;
-  transition: 0.2s linear;
-}
-
-.progress-bar .step .check {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  font-size: 15px;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
-.progress-bar .step .check.active {
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  color: #fff;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
 
 .container-sobre {
