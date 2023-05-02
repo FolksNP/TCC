@@ -23,8 +23,8 @@
                 <div class="listagem">
                     <h2>Mapa da Plataforma</h2>
                     <ul id="linkFooter" >
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Cursos</a></li>
+                        <li><a href="inicial.php">Home</a></li>
+                        <li><a href="cursos.php">Cursos</a></li>
                         <li><a href="">Certificados</a></li>
                         <li><a href="">Professores</a></li>
                         <li><a href="">Working Togheter</a></li>
@@ -34,9 +34,9 @@
                     <h2>Links úteis</h2>
                     <ul id="linksUteis">
                         <li><a href="">Trabalhe Conosco</a></li>
-                        <li><a href="https://www.etecitaquera.com.br">Etec de Itaquera</a></li>
-                        <li><a href="https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/">Centro Paula Souza</a></li>
-                        <li><a href="https://www.saopaulo.sp.gov.br">Governo de São Paulo</a></li>
+                        <li><a href="https://www.etecitaquera.com.br" target="_blank">Etec de Itaquera</a></li>
+                        <li><a href="https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/" target="_blank">Centro Paula Souza</a></li>
+                        <li><a href="https://www.saopaulo.sp.gov.br" target="_blank">Governo de São Paulo</a></li>
                     </ul>
                 </div>
                 <div class="endereco" >

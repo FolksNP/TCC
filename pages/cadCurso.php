@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="../styles/css/main.css">
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
-
-  <title>Multi Step Form</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../imgs/logoTCC.png">
+  <title>Patrono Neves - Cursos</title>
 </head>
 <body>
   <?php 
