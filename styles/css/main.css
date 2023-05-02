@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/itc-benguiat-std");
 * {
   margin: 0;
   padding: 0;
@@ -2067,52 +2068,96 @@ fa-sun .fa-sun {
   background: none;
 }
 
-.dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+.allPageCadCurso {
+  font-family: "ITC Benguiat Std", sans-serif;
+  font-style: italic;
+  background-color: white;
+  margin: 5%;
+  border-radius: 20px;
+  padding: 3%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
 }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.allPageCadCurso img {
+  max-width: 100px;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+.allPageCadCurso .topCadCurso {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.allPageCadCurso .centerCadCurso {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.allPageCadCurso .centerCadCurso .btnCurso {
+  width: 50%;
+  height: 45px;
+  margin: 45px;
+  --border-color: linear-gradient(-45deg, #00ff9d, #0367aa, #00fffb);
+  --border-width: .125em;
+  --curve-size: .5em;
+  --blur: 30px;
+  --bg: #080312;
+  --color: #afffff;
+  color: var(--color);
+  /* use position: relative; so that BG is only for .btnCurso */
   position: relative;
-  display: inline-block;
+  isolation: isolate;
+  display: inline-grid;
+  place-content: center;
+  padding: 0.5em 1.5em;
+  font-size: 17px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  clip-path: polygon(0% var(--curve-size), var(--curve-size) 0, 100% 0, 100% calc(100% - var(--curve-size)), calc(100% - var(--curve-size)) 100%, 0 100%);
+  transition: color 250ms;
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
+.allPageCadCurso .centerCadCurso .btnCurso::after,
+.allPageCadCurso .centerCadCurso .btnCurso::before {
+  content: "";
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  inset: 0;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.allPageCadCurso .centerCadCurso .btnCurso::before {
+  background: var(--border-color);
+  background-size: 300% 300%;
+  animation: move-bg7234 5s ease infinite;
+  z-index: -2;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
+@keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%;
+  }
+  50% {
+    background-position: 70% 100%;
+  }
+  100% {
+    background-position: 31% 0%;
+  }
 }
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-  display: block;
+.allPageCadCurso .centerCadCurso .btnCurso::after {
+  background: var(--bg);
+  z-index: -1;
+  clip-path: polygon(var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5), calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)), var(--border-width) calc(100% - var(--border-width)));
+  transition: clip-path 500ms;
+}
+.allPageCadCurso .centerCadCurso .btnCurso:where(:hover, :focus)::after {
+  clip-path: polygon(calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) var(--border-width), calc(100% - var(--border-width)) calc(100% - (var(--curve-size) + var(--border-width) * 0.5)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)), calc(100% - (var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+  transition: 200ms;
+}
+.allPageCadCurso .centerCadCurso .btnCurso:where(:hover, :focus) {
+  color: #fff;
 }
 
 .container-sobre {

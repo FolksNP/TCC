@@ -13,14 +13,21 @@
     include('header.php');
     ?>
   <!-- Trigger/Open The Modal -->
-  <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+ <div class="allPageCadCurso">
+    <div class="topCadCurso">
+      <img src="../imgs/note.png" alt="">
+      <img src="../imgs/lampada.png" alt="">
+    </div>
+    <div class="centerCadCurso">
+      <h2>Distribua seu conhecimento e eleve a educação à outro nível!</h2>
+      <button class="btnCurso">Cadastrar Curso</button>
+      
+    </div>
+    <div class="bottomCadCurso">
+      <img src="../imgs/feed.png" alt="">
+    </div>
+
+ </div>
 <?php include('footer.php') ?>
 <script src="../scripts/cadCurso.js"></script>
 </body>
