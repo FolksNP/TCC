@@ -5,7 +5,7 @@
             $busca = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$codigo'");
             $perfil = mysqli_fetch_array($busca);
     ?>
-<div class="direitaPerfilProfessor" id="direitaPerfilAlterar">
+<div class="direitaPerfil" id="direitaPerfilAlterar">
          <form class="alterLogin" action="alterarPerfil.act.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="codigo" value="<?php echo @$perfil['codAluno']; ?>">
             <input type="hidden" name="foto_anterior" value="<?php echo @$perfil['fotoAluno']; ?>">

@@ -1588,61 +1588,61 @@ body {
 }
 
 @media screen and (max-width: 740px) {
-  .pagTodaPerfilProfessor {
+  .pagTodaPerfil {
     display: flex;
     flex-direction: column;
     background: none;
   }
-  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+  .pagTodaPerfil .colunaEsquerdaPerfil {
     justify-content: center;
     height: 100%;
     width: 100%;
     margin: 0;
     justify-content: center;
   }
-  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
+  .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes {
     display: flex;
     flex-direction: row;
     background: none;
   }
-  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div {
+  .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes div {
     border: none;
   }
-  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor div p {
+  .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes div p {
     display: none;
     border: none;
   }
-  .pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor a {
+  .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes a {
     display: none;
   }
-  .pagTodaPerfilProfessor .direitaPerfilProfessor {
+  .pagTodaPerfil .direitaPerfil {
     margin: 0;
     width: 100%;
     padding: 0;
   }
-  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor {
+  .pagTodaPerfil .direitaPerfil .nomeEmail {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
   }
-  .pagTodaPerfilProfessor .direitaPerfilProfessor .nomeEmailProfessor p {
+  .pagTodaPerfil .direitaPerfil .nomeEmail p {
     width: 100%;
     text-align: center;
     padding: 10px 0px;
   }
-  .pagTodaPerfilProfessor .cursandoTerminados {
+  .pagTodaPerfil .cursandoTerminados {
     display: flex;
     flex-direction: column;
   }
-  .pagTodaPerfilProfessor .cursandoTerminados .terminados img {
+  .pagTodaPerfil .cursandoTerminados .terminados img {
     width: 80px;
     height: 80px;
   }
-  .pagTodaPerfilProfessor .cursandoTerminados .cursando img {
+  .pagTodaPerfil .cursandoTerminados .cursando img {
     width: 80px;
     height: 80px;
   }
-  .pagTodaPerfilProfessor .cursandoTerminados .resp-perg-aulas-exe {
+  .pagTodaPerfil .cursandoTerminados .resp-perg-aulas-exe {
     display: flex;
     flex-direction: column;
     columns: 1;

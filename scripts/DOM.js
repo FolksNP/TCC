@@ -1,7 +1,7 @@
 function alterar(alterar){
-    alter = document.querySelector('#direitaPerfilProfessorInfs') ;
-    alterCursos = document.querySelector('#direitaPerfilProfessorCursos');
-    alterEstatisticas = document.querySelector('#direitaPerfilProfessorEst');
+    alter = document.querySelector('#direitaPerfilInfs') ;
+    alterCursos = document.querySelector('#direitaPerfilCursos');
+    alterEstatisticas = document.querySelector('#direitaPerfilEst');
     alterarPerfil = document.querySelector('#direitaPerfilAlterar');
 
     

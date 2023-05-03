@@ -538,18 +538,18 @@ p{
 
 
 @media screen and (max-width: 740px) {
-    .pagTodaPerfilProfessor{
+    .pagTodaPerfil{
         display: flex;
         flex-direction: column;
        background: none;
        
-        .colunaEsquerdaPerfilProfessor{
+        .colunaEsquerdaPerfil{
             justify-content: center;
             height: 100%;
             width: 100%;
             margin: 0;
             justify-content: center;
-            .listaAcoesProfessor{
+            .listaAcoes{
                 display: flex;
                 flex-direction: row;
                 background: none;
@@ -566,8 +566,8 @@ p{
                 }
             }
         }
-        .direitaPerfilProfessor{
-            .nomeEmailProfessor{
+        .direitaPerfil{
+            .nomeEmail{
                 
                 margin-top: 40px;
                 display: flex;
