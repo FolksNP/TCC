@@ -21,13 +21,16 @@
     <div class="centerCadCurso">
       <h2>Distribua seu conhecimento e eleve a educação à outro nível!</h2>
       <button class="btnCurso">Cadastrar Curso</button>
-      
     </div>
     <div class="bottomCadCurso">
       <img src="../imgs/feed.png" alt="">
     </div>
-
+     <div class="pf-frase" style="display: flex">
+         <h3 style="font-weight: unset">"Quem ensina aprende ao ensinar. E quem aprende ensina ao aprender." - Paulo Freire</h3>
+     </div>
  </div>
+
+
 <?php include('footer.php') ?>
 <script src="../scripts/cadCurso.js"></script>
 </body>
