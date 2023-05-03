@@ -2159,6 +2159,20 @@ fa-sun .fa-sun {
 .allPageCadCurso .centerCadCurso .btnCurso:where(:hover, :focus) {
   color: #fff;
 }
+.allPageCadCurso .pf-frase {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  border: 3px solid #0367aa;
+  padding: 10px;
+  border-radius: 1px;
+  background-color: #080312;
+}
+.allPageCadCurso .pf-frase h3 {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
 
 .container-sobre {
   display: flex;
@@ -2184,6 +2198,29 @@ fa-sun .fa-sun {
   width: 1280px;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .paulo-freire {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .paulo-freire {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .paulo-freire {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
 .paulo-freire .lado-esquerdo {
   width: 40%;
   padding: 10px;
@@ -2194,10 +2231,32 @@ fa-sun .fa-sun {
   width: 100%;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .paulo-freire .lado-esquerdo {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .paulo-freire .lado-esquerdo {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
 .paulo-freire .lado-direito {
   padding: 15px;
   width: 60%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .paulo-freire .lado-direito {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .paulo-freire .lado-direito {
+    width: 100%;
+  }
 }
 .paulo-freire .lado-direito #paulo-freire-texto {
   position: relative;
@@ -2208,12 +2267,41 @@ fa-sun .fa-sun {
   line-height: 1.8rem;
   text-indent: 4rem;
 }
+@media (max-width: 1280px) {
+  .paulo-freire .lado-direito #paulo-freire-texto {
+    top: 0%;
+  }
+}
 
 .patrono-neves {
   margin: 0 auto;
   display: flex;
   width: 1280px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .patrono-neves {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 900px) {
+  .patrono-neves {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1280px) {
+  .patrono-neves {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+  }
+}
+.patrono-neves p.txt-indent {
+  text-indent: 4rem;
 }
 .patrono-neves .lado-direito {
   width: 40%;
@@ -2228,10 +2316,59 @@ fa-sun .fa-sun {
   top: 20%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .patrono-neves .lado-direito {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .patrono-neves .lado-direito {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 1280px) {
+  .patrono-neves .lado-direito {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
 .patrono-neves .lado-esquerdo {
   padding: 15px;
   width: 60%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .patrono-neves .lado-esquerdo {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .patrono-neves .lado-esquerdo {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .patrono-neves .lado-esquerdo {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .patrono-neves .lado-esquerdo h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .patrono-neves .lado-esquerdo h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 .patrono-neves .lado-esquerdo #paulo-freire-texto {
   position: relative;
@@ -2244,6 +2381,16 @@ fa-sun .fa-sun {
 }
 .patrono-neves .lado-esquerdo .cards {
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .patrono-neves .lado-esquerdo .cards {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .patrono-neves .lado-esquerdo .cards {
+    width: 100%;
+  }
 }
 .patrono-neves .lado-esquerdo .cards .missao, .patrono-neves .lado-esquerdo .cards .visao, .patrono-neves .lado-esquerdo .cards .valores {
   text-align: justify;

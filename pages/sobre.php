@@ -11,9 +11,8 @@
     
     <?php include('header.php');?>
 
-    <!-- 
-        
-        Superior: Header Posterior: Footer
+    <!--
+    Superior: Header Posterior: Footer
     aqui será composto de três conteúdos, o primeiro vai ser sobre o paulo freire, o segundo é sobre a patrono neves e terceiro sobre o projeto
 
     Paulo freire: aqui vamos contar um pouco sobre sua história, e seus trabalhos na educação
@@ -41,14 +40,14 @@
             <div class="cards">
                 <div class="missao">
                     <h2>Nossa missão</h2>
-                    <p>Nossa missão é levar o ensino de disciplinas menos divulgadas para o grande público com qualidade e de maneira gratuita, isto é, criar um ambiente agradável e seguro para o aprendizado de matérias menos difundidas. Procurando atender um público com necessidades mais específicas enquanto se mantém interativo e interessante para o usuário.
+                    <p class="txt-indent">Nossa missão é levar o ensino de disciplinas menos divulgadas para o grande público com qualidade e de maneira gratuita, isto é, criar um ambiente agradável e seguro para o aprendizado de matérias menos difundidas. Procurando atender um público com necessidades mais específicas enquanto se mantém interativo e interessante para o usuário.
                     O principal benefício que a nossa empresa tem a oferecer são aulas de áreas de conhecimento menos divulgadas, pois nos focamos em fortalecer justamente no que as outras empresas não focam, como áreas de cultura, economia, tipografia etc.
                     O segundo benefício que oferecemos é a interatividade no estudo, de maneira a tornar o aprendizado mais dinâmico e agradável. Para isso planejamos criar ferramentas adaptáveis que aumentem o conforto dos usuários e o dinamismo das atividades.
                     </p>
                 </div>
                 <div class="visao">
                     <h2>Nossa visão</h2>
-                    <p>A visão da nossa empresa é única e objetiva estabelecer uma boa educação para futuros trabalhadores, pretendemos explorar as habilidades e conhecimento inexplorados das pessoas. Queremos que nossos clientes possam se encontrar profissionalmente na área em que desejam com uma posição de destaque.</p>
+                    <p class="txt-indent">A visão da nossa empresa é única e objetiva estabelecer uma boa educação para futuros trabalhadores, pretendemos explorar as habilidades e conhecimento inexplorados das pessoas. Queremos que nossos clientes possam se encontrar profissionalmente na área em que desejam com uma posição de destaque.</p>
                 </div>
                 <div class="valores">
                     <h2>Nossos valores</h2>
