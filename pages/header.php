@@ -37,11 +37,11 @@
             }
                else{
                    
-                echo "<a href=telaPerfilProfessor.php?cod=$perfil[codAluno]> <p class=perfilImg> <img src= $_SESSION[foto] class=perfil> </p></a>";
+                echo "<a href=telaPerfil.php?cod=$perfil[codAluno]> <p class=perfilImg> <img src= $_SESSION[foto] class=perfil> </p></a>";
                 
             }
              ?>
-                    <!-- <p class="perfilImg"><a href="../pages/telaPerfilProfessor.php"><img src="../imgs/rony.jpg" alt=""></a></p> -->
+                    <!-- <p class="perfilImg"><a href="../pages/telaPerfil.php"><img src="../imgs/rony.jpg" alt=""></a></p> -->
                 </div>
                 <div class="link-cadastrar">
                 <?php
@@ -62,7 +62,7 @@
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
                 <li><a href="../pages/sobre.php">Sobre nós</a></li>
-                <li><a href="../pages/telaPerfilProfessor.php">Suporte</a></li>
+                <li><a href="../pages/telaPerfil.php">Suporte</a></li>
             </ul>
         </div>
     </div>

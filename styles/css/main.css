@@ -1139,7 +1139,7 @@ body {
   box-sizing: border-box;
 }
 
-.pagTodaPerfilProfessor {
+.pagTodaPerfil {
   font-family: "Fira Sans", sans-serif;
   margin: 20px;
   border-radius: 20px;
@@ -1147,7 +1147,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor {
+.pagTodaPerfil .colunaEsquerdaPerfil {
   width: 30%;
   background-color: white;
   margin: 10px;
@@ -1156,15 +1156,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit {
+.pagTodaPerfil .colunaEsquerdaPerfil .edit {
   display: flex;
   flex-direction: row;
   margin: 5px 0px;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .edit img {
+.pagTodaPerfil .colunaEsquerdaPerfil .edit img {
   max-width: 20px;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor {
+.pagTodaPerfil .colunaEsquerdaPerfil .fotoPerfil {
   padding: 10px;
   background-color: #f3f3f3;
   margin: 10px;
@@ -1175,19 +1175,19 @@ body {
   justify-content: center;
   text-align: center;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .fotoPerfilProfessor > img {
+.pagTodaPerfil .colunaEsquerdaPerfil .fotoPerfil > img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor {
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #f3f3f3;
   padding-bottom: 5px;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor > div {
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes > div {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -1196,13 +1196,13 @@ body {
   width: 100%;
   cursor: pointer;
 }
-.pagTodaPerfilProfessor .colunaEsquerdaPerfilProfessor .listaAcoesProfessor img {
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes img {
   width: 30px;
   height: 30px;
   margin: 5px;
 }
 
-.direitaPerfilProfessor {
+.direitaPerfil {
   margin: 10px;
   margin-left: 50px;
   border-radius: 20px;
@@ -1211,7 +1211,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.direitaPerfilProfessor .alterLogin {
+.direitaPerfil .alterLogin {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -1219,41 +1219,41 @@ body {
   width: 100%;
   align-items: center;
 }
-.direitaPerfilProfessor .alterLogin .arquivoPerfil {
+.direitaPerfil .alterLogin .arquivoPerfil {
   display: none;
 }
-.direitaPerfilProfessor .nomeEmailProfessor {
+.direitaPerfil .nomeEmail {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
 }
-.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(1) {
+.direitaPerfil .nomeEmail .nomePerfil :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilProfessor .nomeEmailProfessor .nomePerfilProfessor :nth-child(2) {
+.direitaPerfil .nomeEmail .nomePerfil :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .emailPerfilProfessor :nth-child(1) {
+.direitaPerfil .emailPerfil :nth-child(1) {
   margin-left: 5px;
 }
-.direitaPerfilProfessor .emailPerfilProfessor :nth-child(2) {
+.direitaPerfil .emailPerfil :nth-child(2) {
   background-color: #f3f3f3;
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .estudosProfessor {
+.direitaPerfil .estudos {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.direitaPerfilProfessor .estudosProfessor .estudosProfessorTxt {
+.direitaPerfil .estudos .estudosTxt {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .estudosProfessor .cursandoTerminados {
+.direitaPerfil .estudos .cursandoTerminados {
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -1262,40 +1262,40 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.direitaPerfilProfessor .estudosProfessor .cursandoTerminados p {
+.direitaPerfil .estudos .cursandoTerminados p {
   margin-bottom: 10px;
 }
-.direitaPerfilProfessor .estudosProfessor .cursando {
+.direitaPerfil .estudos .cursando {
   text-align: center;
 }
-.direitaPerfilProfessor .estudosProfessor .cursando img {
+.direitaPerfil .estudos .cursando img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .estudosProfessor .terminados {
+.direitaPerfil .estudos .terminados {
   text-align: center;
 }
-.direitaPerfilProfessor .estudosProfessor .terminados img {
+.direitaPerfil .estudos .terminados img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .estatProfessor .estatProfessorTxt {
+.direitaPerfil .estat .estatTxt {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe {
+.direitaPerfil .estat .resp-perg-aulas-exe {
   background-color: white;
   display: flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor {
+.direitaPerfil .estat .resp-perg-aulas-exe .estPerfil {
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
@@ -1303,38 +1303,38 @@ body {
   margin: 5px;
   padding: 5px;
 }
-.direitaPerfilProfessor .estatProfessor .resp-perg-aulas-exe .estPerfilProfessor p {
+.direitaPerfil .estat .resp-perg-aulas-exe .estPerfil p {
   margin-top: 5px;
 }
-.direitaPerfilProfessor .descProfessor :nth-child(1) {
+.direitaPerfil .desc :nth-child(1) {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .descProfessor :nth-child(2) {
+.direitaPerfil .desc :nth-child(2) {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
 }
-.direitaPerfilProfessor .redeSociaisProfessor {
+.direitaPerfil .redeSociais {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.direitaPerfilProfessor .redeSociaisProfessor img {
+.direitaPerfil .redeSociais img {
   width: 50px;
   height: 50px;
 }
-.direitaPerfilProfessor .cursoProfessorTopo {
+.direitaPerfil .cursoTopo {
   width: 100%;
   background-color: #ffffff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
-.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor {
+.direitaPerfil .cursoTopo .txtCursos {
   align-items: center;
   width: 100%;
   display: flex;
@@ -1343,37 +1343,37 @@ body {
   margin-left: 30px;
   color: black;
 }
-.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor :nth-child(1) {
+.direitaPerfil .cursoTopo .txtCursos :nth-child(1) {
   border-bottom: solid 2px #116798;
   background-color: #f3f3f3;
   height: 100%;
   width: 50%;
   margin-left: -30px;
 }
-.direitaPerfilProfessor .cursoProfessorTopo .txtCursosProfessor p > img {
+.direitaPerfil .cursoTopo .txtCursos p > img {
   max-width: 35px;
   margin: 5px;
   margin-right: 40px;
   border: solid 2px #116798;
   border-radius: 5px;
 }
-.direitaPerfilProfessor .imgsCursosProfessor > img {
+.direitaPerfil .imgsCursos > img {
   width: 100px;
   margin: 10px;
   height: 100px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .tudo-videos-atvd {
+.direitaPerfil .tudo-videos-atvd {
   display: flex;
 }
-.direitaPerfilProfessor .tudo-videos-atvd :nth-child(1) {
+.direitaPerfil .tudo-videos-atvd :nth-child(1) {
   border-bottom: solid 2px #116798;
 }
-.direitaPerfilProfessor .tudo-videos-atvd p {
+.direitaPerfil .tudo-videos-atvd p {
   margin: 10px 5px 5px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso {
+.direitaPerfil .conteudosTelaCursos .topoConteudosCurso {
   display: flex;
   align-items: center;
   background-color: white;
@@ -1381,7 +1381,7 @@ body {
   padding: 5px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=text] {
+.direitaPerfil .conteudosTelaCursos .topoConteudosCurso input[type=text] {
   width: 400px;
   height: 30px;
   border-radius: 5px;
@@ -1393,11 +1393,11 @@ body {
   -moz-box-shadow: 3px 3px 0px 0px #116798;
   box-shadow: 3px 3px 0px 0px #116798;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso input[type=checkbox] {
+.direitaPerfil .conteudosTelaCursos .topoConteudosCurso input[type=checkbox] {
   height: 30px;
   width: 30px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso > p {
+.direitaPerfil .conteudosTelaCursos .topoConteudosCurso > p {
   background-color: #f3f3f3;
   align-items: center;
   text-align: center;
@@ -1406,10 +1406,10 @@ body {
   border-radius: 10px;
   border-left: solid 2px #116798;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor .topoConteudosCurso img {
+.direitaPerfil .conteudosTelaCursos .topoConteudosCurso img {
   max-width: 25px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details {
+.direitaPerfil .conteudosTelaCursos details {
   cursor: pointer;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -1419,11 +1419,11 @@ body {
   user-select: none;
   display: flex;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details .scrollCursos {
+.direitaPerfil .conteudosTelaCursos details .scrollCursos {
   height: 200px;
   overflow-y: scroll;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details p {
+.direitaPerfil .conteudosTelaCursos details p {
   display: flex;
   background-color: #116798;
   margin: 10px 0px;
@@ -1431,42 +1431,42 @@ body {
   align-items: center;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details p input[type=checkbox] {
+.direitaPerfil .conteudosTelaCursos details p input[type=checkbox] {
   height: 50px;
   width: 50px;
   border: none;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details summary {
+.direitaPerfil .conteudosTelaCursos details summary {
   background-color: white;
   margin: 10px 0px;
   padding: 10px;
   border-radius: 10px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details img {
+.direitaPerfil .conteudosTelaCursos details img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
   margin: 0px 10px;
 }
-.direitaPerfilProfessor .conteudosTelaCursosProfessor details a {
+.direitaPerfil .conteudosTelaCursos details a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: flex;
 }
-.direitaPerfilProfessor .topoProfessorEst {
+.direitaPerfil .topoEst {
   display: flex;
   justify-content: space-between;
 }
-.direitaPerfilProfessor .topoProfessorEst :nth-child(1) p {
+.direitaPerfil .topoEst :nth-child(1) p {
   font-size: 20px;
   border-bottom: solid 2px #116798;
 }
-.direitaPerfilProfessor .topoProfessorEst :nth-child(2) {
+.direitaPerfil .topoEst :nth-child(2) {
   height: 30px;
   align-items: center;
   display: flex;
 }
-.direitaPerfilProfessor .topoProfessorEst :nth-child(2) img {
+.direitaPerfil .topoEst :nth-child(2) img {
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -1474,7 +1474,7 @@ body {
   margin-left: -3px;
   border-radius: 5px;
 }
-.direitaPerfilProfessor .topoProfessorEst :nth-child(2) input {
+.direitaPerfil .topoEst :nth-child(2) input {
   border: none;
   outline: none;
   height: 100%;
@@ -1483,42 +1483,42 @@ body {
   padding-left: 5px;
   width: 200px;
 }
-.direitaPerfilProfessor .selecioneCursoProfessor {
+.direitaPerfil .selecioneCurso {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 }
-.direitaPerfilProfessor .selecioneCursoProfessor :nth-child(1) {
+.direitaPerfil .selecioneCurso :nth-child(1) {
   font-size: 20px;
 }
-.direitaPerfilProfessor .selecioneCursoProfessor .selecioneCursoProfessorImg {
+.direitaPerfil .selecioneCurso .selecioneCursoImg {
   padding: 10px;
   background-color: white;
   border-radius: 15px;
 }
-.direitaPerfilProfessor .selecioneCursoProfessor img {
+.direitaPerfil .selecioneCurso img {
   width: 80px;
   height: 80px;
   border-radius: 15px;
 }
-.direitaPerfilProfessor .estCursosProfessor {
+.direitaPerfil .estCursos {
   display: flex;
   flex-direction: column;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorTxt {
+.direitaPerfil .estCursos .estAlunos .estAlunosTxt {
   width: 100%;
   text-align: center;
   font-size: 20px;
   margin: 15px 0px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs {
+.direitaPerfil .estCursos .estAlunos .estAlunosInfs {
   column-count: 2;
   gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAlunosProfessor .estAlunosProfessorInfs div {
+.direitaPerfil .estCursos .estAlunos .estAlunosInfs div {
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
@@ -1526,20 +1526,20 @@ body {
   margin: 10px 0px;
   background-color: #f3f3f3;
 }
-.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorTxt {
+.direitaPerfil .estCursos .estViews .estViewsTxt {
   width: 100%;
   text-align: center;
   margin: 15px 0px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs {
+.direitaPerfil .estCursos .estViews .estViewsInfs {
   column-count: 2;
   gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estViewsProfessor .estViewsProfessorInfs div {
+.direitaPerfil .estCursos .estViews .estViewsInfs div {
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
@@ -1547,20 +1547,20 @@ body {
   margin: 10px 0px;
   background-color: #f3f3f3;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorTxt {
+.direitaPerfil .estCursos .estAvaliacoes .estAvaliacoesTxt {
   width: 100%;
   text-align: center;
   margin: 15px 0px;
   font-size: 20px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs {
+.direitaPerfil .estCursos .estAvaliacoes .estAvaliacoesInfs {
   column-count: 2;
   gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
 }
-.direitaPerfilProfessor .estCursosProfessor .estAvaliacoesProfessor .estAvaliacoesProfessorInfs > div {
+.direitaPerfil .estCursos .estAvaliacoes .estAvaliacoesInfs > div {
   display: flex;
   justify-content: space-between;
   background-color: #f3f3f3;
@@ -1568,14 +1568,14 @@ body {
   padding: 10px;
   margin: 10px 0px;
 }
-.direitaPerfilProfessor .graficosProfessor {
+.direitaPerfil .graficos {
   height: 100%;
   background-color: white;
   margin-top: 10px;
   border-radius: 15px;
   padding: 20px;
 }
-.direitaPerfilProfessor .graficosProfessor p {
+.direitaPerfil .graficos p {
   width: 100%;
   text-align: center;
   align-items: center;
@@ -1583,7 +1583,7 @@ body {
   font-size: 20px;
 }
 
-#direitaPerfilProfessorEst, #direitaPerfilProfessorCursos, #direitaPerfilAlterar {
+#direitaPerfilEst, #direitaPerfilCursos, #direitaPerfilAlterar {
   display: none;
 }
 

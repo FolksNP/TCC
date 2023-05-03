@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.pagTodaPerfil{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    .colunaEsquerdaPerfil{
+        width: 30%;
+        background-color: white;
+        margin: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       .edit{
+           display: flex;
+           flex-direction: row;
+           margin: 5px 0px;
+           img{
+               max-width: 20px;
+           }
+       }
+        .fotoPerfil{
+            padding: 10px;
+            background-color: #f3f3f3;
+            margin: 10px;
+            border-radius: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            >img{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .listaAcoes{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #f3f3f3;
+            
+            padding-bottom: 5px;
+            >div{
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                border-bottom: solid 1px #156aaa;
+                width: 100%;
+                cursor: pointer;
+                
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 5px;
+            }
+        }
+
+
+    
+    }
+}
+
+.direitaPerfil{
+   // display: flex;
+   margin: 10px;
+   margin-left: 50px;
+   border-radius: 20px;
+  // background-color: white;
+   padding: 10px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   .alterLogin{
+       background-color: white;
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        
+        .arquivoPerfil{
+            display: none;
+        }
+   }
+   .nomeEmail{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    .nomePerfil{
+        :nth-child(1){
+            margin-left: 5px;
+        }
+    
+    :nth-child(2){
+        background-color: #f3f3f3;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    }
+   }
+   .emailPerfil{
+    :nth-child(1){
+        margin-left: 5px;
+    }
+
+:nth-child(2){
+    background-color: #f3f3f3;
+    padding: 5px;
+    border-radius: 10px;
+}
+}
+
+.estudos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    .estudosTxt{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .cursandoTerminados{
+        display: flex;
+      justify-content: space-around;
+        width: 100%;
+      background-color: white;
+      border-radius: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+    .cursando{
+        
+        text-align: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+    .terminados{
+        text-align: center;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+
+.estat{
+    
+    .estatTxt{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        
+    }
+    .resp-perg-aulas-exe{
+        background-color: white;
+       display: flex;
+       flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
+        .estPerfil{
+            display: flex;
+            justify-content: space-between;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            margin:5px;
+            padding: 5px;
+           p{
+            margin-top: 5px;
+           }
+        }
+    }
+}
+.desc{
+    :nth-child(1){
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    :nth-child(2){
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+}
+.redeSociais{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.cursoTopo{
+   width: 100%;
+   background-color: #ffffff;
+   //height: 10%;
+   border-radius: 20px;
+  
+   display: flex;
+   flex-direction: column;
+    .txtCursos {
+        :nth-child(1){
+           border-bottom: solid 2px $azul;
+           background-color: #f3f3f3;
+           height: 100%;
+           width: 50%;
+           margin-left: -30px;
+           
+        }
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-left: 30px;
+        color: black;
+        p >img{
+            max-width: 35px;
+           margin: 5px;
+           margin-right: 40px;
+           
+           border: solid 2px $azul;
+           border-radius: 5px;
+        }
+    }
+}
+.imgsCursos{
+    >img{
+        width: 100px;
+        margin: 10px;
+        height: 100px;
+        border-radius: 10px;
+    }
+}
+.tudo-videos-atvd{
+    display: flex;
+    :nth-child(1){
+        border-bottom: solid 2px $azul;
+    }
+    p{  
+        margin: 10px 5px  5px;
+        font-size: 20px;
+    }
+}
+
+.conteudosTelaCursos{
+    .topoConteudosCurso{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        justify-content: space-around;
+        padding: 5px;
+        border-radius: 10px;
+        input[type=text]{
+            width: 400px;
+            height: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;  
+            margin-right: 10px;
+            padding-left: 5px;
+            -webkit-box-shadow: 3px 3px 0px 0px $azul;
+-moz-box-shadow: 3px 3px 0px 0px $azul;
+box-shadow: 3px 3px 0px 0px $azul;
+        }
+        input[type=checkbox]{
+            height: 30px;
+            width: 30px;
+            
+        }
+        >p{
+            background-color: #f3f3f3;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            border-radius: 10px;
+            border-left: solid 2px $azul;
+        }
+        
+        img{
+            max-width: 25px;
+            
+        }
+    }
+   details{
+    cursor: pointer;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+    display: flex;
+    
+    .scrollCursos{
+    height: 200px;
+    overflow-y: scroll;
+    }
+p{
+   display: flex; 
+   background-color: $azul;
+   margin: 10px 0px;
+   padding: 10px;
+   align-items: center;
+   border-radius: 10px;
+  
+   input[type=checkbox]{
+    height: 50px;
+    width: 50px;
+    border: none;
+   }
+   
+}
+
+
+    summary{
+        background-color: white;
+        margin: 10px 0px;
+        padding: 10px;
+        border-radius: 10px;
+      
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 0px 10px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: flex;
+    }
+
+
+   }
+
+
+}
+
+.topoEst{
+    display: flex;
+    justify-content: space-between;
+    :nth-child(1) p{
+        font-size: 20px;
+        border-bottom: solid 2px $azul;
+    }
+    :nth-child(2) {
+        height: 30px;
+        align-items: center;
+        
+       // background-color: #ffffff;
+        display: flex;
+    
+    img{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        background-color: #d7d7d7;
+        margin-left: -3px;
+        border-radius: 5px;
+    }
+
+    input{
+        border: none;
+        outline: none;
+        height: 100%;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        padding-left: 5px;
+        width: 200px;
+    }
+}
+
+}
+.selecioneCurso{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    :nth-child(1){
+        font-size: 20px;
+    }
+    .selecioneCursoImg{
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+        
+    }
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+    }
+}
+.estCursos{
+    display: flex;
+    flex-direction: column;
+    .estAlunos{
+
+        .estAlunosTxt{
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            margin: 15px 0px;
+        }
+        .estAlunosInfs{
+
+            column-count: 2;
+            gap: 150px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 10px 0px;
+                background-color: #f3f3f3;
+                
+            }
+           
+        }
+    }
+    .estViews{
+        .estViewsTxt{
+            width: 100%;
+            text-align: center;
+            margin: 15px 0px;
+            font-size: 20px;
+
+        }
+        .estViewsInfs{
+            // display: flex;
+            column-count: 2;
+            gap: 150px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 10px 0px;
+                background-color: #f3f3f3;
+            }
+        }
+    }
+    .estAvaliacoes{
+        .estAvaliacoesTxt{
+            width: 100%;
+            text-align: center;
+            margin: 15px 0px;
+            font-size: 20px;
+        }
+        .estAvaliacoesInfs{
+            // display: flex;
+            column-count: 2;
+            gap: 150px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            >div{
+                display: flex;
+                justify-content: space-between;
+                background-color: #f3f3f3;
+                border-radius: 15px;
+                padding: 10px;
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+.graficos{
+    height: 100%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+
+    }
+}
+}
+#direitaPerfilEst, #direitaPerfilCursos, #direitaPerfilAlterar{
+    display: none;
+    
+}
+
+
+
+
+
+
+
+//aq começa o media screen para mobile
+
+
+
+
+@media screen and (max-width: 740px) {
+    .pagTodaPerfilProfessor{
+        display: flex;
+        flex-direction: column;
+       background: none;
+       
+        .colunaEsquerdaPerfilProfessor{
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            justify-content: center;
+            .listaAcoesProfessor{
+                display: flex;
+                flex-direction: row;
+                background: none;
+              
+                div{
+                    border: none;
+                    p{
+                    display: none;
+                    border: none;      
+                }
+            }
+                a{
+                    display: none;
+                }
+            }
+        }
+        .direitaPerfilProfessor{
+            .nomeEmailProfessor{
+                
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                p{
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px 0px;
+                }
+            }
+            margin: 0;
+            width: 100%;
+            padding: 0;
+        }
+        .cursandoTerminados{
+            display: flex;
+            flex-direction: column;
+            .terminados{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .cursando{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .resp-perg-aulas-exe{
+            display: flex;
+            flex-direction: column;
+            columns: 1;
+            gap: 0;
+        }
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
