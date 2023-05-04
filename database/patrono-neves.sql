@@ -2,16 +2,16 @@
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema PatronoNeves
+-- Database PatronoNeves
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema PatronoNeves
+-- Database PatronoNeves
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `PatronoNeves` DEFAULT CHARACTER SET utf8 ;
+CREATE DATABASE IF NOT EXISTS `PatronoNeves` DEFAULT CHARACTER SET utf8 ;
 USE `PatronoNeves` ;
 
 -- -----------------------------------------------------
@@ -20,6 +20,7 @@ USE `PatronoNeves` ;
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Cursos` (
   `codCurso` INT NOT NULL AUTO_INCREMENT,
   `avaliacaoMedia` DECIMAL ZEROFILL NOT NULL,
+  `capaCurso` VARCHAR(32) NOT NULL,
   `comentarios` VARCHAR(300) NOT NULL,
   `descCurso` VARCHAR(300) NOT NULL,
   `nomeCurso` VARCHAR(50) NOT NULL,
@@ -49,7 +50,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Seccoes` (
   `codSeccao` INT NOT NULL AUTO_INCREMENT,
   `curso` INT NOT NULL,
-  `secNome` VARCHAR(50) NOT NULL,
+  `numeracao` INT NOT NULL,
+  `secTitulo` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`codSeccao`),
   INDEX `curso_idx` (`curso` ASC),
   CONSTRAINT `fkCursoCod_Seccoes`
@@ -284,18 +286,32 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `PatronoNeves`.`Topicos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Topicos` (
+  `codTopicos` INT NOT NULL AUTO_INCREMENT,
+  `descTopicos` VARCHAR(120) NOT NULL,
+  `topicosNome` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`codTopicos`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `PatronoNeves`.`Suportes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Suportes` (
   `codSuporte` INT NOT NULL,
   `moderador` INT NOT NULL,
+  `topico` INT NOT NULL,
   `usuario` INT NOT NULL,
   `concluido` TINYINT NOT NULL,
   `desc` VARCHAR(300) NOT NULL,
   `disponivel` TINYINT NOT NULL,
+  `titulo` VARCHAR(40) NOT NULL,
   PRIMARY KEY (`codSuporte`),
   INDEX `mod_idx` (`moderador` ASC),
   INDEX `usuario_idx` (`usuario` ASC),
+  INDEX `fkTopicosCod_Suportes_idx` (`topico` ASC),
   CONSTRAINT `fkModCod_Suportes`
     FOREIGN KEY (`moderador`)
     REFERENCES `PatronoNeves`.`Moderadores` (`codMod`)
@@ -304,6 +320,11 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Suportes` (
   CONSTRAINT `fkUsuarioCod_Suportes`
     FOREIGN KEY (`usuario`)
     REFERENCES `PatronoNeves`.`Alunos` (`codAluno`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fkTopicosCod_Suportes`
+    FOREIGN KEY (`topico`)
+    REFERENCES `PatronoNeves`.`Topicos` (`codTopicos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -314,8 +335,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Tags` (
   `codTag` INT NOT NULL,
-  `desc` VARCHAR(120) NOT NULL,
-  `nomeTag` VARCHAR(45) NOT NULL,
+  `descTags` VARCHAR(120) NOT NULL,
+  `tagNome` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`codTag`))
 ENGINE = InnoDB;
 
@@ -348,8 +369,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Pacotes` (
   `codPacotes` INT NOT NULL,
-  `desc` VARCHAR(120) NOT NULL,
-  `pacoteNome` VARCHAR(45) NOT NULL,
+  `descPacotes` VARCHAR(120) NOT NULL,
+  `pacoteNome` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`codPacotes`))
 ENGINE = InnoDB;
 
