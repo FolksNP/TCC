@@ -40,14 +40,15 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="cadCursoModal">
-      <form action="">
+      <form action="cadCurso.act.php" method="post" enctype="multipart/form-data">
           <p><p>Nome do Curso</p><input type="text" name="nomeCurso"></p>
-          <p><p>Descrição do curso</p><textarea name="descCurso" id="" cols="30" rows="10"></textarea></p>
-          <p>Nível</p><select name="nivelCurso" id="">
+          <p><p>Descrição do curso</p><textarea name="descCurso" cols="30" rows="10"></textarea></p>
+          <p>Nível</p><select name="nivelCurso">
             <option value="Basico"> Básico</option>
             <option value="Intermediario"> Intermediário</option>
             <option value="Avançado">Avançado</option>
           </select>
+          <input type="file" name="capaCurso" value="Escolher Capa">
           <p><input type="submit" value="Cadastrar Curso"></p>
       </form>
       <img src="../imgs/imgCad.png" alt="">

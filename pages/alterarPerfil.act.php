@@ -31,4 +31,4 @@ echo $msg;
 var_dump($arquivo);
 $_SESSION['msg'] = $msg;
 $_SESSION['arquivo'] = $arquivo;
-header("location:telaPerfilProfessor.php");
+header("location:telaPerfil.php");
