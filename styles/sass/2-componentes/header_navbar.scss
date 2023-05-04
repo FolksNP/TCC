@@ -135,26 +135,77 @@ input:checked + .slider:before {
   }
 
 }
-
 .catNavbar{
   ul{
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  border-top: 2px solid $cor-primaria;
-  padding-top: 12px;
-  :nth-child(1){
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    border-top: 2px solid $cor-primaria;
+    padding-top: 12px;
+    :nth-child(1){
       color: #116798;
-  }
-      li {
-          font-size: 15px;
-          margin-bottom: 10px;
+    }
+    li {
+      font-size: 15px;
+      margin-bottom: 10px;
 
-      }
+    }
   }
 
   a{
-      text-decoration: none;
+    text-decoration: none;
   }
 }
+}
+
+/// hamburguer menu
+.topnav {
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+
+  @include mobile{
+    display: block;
+  }
+
+  @include monitor{
+    //display: none;
+  }
+
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a img {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 50px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+#hmb-menu{
+  width: 100%;
+  border-radius: 0px;
 }

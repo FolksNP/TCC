@@ -237,6 +237,51 @@ input:checked + .slider:before {
   text-decoration: none;
 }
 
+.topnav {
+  overflow: hidden;
+  position: relative;
+  list-style-type: none;
+}
+@media (max-width: 500px) {
+  .topnav {
+    display: block;
+  }
+}
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a img {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 50px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#hmb-menu {
+  width: 100%;
+  border-radius: 0px;
+}
+
 button {
   background-color: #116798;
   color: #fff;
