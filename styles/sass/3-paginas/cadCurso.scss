@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/itc-benguiat-std');
+
 .allPageCadCurso{
   font-family: 'ITC Benguiat Std', sans-serif;
   font-style: italic;
@@ -167,4 +168,135 @@
     }
 
   }
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    //overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background: linear-gradient(50deg,#002B5C, $azul , #C9FBFA  );
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+    border-radius: 20px;
+    .cadCursoModal{
+     // background-color: $cor-primaria;
+      padding: 10px;
+      border-radius: 20px;
+      color: white;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      >img{
+        max-width: 300px;
+        max-height: 300px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%;
+        text-align: center;
+        gap: 5px;
+      
+      input[type=text]{
+          height: 30px;
+          border: none;
+          outline: none;
+          padding: 5px;
+          border-radius: 5px;
+      }
+      input[type=submit]{
+        width: 10em;
+        position: relative;
+        height: 3.5em;
+        border: 3px ridge #149CEA;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        transition: 1s;
+        border-radius: 0.3em;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+        
+      }
+      input[type=submit]::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: #212121;
+        transition: 0.5s;
+        transform-origin: center;
+       }
+      input[type=submit]::before {
+        content: "";
+        transform-origin: center;
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: #212121;
+        transition: 0.5s;
+       }
+       input[type=submit]:hover:before, input[type=submit]:hover::after{
+        transform: scale(0)
+      }
+         input[type=submit]:hover{
+          box-shadow: inset 0px 0px 25px #1479EA;
+          
+         }
+         
+      select{
+        
+        border: none;
+        outline: none;
+        height: 30px;
+        border-radius: 10px;
+
+        
+      }
+      textarea{
+        resize: none;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-top: 2px;
+      }
+     
+    }
+  }
+}
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }

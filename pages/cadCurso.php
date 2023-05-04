@@ -8,6 +8,7 @@
   <title>Patrono Neves - Cursos</title>
 </head>
 <body>
+  <script src="../scripts/cadCurso.js"></script>
   <?php 
     session_start();
     include('header.php');
@@ -20,7 +21,7 @@
     </div>
     <div class="centerCadCurso">
       <h2>Distribua seu conhecimento e eleve a educação à outro nível!</h2>
-      <button class="btnCurso">Cadastrar Curso</button>
+      <button id="btnCurso" class="btnCurso">Cadastrar Curso</button>
     </div>
     <div class="bottomCadCurso">
       <img src="../imgs/feed.png" alt="">
@@ -31,6 +32,29 @@
  </div>
 
 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="cadCursoModal">
+      <form action="">
+          <p><p>Nome do Curso</p><input type="text" name="nomeCurso"></p>
+          <p><p>Descrição do curso</p><textarea name="descCurso" id="" cols="30" rows="10"></textarea></p>
+          <p>Nível</p><select name="nivelCurso" id="">
+            <option value="Basico"> Básico</option>
+            <option value="Intermediario"> Intermediário</option>
+            <option value="Avançado">Avançado</option>
+          </select>
+          <p><input type="submit" value="Cadastrar Curso"></p>
+      </form>
+      <img src="../imgs/imgCad.png" alt="">
+    </div>
+  </div>
+
+</div>
 <?php include('footer.php') ?>
 <script src="../scripts/cadCurso.js"></script>
 </body>
