@@ -165,11 +165,16 @@ input:checked + .slider:before {
   list-style-type: none;
 
   @include mobile{
+    overflow: visible;
     display: block;
   }
 
+  @include tablet{
+    display: none;
+  }
+
   @include monitor{
-    //display: none;
+    display: none;
   }
 
 }

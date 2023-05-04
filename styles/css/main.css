@@ -244,9 +244,21 @@ input:checked + .slider:before {
 }
 @media (max-width: 500px) {
   .topnav {
+    overflow: visible;
     display: block;
   }
 }
+@media (min-width: 900px) {
+  .topnav {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .topnav {
+    display: none;
+  }
+}
+
 .topnav #myLinks {
   display: none;
 }
@@ -708,7 +720,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .banner {
     flex-direction: column;
   }
@@ -718,7 +730,7 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 1400px) {
+@media (min-width: 1280px) {
   .banner {
     flex-direction: column;
   }
@@ -733,7 +745,7 @@ body {
     height: 100%;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .banner > img {
     width: 100%;
     height: 100%;
@@ -751,7 +763,7 @@ body {
     justify-content: center;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .beneficios {
     flex-direction: column;
     justify-content: center;
@@ -775,13 +787,13 @@ body {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .beneficios .card {
     margin: 0 auto;
     margin-bottom: 40px;
   }
 }
-@media (max-width: 1400px) {
+@media (min-width: 1280px) {
   .beneficios .card {
     margin: 0 auto;
     margin-bottom: 40px;
@@ -859,7 +871,7 @@ body {
     justify-content: center;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .cursosAreas {
     flex-wrap: wrap;
     justify-content: center;
@@ -893,7 +905,7 @@ body {
     width: 80%;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .cardCurso {
     margin: 0 auto;
     margin-top: 10px;
@@ -959,7 +971,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .perguntasFrequentesTudo img {
     display: none;
     color: #002b5c;
@@ -2372,7 +2384,7 @@ fa-sun .fa-sun {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .paulo-freire {
     width: 90%;
     margin: 0 auto;
@@ -2403,7 +2415,7 @@ fa-sun .fa-sun {
     border-radius: 0px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .paulo-freire .lado-esquerdo {
     width: 100%;
     border-radius: 0px;
@@ -2419,7 +2431,7 @@ fa-sun .fa-sun {
     width: 100%;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .paulo-freire .lado-direito {
     width: 100%;
   }
@@ -2452,7 +2464,7 @@ fa-sun .fa-sun {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .patrono-neves {
     width: 90%;
     margin: 0 auto;
@@ -2488,7 +2500,7 @@ fa-sun .fa-sun {
     border-radius: 0px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .patrono-neves .lado-direito {
     width: 100%;
     border-radius: 0px;
@@ -2510,7 +2522,7 @@ fa-sun .fa-sun {
     width: 100%;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .patrono-neves .lado-esquerdo {
     width: 100%;
   }
@@ -2528,7 +2540,7 @@ fa-sun .fa-sun {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .patrono-neves .lado-esquerdo h1 {
     width: 100%;
     font-size: 25px;
@@ -2553,7 +2565,7 @@ fa-sun .fa-sun {
     width: 100%;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
   .patrono-neves .lado-esquerdo .cards {
     width: 100%;
   }
