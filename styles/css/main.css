@@ -248,16 +248,6 @@ input:checked + .slider:before {
     display: block;
   }
 }
-@media (max-width: 900px) {
-  .topnav {
-    display: none;
-  }
-}
-@media (max-width: 1400px) {
-  .topnav {
-    display: none;
-  }
-}
 
 .topnav #myLinks {
   display: none;

@@ -18,6 +18,15 @@
 
 @mixin monitor{
   @media (max-width:1400px){
-    @content
+    @content;
+  }
+}
+
+
+//gambiarra para o menu hamburguer
+
+@mixin mobile-2{
+  @media (min-width: 500) {
+    @content;
   }
 }

@@ -158,23 +158,24 @@ input:checked + .slider:before {
 }
 }
 
+
+$max-width: 500px;
+
 /// hamburguer menu
 .topnav {
   overflow: hidden;
   position: relative;
   list-style-type: none;
 
+
   @include mobile{
     overflow: visible;
     display: block;
   }
 
-  @include tablet{
+  @mixin mobile-2{
     display: none;
-  }
-
-  @include monitor{
-    display: none;
+    overflow: hidden;
   }
 
 }
