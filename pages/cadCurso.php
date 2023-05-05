@@ -44,9 +44,9 @@
           <p><p>Nome do Curso</p><input type="text" name="nomeCurso"></p>
           <p><p>Descrição do curso</p><textarea name="descCurso" cols="30" rows="10"></textarea></p>
           <p>Nível</p><select name="nivelCurso">
-            <option value="Basico"> Básico</option>
-            <option value="Intermediario"> Intermediário</option>
-            <option value="Avançado">Avançado</option>
+            <option value="1"> Básico</option>
+            <option value="2"> Intermediário</option>
+            <option value="3">Avançado</option>
           </select>
           <input type="file" name="capaCurso" value="Escolher Capa">
           <p><input type="submit" value="Cadastrar Curso"></p>

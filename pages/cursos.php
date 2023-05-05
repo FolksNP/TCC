@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,112 +10,48 @@
     <title>Cursos - Patrono Neves</title>
 </head>
 <body>
-    <?php include('header.php'); ?>
+    <?php 
+    session_start();
+    include('header.php'); ?>
     
      <!-- Swiper -->
 
   <div #swiperRef="" class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
+      <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
+     
+     while($curso=mysqli_fetch_array($cursos)){
+      echo" <div class=swiper-slide>
 
-  <div #swiperRef="" class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="container-carrossel">
+         <div class=container-carrossel>
+            <h1>$curso[nomeCurso] </h1>
+          <img src=$curso[capaCurso]  class=card-imagem> 
+            <p>$curso[descCurso]</p>
+        </div>
+        </div>";
+    }
+    ?>
+      <!-- <div class="swiper-slide">
+      <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/php.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/php.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div>
       <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
-            <img src="../imgs/php.jpg" alt="" class="card-imagem">
+            <img src="../imgs/html.jpg" alt="" class="card-imagem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/php.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div #swiperRef="" class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/java.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/java.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/java.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/java.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div>
+      </div> -->
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
