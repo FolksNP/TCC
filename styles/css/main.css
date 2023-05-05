@@ -350,7 +350,8 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
 }
 .container-carrossel p {
   padding: 10px;
@@ -371,7 +372,7 @@ body {
   align-items: center;
   width: 100%;
   flex-direction: column;
-  height: 70vh;
+  height: 30vh;
 }
 .fundoCinza .txt {
   color: white;
@@ -402,7 +403,6 @@ body {
   position: relative;
   overflow: hidden;
   outline: 2px solid #116798;
-  bottom: 10px;
 }
 .fundoCinza .btnInscrevase input[type=button]:hover {
   color: #116798;
@@ -427,9 +427,11 @@ body {
 }
 
 .videoCurso {
-  position: absolute;
-  left: 33%;
-  bottom: 0%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 70%, #f3f3f3 30%);
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .videoCurso > img {
   max-height: 500px;
@@ -439,16 +441,15 @@ body {
 }
 
 .fundoPreto {
-  border-top: solid 2px #116798;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 70vh;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 .fundoPreto .interatividades {
   justify-content: center;
@@ -476,11 +477,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 .fundoPreto .txt h2 {
   margin-bottom: 10px;
-  margin-top: 50px;
 }
 
 .fundoCinza2 {
@@ -489,7 +488,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #495057;
+  background-color: #116798;
   border-top: solid 2px #116798;
   height: 80vh;
   border-bottom: solid 2px #116798;

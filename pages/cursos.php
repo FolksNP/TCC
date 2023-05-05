@@ -12,22 +12,25 @@
 <body>
     <?php 
     session_start();
-    include('header.php'); ?>
+    include('header.php'); 
+    $cod = $_SESSION['codCurso'];
     
+    ?>
      <!-- Swiper -->
-
+</a>
   <div #swiperRef="" class="swiper mySwiper">
     <div class="swiper-wrapper">
       <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
      
      while($curso=mysqli_fetch_array($cursos)){
-      echo" <div class=swiper-slide>
+      echo"
+       <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
 
          <div class=container-carrossel>
-            <h1>$curso[nomeCurso] </h1>
+            <h3>$curso[nomeCurso] </h3>
           <img src=$curso[capaCurso]  class=card-imagem> 
-            <p>$curso[descCurso]</p>
-        </div>
+            <p></p>
+        </div></a>
         </div>";
     }
     ?>
@@ -66,8 +69,8 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
+      //centeredSlides: true,
+      spaceBetween: 40,
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -116,7 +119,7 @@
       });
   </script>
     
-    <script src="../scripts/cursos.js"></script>
+    <!-- <script src="../scripts/cursos.js"></script> -->
     
     <?php include('footer.php'); ?>
 </body>

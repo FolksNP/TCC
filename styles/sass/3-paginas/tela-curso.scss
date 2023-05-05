@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 $font-primaria: 'Fira Sans', sans-serif;
-$cor-primaria: #495057;
-$cor-secundaria:#116798;
+
 *{
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ body{
    width: 100%;
    flex-direction: column;
   // background-color: $cor-primaria ;
-   height: 70vh;
+   height: 30vh;
    
    .txt{
     color: white;
@@ -32,12 +31,12 @@ body{
      }
     h2{
         font-size: 30px;
-        border-bottom: solid 1px $cor-secundaria;
+        border-bottom: solid 1px $cor-primaria;
     }
     text-align: center;
     max-width: 350px;
     margin: 30px;
-    border-bottom: solid 1px $cor-secundaria;
+    border-bottom: solid 1px $cor-primaria;
    }
    .btnInscrevase{
     input[type=button]{
@@ -47,20 +46,20 @@ body{
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: $cor-secundaria;
+  color: $cor-primaria;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
   overflow: hidden;
-  outline: 2px solid $cor-secundaria;
-  bottom: 10px;
+  outline: 2px solid $cor-primaria;
+  //bottom: 10px;
       
 }
 input[type=button]:hover{
-    color: $cor-secundaria;
+    color: $cor-primaria;
   transform: scale(1.1);
-  outline: 2px solid $cor-secundaria;
-  box-shadow: 4px 5px 17px -4px $cor-secundaria;
+  outline: 2px solid $cor-primaria;
+  box-shadow: 4px 5px 17px -4px $cor-primaria;
 }
 input[type=button]::before{
     content: "";
@@ -69,7 +68,7 @@ input[type=button]::before{
   top: 0;
   width: 0;
   height: 100%;
-  background-color: $cor-secundaria;
+  background-color: $cor-primaria;
   transform: skewX(45deg);
   z-index: -1;
   transition: width 1000ms;
@@ -81,21 +80,22 @@ input[type=button]:hover::before{
 }
 }
 .videoCurso{
-    position: absolute;
-  //  right: 25%;
-    left: 33%;
-    bottom: 0%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 70%, #f3f3f3 30%);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     >img{
   max-height: 500px;
   max-width: 500px;
   border-radius: 5px;
-  border: solid 2px $cor-secundaria;
+  border: solid 2px $cor-primaria;
     
 
 }
    }
 .fundoPreto{
-    border-top: solid 2px $cor-secundaria;
+    //border-top: solid 2px $cor-primaria;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -103,9 +103,9 @@ input[type=button]:hover::before{
     justify-content: center;
    // text-align: center;
     align-items: center;
-    height: 80vh ;
+    height: 70vh ;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     
     .interatividades{
         
@@ -140,10 +140,10 @@ input[type=button]:hover::before{
         align-items: center;
         justify-content: center;
         //text-align: center;
-        margin-top: 50px;
+        //margin-top: 50px;
         h2{
             margin-bottom: 10px;
-            margin-top: 50px;
+           // margin-top: 50px;
         }
     }
 }
@@ -154,9 +154,9 @@ input[type=button]:hover::before{
     align-items: center;
     justify-content: center;
     background-color: $cor-primaria;
-    border-top: solid 2px $cor-secundaria;
+    border-top: solid 2px $cor-primaria;
     height: 80vh;
-    border-bottom: solid 2px $cor-secundaria;
+    border-bottom: solid 2px $cor-primaria;
     
     h3{
         margin-top: 40px;
@@ -206,20 +206,20 @@ input[type=button]:hover::before{
       font-weight: bold;
       letter-spacing: 5px;
       text-transform: uppercase;
-      color: $cor-secundaria;
+      color: $cor-primaria;
       transition: all 1000ms;
       font-size: 15px;
       position: relative;
       overflow: hidden;
-      outline: 2px solid $cor-secundaria;
+      outline: 2px solid $cor-primaria;
       bottom: 10px;
           
     }
     input[type=button]:hover{
-        color: $cor-secundaria;
+        color: $cor-primaria;
       transform: scale(1.1);
-      outline: 2px solid $cor-secundaria;
-      box-shadow: 4px 5px 17px -4px $cor-secundaria;
+      outline: 2px solid $cor-primaria;
+      box-shadow: 4px 5px 17px -4px $cor-primaria;
     }
     input[type=button]::before{
         content: "";
@@ -228,7 +228,7 @@ input[type=button]:hover::before{
       top: 0;
       width: 0;
       height: 100%;
-      background-color: $cor-secundaria;
+      background-color: $cor-primaria;
       transform: skewX(45deg);
       z-index: -1;
       transition: width 1000ms;

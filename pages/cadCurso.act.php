@@ -19,6 +19,7 @@ VALUES (NULL, 0.0 ,'$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso', '
         $_SESSION['nomeCurso'] = $curso['nomeCurso'];
         $_SESSION['descCurso'] = $curso['descCurso'];
         $_SESSION['capaCurso'] = $curso['capaCurso'];
+        $_SESSION['codCurso'] = $curso['codCurso'];
         
 
 } else{
