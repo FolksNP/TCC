@@ -9,13 +9,13 @@
          <form class="alterLogin" action="alterarPerfil.act.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="codigo" value="<?php echo @$perfil['codAluno']; ?>">
             <input type="hidden" name="foto_anterior" value="<?php echo @$perfil['fotoAluno']; ?>">
-            <p>Nome: <input type="text" name="nome" value="<?php echo @$perfil['nomeAluno'];?>"></p>
+            <p>Nome: <input type="text" name="nome" value="<?php echo @$_SESSION['nome'];?>"></p>
             <p><input type="file" name="foto" id="arquivo" class="arquivoPerfil">
  
             <div id="img-container">
-            <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$perfil['fotoAluno'];?>"></label></p>
+            <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$_SESSION['foto'];?>"></label></p>
             </div></p>
-            <p>Email: <input type="email" name="email" value="<?php echo @$perfil['emailAluno'];?>"></"></p>
+            <p>Email: <input type="email" name="email" value="<?php echo @$_SESSION['email'];?>"></"></p>
             <p>Senha: <input type="password" name="password"></p>
 
             <p><label class="btnFoto" for="arquivo">Foto</label></p>

@@ -22,6 +22,7 @@ if($foto['size']> 0){
 if(mysqli_query($con,"UPDATE `alunos` SET  `nomeAluno` = '$nome', `fotoAluno` = '$arquivo', `emailAluno` = '$email',
  `senhaAluno` = '$password' WHERE `alunos`.`codAluno` = '$codigo';")){
     $msg = "Informações alteradas com sucesso!";
+
 }else{
         $msg = "Erro ao gravar";
 }
