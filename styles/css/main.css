@@ -2576,4 +2576,85 @@ fa-sun .fa-sun {
   margin-bottom: 10px;
 }
 
+.principal-certificado {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  width: 1280px;
+  height: 720px;
+  background-color: white;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+.principal-certificado .patrono-neves-certificado {
+  background-color: #05347e;
+  height: 720px;
+  width: 120px;
+  z-index: 1;
+}
+.principal-certificado .patrono-neves-certificado .caixa-pn {
+  margin-top: 60px;
+}
+.principal-certificado .patrono-neves-certificado .caixa-pn .pn-letter {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.principal-certificado .conteudo-principal {
+  text-align: center;
+  width: 40%;
+}
+.principal-certificado .conteudo-lateral-direito {
+  padding: 0px 90px;
+  width: 300px;
+}
+.principal-certificado .conteudo-lateral-direito .bloco-superior {
+  width: 100px;
+  height: 200px;
+  background-color: #1c2143;
+}
+.principal-certificado .conteudo-lateral-direito .logo img {
+  width: 200%;
+  position: relative;
+  top: -80px;
+  left: -70px;
+}
+.principal-certificado .conteudo-lateral-direito .bloco-inferior {
+  width: 100px;
+  height: 200px;
+  background-color: #1c2143;
+  position: relative;
+  bottom: -75px;
+}
+
+.linha {
+  width: 250px;
+  height: 50px;
+  background-color: #116798;
+  height: 10px;
+  position: relative;
+  top: 70px;
+  left: -30px;
+  transform: rotate(323deg);
+}
+
+.linha2 {
+  width: 250px;
+  height: 50px;
+  background-color: #116798;
+  height: 10px;
+  position: relative;
+  bottom: -625px;
+  left: -30px;
+  transform: rotate(36deg);
+}
+
+.caixa-linha {
+  position: relative;
+  left: -80px;
+}
+.caixa-linha #detalhe {
+  height: 718px;
+}
+
 /*# sourceMappingURL=main.css.map */
