@@ -2603,7 +2603,7 @@ fa-sun .fa-sun {
 }
 .principal-certificado .conteudo-principal {
   text-align: center;
-  width: 40%;
+  width: 41%;
 }
 .principal-certificado .conteudo-principal #certi {
   font-size: 60px;
@@ -2624,6 +2624,18 @@ fa-sun .fa-sun {
 }
 .principal-certificado .conteudo-principal #concli {
   margin-top: 10px;
+  font-size: 16px;
+}
+.principal-certificado .assinaturas {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.principal-certificado .assinaturas .instrutor, .principal-certificado .assinaturas .plataforma {
+  width: 40%;
+}
+.principal-certificado .assinaturas #nome-instrutor, .principal-certificado .assinaturas #plataforma-ass {
+  font-family: "dance";
 }
 .principal-certificado .conteudo-lateral-direito {
   padding: 0px 90px;

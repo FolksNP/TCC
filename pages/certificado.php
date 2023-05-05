@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificado Patrono Neves</title>
     <link rel="stylesheet" href="../styles/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/logoTCC.png">
 </head>
 <body>
 
@@ -40,9 +41,22 @@
 
             <p id="dedicacao">Dedicamos este certificado a</p>
 
-            <h1 id="nome-aluno">Felipe Silva Siqueira</h1>
+            <h1 id="nome-aluno">Guilherme Pereira</h1>
             <hr>
-            <h4 id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</h4>
+            <p id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</p>
+
+            <div class="assinaturas">
+                <div class="instrutor">
+                    <h1 id="nome-instrutor">Felipe Silva</h1>
+                    <hr>
+                    <p id="instrutor">Diretor de Ensino</p>
+                </div>
+                <div class="plataforma">
+                    <h1 id="plataforma-ass">Pedro Arthur</h1>
+                    <hr>
+                    <p id="plat-resp">Diretor Executivo</p>
+                </div>
+            </div>
 
         </div>
         <div class="conteudo-lateral-direito">
