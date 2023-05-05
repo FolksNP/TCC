@@ -34,8 +34,16 @@
             <img id="detalhe" src="../imgs/certificado-detalhe.png" alt="">
         </div>
         <div class="conteudo-principal">
+
             <h1 id="certi">CERTIFICADO</h1>
             <h3 id="conc"><i>DE CONCLUSÃO DE CURSO</i></h3>
+
+            <h4 id="dedicacao">Dedicamos este certificado a</h4>
+
+            <h1 id="nome-aluno">Nome do aluno</h1>
+            <hr>
+            <h4>Por concluir o curso de Introdução a Programação Geral de 5 Horas</h4>
+
         </div>
         <div class="conteudo-lateral-direito">
             <div class="bloco-superior"></div>

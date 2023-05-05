@@ -2604,6 +2604,13 @@ fa-sun .fa-sun {
   text-align: center;
   width: 40%;
 }
+.principal-certificado .conteudo-principal #certi {
+  font-size: 60px;
+  margin-top: 30px;
+}
+.principal-certificado .conteudo-principal #conc {
+  font-size: 30px;
+}
 .principal-certificado .conteudo-lateral-direito {
   padding: 0px 90px;
   width: 300px;
@@ -2625,28 +2632,6 @@ fa-sun .fa-sun {
   background-color: #1c2143;
   position: relative;
   bottom: -75px;
-}
-
-.linha {
-  width: 250px;
-  height: 50px;
-  background-color: #116798;
-  height: 10px;
-  position: relative;
-  top: 70px;
-  left: -30px;
-  transform: rotate(323deg);
-}
-
-.linha2 {
-  width: 250px;
-  height: 50px;
-  background-color: #116798;
-  height: 10px;
-  position: relative;
-  bottom: -625px;
-  left: -30px;
-  transform: rotate(36deg);
 }
 
 .caixa-linha {
