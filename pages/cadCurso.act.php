@@ -10,7 +10,7 @@ move_uploaded_file($capaCurso['tmp_name'],$arquivoCurso);
 
 
 $buscaCurso = mysqli_query($con, "Select * from `cursos`");
-var_dump($buscaCurso);
+
 $curso = mysqli_fetch_array($buscaCurso);
 
 if(mysqli_query($con, "INSERT INTO `cursos` ( `codCurso`,`avaliacaoMedia`,`nomeCurso`, `descCurso`, `nivelCurso`, `capaCurso`, `comentarios`) 

@@ -28,19 +28,25 @@ body{
     
      p{
         font-size: 15px;
+        margin-top: 30px;
+        border-top: 1px solid $cor-primaria;
+        padding-top: 5px;
+        margin-bottom: 5px;
      }
     h2{
+       
         font-size: 30px;
-        border-bottom: solid 1px $cor-primaria;
+        //border-bottom: solid 1px $cor-primaria;
     }
     text-align: center;
-    max-width: 350px;
-    margin: 30px;
+    max-width: 500px;
+    margin: 40px;
     border-bottom: solid 1px $cor-primaria;
    }
    .btnInscrevase{
     input[type=button]{
         padding: 1em 2em;
+        cursor: pointer;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -52,7 +58,7 @@ body{
   position: relative;
   overflow: hidden;
   outline: 2px solid $cor-primaria;
-  bottom: 10px;
+ // bottom: 10px;
       
 }
 input[type=button]:hover{
@@ -86,11 +92,11 @@ input[type=button]:hover::before{
     display: flex;
     justify-content: center;
     >img{
-  max-height: 350px;
-  max-width: 350px;
-  border-radius: 5px;
-  border: solid 2px $cor-primaria;
-    margin-top: 100px;
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 5px;
+    border: solid 3px $cor-primaria;
+    margin-top: 50px;
 
 }
    }
@@ -100,12 +106,13 @@ input[type=button]:hover::before{
     display: flex;
     flex-direction: column;
     background-color: #f3f3f3;
-    justify-content: center;
+    //justify-content: center;
    // text-align: center;
     align-items: center;
-    height: 70vh ;
-    justify-content: center;
+    height: 50vh ;
+    //justify-content: center;
     width: 100%;
+    padding-top: 50px;
     
     .interatividades{
         
@@ -126,7 +133,7 @@ input[type=button]:hover::before{
             
             >p{
                padding-left: 10px;
-               max-width: 800px;
+               max-width: 1000px;
             }
         }
         img{
@@ -155,24 +162,26 @@ input[type=button]:hover::before{
     justify-content: center;
     background-color: $cor-primaria;
     border-top: solid 2px $cor-primaria;
-    height: 80vh;
+    height: 60vh;
     border-bottom: solid 2px $cor-primaria;
     
     h3{
-        margin-top: 40px;
+        //margin-top: 40px;
         color: white;
+        margin-bottom: 20px;
+        font-size: 30px;
     }
     .coment{
         max-height: 100px;
         display: flex;
         flex-direction: column;
-        margin: 10px;
-        max-width: 50%;
+        margin: 15px;
+        width: 70%;
         //align-items: center;
         justify-content: center;
         background-color: rgb(236, 236, 236);
-        padding: 5px 5px 5px 20px;
-        border-radius: 5px;
+        padding: 10px 10px 10px 20px;
+        border-radius: 10px;
         
         .perfilComent{
             display: flex;
@@ -191,7 +200,7 @@ input[type=button]:hover::before{
 }
 .fundoPreto2{
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;

@@ -6,20 +6,32 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+   // background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(70deg, #ffffff 30%, $cor-primaria 0, $cor-primaria 70% );
+    border: 1px solid black;
+    border-radius: 5px;
+
     a{
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
+        margin: 10px;
     }
 }
 
-
+.txtCursosSlider p{
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
 .swiper {
     width: 100%;
     margin: 20px auto;
+    
 }
 
 .append-buttons {
@@ -43,8 +55,10 @@
     padding: 5px;
 
     img{
-        width: 100%;
+        width: 500px;
         height: 250px;
+        margin-top: 5px;
+        border-radius: 5px;
     }
     p{
         padding: 10px;

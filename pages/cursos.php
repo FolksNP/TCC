@@ -19,11 +19,12 @@
      <!-- Swiper -->
 </a>
   <div #swiperRef="" class="swiper mySwiper">
+    <DIV class="txtCursosSlider"><p>Continue Assistindo</p></DIV>
     <div class="swiper-wrapper">
       <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
      
      while($curso=mysqli_fetch_array($cursos)){
-      echo"
+       echo"
        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
 
          <div class=container-carrossel>
@@ -70,7 +71,7 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       //centeredSlides: true,
-      spaceBetween: 40,
+      spaceBetween: 50,
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",
