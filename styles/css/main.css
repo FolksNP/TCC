@@ -2636,6 +2636,10 @@ fa-sun .fa-sun {
 }
 .principal-certificado .assinaturas #nome-instrutor, .principal-certificado .assinaturas #plataforma-ass {
   font-family: "dance";
+  margin-bottom: 5px;
+}
+.principal-certificado .assinaturas #instrutor, .principal-certificado .assinaturas #plat-resp {
+  margin-top: 5px;
 }
 .principal-certificado .conteudo-lateral-direito {
   padding: 0px 90px;
