@@ -2629,7 +2629,7 @@ fa-sun .fa-sun {
 .principal-certificado .assinaturas {
   display: flex;
   margin-top: 100px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .principal-certificado .assinaturas .instrutor, .principal-certificado .assinaturas .plataforma {
   width: 40%;
