@@ -18,3 +18,14 @@
 @import '3-paginas/login.scss';
 @import '3-paginas/cadCurso.scss';
 @import '3-paginas/sobre.sass';
+@import '3-paginas/certificados.sass';
+
+@font-face{
+  font-family: 'Cocomat';
+  src: url('./fonts/CocomatPro-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'dance';
+    src: url('./fonts/DancingScript-Regular.otf') format('opentype');
+  }
