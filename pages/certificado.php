@@ -41,7 +41,7 @@
 
             <p id="dedicacao">Dedicamos este certificado a</p>
 
-            <h1 id="nome-aluno">Guilherme Pereira</h1>
+            <h1 id="nome-aluno">Marcelo Barbosa</h1>
             <hr>
             <p id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</p>
 
