@@ -52,7 +52,7 @@ body{
   position: relative;
   overflow: hidden;
   outline: 2px solid $cor-primaria;
-  //bottom: 10px;
+  bottom: 10px;
       
 }
 input[type=button]:hover{
@@ -86,11 +86,11 @@ input[type=button]:hover::before{
     display: flex;
     justify-content: center;
     >img{
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 350px;
+  max-width: 350px;
   border-radius: 5px;
   border: solid 2px $cor-primaria;
-    
+    margin-top: 100px;
 
 }
    }

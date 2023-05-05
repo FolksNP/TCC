@@ -18,9 +18,11 @@
 ?>
         <div class="fundoCinza">
             <div class="txt">
-                    <h2>Adentre no Curso Java,
+                <?php 
+                    echo "<h2>Adentre no Curso $curso[nomeCurso],
                     Invista na sua carreira!</h2>
-                    <p>Descrição sobre temas que serão abordados</p>
+                    <p>$curso[descCurso]</p>"
+                    ?>
             </div>
             <div class="btnInscrevase">
 
@@ -76,5 +78,6 @@
             <input type="button" value="Começar Agora">
         </div>
     </div>
+    <?php include('footer.php') ?>
 </body>
 </html>

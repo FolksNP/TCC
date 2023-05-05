@@ -13,7 +13,7 @@
     <?php 
     session_start();
     include('header.php'); 
-    $cod = $_SESSION['codCurso'];
+    @$cod = $_SESSION['codCurso'];
     
     ?>
      <!-- Swiper -->

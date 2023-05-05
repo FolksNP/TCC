@@ -323,6 +323,10 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide a {
+  text-decoration: none;
+  color: black;
+}
 
 .swiper {
   width: 100%;
@@ -350,7 +354,7 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 250px;
+  width: 100%;
   height: 250px;
 }
 .container-carrossel p {
@@ -403,6 +407,7 @@ body {
   position: relative;
   overflow: hidden;
   outline: 2px solid #116798;
+  bottom: 10px;
 }
 .fundoCinza .btnInscrevase input[type=button]:hover {
   color: #116798;
@@ -434,10 +439,11 @@ body {
   justify-content: center;
 }
 .videoCurso > img {
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 350px;
+  max-width: 350px;
   border-radius: 5px;
   border: solid 2px #116798;
+  margin-top: 100px;
 }
 
 .fundoPreto {
