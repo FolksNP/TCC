@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificado Patrono Neves</title>
     <link rel="stylesheet" href="../styles/css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/logoTCC.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
 <body>
 

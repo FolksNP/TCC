@@ -6,6 +6,7 @@
     <title>Paulo Reglus Neves Freire</title>
     <link rel="stylesheet" href="sobre.css">
     <link rel="stylesheet" href="../styles/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
 <body>
     
