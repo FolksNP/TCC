@@ -158,8 +158,11 @@ input:checked + .slider:before {
 }
 }
 
-
-$max-width: 500px;
+@mixin aparecer{
+  @media (min-width: 741px) {
+    @content;
+  }
+}
 
 /// hamburguer menu
 .topnav {
@@ -167,15 +170,9 @@ $max-width: 500px;
   position: relative;
   list-style-type: none;
 
-
-  @include mobile{
-    overflow: visible;
-    display: block;
-  }
-
-  @mixin mobile-2{
-    display: none;
+  @mixin aparecer{
     overflow: hidden;
+    display: none;
   }
 
 }
@@ -214,4 +211,10 @@ $max-width: 500px;
 #hmb-menu{
   width: 100%;
   border-radius: 0px;
+}
+
+#container-hamburguer{
+  @include aparecer{
+    display: none;
+  }
 }

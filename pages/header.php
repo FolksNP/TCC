@@ -90,18 +90,19 @@
         </div>
     </div>
 
-    <div class="topnav">
-        <div id="myLinks">
-            <li><a href="../pages/inicial.php">Inicio</a></li>
-            <li><a href="../pages/cursos.php">Cursos</a></li>
-            <li><a href="../pages/sobre.php">Sobre nós</a></li>
-            <li><a href="../pages/telaPerfil.php">Suporte</a></li>
+    <div id="container-hamburguer">
+        <div class="topnav">
+            <div id="myLinks">
+                <li><a href="../pages/inicial.php">Inicio</a></li>
+                <li><a href="../pages/cursos.php">Cursos</a></li>
+                <li><a href="../pages/sobre.php">Sobre nós</a></li>
+                <li><a href="../pages/telaPerfil.php">Suporte</a></li>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <button id="hmb-menu">Menu</button>
+            </a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <button id="hmb-menu">Menu</button>
-        </a>
     </div>
-
 
     <script>
         function myFunction() {
