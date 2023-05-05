@@ -38,11 +38,11 @@
             <h1 id="certi">CERTIFICADO</h1>
             <h3 id="conc"><i>DE CONCLUSÃO DE CURSO</i></h3>
 
-            <h4 id="dedicacao">Dedicamos este certificado a</h4>
+            <p id="dedicacao">Dedicamos este certificado a</p>
 
-            <h1 id="nome-aluno">Nome do aluno</h1>
+            <h1 id="nome-aluno">Felipe Silva Siqueira</h1>
             <hr>
-            <h4>Por concluir o curso de Introdução a Programação Geral de 5 Horas</h4>
+            <h4 id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</h4>
 
         </div>
         <div class="conteudo-lateral-direito">

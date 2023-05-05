@@ -2593,12 +2593,13 @@ fa-sun .fa-sun {
   z-index: 1;
 }
 .principal-certificado .patrono-neves-certificado .caixa-pn {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .principal-certificado .patrono-neves-certificado .caixa-pn .pn-letter {
   color: white;
   text-align: center;
   font-size: 40px;
+  font-family: "Cocomat";
 }
 .principal-certificado .conteudo-principal {
   text-align: center;
@@ -2606,10 +2607,23 @@ fa-sun .fa-sun {
 }
 .principal-certificado .conteudo-principal #certi {
   font-size: 60px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .principal-certificado .conteudo-principal #conc {
   font-size: 30px;
+}
+.principal-certificado .conteudo-principal #dedicacao {
+  font-size: 25px;
+  margin-top: 100px;
+}
+.principal-certificado .conteudo-principal #nome-aluno {
+  margin-top: 60px;
+  margin-bottom: 5px;
+  font-family: "dance";
+  font-size: 50px;
+}
+.principal-certificado .conteudo-principal #concli {
+  margin-top: 10px;
 }
 .principal-certificado .conteudo-lateral-direito {
   padding: 0px 90px;
@@ -2640,6 +2654,15 @@ fa-sun .fa-sun {
 }
 .caixa-linha #detalhe {
   height: 718px;
+}
+
+@font-face {
+  font-family: "Cocomat";
+  src: url("./fonts/CocomatPro-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "dance";
+  src: url("./fonts/DancingScript-Regular.otf") format("opentype");
 }
 
 /*# sourceMappingURL=main.css.map */
