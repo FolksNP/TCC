@@ -25,7 +25,7 @@
             <div class="lado-esquerdo">
                 <img src="../imgs/paulo-freire.png" class="imagem" alt="imagem-paulo-freire">
             </div>
-            <div class="lado-direito">
+            <div class="lado-direito" id="lado-direito">
                 <h1 id="paulo-freire-texto">Paulo Reglus Neves Freire - Quem era?</h1>
                 <p id="paulo-freire-texto">Paulo Reglus Neves Freire (Recife, 19 de setembro de 1921 — São Paulo, 2 de maio de 1997) foi um educador, pedagogo e filósofo brasileiro. É considerado um dos pensadores mais notáveis na história da pedagogia mundial, tendo influenciado o movimento chamado pedagogia crítica. É também o Patrono da Educação Brasileira.</p>
                 <p id="paulo-freire-texto">Paulo Freire defendia a tese de que a educação deve valorizar a cultura do aluno, reconhecendo que, estando alfabetizado ou não, o aluno leva à escola uma cultura própria, que não é pior nem melhor que a do professor e, portanto, há um aprendizado mútuo.</p>
@@ -34,10 +34,10 @@
             </div>
         </div>
 
-        <div class="patrono-neves">
+        <div class="patrono-neves" id="patrono-neves">
             <div class="lado-esquerdo">
             <h1 style="text-align: center; margin-bottom: 10px;">Patrono Neves - #For_education</h1>
-            <div class="cards">
+            <div class="cards" id="cards">
                 <div class="missao">
                     <h2>Nossa missão</h2>
                     <p class="txt-indent">Nossa missão é levar o ensino de disciplinas menos divulgadas para o grande público com qualidade e de maneira gratuita, isto é, criar um ambiente agradável e seguro para o aprendizado de matérias menos difundidas. Procurando atender um público com necessidades mais específicas enquanto se mantém interativo e interessante para o usuário.

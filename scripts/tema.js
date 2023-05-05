@@ -13,6 +13,9 @@ function darkMode(){
     linkFooter = document.getElementById("linkFooter");
     linksUteis = document.getElementById("linksUteis");
     product = document.getElementById("product");
+    lado_direito = document.getElementById("lado-direito");
+    cards = document.getElementById("cards");
+    patrono_neves = document.getElementById("patrono-neves");
 
     if(btnTema.checked){
 
@@ -63,6 +66,18 @@ function darkMode(){
             document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark2;
             document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark2;
             
+        }
+        if (lado_direito) {
+            document.getElementById("lado-direito").style.backgroundColor = corDark;
+            document.getElementById("lado-direito").style.color = corLight;
+        }
+        if (cards) {
+            document.getElementById("cards").style.backgroundColor = corDark;
+            document.getElementById("cards").style.color = corLight;
+        }
+        if (patrono_neves) {
+            document.getElementById("patrono-neves").style.backgroundColor = corDark;
+            document.getElementById("patrono-neves").style.color = corLight;
         }
         if(cursosArea){
             for (i = 0; i < 5; i++) {
@@ -133,6 +148,18 @@ else{
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corLight;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corLight;
         
+    }
+    if (lado_direito) {
+        document.getElementById("lado-direito").style.backgroundColor = corLight;
+        document.getElementById("lado-direito").style.color = 'black';
+    }
+    if (cards) {
+        document.getElementById("cards").style.backgroundColor = corLight;
+        document.getElementById("cards").style.color = 'black';
+    }
+    if (patrono_neves) {
+        document.getElementById("patrono-neves").style.backgroundColor = corLight;
+        document.getElementById("patrono-neves").style.color = 'black';
     }
     if(cursosArea){
         for (i = 0; i < 5; i++) {

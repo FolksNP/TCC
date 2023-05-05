@@ -242,12 +242,6 @@ input:checked + .slider:before {
   position: relative;
   list-style-type: none;
 }
-@media (max-width: 500px) {
-  .topnav {
-    overflow: visible;
-    display: block;
-  }
-}
 
 .topnav #myLinks {
   display: none;
@@ -282,6 +276,12 @@ input:checked + .slider:before {
 #hmb-menu {
   width: 100%;
   border-radius: 0px;
+}
+
+@media (min-width: 741px) {
+  #container-hamburguer {
+    display: none;
+  }
 }
 
 button {
