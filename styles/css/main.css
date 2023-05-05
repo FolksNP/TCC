@@ -318,14 +318,25 @@ button:hover {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(70deg, #ffffff 30%, #116798 0, #116798 70%);
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .swiper-slide a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.txtCursosSlider p {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .swiper {
@@ -354,8 +365,10 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 100%;
+  width: 500px;
   height: 250px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 .container-carrossel p {
   padding: 10px;
@@ -383,19 +396,23 @@ body {
   text-align: center;
   align-items: center;
   text-align: center;
-  max-width: 350px;
-  margin: 30px;
+  max-width: 500px;
+  margin: 40px;
   border-bottom: solid 1px #116798;
 }
 .fundoCinza .txt p {
   font-size: 15px;
+  margin-top: 30px;
+  border-top: 1px solid #116798;
+  padding-top: 5px;
+  margin-bottom: 5px;
 }
 .fundoCinza .txt h2 {
   font-size: 30px;
-  border-bottom: solid 1px #116798;
 }
 .fundoCinza .btnInscrevase input[type=button] {
   padding: 1em 2em;
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -407,7 +424,6 @@ body {
   position: relative;
   overflow: hidden;
   outline: 2px solid #116798;
-  bottom: 10px;
 }
 .fundoCinza .btnInscrevase input[type=button]:hover {
   color: #116798;
@@ -439,11 +455,11 @@ body {
   justify-content: center;
 }
 .videoCurso > img {
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 500px;
+  max-width: 500px;
   border-radius: 5px;
-  border: solid 2px #116798;
-  margin-top: 100px;
+  border: solid 3px #116798;
+  margin-top: 50px;
 }
 
 .fundoPreto {
@@ -451,11 +467,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
-  justify-content: center;
   align-items: center;
-  height: 70vh;
-  justify-content: center;
+  height: 50vh;
   width: 100%;
+  padding-top: 50px;
 }
 .fundoPreto .interatividades {
   justify-content: center;
@@ -472,7 +487,7 @@ body {
 }
 .fundoPreto .interatividades .txtInt > p {
   padding-left: 10px;
-  max-width: 800px;
+  max-width: 1000px;
 }
 .fundoPreto .interatividades img {
   max-width: 50px;
@@ -496,23 +511,24 @@ body {
   justify-content: center;
   background-color: #116798;
   border-top: solid 2px #116798;
-  height: 80vh;
+  height: 60vh;
   border-bottom: solid 2px #116798;
 }
 .fundoCinza2 h3 {
-  margin-top: 40px;
   color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 .fundoCinza2 .coment {
   max-height: 100px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  max-width: 50%;
+  margin: 15px;
+  width: 70%;
   justify-content: center;
   background-color: rgb(236, 236, 236);
-  padding: 5px 5px 5px 20px;
-  border-radius: 5px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 10px;
 }
 .fundoCinza2 .coment .perfilComent {
   display: flex;
@@ -528,7 +544,7 @@ body {
 
 .fundoPreto2 {
   width: 100%;
-  height: 90vh;
+  height: 60vh;
   background-color: rgb(27, 27, 27);
   display: flex;
   flex-direction: column;
@@ -2239,13 +2255,13 @@ fa-sun .fa-sun {
 
 /* Modal Content/Box */
 .modal-content {
-  background: linear-gradient(50deg, #002B5C, #116798, #C9FBFA);
   margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  border: 2px solid rgb(0, 0, 0);
+  width: 60%; /* Could be more or less, depending on screen size */
   height: 80%;
   border-radius: 20px;
+  background-image: linear-gradient(70deg, #116798 0, #116798 70%, #ffffff 30%);
 }
 .modal-content .cadCursoModal {
   padding: 10px;
@@ -2256,14 +2272,14 @@ fa-sun .fa-sun {
   justify-content: space-between;
 }
 .modal-content .cadCursoModal > img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
 }
 .modal-content .cadCursoModal form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
+  width: 45%;
   text-align: center;
   gap: 5px;
 }
@@ -2273,6 +2289,20 @@ fa-sun .fa-sun {
   outline: none;
   padding: 5px;
   border-radius: 5px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+.modal-content .cadCursoModal form input[type=file] {
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 .modal-content .cadCursoModal form input[type=submit] {
   width: 10em;
@@ -2280,7 +2310,7 @@ fa-sun .fa-sun {
   height: 3.5em;
   border: 3px ridge #149CEA;
   outline: none;
-  background-color: transparent;
+  background-color: rgb(61, 61, 61);
   color: white;
   transition: 1s;
   border-radius: 0.3em;
@@ -2315,13 +2345,15 @@ fa-sun .fa-sun {
   transform: scale(0);
 }
 .modal-content .cadCursoModal form input[type=submit]:hover {
-  box-shadow: inset 0px 0px 25px #1479EA;
+  background-color: #0b2646;
 }
 .modal-content .cadCursoModal form select {
   border: none;
   outline: none;
   height: 30px;
   border-radius: 10px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 .modal-content .cadCursoModal form textarea {
   resize: none;
@@ -2329,7 +2361,16 @@ fa-sun .fa-sun {
   border: none;
   border-radius: 10px;
   padding-left: 5px;
-  padding-top: 2px;
+  padding-top: 5px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+.thumbCurso {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  height: 150px;
 }
 
 /* The Close Button */

@@ -41,22 +41,33 @@
     <span class="close">&times;</span>
     <div class="cadCursoModal">
       <form action="cadCurso.act.php" method="post" enctype="multipart/form-data">
-          <p><p>Nome do Curso</p><input type="text" name="nomeCurso"></p>
-          <p><p>Descrição do curso</p><textarea name="descCurso" cols="30" rows="10"></textarea></p>
-          <p>Nível</p><select name="nivelCurso">
+          <p><p>Nome do Curso</p><input type="text" name="nomeCurso" required="required"></p>
+          <p><p>Descrição do curso</p><textarea name="descCurso" required="required" cols="30" rows="10"></textarea></p>
+          <p>Nível</p><select name="nivelCurso" required="required">
             <option value="1"> Básico</option>
             <option value="2"> Intermediário</option>
             <option value="3">Avançado</option>
           </select>
-          <input type="file" name="capaCurso" value="Escolher Capa">
-          <p><input type="submit" value="Cadastrar Curso"></p>
+          <p><p>Selecione uma capa para o curso</p><input type="file" name="capaCurso" id="imgInp"></p>
+          <label for="imgInp">
+          <img id="blah" src="../imgs/thumb.jpg" alt="your image" class="thumbCurso" />
+          </label>
+          <p><input type="submit" value="Cadastrar Curso" ></p>
       </form>
-      <img src="../imgs/imgCad.png" alt="">
+      <img src="../imgs/set.png" alt="">
     </div>
   </div>
 
 </div>
 <?php include('footer.php') ?>
 <script src="../scripts/cadCurso.js"></script>
+<script>
+
+  imgInp.onchange = evt => {
+  const [file] = imgInp.files
+  if (file) {
+    blah.src = URL.createObjectURL(file)
+  }
+}</script>
 </body>
 </html>
