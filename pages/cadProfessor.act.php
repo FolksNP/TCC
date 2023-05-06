@@ -13,6 +13,7 @@ $professor = mysqli_fetch_array($buscaProfessor);
 if(mysqli_query($con, "INSERT INTO `professores` ( `codProfessor`,`cpf`,`numAgencia`, `numConta`) 
 VALUES ('$codigoProf', '$cpf', '$numAgencia', '$numConta');")){
         $msg = "Seja bem-vindo ao time!";
+        $_SESSION['loginProf'] = true;
 
 } else{
     $msg = "Não foi possível realizar seu cadastro!";
@@ -21,5 +22,5 @@ VALUES ('$codigoProf', '$cpf', '$numAgencia', '$numConta');")){
 var_dump($con);
 echo $msg;
 $_SESSION['msg'] = $msg;
-//header("location:inicial.php");
+header("location:inicial.php");
 ?>
