@@ -6,6 +6,7 @@
         <p>Cursos</p>
         <p>Promoções</p>
         <p>Adicionar</p>
+        
         <p><img src="../imgs/lixeira.png" alt=""></p>
         
     </div>

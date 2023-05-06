@@ -22,6 +22,7 @@
                     ?>
                     <div><img src="../imgs/sairAluno.png" alt=""><a href="login.php"> Sair</a></p></div>
             </div>
+            
             <div id="myModal" class="modal">
 
 <!-- Modal content -->
@@ -34,6 +35,9 @@
 </div>
 
 </div>
-            <script src="../scripts/DOM.js"> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="../scripts/DOM.js"> 
 </script>
 <script src="../scripts/cadProfessor.js"></script>

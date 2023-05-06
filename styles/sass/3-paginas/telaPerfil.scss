@@ -225,27 +225,22 @@
 .cursoTopo{
    width: 100%;
    background-color: #ffffff;
-   //height: 10%;
+   //height: 30%;
    border-radius: 20px;
   
    display: flex;
    flex-direction: column;
     .txtCursos {
-        :nth-child(1){
-           border-bottom: solid 2px $azul;
-           background-color: #f3f3f3;
-           height: 100%;
-           width: 50%;
-           margin-left: -30px;
-           
-        }
-        align-items: center;
-        width: 100%;
+        
+       // align-items: center;
         display: flex;
         justify-content: space-between;
         font-size: 20px;
         margin-left: 30px;
+        height: 40px;
         color: black;
+        margin-bottom: 0;
+        margin-top: 10px;
         p >img{
             max-width: 35px;
            margin: 5px;

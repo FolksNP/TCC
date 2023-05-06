@@ -14,13 +14,15 @@ if(mysqli_query($con, "INSERT INTO `professores` ( `codProfessor`,`cpf`,`numAgen
 VALUES ('$codigoProf', '$cpf', '$numAgencia', '$numConta');")){
         $msg = "Seja bem-vindo ao time!";
         $_SESSION['loginProf'] = true;
-
+        
+        
 } else{
     $msg = "Não foi possível realizar seu cadastro!";
 }
 
 var_dump($con);
 echo $msg;
+$_SESSION['codProf'] = $codigoProf;
 $_SESSION['msg'] = $msg;
 header("location:inicial.php");
 ?>
