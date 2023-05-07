@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    transition: 0.3s;
 }
+
 
 .pagTodaPerfil{
     font-family: 'Fira Sans', sans-serif;
@@ -12,6 +14,7 @@
     background-color: #f3f3f3;
     display: flex;
     justify-content: space-between;
+    
     .colunaEsquerdaPerfil{
         width: 30%;
         background-color: white;
@@ -49,8 +52,16 @@
             flex-direction: column;
             width: 100%;
             background-color: #f3f3f3;
-            
             padding-bottom: 5px;
+            .txtIfProf{
+                background-color: #156aaa;
+                text-align: center;
+                //color: white;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                padding: 10px;
+                margin-top: 5px;
+            }
             >div{
                 align-items: center;
                 display: flex;
@@ -225,27 +236,22 @@
 .cursoTopo{
    width: 100%;
    background-color: #ffffff;
-   //height: 10%;
+   //height: 30%;
    border-radius: 20px;
   
    display: flex;
    flex-direction: column;
     .txtCursos {
-        :nth-child(1){
-           border-bottom: solid 2px $azul;
-           background-color: #f3f3f3;
-           height: 100%;
-           width: 50%;
-           margin-left: -30px;
-           
-        }
-        align-items: center;
-        width: 100%;
+        
+       // align-items: center;
         display: flex;
         justify-content: space-between;
         font-size: 20px;
         margin-left: 30px;
+        height: 40px;
         color: black;
+        margin-bottom: 0;
+        margin-top: 10px;
         p >img{
             max-width: 35px;
            margin: 5px;
@@ -257,6 +263,16 @@
     }
 }
 .imgsCursos{
+    a{
+        img{
+
+        
+            width: 100px;
+            margin: 10px;
+            height: 100px;
+            border-radius: 10px;
+    }
+    }
     >img{
         width: 100px;
         margin: 10px;

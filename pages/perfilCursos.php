@@ -6,11 +6,39 @@
         <p>Cursos</p>
         <p>Promoções</p>
         <p>Adicionar</p>
+        
         <p><img src="../imgs/lixeira.png" alt=""></p>
         
     </div>
     <div class="imgsCursos">
-        <img src="../imgs/java.jpg" alt="">
+        <?php
+        $codProf = $_SESSION['codProf'];
+        $cursos = $_SESSION['codCurso'];
+        
+        $cursos = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
+        FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 2");
+    
+        while($curso = mysqli_fetch_array($cursos)){
+            echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+    
+        };
+    //    $cursos = mysqli_query($con, "SELECT `cursos.capaCurso`
+    //     FROM `cursos` INNER JOIN `professorcurso` ON 'professorcurso.professor' = 'professores.codProfessor' ");
+    //     var_dump($cursos);
+    //    $curso = mysqli_fetch_array($cursos);
+    //    echo $curso[''];
+
+    // $cursos = mysqli_query($con,"SELECT * FROM `professorcurso` where `professor` = '$codProf'");
+    // $curso = mysqli_fetch_array($cursos);
+    // echo $curso['nivelCurso'];
+
+  //echo $tes['codProfCurso'];
+
+    var_dump($con);
+  
+
+       ?>
+        
         <img src="../imgs/html.jpg" alt="">
         <img src="../imgs/php.jpg" alt="">
     </div>

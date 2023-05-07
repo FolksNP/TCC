@@ -29,6 +29,7 @@
                     <?php echo "<p>$_SESSION[nome]</p>";?>
                     <p>Desde 01/06/2004</p>
             </div>
+
             <?php include('perfilListaAcoes.php') ?>
         </div>
         <!-- <div class="direitaPerfi"> -->
