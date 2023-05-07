@@ -11,7 +11,33 @@
         
     </div>
     <div class="imgsCursos">
-        <img src="../imgs/java.jpg" alt="">
+        <?php
+        
+    //    $cursos = mysqli_query($con, "SELECT `cursos.capaCurso`
+    //     FROM `cursos` INNER JOIN `professorcurso` ON 'professorcurso.professor' = 'professores.codProfessor' ");
+    //     var_dump($cursos);
+    //    $curso = mysqli_fetch_array($cursos);
+    //    echo $curso[''];
+
+     $codProf = $_SESSION['codProf'];
+    // $cursos = mysqli_query($con,"SELECT * FROM `professorcurso` where `professor` = '$codProf'");
+    // $curso = mysqli_fetch_array($cursos);
+    // echo $curso['nivelCurso'];
+    $cursos = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso 
+    FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 2");
+
+    while($curso = mysqli_fetch_array($cursos)){
+        echo "<img src= $curso[capaCurso]>";
+
+    };
+
+  //echo $tes['codProfCurso'];
+
+    var_dump($con);
+  
+
+       ?>
+        
         <img src="../imgs/html.jpg" alt="">
         <img src="../imgs/php.jpg" alt="">
     </div>
