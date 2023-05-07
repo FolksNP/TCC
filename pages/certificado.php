@@ -11,41 +11,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         .principal-certificado {
-  margin: 0 auto;
-  margin-top: 20px;
-  display: flex;
-  width: 1280px;
-  height: 720px;
-  background-color: white;
-  border: 1px solid black;
-  justify-content: space-between;
-}
-.principal-certificado .patrono-neves-certificado {
-  background-color: #05347e;
-  height: 720px;
-  width: 120px;
-  z-index: 1;
-}
-.principal-certificado .patrono-neves-certificado .caixa-pn {
-  margin-top: 40px;
-}
-.principal-certificado .patrono-neves-certificado .caixa-pn .pn-letter {
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  font-family: "Cocomat";
-}
-.principal-certificado .conteudo-principal {
-  text-align: center;
-  width: 41%;
-}
-.principal-certificado .conteudo-principal #certi {
-  font-size: 60px;
-  margin-top: 50px;
-}
-.principal-certificado .conteudo-principal #conc {
-  font-size: 30px;
-}
+            margin: 0 auto;
+            margin-top: 20px;
+            display: flex;
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            border: 1px solid black;
+            justify-content: space-between;
+        }
+        .principal-certificado .patrono-neves-certificado {
+            background-color: #05347e;
+            height: 720px;
+            width: 120px;
+            z-index: 1;
+        }
+        .principal-certificado .patrono-neves-certificado .caixa-pn {
+            margin-top: 40px;
+        }
+        .principal-certificado .patrono-neves-certificado .caixa-pn .pn-letter {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            font-family: "Cocomat";
+        }
+        .principal-certificado .conteudo-principal {
+            text-align: center;
+            width: 41%;
+        }
+        .principal-certificado .conteudo-principal #certi {
+            font-size: 60px;
+            margin-top: 50px;
+        }
+        .principal-certificado .conteudo-principal #conc {
+            font-size: 30px;
+        }
 .principal-certificado .conteudo-principal #dedicacao {
   font-size: 25px;
   margin-top: 100px;
