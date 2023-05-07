@@ -115,7 +115,6 @@
     <?php include('header.php')?>
 
     <div class="botoes">
-        <button id="gerador" onclick="gerarPDF()">Gerar Certificado PDF</button>
         <button onclick="downloadPDF()">Baixar Certificado</button>
     </div>
 
