@@ -14,19 +14,39 @@
                     <div class="cursandoTerminados" id="estudos">
                     <div class="cursando">
                         <p>Cursando</p> 
-                        <div class="cursandoImgs"> 
-                        <img src="../imgs/farcry4.jpg" alt="">
-                        <img src="../imgs/farcry5.jpg" alt="">
-                        <img src="../imgs/wd.jpg" alt="">
+                        <div class="cursandoImgs">
+
+
+                        <?php
+                          $codProf = $_SESSION['codProf'];
+                          $cursos = $_SESSION['codCurso'];
+                          
+                          $cursos = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
+                          FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 2");
+                        while($curso = mysqli_fetch_array($cursos)){
+            echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+    
+        } 
+        ?>
+                       
+                       
                         </div>
                         
                     </div>
                     <div class="terminados">
                         <p>Terminados</p>
                         <div class="terminadosImgs">
-                        <img src="../imgs/farcry4.jpg" alt="">
-                        <img src="../imgs/farcry5.jpg" alt="">
-                        <img src="../imgs/wd.jpg" alt=""></div>
+                        <?php
+                          $codProf = $_SESSION['cod'];
+                          $cursos = $_SESSION['codCurso'];
+                          
+                          $terminando = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
+                          FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 1");
+                        while($terminado = mysqli_fetch_array($terminando)){
+            echo "<a href=telaCurso.php?codCurso=$terminado[codCurso] ><img src= $terminado[capaCurso]></a>";
+    
+        } 
+        ?></div>
                         </div>
                         </div>
             </div>

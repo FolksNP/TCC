@@ -43,28 +43,29 @@ function darkMode(){
             
          }
          if(perfil){
-            document.getElementById("pagProf").style.backgroundColor= corDark2;
-            document.getElementById("fotoPerfil").style.backgroundColor= corDark2;
-            document.getElementById("listaAcoes").style.backgroundColor= corDark2;
-            document.getElementById("colEsq").style.backgroundColor= corDark;
-            document.getElementById("nomeEmail").style.backgroundColor= corDark;
-            document.getElementById("estudos").style.backgroundColor= corDark;
+            document.getElementById("pagProf").style.backgroundColor= corDark;
+            document.getElementById("pagProf").style.color= 'white';
+            document.getElementById("fotoPerfil").style.backgroundColor= corDark;
+            document.getElementById("listaAcoes").style.backgroundColor= corDark;
+            document.getElementById("colEsq").style.backgroundColor= corDark2;
+            document.getElementById("nomeEmail").style.backgroundColor= corDark2;
+            document.getElementById("estudos").style.backgroundColor= corDark2;
             document.getElementById("estudos").style.color= 'white';
             nome = document.getElementById("nomePerfil");
             nome.children[0].style.color= 'white';
-            nome.children[1].style.backgroundColor= corDark2;
+            nome.children[1].style.backgroundColor= corDark;
             
             email = document.getElementById("emailPerfil");
             email.children[0].style.color= 'white';
-            email.children[1].style.backgroundColor= corDark2;
+            email.children[1].style.backgroundColor= corDark;
 
-            document.getElementById("resp-perg-aulas-exe").style.backgroundColor= corDark;
-            document.getElementById("descPerfil").children[1].style.backgroundColor= corDark;
+            document.getElementById("resp-perg-aulas-exe").style.backgroundColor= corDark2;
+            document.getElementById("descPerfil").children[1].style.backgroundColor= corDark2;
             document.getElementById("descPerfil").children[1].style.color= 'white';
-            document.querySelectorAll(".estPerfil")[0].style.backgroundColor = corDark2;
-            document.querySelectorAll(".estPerfil")[1].style.backgroundColor = corDark2;
-            document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark2;
-            document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark2;
+            document.querySelectorAll(".estPerfil")[0].style.backgroundColor = corDark;
+            document.querySelectorAll(".estPerfil")[1].style.backgroundColor = corDark;
+            document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark;
+            document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark;
             
         }
         if (lado_direito) {
@@ -126,6 +127,7 @@ else{
     }
     if(perfil){
         document.getElementById("pagProf").style.backgroundColor= corLight;
+        document.getElementById("pagProf").style.color= 'black';
         document.getElementById("fotoPerfil").style.backgroundColor= corLight;
         document.getElementById("listaAcoes").style.backgroundColor= corLight;
         document.getElementById("colEsq").style.backgroundColor= 'white';

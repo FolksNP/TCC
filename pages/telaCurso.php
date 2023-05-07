@@ -27,7 +27,7 @@
             </div>
             <div class="btnInscrevase">
 
-                <input type="button" value="INSCREVA-SE">
+              <a href="tela.video.php">  <input type="button" value="INSCREVA-SE"></a>
 
             </div>
         

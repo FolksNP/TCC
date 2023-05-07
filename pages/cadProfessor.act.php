@@ -24,5 +24,5 @@ var_dump($con);
 echo $msg;
 $_SESSION['codProf'] = $codigoProf;
 $_SESSION['msg'] = $msg;
-header("location:inicial.php");
+//header("location:inicial.php");
 ?>
