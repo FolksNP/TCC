@@ -18,7 +18,7 @@
             <div class="conteudos">
                 <div class="sobre">
                     <h2>Patrono Neves</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus libero animi explicabo vitae voluptas facilis illo amet fugit, atque, sequi, vel perspiciatis alias molestiae modi tempora! Culpa, quod possimus.</p>
+                    <p>Trabalho de Conclusão de Curso apresentado ao Curso Técnico em Desenvolvimento de Sistemas da Etec de Itaquera I, orientado pelo Prof. Luciano, como requisito parcial para obtenção do título de técnico em Desenvolvimento de Sistemas.</p>
                 </div>
                 <div class="listagem">
                     <h2>Mapa da Plataforma</h2>
