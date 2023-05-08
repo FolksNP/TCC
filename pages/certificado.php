@@ -106,6 +106,13 @@
   height: 718px;
 }
 
+#imagem-gambiarra{
+  position: relative;
+  margin-top: 0px;
+  height: 720px;
+  top: -40px;
+  left: 3px;
+}
 /*# sourceMappingURL=certificado.css.map */
 
     </style>
@@ -121,7 +128,7 @@
     <div class="principal-certificado">
         <div class="patrono-neves-certificado">
             <div class="caixa-pn">
-                <h1 class="pn-letter">P</h1>
+                <!-- <h1 class="pn-letter">P</h1>
                 <h1 class="pn-letter">A</h1>
                 <h1 class="pn-letter">T</h1>
                 <h1 class="pn-letter">R</h1>
@@ -134,7 +141,10 @@
                 <h1 class="pn-letter">E</h1>
                 <h1 class="pn-letter">V</h1>
                 <h1 class="pn-letter">E</h1>
-                <h1 class="pn-letter">S</h1>
+                <h1 class="pn-letter">S</h1> -->
+
+              <img src="../imgs/melhorgambiarra.png" alt="" id="imagem-gambiarra">
+
             </div>        
         </div>
         <div class="caixa-linha">
