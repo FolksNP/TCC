@@ -10,3 +10,4 @@ function downloadPDF() {
 
     html2pdf().set(opt).from(item).save();
 }
+
