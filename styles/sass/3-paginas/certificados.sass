@@ -8,6 +8,16 @@
     border: 1px solid black
     justify-content: space-between
 
+    @include mobile
+        width: 100%
+    
+    // @include tablet
+    //     display: none
+
+    // @include tablet-2
+    //     display: none
+
+
     .patrono-neves-certificado
         background-color: #05347e
         height: 720px
@@ -92,3 +102,19 @@
     #detalhe
         height: 718px
         
+.botoes       
+    display: flex
+    justify-content: center
+    width: 100%
+    margin-top: 20px
+
+    .button-pdf
+        margin: 0 auto
+        width: 80%
+        height: 50px
+        font-size: 25px
+        border-radius: 10px
+        background-color: green
+
+        @include mobile
+            height: 100px
