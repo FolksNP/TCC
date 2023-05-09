@@ -321,8 +321,6 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(70deg, #ffffff 30%, #116798 0, #116798 70%);
-  border: 1px solid black;
   border-radius: 5px;
 }
 .swiper-slide a {
@@ -365,7 +363,7 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 500px;
+  width: 300px;
   height: 250px;
   margin-top: 5px;
   border-radius: 5px;
@@ -1294,6 +1292,20 @@ body {
   justify-content: center;
   width: 100%;
   align-items: center;
+  border-radius: 20px;
+}
+.direitaPerfil .alterLogin input {
+  margin: 10px 5px;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  padding-left: 5px;
+}
+.direitaPerfil .alterLogin img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: solid 3px black;
 }
 .direitaPerfil .alterLogin .arquivoPerfil {
   display: none;
@@ -2293,25 +2305,14 @@ fa-sun .fa-sun {
   gap: 5px;
 }
 .modal-content .cadCursoModal form input[type=text] {
-  height: 30px;
+  height: 35px;
   border: none;
   outline: none;
   padding: 5px;
   border-radius: 5px;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
 }
 .modal-content .cadCursoModal form input[type=file] {
-  height: 30px;
-  border: none;
-  outline: none;
-  padding: 5px;
-  border-radius: 5px;
-  width: 100%;
-  background-color: white;
-  color: black;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
+  display: none;
 }
 .modal-content .cadCursoModal form input[type=submit] {
   width: 10em;
@@ -2359,20 +2360,20 @@ fa-sun .fa-sun {
 .modal-content .cadCursoModal form select {
   border: none;
   outline: none;
-  height: 30px;
-  border-radius: 10px;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
+  height: 35px;
+  border-radius: 5px;
+}
+.modal-content .cadCursoModal form option {
+  font-size: 15px;
+  padding-left: 2px;
 }
 .modal-content .cadCursoModal form textarea {
   resize: none;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
 }
 
 .thumbCurso {

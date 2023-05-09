@@ -4,6 +4,7 @@
             require('connect.php');
             $busca = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$codigo'");
             $perfil = mysqli_fetch_array($busca);
+            $senhaAlterar = md5($_SESSION['senha']);
     ?>
 <div class="direitaPerfil" id="direitaPerfilAlterar">
          <form class="alterLogin" action="alterarPerfil.act.php" method="post" enctype="multipart/form-data">
@@ -16,7 +17,7 @@
             <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$_SESSION['foto'];?>"></label></p>
             </div></p>
             <p>Email: <input type="email" name="email" value="<?php echo @$_SESSION['email'];?>"></"></p>
-            <p>Senha: <input type="password" name="password"></p>
+            <p>Senha: <input type="password" name="password" value=" <?php $senhaAlterar ?>"></p>
 
             <p><label class="btnFoto" for="arquivo">Foto</label></p>
             <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 

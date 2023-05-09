@@ -17,8 +17,8 @@ $codProfCurso = $_SESSION['codProf'];
  $curso = mysqli_fetch_array($buscaCurso);
 
 
-    if(mysqli_query($con, "INSERT INTO `cursos` ( `codCurso`,`avaliacaoMedia`,`nomeCurso`, `descCurso`, `nivelCurso`, `capaCurso`, `comentarios`) 
-    VALUES (NULL, 0.0, '$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso','amei');")){
+    if(mysqli_query($con, "INSERT INTO `cursos` ( `codCurso`,`professor`,`avaliacaoMedia`,`nomeCurso`, `descCurso`, `nivelCurso`, `capaCurso`, `comentarios`) 
+    VALUES (NULL,'$codProfCurso', 0.0, '$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso','amei');")){
             $msg = "Curso foi cadastrado com sucesso!";
 
             $_SESSION['codCurso'] = $curso['codCurso'];  
@@ -31,9 +31,7 @@ $codProfCurso = $_SESSION['codProf'];
 
                 $buscaCursoProf = mysqli_query($con, "Select * from `cursos` where `codCurso` = '$cursoCodigo'");
                 $cursoProfCurso = mysqli_fetch_array($buscaCursoProf);
-                
-                mysqli_query($con,"INSERT INTO `professorcurso` (`codProfCurso`, `curso`, `professor`) 
-            VALUES (NULL, '$cursoProfCurso[codCurso]', '$codProfCurso')");
+              
             }
             
             
@@ -42,5 +40,5 @@ $codProfCurso = $_SESSION['codProf'];
 var_dump($con);
 echo $msg;
 //$_SESSION['msg'] = $msg;
-//header("location:cursos.php");
+header("location:cursos.php");
 ?>

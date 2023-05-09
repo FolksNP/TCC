@@ -13,10 +13,9 @@
     <div class="imgsCursos">
         <?php
         $codProf = $_SESSION['codProf'];
-        $cursos = $_SESSION['codCurso'];
+        @$cursos = $_SESSION['codCurso'];
         
-        $cursos = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
-        FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 2");
+        $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
     
         while($curso = mysqli_fetch_array($cursos)){
             echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
@@ -34,13 +33,9 @@
 
   //echo $tes['codProfCurso'];
 
-    var_dump($con);
-  
 
        ?>
-        
-        <img src="../imgs/html.jpg" alt="">
-        <img src="../imgs/php.jpg" alt="">
+  
     </div>
 
 

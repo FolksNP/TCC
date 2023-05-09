@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(70deg, #ffffff 30%, $cor-primaria 0, $cor-primaria 70% );
-    border: 1px solid black;
+   // background-image: linear-gradient(70deg, #ffffff 30%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 70% );
+    //border: 1px solid black;
     border-radius: 5px;
 
     a{
@@ -55,7 +55,7 @@
     padding: 5px;
 
     img{
-        width: 500px;
+        width: 300px;
         height: 250px;
         margin-top: 5px;
         border-radius: 5px;
