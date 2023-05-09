@@ -113,6 +113,7 @@
   top: -40px;
   left: 3px;
 }
+
 /*# sourceMappingURL=certificado.css.map */
 
     </style>
@@ -122,7 +123,7 @@
     <?php include('header.php')?>
 
     <div class="botoes">
-        <button onclick="downloadPDF()">Baixar Certificado</button>
+        <button class="button-pdf" onclick="downloadPDF()">Baixar seu certificado Patrono Neves</button>
     </div>
 
     <div class="principal-certificado">

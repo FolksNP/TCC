@@ -2686,6 +2686,11 @@ fa-sun .fa-sun {
   border: 1px solid black;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .principal-certificado {
+    width: 100%;
+  }
+}
 .principal-certificado .patrono-neves-certificado {
   background-color: #05347e;
   height: 720px;
@@ -2770,6 +2775,26 @@ fa-sun .fa-sun {
 }
 .caixa-linha #detalhe {
   height: 718px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.botoes .button-pdf {
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: green;
+}
+@media (max-width: 500px) {
+  .botoes .button-pdf {
+    height: 100px;
+  }
 }
 
 @font-face {
