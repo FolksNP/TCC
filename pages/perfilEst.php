@@ -6,11 +6,12 @@
 <div class="selecioneCurso">
     <div class="selecioneCursoTxt"><p>Selecione o Curso</p></div>
     <div class="selecioneCursoImg">
-        <img src="../imgs/java.jpg" alt="">
-        <img src="../imgs/java.jpg" alt="">
-        <img src="../imgs/java.jpg" alt="">
-        <img src="../imgs/java.jpg" alt="">
-        <img src="../imgs/java.jpg" alt="">
+    <?php $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
+    
+    while($curso = mysqli_fetch_array($cursos)){
+        echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+
+    }; ?>
     </div>
 </div>
 <div class="estCursos">

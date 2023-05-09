@@ -19,14 +19,17 @@
 
                         <?php
                           $codProf = $_SESSION['codProf'];
-                          $cursos = $_SESSION['codCurso'];
+                          @$cursos = $_SESSION['codCurso'];
                           
-                          $cursos = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
-                          FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 2");
-                        while($curso = mysqli_fetch_array($cursos)){
-            echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+                          $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
+                            //var_dump($con);
+                          while($curso = mysqli_fetch_array($cursos)){
+                              echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+                            }
     
-        } 
+    
+        
+       // var_dump($curso)
         ?>
                        
                        
@@ -38,10 +41,9 @@
                         <div class="terminadosImgs">
                         <?php
                           $codProf = $_SESSION['cod'];
-                          $cursos = $_SESSION['codCurso'];
+                          @$cursos = $_SESSION['codCurso'];
                           
-                          $terminando = mysqli_query($con, "SELECT  professorcurso.professor, cursos.capaCurso, cursos.codCurso 
-                          FROM `professorcurso`,`cursos` WHERE professorcurso.professor = $codProf AND cursos.nivelCurso = 1");
+                          $terminando = mysqli_query($con,"SELECT * FROM `cursos` WHERE `professor` = $codProf ");
                         while($terminado = mysqli_fetch_array($terminando)){
             echo "<a href=telaCurso.php?codCurso=$terminado[codCurso] ><img src= $terminado[capaCurso]></a>";
     

@@ -69,9 +69,9 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 5,
       //centeredSlides: true,
-      spaceBetween: 50,
+      spaceBetween: 10,
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",

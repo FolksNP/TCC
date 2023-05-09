@@ -15,7 +15,7 @@
             <p><input type="text" placeholder="Digite aqui sua pesquisa"></p>
 
             <div class="login-perfil">
-                <a href="cadCurso.php"><input type="button" value="cadastrarCurso"></a>
+                
             <label class="switch">
   <input type="checkbox" id="switch-shadow" onclick="darkMode()" >
   <span class="slider round"></span>
