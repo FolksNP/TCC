@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 09-Maio-2023 às 19:53
+-- Tempo de geração: 09-Maio-2023 às 23:37
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -183,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `cursos` (
   PRIMARY KEY (`codCurso`),
   UNIQUE KEY `idCurso_UNIQUE` (`codCurso`),
   KEY `fk_idx` (`professor`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `cursos`
@@ -192,7 +192,12 @@ CREATE TABLE IF NOT EXISTS `cursos` (
 INSERT INTO `cursos` (`codCurso`, `professor`, `avaliacaoMedia`, `capaCurso`, `comentarios`, `descCurso`, `nomeCurso`, `nivelCurso`) VALUES
 (1, 1, '0000000000', '../imgs/7bf1632ffc7c7aebb6c0b3f728b74693.jpg', 'amei', 'sdfsdfsfs', 'Fundamentos do JavaScript', 1),
 (2, 1, '0000000000', '../imgs/3c5e6dd85c4e853c4a32e00411790632.jpg', 'amei', 'sdfsdfsfs', 'Fundamentos Da Informática', 1),
-(3, 3, '0000000000', '../imgs/b9a7b3150bb82268e878f0c420f521d6.jpg', 'amei', 'a eeeee', 'Criar jogos em 8bits', 1);
+(3, 3, '0000000000', '../imgs/b9a7b3150bb82268e878f0c420f521d6.jpg', 'amei', 'neste curso você aprendera isso aquilo aquilo outro auilo ali também, sipa aquilo e talvez um pouco disso', 'Criação de Jogos 8BIT', 1),
+(4, 3, '0000000000', '../imgs/fc675df54b8d65caac96c27701b1b83a.jpg', 'amei', 'O maior sherife da história do entretenimento', 'Pica Pau Sherife', 3),
+(5, 3, '0000000000', '../imgs/fbedc59779551d35fd17b32aeef6821a.jpg', 'amei', 'o maquinista mais brabo', 'Pica Pau Maquinista', 1),
+(6, 3, '0000000000', '../imgs/c5ed644cfe1088530ce833871e7f585c.jpg', 'amei', 'esse come', 'Pica Pau Guloso', 2),
+(7, 3, '0000000000', '../imgs/7294fa6d780a7557c1f52ccf743687f5.jpg', 'amei', 'Lá ele 1000x', 'Pica Pau Lá ele', 2),
+(8, 3, '0000000000', '../imgs/32e7335a4d51967997b5adcae96d46c0.jpg', 'amei', 'Pica pau índio ', 'Pica Pau Índio ', 2);
 
 -- --------------------------------------------------------
 
@@ -261,7 +266,15 @@ CREATE TABLE IF NOT EXISTS `matriculas` (
   UNIQUE KEY `Matriculascol_UNIQUE` (`codMatricula`),
   KEY `matriculaAlunos_idx` (`matriculaAlunos`),
   KEY `matriculaCursos_idx` (`matriculaCursos`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `matriculas`
+--
+
+INSERT INTO `matriculas` (`codMatricula`, `matriculaAlunos`, `matriculaCursos`, `cursoProgresso`, `dataMatricula`) VALUES
+(1, 2, 4, 000000000000, '2023-05-09'),
+(2, 2, 3, 000000000000, '2023-05-09');
 
 -- --------------------------------------------------------
 

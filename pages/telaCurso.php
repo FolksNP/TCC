@@ -27,7 +27,7 @@
             </div>
             <div class="btnInscrevase">
 
-              <a href="tela.video.php">  <input type="button" value="INSCREVA-SE"></a>
+              <?php echo "<a href=matricula.php?codCurso=$curso[codCurso]>  <input type=button value=INSCREVA-SE></a> ";?>
 
             </div>
         

@@ -1,0 +1,45 @@
+.matriculaPag{
+    width: 100%;
+    background-color: aliceblue;
+    align-items: center;
+    .matriculaForm{
+        margin: 5px 80px;
+        background-color: aqua;
+        padding-left: 10px;
+    .capaCurso{
+        display: flex;
+    }
+    form{
+        //padding: 0% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            width: 500px;
+        }
+        input[type=text]{
+            display: none;
+        }
+        .btnsMat{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 35px;
+            margin: 20px;
+            gap: 5px;
+            a{
+                width: 40%;
+                input{
+                    width: 100%;
+                    height: 35px;
+                }
+            }
+            >input{
+                width: 40%;
+                height: 35px;
+            }
+        }
+    }
+}
+
+}

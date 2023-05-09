@@ -340,11 +340,13 @@ button:hover {
 .swiper {
   width: 100%;
   margin: 20px auto;
+  align-items: center;
 }
 
 .append-buttons {
   text-align: center;
   margin-top: 20px;
+  align-items: center;
 }
 
 .append-buttons button {
@@ -356,7 +358,7 @@ button:hover {
   padding: 4px 10px;
   border-radius: 4px;
   margin: 0 10px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .container-carrossel {
@@ -367,6 +369,9 @@ button:hover {
   height: 250px;
   margin-top: 5px;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .container-carrossel p {
   padding: 10px;
@@ -2625,6 +2630,50 @@ fa-sun .fa-sun {
 }
 .patrono-neves .lado-esquerdo .cards h2 {
   margin-bottom: 10px;
+}
+
+.matriculaPag {
+  width: 100%;
+  background-color: aliceblue;
+  align-items: center;
+}
+.matriculaPag .matriculaForm {
+  margin: 5px 80px;
+  background-color: aqua;
+  padding-left: 10px;
+}
+.matriculaPag .matriculaForm .capaCurso {
+  display: flex;
+}
+.matriculaPag .matriculaForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.matriculaPag .matriculaForm form img {
+  width: 500px;
+}
+.matriculaPag .matriculaForm form input[type=text] {
+  display: none;
+}
+.matriculaPag .matriculaForm form .btnsMat {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 35px;
+  margin: 20px;
+  gap: 5px;
+}
+.matriculaPag .matriculaForm form .btnsMat a {
+  width: 40%;
+}
+.matriculaPag .matriculaForm form .btnsMat a input {
+  width: 100%;
+  height: 35px;
+}
+.matriculaPag .matriculaForm form .btnsMat > input {
+  width: 40%;
+  height: 35px;
 }
 
 .principal-certificado {

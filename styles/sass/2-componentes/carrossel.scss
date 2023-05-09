@@ -31,12 +31,15 @@
 .swiper {
     width: 100%;
     margin: 20px auto;
-    
+    align-items: center;
+
 }
 
 .append-buttons {
     text-align: center;
     margin-top: 20px;
+    align-items: center;
+    
 }
 
 .append-buttons button {
@@ -48,7 +51,7 @@
     padding: 4px 10px;
     border-radius: 4px;
     margin: 0 10px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .container-carrossel{
@@ -59,6 +62,9 @@
         height: 250px;
         margin-top: 5px;
         border-radius: 5px;
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     }
     p{
         padding: 10px;

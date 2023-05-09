@@ -17,7 +17,7 @@
     
     ?>
      <!-- Swiper -->
-</a>
+
   <div #swiperRef="" class="swiper mySwiper">
     <DIV class="txtCursosSlider"><p>Continue Assistindo</p></DIV>
     <div class="swiper-wrapper">
@@ -26,15 +26,20 @@
      while($curso=mysqli_fetch_array($cursos)){
        echo"
        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
-
-         <div class=container-carrossel>
-            <h3>$curso[nomeCurso] </h3>
-          <img src=$curso[capaCurso]  class=card-imagem> 
-            <p></p>
-        </div></a>
-        </div>";
-    }
-    ?>
+       
+       <div class=container-carrossel>
+       <h3>$curso[nomeCurso] </h3>
+       <img src=$curso[capaCurso]  class=card-imagem> 
+       <p></p>
+       </div></a>
+       </div>";
+       
+      }
+      
+      ?>
+      </div>
+      
+    
       <!-- <div class="swiper-slide">
       <div class="container-carrossel">
             <h1>Titulo</h1>
@@ -56,7 +61,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
         </div>
       </div> -->
-    </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
