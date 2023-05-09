@@ -136,7 +136,6 @@
                 <h1 class="pn-letter">N</h1>
                 <h1 class="pn-letter">O</h1>
                 <br>
-                
                 <h1 class="pn-letter">N</h1>
                 <h1 class="pn-letter">E</h1>
                 <h1 class="pn-letter">V</h1>
@@ -188,10 +187,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js" integrity="sha512-d5Jr3NflEZmFDdFHZtxeJtBzk0eB+kkRXWFQqEc1EKmolXjHm2IKCA7kTvXBNjIYzjXfD5XzIjaaErpkZHCkBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../scripts/gerador.js"></script>
-    
-    
     <!-- conversor btn = downloadPDF -->
-    
     <script src="../scripts/conversor.js"></script>
     
     <?php include('footer.php')?>
