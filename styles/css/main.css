@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import '3-paginas/inicial.css';
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Genos:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
@@ -604,31 +603,24 @@ body {
   max-height: 500px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Fira Sans", sans-serif;
-}
-
-.conteiner {
-  padding: 15px;
+.conteiner-video {
+  margin: 0 auto;
+  padding: 15px 40px;
   margin-top: 10px;
   display: flex;
-  width: 100%;
+  width: 95%;
+  background-color: rgba(214, 214, 214, 0.8235294118);
+  border-radius: 5px;
 }
-.conteiner .lado-esquerdo {
-  margin-top: 50px;
+.conteiner-video .lado-esquerdo {
+  margin-top: 13px;
   background-color: #fff;
   width: 35%;
   border: 2px solid #116798;
-  background-color: #fff;
+  background-color: black;
   border-radius: 5px;
 }
-.conteiner .lado-esquerdo .conteudo h1 {
+.conteiner-video .lado-esquerdo .conteudo h1 {
   background-color: #116798;
   color: white;
   text-align: center;
@@ -636,54 +628,75 @@ body {
   border-radius: 0px 0px 15px 15px;
   border-bottom: 2px solid #116798;
 }
-.conteiner .lado-esquerdo .conteudo .caixa-cont {
-  padding: 10px;
+.conteiner-video .lado-esquerdo .conteudo .caixa-cont {
+  display: flex;
   margin: 20px 10px;
   color: black;
   border: 2px solid #116798;
   border-radius: 4px;
   font-size: 20px;
-  text-align: center;
+  height: 80px;
+  cursor: pointer;
 }
-.conteiner .lado-esquerdo .conteudo .caixa-cont .checkin {
-  margin-right: 10px;
-  border: 1px solid white;
-  border-radius: 10px;
-  height: 25px;
-  width: 25px;
+.conteiner-video .lado-esquerdo .conteudo .caixa-cont #thumbAula {
+  height: 100%;
 }
-.conteiner .lado-esquerdo .conteudo .caixa-cont h3 {
-  display: inline;
+.conteiner-video .lado-esquerdo .conteudo .caixa-cont .video-button-check {
+  border-radius: 0px;
+  width: 100%;
+  font-size: 23px;
 }
-.conteiner .lado-direito {
+.conteiner-video .lado-esquerdo .conteudo .caixa-cont .video-button-check:hover {
+  color: white;
+  background-color: #649614;
+}
+.conteiner-video .lado-esquerdo .conteudo .caixa-cont .video-button-check:focus {
+  background-color: green;
+}
+.conteiner-video .lado-direito {
   background-color: transparent;
   width: 100%;
 }
-.conteiner .lado-direito .conteudo {
+.conteiner-video .lado-direito .conteudo {
   margin: 0 auto;
   margin-top: 0px;
-  width: 990px;
-  padding: 30px;
+  width: 1290px;
+  padding: 15px;
 }
-.conteiner .lado-direito .conteudo h1 {
-  color: black;
+.conteiner-video .lado-direito .conteudo #titulo-aula {
+  background-color: #116798;
+  color: white;
   padding: 10px;
+  width: 100%;
 }
-.conteiner .lado-direito .links-inferiores ul {
+.conteiner-video .lado-direito .links-inferiores {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #120a8f;
+}
+.conteiner-video .lado-direito .links-inferiores ul {
   display: flex;
   list-style-type: none;
 }
-.conteiner .lado-direito .links-inferiores ul li {
+.conteiner-video .lado-direito .links-inferiores ul a {
+  text-decoration: none;
+}
+.conteiner-video .lado-direito .links-inferiores ul li {
   color: white;
   padding: 10px;
   font-size: 25px;
 }
-.conteiner .lado-direito .conteudo-inferior {
+.conteiner-video .lado-direito .links-inferiores ul li:hover {
+  background-color: white;
+  color: #120a8f;
+}
+.conteiner-video .lado-direito .conteudo-inferior {
   background-color: #116798;
   border-radius: 5px;
   padding: 20px;
 }
-.conteiner .lado-direito .conteudo-inferior p {
+.conteiner-video .lado-direito .conteudo-inferior p {
   font-size: 20px;
   text-align: justify;
   padding: 5px;

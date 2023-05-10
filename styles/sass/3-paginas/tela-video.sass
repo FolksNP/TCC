@@ -1,34 +1,20 @@
-@import '../1-modulos/variables'
-//início da formartação padrão
-*
-    padding: 0
-    margin: 0
-    box-sizing: border-box
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap')
-$font-primaria: 'Fira Sans', sans-serif
-
-
-
-body
-    font-family: $font-primaria
-
-//fim da formartação padrão
-    
-//conteudo da página
-// conteiner = caixa geral
-.conteiner
-    padding: 15px
+.conteiner-video
+    margin: 0 auto
+    padding: 15px 40px
     margin-top: 10px
     display: flex
-    width: 100%
+    width: 95%
+    background-color: #d6d6d6d2
+    border-radius: 5px
+
     .lado-esquerdo // conteudos do lado esquerdo da pagina
-        margin-top: 50px
+        margin-top: 13px
         background-color: $cor-base-website
         width: 35%
         border: 2px solid $cor-primaria 
-        background-color: #fff
+        background-color: black
         border-radius: 5px
+        
         .conteudo
             h1
                 background-color: $cor-primaria
@@ -37,22 +23,31 @@ body
                 padding: 10px
                 border-radius: 0px 0px 15px 15px
                 border-bottom: 2px solid $cor-primaria
+
             .caixa-cont
-                padding: 10px
+                display: flex
                 margin: 20px 10px
                 color: black
                 border: 2px solid $cor-primaria
                 border-radius: 4px
                 font-size: 20px
-                text-align: center
-                .checkin
-                    margin-right: 10px
-                    border: 1px solid white
-                    border-radius: 10px
-                    height: 25px
-                    width: 25px
-                h3
-                    display: inline
+                height: 80px
+                cursor: pointer
+
+                #thumbAula
+                    height: 100%
+
+                .video-button-check
+                    border-radius: 0px
+                    width: 100%
+                    font-size: 23px
+
+                    &:hover
+                        color: white
+                        background-color: #649614
+
+                    &:focus
+                        background-color: green 
         
     .lado-direito // conteudos do lado esquerdo da pagina
         background-color: transparent
@@ -60,19 +55,37 @@ body
         .conteudo
             margin: 0 auto
             margin-top: 0px
-            width: 990px
-            padding: 30px
-            h1
-                color: black
+            width: 1290px
+            padding: 15px
+            
+            #titulo-aula
+                background-color: $cor-primaria
+                color: white
                 padding: 10px
+                width: 100%
+            
+
         .links-inferiores // links abaixo do vídeo
+            margin: 10px 0px
+            padding: 10px
+            border-radius: 10px
+            background-color: #120a8f
             ul
                 display: flex
                 list-style-type: none
+                
+                a
+                    text-decoration: none
+
                 li
                     color: white
                     padding: 10px
                     font-size: 25px
+
+                    &:hover
+                        background-color: white
+                        color: #120a8f
+
                     
         .conteudo-inferior   
             background-color: $cor-primaria
