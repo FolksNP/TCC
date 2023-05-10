@@ -19,7 +19,7 @@
      <!-- Swiper -->
 
   <div #swiperRef="" class="swiper mySwiper">
-    <DIV class="txtCursosSlider"><p>Continue Assistindo</p></DIV>
+    <DIV class="txtCursosSlider"><p>Adicionados Recentemente</p></DIV>
     <div class="swiper-wrapper">
       <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
      

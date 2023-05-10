@@ -91,9 +91,10 @@ input[type=button]:hover::before{
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
     >img{
-    max-height: 500px;
-    max-width: 500px;
+    height: 500px;
+    width: 500px;
     border-radius: 5px;
     border: solid 3px $cor-primaria;
     margin-top: 50px;

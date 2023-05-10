@@ -16,6 +16,10 @@ function darkMode(){
     lado_direito = document.getElementById("lado-direito");
     cards = document.getElementById("cards");
     patrono_neves = document.getElementById("patrono-neves");
+    fundoPreto = document.getElementById("fundoPreto");
+    videoCurso = document.getElementById("videoCurso");
+    fundoCinza2 = document.getElementById("fundoCinza2");
+    
 
     if(btnTema.checked){
 
@@ -23,6 +27,8 @@ function darkMode(){
         document.querySelector('body').style.background = '#293342';
         document.getElementById("footer").style.color='white';  
         document.getElementById("footer").style.backgroundColor= corDark;
+  
+        
         
         if(banner){
 
@@ -33,6 +39,18 @@ function darkMode(){
          }
          if(loginPag){
             document.getElementById("tudoLogin").style.backgroundColor= corDark;
+         }
+         if(fundoPreto){
+            document.getElementById("fundoPreto").style.backgroundColor= corDark;
+            document.getElementById("fundoPreto").style.color= 'white';
+         }
+         if(fundoCinza2){
+            document.getElementById("fundoCinza2").style.backgroundColor= 'rgba(0, 0, 255, 0)';
+            
+         }
+         if(videoCurso){
+            document.getElementById("videoCurso").style.background= 'linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 70%, '+corDark+' 30%)';
+            document.getElementById("videoCurso").style.color= 'white';
          }
       
          if(product){
@@ -125,6 +143,19 @@ else{
 
         document.getElementById("tudoLogin").style.backgroundColor='white';
     }
+    if(fundoPreto){
+        document.getElementById("fundoPreto").style.backgroundColor= '#f3f3f3';
+        document.getElementById("fundoPreto").style.color= 'black';
+     }
+     if(fundoCinza2){
+        document.getElementById("fundoCinza2").style.backgroundColor= 'rgba(0, 0, 255, 0)';
+        
+     }
+     if(videoCurso){
+        document.getElementById("videoCurso").style.background= 'linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 70%, #f3f3f3 30%)';
+        document.getElementById("videoCurso").style.color= 'white';
+     }
+  
     if(perfil){
         document.getElementById("pagProf").style.backgroundColor= corLight;
         document.getElementById("pagProf").style.color= 'black';

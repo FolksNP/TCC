@@ -32,11 +32,11 @@
             </div>
         
         </div>
-        <div class="videoCurso">
+        <div class="videoCurso" id="videoCurso">
            <!-- <img src="../imgs/java2.jpg" alt=""> -->
             <?php echo "<img src= $curso[capaCurso] >"?>
         </div>
-        <div class="fundoPreto">
+        <div class="fundoPreto" id="fundoPreto">
             <div class="txt">
             <h2>Metodologias</h2>
             <div class="interatividades">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="fundoCinza2">
+    <div class="fundoCinza2" id="fundoCinza2">
         <div class="comentarios">
             <h3>Comentários</h3>
         </div>
@@ -80,5 +80,6 @@
         </div>
     </div>
     <?php include('footer.php') ?>
+    
 </body>
 </html>

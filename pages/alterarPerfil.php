@@ -19,7 +19,7 @@
             <p>Email: <input type="email" name="email" value="<?php echo @$_SESSION['email'];?>"></"></p>
             <p>Senha: <input type="password" name="password" value=" <?php $senhaAlterar ?>"></p>
 
-            <p><label class="btnFoto" for="arquivo">Foto</label></p>
+
             <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
         crossorigin="anonymous"></script>
     

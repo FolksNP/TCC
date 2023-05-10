@@ -175,10 +175,11 @@ input:checked + .slider:before {
 }
 .navbarAzul .logoPesquisa input[type=text] {
   height: 40px;
-  width: 300px;
+  width: 400px;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: solid 2px #116798;
+  outline: none;
 }
 .navbarAzul .logoPesquisa .logoImg {
   display: flex;
@@ -328,6 +329,11 @@ button:hover {
   margin: 10px;
 }
 
+.swiper-slide:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 .txtCursosSlider p {
   width: 100%;
   font-size: 35px;
@@ -455,10 +461,11 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .videoCurso > img {
-  max-height: 500px;
-  max-width: 500px;
+  height: 500px;
+  width: 500px;
   border-radius: 5px;
   border: solid 3px #116798;
   margin-top: 50px;
@@ -2666,6 +2673,11 @@ fa-sun .fa-sun {
   justify-content: center;
   background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 60%, #f3f3f3 40%);
   margin-bottom: 20px;
+}
+.matriculaPag .matriculaForm .capaCurso img {
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
 }
 .matriculaPag .matriculaForm .descCurso {
   width: 100%;

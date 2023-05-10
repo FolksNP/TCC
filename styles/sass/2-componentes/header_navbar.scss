@@ -80,10 +80,11 @@ input:checked + .slider:before {
       }
       input[type=text]{
           height: 40px;
-          width: 300px;
+          width: 400px;
           padding: 10px;
-          border-radius: 50px;
+          border-radius: 10px;
           border: solid 2px #116798;
+          outline: none;
       }
       .logoImg {
           display: flex;
