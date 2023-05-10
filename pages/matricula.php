@@ -35,16 +35,16 @@
 
         <?php echo" <h2>Ótima Escolha de curso! Tem certeza que deseja se inscrever no curso $matricula[nomeCurso] ? </h2> 
                  <div class=capaCurso>
-                    <img src=$matricula[capaCurso]>                    
-                    <p>$matricula[descCurso]</p>
-                </div>
+                 <img src=$matricula[capaCurso]>                    
+                 </div>
                     
+                    <p class=descCurso>$matricula[descCurso]</p>
                     
                     
                     ";?>
                     <div class="dataMat">
-                    <input type="date" name="dataCurso" required="required">
-                    <p>Para continuar insira a data de hoje</p>
+                    <input type="date" name="dataCurso" value="2023-05-09" required="required">
+
                     </div>
                     <div class="btnsMat">
                     <?php echo "<a href=telaCurso.php?codCurso=$matricula[codCurso]><input type=button value=Voltar></a>" ?>

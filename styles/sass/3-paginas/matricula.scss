@@ -1,13 +1,45 @@
 .matriculaPag{
+   
     width: 100%;
-    background-color: aliceblue;
+    background-image: linear-gradient(to bottom, rgb(82, 183, 255) 0, rgb(82, 183, 255) 60%, #f3f3f3 40%);
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .matriculaForm{
-        margin: 5px 80px;
-        background-color: aqua;
-        padding-left: 10px;
-    .capaCurso{
+        padding-top: 10px ;
+        margin: 0px 0px;
+        background-image: linear-gradient(to bottom, rgb(82, 183, 255) 55%, rgb(0, 0, 0) 5%, #f3f3f3 40%);
+        //padding-left: 10px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        width: 60%;
+        margin-bottom: 20px;
+        h2{
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px;
+            
+        }
+        .capaCurso{
+        border: solid 2px black;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0) 0, rgba(0, 0, 255, 0) 60%, #f3f3f3 40%);
+        margin-bottom: 20px;
+    }
+    .descCurso{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        font-size: 20px;
     }
     form{
         //padding: 0% 10%;
@@ -19,24 +51,47 @@
         }
         input[type=text]{
             display: none;
+        }input[type=date]{
+            display: none;
         }
         .btnsMat{
             display: flex;
             width: 100%;
             justify-content: center;
             height: 35px;
-            margin: 20px;
-            gap: 5px;
+           margin-top: 50px;
+           margin-bottom: 50px;
+            gap: 50px;
+            align-items: center;
+           // background-color: rgb(0, 102, 255);
             a{
-                width: 40%;
+                width: 50%;
                 input{
                     width: 100%;
-                    height: 35px;
+                    height: 50px;
+                    border-radius: 5px;
+                    border: solid 2px black;
+                    font-size: 20px;
+                    background-color: rgb(209, 120, 120);
+                }
+                input:hover{
+                    cursor: pointer;
+                    background-color: rgb(255, 36, 36);
+                    color: white;
                 }
             }
             >input{
-                width: 40%;
-                height: 35px;
+                width: 50%;
+                height: 50px;
+                border-radius: 5px;
+                border: solid 2px black;
+                font-size: 20px;
+                background-color: rgb(0, 176, 132);
+            }
+            input:hover{
+                cursor: pointer;
+                background-color: rgb(36, 255, 182);
+                color: white;
             }
         }
     }
