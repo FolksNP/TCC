@@ -18,11 +18,13 @@
 
 
                         <?php
+                          $codAluno = $_SESSION['cod'];
                           $codProf = $_SESSION['codProf'];
                           @$cursos = $_SESSION['codCurso'];
                           
-                          $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
-                            //var_dump($con);
+                          $cursos = mysqli_query($con, "SELECT * FROM `cursos` INNER JOIN `matriculas` 
+                          ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
+                            //   var_dump($cursos);
                           while($curso = mysqli_fetch_array($cursos)){
                               echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
                             }
