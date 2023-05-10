@@ -1,8 +1,57 @@
-.caixa-acess
+.principal-acesso
+    //display: flex
+    width: 90%
+    margin: 0 auto
+    margin-top: 40px
+
+    #dis-acess
+        background-color: $cor-primaria
+        padding: 10px
+        color: #fff
+        text-align: center
+    
+    .geral-e-video
+        padding: 10px
+        text-align: center
+        background-color: $cor-primaria
+        color: #fff
+
+form
+    display: flex
+
+.caixa-acess, .video-acess
     position: relative
     background-color: #fff
+    width: 50%
+    border: 2px solid black
 
-
-    label
+    .selecaoUnica
+        margin: 10px
         display: block
+        padding: 5px
 
+        input[type=checkbox]
+            height: 25px
+            width: 25px
+            margin-left: 5px
+
+        label
+            font-size: 30px
+
+    .selecaoMultipla
+        display: block
+        padding: 5px
+        margin: 10px
+
+        select
+            padding: 5px
+            font-size: 25px
+
+        label
+            font-size: 30px
+
+#alter-button
+    border-top-left-radius: 0px
+    border-top-right-radius: 0px
+    width: 100%
+    font-size: 30px
