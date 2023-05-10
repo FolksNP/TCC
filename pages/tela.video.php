@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrono Neves - Aula</title>
+    <title>Patrono Neves - Aulas</title>
     <link rel="stylesheet" href="../styles/css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
@@ -14,60 +14,58 @@
         include ('header.php');
     ?>
 
-    <div class="conteiner">
+    <div class="conteiner-video">
         <div class="lado-esquerdo">
             <div class="conteudo">
-                <h1>conteudo</h1>
+                <h1>Conteúdo</h1>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>1. Javascript - Aula #001</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check" onclick="checked()">1. PHP - Aula #001</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>2. Javascript - Aula #002</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">2. PHP - Aula #002</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>3. Javascript - Aula #003</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">3. PHP - Aula #003</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>4. Javascript - Aula #004</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">4. PHP - Aula #004</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>5. Javascript - Aula #005</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">5. PHP - Aula #005</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>6. Javascript - Aula #006</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">6. PHP - Aula #006</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>7. Javascript - Aula #007</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">7. PHP - Aula #007</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>8. Javascript - Aula #008</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">8. PHP - Aula #008</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>9. Javascript - Aula #009</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">9. PHP - Aula #009</Button>
                 </div>
 
                 <div class="caixa-cont">
-                <input type="checkbox" name="" class="checkin"><h3>10. Javascript - Aula #010</h3>
+                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">10. PHP - Aula #010</Button>
                 </div>
-
-                
 
             </div>
         </div>
             
         <div class="lado-direito">
             <div class="conteudo">
-                <h1>Curso de Javascript #001</h1>
-                <iframe width="926" height="526" src="https://www.youtube.com/embed/SFUngC51-z4" title="I Built a Note Android App With ChatGPT 😱" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h1 id="titulo-aula">Curso de PHP #001</h1>
+                <iframe width="1260" height="710" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="links-inferiores">
                     <ul>
                         <li>Descrição</li>
@@ -89,6 +87,17 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+
+        function checked(){
+            let caixa = document.querySelector(".caixa-cont")
+            caixa.style.background = 'green'
+        }
+
+
+    </script>
 
     <?php
         include ('footer.php');
