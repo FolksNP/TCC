@@ -6,7 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap");
 @import url("https://fonts.cdnfonts.com/css/itc-benguiat-std");
-@import url("3-paginas/acessibilidade.sass");
 * {
   margin: 0;
   padding: 0;
@@ -2941,6 +2940,67 @@ fa-sun .fa-sun {
   .botoes .button-pdf {
     height: 100px;
   }
+}
+
+.principal-acesso {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.principal-acesso #dis-acess {
+  background-color: #116798;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+.principal-acesso .geral-e-video {
+  padding: 10px;
+  text-align: center;
+  background-color: #116798;
+  color: #fff;
+}
+
+form {
+  display: flex;
+}
+
+.caixa-acess, .video-acess {
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  border: 2px solid black;
+}
+.caixa-acess .selecaoUnica, .video-acess .selecaoUnica {
+  margin: 10px;
+  display: block;
+  padding: 5px;
+}
+.caixa-acess .selecaoUnica input[type=checkbox], .video-acess .selecaoUnica input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+}
+.caixa-acess .selecaoUnica label, .video-acess .selecaoUnica label {
+  font-size: 30px;
+}
+.caixa-acess .selecaoMultipla, .video-acess .selecaoMultipla {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+}
+.caixa-acess .selecaoMultipla select, .video-acess .selecaoMultipla select {
+  padding: 5px;
+  font-size: 25px;
+}
+.caixa-acess .selecaoMultipla label, .video-acess .selecaoMultipla label {
+  font-size: 30px;
+}
+
+#alter-button {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 100%;
+  font-size: 30px;
 }
 
 @font-face {
