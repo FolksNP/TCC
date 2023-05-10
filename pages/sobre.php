@@ -70,9 +70,52 @@
         </div>
     </div>
 
+    <div class="parcerias" id="parcerias">
+        <div class="parceria-cont">
+        <h1 style="text-align: center; margin-top: 15px;">Conheça nossos Parceiros!</h1> 
+        <h2>Aqui estão aqueles que ajudaram a tornar isso possível:</h2> 
+        <div class="parceiros">
+            <div class="parceiro1" style="width: 50%;">
+                <h3 style="text-align: center; margin-top: 70px;"> Ender Softwares: </h3><br>
+                <img  style="margin-left: 25px; margin-bottom: 25px; width: 90%; height: 450px; box-shadow: 5px 5px 20px #001242; border-radius: 10px;" src="../imgs/logoEnder2.png" alt="">
+                <button style="margin-left: 270px;" id="btnEnder" class="btnEnder">Conhecer</button>
+            </div>
+            <div class="parceiro2" style="width: 50%;">
+                <h3 style="text-align: center; margin-top: 70px;"> TeachUp: </h3><br>
+                <img style="margin-left: 25px; margin-bottom: 25px; width: 90%; height: 450px; box-shadow: 5px 5px 20px #001242; border-radius: 10px;" src="../imgs/teach-up-logo.jpeg">
+                <button style="margin-left: 270px;" id="btnTeachUp" class="btnTeachUp">Conhecer</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
+    <div id="enderModal" class="modal">
+
+    <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="enderModal">
+            <h2>Empresa Ender Softwares</h2>
+            <img src="../imgs/logoEnder2.png" alt="">
+        </div>
+        </div>
+
+    </div>
+
+    <div id="teachUpModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close2">&times;</span>
+        <div class="teachUpModal">
+            <h2>Empresa TeachUp</h2>
+            <img src="../imgs/teach-up-logo.jpeg" alt="">
+        </div>
+        </div>
+
+    </div>
     <?php include('footer.php');?>
+    <script src="../scripts/sobreParcerias.js"></script>
 
 
-</body>
+</body> 
 </html>
