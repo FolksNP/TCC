@@ -29,6 +29,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
   background-color: #fff;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .container {
@@ -188,7 +189,9 @@ input:checked + .slider:before {
   color: #116798;
 }
 .navbarAzul .logoPesquisa .logoImg img {
-  margin-right: 40px;
+  position: relative;
+  top: 6px;
+  margin-right: 25px;
   max-width: 70px;
   max-height: 70px;
 }

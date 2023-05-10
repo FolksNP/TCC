@@ -11,7 +11,7 @@
 <body>
     <div class="navbarAzul" id="navbar">
         <div class="logoPesquisa">
-            <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.png" alt=""></a><a href="inicial.php">Patrono Neves</a></div>
+            <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.png" alt="" id="logo-header"></a><a href="inicial.php">Patrono Neves</a></div>
             <p><input type="text" placeholder="Digite aqui sua pesquisa"></p>
 
             <div class="login-perfil">
