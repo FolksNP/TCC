@@ -609,7 +609,7 @@ body {
   margin-top: 10px;
   display: flex;
   width: 95%;
-  background-color: rgba(255, 255, 255, 0.2588235294);
+  background-color: rgba(214, 214, 214, 0.8235294118);
   border-radius: 5px;
 }
 .conteiner-video .lado-esquerdo {
@@ -664,19 +664,32 @@ body {
   padding: 15px;
 }
 .conteiner-video .lado-direito .conteudo #titulo-aula {
-  background-color: #33a2ce;
+  background-color: #116798;
   color: white;
   padding: 10px;
   width: 100%;
+}
+.conteiner-video .lado-direito .links-inferiores {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #120a8f;
 }
 .conteiner-video .lado-direito .links-inferiores ul {
   display: flex;
   list-style-type: none;
 }
+.conteiner-video .lado-direito .links-inferiores ul a {
+  text-decoration: none;
+}
 .conteiner-video .lado-direito .links-inferiores ul li {
   color: white;
   padding: 10px;
   font-size: 25px;
+}
+.conteiner-video .lado-direito .links-inferiores ul li:hover {
+  background-color: white;
+  color: #120a8f;
 }
 .conteiner-video .lado-direito .conteudo-inferior {
   background-color: #116798;

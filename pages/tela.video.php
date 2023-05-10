@@ -68,10 +68,10 @@
                 <iframe width="1260" height="710" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="links-inferiores">
                     <ul>
-                        <li>Descrição</li>
-                        <li>Comentários</li>
-                        <li>Arquivos</li>
-                        <li>Referências</li>
+                        <a href="" id="links"><li>Descrição</li></a>
+                        <a href="" id="links"><li>Comentários</li></a>
+                        <a href="" id="links"><li>Arquivos</li></a>
+                        <a href="" id="links"><li>Referências</li></a>
                     </ul>
                 </div>
                 <div class="conteudo-inferior">

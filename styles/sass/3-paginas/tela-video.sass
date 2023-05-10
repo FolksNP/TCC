@@ -4,7 +4,7 @@
     margin-top: 10px
     display: flex
     width: 95%
-    background-color: #ffffff42
+    background-color: #d6d6d6d2
     border-radius: 5px
 
     .lado-esquerdo // conteudos do lado esquerdo da pagina
@@ -59,20 +59,33 @@
             padding: 15px
             
             #titulo-aula
-                background-color: #33a2ce
+                background-color: $cor-primaria
                 color: white
                 padding: 10px
                 width: 100%
             
 
         .links-inferiores // links abaixo do vídeo
+            margin: 10px 0px
+            padding: 10px
+            border-radius: 10px
+            background-color: #120a8f
             ul
                 display: flex
                 list-style-type: none
+                
+                a
+                    text-decoration: none
+
                 li
                     color: white
                     padding: 10px
                     font-size: 25px
+
+                    &:hover
+                        background-color: white
+                        color: #120a8f
+
                     
         .conteudo-inferior   
             background-color: $cor-primaria
