@@ -45,7 +45,8 @@
                           $codProf = $_SESSION['cod'];
                           @$cursos = $_SESSION['codCurso'];
                           
-                          $terminando = mysqli_query($con,"SELECT * FROM `cursos` WHERE `professor` = $codProf ");
+                          $terminando = mysqli_query($con, "SELECT * FROM `cursos` INNER JOIN `matriculas` 
+                          ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
                         while($terminado = mysqli_fetch_array($terminando)){
             echo "<a href=telaCurso.php?codCurso=$terminado[codCurso] ><img src= $terminado[capaCurso]></a>";
     

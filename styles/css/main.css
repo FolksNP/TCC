@@ -1249,14 +1249,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 5px;
 }
 .pagTodaPerfil .colunaEsquerdaPerfil .edit {
   display: flex;
   flex-direction: row;
   margin: 5px 0px;
 }
+.pagTodaPerfil .colunaEsquerdaPerfil .edit p {
+  cursor: pointer;
+}
 .pagTodaPerfil .colunaEsquerdaPerfil .edit img {
-  max-width: 20px;
+  width: 20px;
 }
 .pagTodaPerfil .colunaEsquerdaPerfil .fotoPerfil {
   padding: 10px;
@@ -1281,6 +1288,22 @@ body {
   background-color: #f3f3f3;
   padding-bottom: 5px;
 }
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes input {
+  background: linear-gradient(45deg, #116798 0%, #116798 50%, rgb(0, 0, 0) 50%);
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes input:hover {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, #116798 50%);
+  transition: 0.8s;
+}
 .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes .txtIfProf {
   background-color: #156aaa;
   text-align: center;
@@ -1303,6 +1326,9 @@ body {
   height: 30px;
   margin: 5px;
 }
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes p:hover {
+  color: rgb(0, 189, 189);
+}
 
 .direitaPerfil {
   margin: 10px;
@@ -1321,6 +1347,9 @@ body {
   width: 100%;
   align-items: center;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .alterLogin input {
   margin: 10px 5px;
@@ -1342,6 +1371,9 @@ body {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .nomeEmail .nomePerfil :nth-child(1) {
   margin-left: 5px;
@@ -1377,6 +1409,9 @@ body {
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .estudos .cursandoTerminados p {
   margin-bottom: 10px;
@@ -1388,6 +1423,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  margin: 0 5px;
 }
 .direitaPerfil .estudos .terminados {
   text-align: center;
@@ -1396,6 +1432,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+  margin: 0 5px;
 }
 .direitaPerfil .estat .estatTxt {
   width: 100%;
@@ -1406,6 +1443,9 @@ body {
 }
 .direitaPerfil .estat .resp-perg-aulas-exe {
   background-color: white;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -1433,6 +1473,9 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .redeSociais {
   display: flex;
@@ -1447,6 +1490,9 @@ body {
   width: 100%;
   background-color: #ffffff;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
 }
@@ -1496,6 +1542,9 @@ body {
   justify-content: space-around;
   padding: 5px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .conteudosTelaCursos .topoConteudosCurso input[type=text] {
   width: 400px;
@@ -1557,6 +1606,9 @@ body {
   margin: 10px 0px;
   padding: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .conteudosTelaCursos details img {
   width: 100px;
@@ -1611,6 +1663,9 @@ body {
   padding: 10px;
   background-color: white;
   border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .selecioneCurso img {
   width: 80px;
@@ -1633,6 +1688,9 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .estCursos .estAlunos .estAlunosInfs div {
   display: flex;
@@ -1654,6 +1712,9 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .estCursos .estViews .estViewsInfs div {
   display: flex;
@@ -1675,6 +1736,9 @@ body {
   background-color: white;
   padding: 15px;
   border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .estCursos .estAvaliacoes .estAvaliacoesInfs > div {
   display: flex;
@@ -1690,6 +1754,9 @@ body {
   margin-top: 10px;
   border-radius: 15px;
   padding: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .direitaPerfil .graficos p {
   width: 100%;
