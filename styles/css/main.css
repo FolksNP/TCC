@@ -2412,6 +2412,38 @@ fa-sun .fa-sun {
   cursor: pointer;
 }
 
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.enderModal, .teachUpModal {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.enderModal > img, .teachUpModal > img {
+  max-width: 250px;
+  max-height: 400px;
+}
+
+.teachUpModal > img {
+  max-width: 250px;
+  max-height: 500px;
+}
+
 .container-sobre {
   display: flex;
   flex-direction: column;
@@ -2639,6 +2671,31 @@ fa-sun .fa-sun {
 }
 .patrono-neves .lado-esquerdo .cards h2 {
   margin-bottom: 10px;
+}
+
+.parcerias {
+  margin: 0 auto;
+  display: block;
+  width: 1280px;
+  height: 815px;
+  background-color: white;
+  border-top: 25px solid #020d3f;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px #001242;
+}
+.parcerias .parceria-cont h2 {
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: 19px;
+  margin: 10px;
+  margin-top: 20px;
+  border: 3px solid #0d3254;
+  padding: 10px;
+  border-radius: 15px;
+}
+.parcerias .parceiros {
+  margin: 0 auto;
+  display: flex;
 }
 
 .matriculaPag {
