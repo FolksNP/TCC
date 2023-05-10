@@ -93,7 +93,9 @@ input:checked + .slider:before {
           color: #116798;
           
           img{
-              margin-right: 40px;
+              position: relative;
+              top: 6px;
+              margin-right: 25px;
               max-width: 70px;
               max-height: 70px;
           }
