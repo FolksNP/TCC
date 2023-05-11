@@ -26,7 +26,8 @@
                           ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
                             //   var_dump($cursos);
                           while($curso = mysqli_fetch_array($cursos)){
-                              echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+                            $cursoCapa = $curso['capaCurso'];
+                              echo "<a href=tela.video.php?codCurso=$curso[codCurso]&capaCurso=$curso[capaCurso]&nomeCurso=$curso[nomeCurso] ><img src= $curso[capaCurso]></a>";
                             }
     
     
@@ -48,7 +49,7 @@
                           $terminando = mysqli_query($con, "SELECT * FROM `cursos` INNER JOIN `matriculas` 
                           ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
                         while($terminado = mysqli_fetch_array($terminando)){
-            echo "<a href=telaCurso.php?codCurso=$terminado[codCurso] ><img src= $terminado[capaCurso]></a>";
+            echo "<a href=tela.video.php?codCurso=$terminado[codCurso]&capaCurso=$terminado[capaCurso]&nomeCurso=$terminado[nomeCurso] ><img src= $terminado[capaCurso]></a>";
     
         } 
         ?></div>

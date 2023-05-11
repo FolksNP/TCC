@@ -1303,6 +1303,22 @@ body {
   background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, #116798 50%);
   transition: 0.8s;
 }
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes button {
+  background: linear-gradient(45deg, #116798 0%, #116798 50%, rgb(0, 0, 0) 50%);
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes button:hover {
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, #116798 50%);
+  transition: 0.8s;
+}
 .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes .txtIfProf {
   background-color: #156aaa;
   text-align: center;

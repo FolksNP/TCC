@@ -6,7 +6,7 @@ require('connect.php');
     if(mysqli_query($con, "INSERT INTO `matriculas` ( `codMatricula`,`matriculaAlunos`,`matriculaCursos`,`cursoProgresso`, `dataMatricula`) 
     VALUES (NULL,'$alunoMat', '$cursoMat', 0.0, '$dataCurso');")){
             $msg = "matriculado com sucesso!";
-            $target = "location:perfil.php";
+            $target = "location:telaPerfil.php";
 
 
 

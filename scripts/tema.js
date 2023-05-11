@@ -164,7 +164,7 @@ else{
         document.getElementById("colEsq").style.backgroundColor= 'white';
         document.getElementById("nomeEmail").style.backgroundColor= 'white';
         document.getElementById("estudos").style.backgroundColor= 'white';
-        document.getElementById("estudos").style.color= 'white';
+        document.getElementById("estudos").style.color= 'black';
         nome = document.getElementById("nomePerfil");
         nome.children[0].style.color= 'black';
         nome.children[1].style.backgroundColor= corLight;

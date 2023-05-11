@@ -12,18 +12,28 @@
     
     <?php
         include ('header.php');
+        @session_start();
     ?>
+
 
     <div class="conteiner-video">
         <div class="lado-esquerdo">
             <div class="conteudo">
                 <h1>Conteúdo</h1>
+                <?php
+                   $capaCurso = $_GET['capaCurso'];
+                   $nomeCurso = $_GET['nomeCurso'];
+                   
+                   for ($i=1; $i < 10; $i++) { 
+                    # code...
+                    echo"<div class=caixa-cont>
 
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check" onclick="checked()">1. PHP - Aula #001</Button>
-                </div>
-
-                <div class="caixa-cont">
+                    <img src= $capaCurso id=\"thumbAula\" ><Button class=\"video-button-check\" onclick=\"checked()\">$i. $nomeCurso - Aula #00$i</Button>
+                   
+                </div>";}
+                    ?>
+                
+                <!-- <div class="caixa-cont">
                     <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">2. PHP - Aula #002</Button>
                 </div>
 
@@ -57,14 +67,14 @@
 
                 <div class="caixa-cont">
                     <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">10. PHP - Aula #010</Button>
-                </div>
+                </div> -->
 
             </div>
         </div>
             
         <div class="lado-direito">
             <div class="conteudo">
-                <h1 id="titulo-aula">Curso de PHP #001</h1>
+               <?php echo "<h1 id=titulo-aula>Curso $nomeCurso</h1> "?>
                 <iframe width="1260" height="710" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="links-inferiores">
                     <ul>
