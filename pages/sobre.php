@@ -97,6 +97,9 @@
         <div class="enderModal">
             <h2>Empresa Ender Softwares</h2>
             <img src="../imgs/logoEnder2.png" alt="">
+            <div class="sobreEnder">
+                <p></p>
+            </div>
         </div>
         </div>
 
@@ -109,6 +112,9 @@
         <div class="teachUpModal">
             <h2>Empresa TeachUp</h2>
             <img src="../imgs/teach-up-logo(cortada).jpg" alt="">
+            <div class="sobreTeachUp">
+
+            </div>
         </div>
         </div>
 
