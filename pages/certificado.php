@@ -129,19 +129,6 @@
     <div class="principal-certificado">
         <div class="patrono-neves-certificado">
             <div class="caixa-pn">
-                <!-- <h1 class="pn-letter">P</h1>
-                <h1 class="pn-letter">A</h1>
-                <h1 class="pn-letter">T</h1>
-                <h1 class="pn-letter">R</h1>
-                <h1 class="pn-letter">O</h1>
-                <h1 class="pn-letter">N</h1>
-                <h1 class="pn-letter">O</h1>
-                <br>
-                <h1 class="pn-letter">N</h1>
-                <h1 class="pn-letter">E</h1>
-                <h1 class="pn-letter">V</h1>
-                <h1 class="pn-letter">E</h1>
-                <h1 class="pn-letter">S</h1> -->
 
               <img src="../imgs/melhorgambiarra.png" alt="" id="imagem-gambiarra">
 
