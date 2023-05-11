@@ -166,11 +166,15 @@
                     <h1 id="nome-instrutor">Felipe Silva</h1>
                     <hr>
                     <p id="instrutor">Diretor de Ensino</p>
+                    <br><br>
+                    <p style="color: gray;">Emitido em: 00-00-0000</p>
                 </div>
                 <div class="plataforma">
                     <h1 id="plataforma-ass">Pedro Arthur</h1>
                     <hr>
                     <p id="plat-resp">Diretor Executivo</p>
+                    <br><br>
+                    <p style="color: gray;">Código: aBcDeFgHiJk</p>
                 </div>
             </div>
 
