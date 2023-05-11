@@ -12,6 +12,9 @@ if(mysqli_query($con, "INSERT INTO `seccoes` ( `codSeccao`,`curso`,`numeracao`, 
 VALUES (null, '$curso', '$numeracao', '$secTitulo');")){
         $msg = "Seção criada com sucesso!";
         $_SESSION['codCursoAula'] = $curso;
+        $_SESSION['numeracaoCurso'] = $numeracao;
+        
+       
         
 
 } else{
