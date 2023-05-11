@@ -26,8 +26,7 @@
                         <li><a href="inicial.php">Home</a></li>
                         <li><a href="cursos.php">Cursos</a></li>
                         <li><a href="certificado.php">Certificados</a></li>
-                        <li><a href="">Professores</a></li>
-                        <li><a href="">Working Togheter</a></li>
+                        <li><a href="login.php">Cadastre-se</a></li>
                     </ul>
                 </div>
                 <div class="links">
