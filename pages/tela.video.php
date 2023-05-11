@@ -107,6 +107,16 @@
             'Content-Length: ' . strlen($dadosJson)
           ));
         curl_close($requestHandle);
+
+        $codProgresso = $progresso[0];
+        $matricula = $progresso[1];
+        $seccao = $progresso[2];
+        $aula = $progresso[3];
+        $progressoAula = $progresso[4];
+        
+        var_dump($codProgresso);
+
+
     ?>
 
     <script type="module" src="http://localhost:8080/video"></script>
@@ -116,12 +126,6 @@
             let caixa = document.querySelector(".caixa-cont")
             caixa.style.background = 'green'
         }
-
-        fetch('url', {
-
-        })
-            .then()
-            .catch() 
     </script>
 
     <?php
