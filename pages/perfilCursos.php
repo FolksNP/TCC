@@ -5,7 +5,7 @@
         
         <p>Cursos</p>
         <p>Promoções</p>
-        <p>Adicionar</p>
+        <button id="btnAula" >Adicionar</button>
         
         <p><img src="../imgs/lixeira.png" alt=""></p>
         
@@ -18,7 +18,7 @@
         $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
     
         while($curso = mysqli_fetch_array($cursos)){
-            echo "<a href=telaCurso.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+            echo "<a href=seccoes.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
     
         };
     //    $cursos = mysqli_query($con, "SELECT `cursos.capaCurso`
@@ -91,6 +91,4 @@
     </details>
 </div>
 </div>
-
-
 

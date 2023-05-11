@@ -9,8 +9,10 @@ var_dump($buscaSec);
 $seccao = mysqli_fetch_array($buscaSec);
 
 if(mysqli_query($con, "INSERT INTO `seccoes` ( `codSeccao`,`curso`,`numeracao`, `secTitulo`) 
-VALUES ('$codSeccao', '$curso', '$numeracao', '$secTitulo');")){
+VALUES (null, '$curso', '$numeracao', '$secTitulo');")){
         $msg = "Seção criada com sucesso!";
+        $_SESSION['codCursoAula'] = $curso;
+        
 
 } else{
     $msg = "Erro ao cadastrar a seção!";
@@ -19,4 +21,5 @@ VALUES ('$codSeccao', '$curso', '$numeracao', '$secTitulo');")){
 var_dump($con);
 echo $msg;
 $_SESSION['msg'] = $msg;
+header("location:conteudo.php");
 ?>
