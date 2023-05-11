@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../styles/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link rel="stylesheet" href="../styles/css/main.css"> -->
     <title>Cadastrar uma seção</title>
 </head>
 <body>
-<?php 
-    session_start();
+    <?php 
+    include('header.php');
+    @session_start();
     $codCurso = $_GET['codCurso'];
 ?>
     <form action="seccoes.act.php" method="post" enctype="multipart/form-data">
