@@ -328,6 +328,19 @@
     font-weight: bold;
   }
   
+  .closeAula:hover,
+  .closeAula:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .closeAula {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
   .close:hover,
   .close:focus {
     color: black;

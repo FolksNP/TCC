@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,16 @@
     <title>Cadastrar uma seção</title>
 </head>
 <body>
-
+<?php 
+    session_start();
+    $codCurso = $_GET['codCurso'];
+?>
     <form action="seccoes.act.php" method="post" enctype="multipart/form-data">
 
-        <p>Curso:</p>
-        <input type="text" name="curso" id="">
+        <?php echo " <input type=hidden value=$codCurso name=curso id=>" ?>
 
         <p>Numeração</p>
-        <input type="text" name="numeracao" id="">
+        <input type="text" value="1" name="numeracao" id="">
 
         <p>Título da Seção</p>
         <input type="text" name="secTitulo" id=""><br><br>
