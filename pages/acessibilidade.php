@@ -93,9 +93,8 @@
     </div>
     
 
-    <script type="module" src="http://localhost:8080/shared.js"></script>
-    <script type="module" src="http://localhost:8080/acessibilidade.js"></script>
-
+    <script type="module" src="http://localhost:8080/shared"></script>
+    <script type="module" src="http://localhost:8080/acessibilidade"></script>
     <?php include('footer.php')?>
 </body>
 </html>

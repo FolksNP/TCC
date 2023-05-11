@@ -1,0 +1,25 @@
+{
+  "name": "patrono-neves",
+  "version": "1.0.3",
+  "description": "Uma aplicação web de cursos online que utiliza JavaScript e PHP.",
+  "main": "./server/main.js",
+  "scripts": {
+    "start": "PORT=8080 node ./server/main.js"
+  },
+  "keywords": [
+    "api",
+    "backend",
+    "express",
+    "javascript",
+    "php"
+  ],
+  "author": "Patrono Neves",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  }
+}
