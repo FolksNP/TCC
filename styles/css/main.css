@@ -2550,8 +2550,12 @@ fa-sun .fa-sun {
 }
 
 .teachUpModal > img {
-  max-width: 250px;
-  max-height: 500px;
+  max-width: 275px;
+  max-height: 600px;
+  margin-top: -10px;
+  margin-left: -18px;
+  height: 100px;
+  width: 1000px;
 }
 
 .container-sobre {
@@ -2806,6 +2810,36 @@ fa-sun .fa-sun {
 .parcerias .parceiros {
   margin: 0 auto;
   display: flex;
+}
+.parcerias .parceiros .parceiro1 h3 {
+  text-align: center;
+  margin-top: 70px;
+}
+.parcerias .parceiros .parceiro1 img {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  width: 90%;
+  height: 450px;
+  box-shadow: 5px 5px 20px #001242;
+  border-radius: 10px;
+}
+.parcerias .parceiros .parceiro1 button {
+  margin-left: 270px;
+}
+.parcerias .parceiros .parceiro2 h3 {
+  text-align: center;
+  margin-top: 70px;
+}
+.parcerias .parceiros .parceiro2 img {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  width: 92%;
+  height: 450px;
+  box-shadow: 5px 5px 20px #001242;
+  border-radius: 10px;
+}
+.parcerias .parceiros .parceiro2 button {
+  margin-left: 270px;
 }
 
 .matriculaPag {
