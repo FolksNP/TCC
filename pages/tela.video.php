@@ -89,12 +89,11 @@
     </div>
     
     <?php 
+
+        // essa variavel $progresso é de onde deve-se tirar todo o progresso do aluno para posteriormente cadastrar no banco de dados.
         $progresso = array(
-            'codProgresso' => '',
-            'matricula' => '',
-            'seccao' => '',
-            'aula' => '',
-            'progressoAula' => '0'
+            'codProgresso' => '12',
+
         );
 
         $progressoJSON = json_encode($progresso);
@@ -102,11 +101,37 @@
         $requestHandle = curl_init('http://localhost:8080/progresso/aula');
         curl_setopt($requestHandle, CURLOPT_CUSTOMREQUEST, 'PATCH');
         curl_setopt($requestHandle, CURLOPT_POSTFIELDS, $progressoJSON);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        curl_setopt($requestHandle, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
-            'Content-Length: ' . strlen($dadosJson)
+            'Content-Length: ' . strlen($progressoJSON)
           ));
         curl_close($requestHandle);
+
+        // $codProgresso = $progresso[0];
+        // $matricula = $progresso[1];
+        // $seccao = $progresso[2];
+        // $aula = $progresso[3];
+        // $progressoAula = $progresso[4];
+        
+        //progresso é de onde o código pega os valores para cadastrar no database
+        foreach($progresso as $indice => $valor){
+            echo 'indice: '.$indice . ' ----- ' .' valor: '.$valor;
+            $codProgresso[] = $valor;
+            var_dump($codProgresso);
+        }
+
+        //no vetor $codProgresso[] temos os seguintes valores e seus indices:
+        // 0 => matricula
+        // 1 => seccao
+        // 2 => dataConclusao
+
+        if ("INSERT INTO `progressos` (`codProgresso`, `matricula`, `seccao`, `dataConclusao`) 
+                            VALUES (NULL, '$codProgresso[0]', '$codProgresso[1]', '$codProgresso[2]')"){
+            echo 'sucesso';
+        }else{
+            echo 'ferrou';
+        }
+
     ?>
 
     <script type="module" src="http://localhost:8080/video"></script>
@@ -116,12 +141,6 @@
             let caixa = document.querySelector(".caixa-cont")
             caixa.style.background = 'green'
         }
-
-        fetch('url', {
-
-        })
-            .then()
-            .catch() 
     </script>
 
     <?php
