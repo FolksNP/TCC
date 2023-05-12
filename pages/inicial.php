@@ -107,7 +107,7 @@
             <img src="../imgs/lupa.png" alt="lupa" ><input type="text" name="pesquisaCurso" placeholder="Procure um curso" id="lupa"><p><label for="lupa">Buscar</label></p>
         </div>
     </div>
-    <p><a href="">Ver todos os cursos</a></p>
+    <p><a href="cursos.php">Ver todos os cursos</a></p>
 </div>
 
         <div class="perguntasFrequentesTudo" id="pergFreq">
