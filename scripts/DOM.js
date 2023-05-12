@@ -3,7 +3,7 @@ function alterar(alterar){
     alterCursos = document.querySelector('#direitaPerfilCursos');
     alterEstatisticas = document.querySelector('#direitaPerfilEst');
     alterarPerfil = document.querySelector('#direitaPerfilAlterar');
-    acessibilidade = document.querySelector('#acesso')
+    acessibilidade = document.querySelector('#acesso');
     
 
 if(alterar == 'cursos'){
