@@ -85,7 +85,7 @@
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
                 <li><a href="../pages/sobre.php">Sobre nós</a></li>
-                <li><a href="../pages/telaPerfil.php">Suporte</a></li>
+                <li><a href="../pages/telaPerfil.php">Dashboard</a></li>
             </ul>
         </div>
     </div>

@@ -25,7 +25,7 @@
                     }
                     ?>
                     <div onclick="alterar('est')"><img src="../imgs/est.png" alt=""><p>Estatísticas</p></div>
-                    <div onclick="alterar()"><img src="../imgs/acessibilidade.png" alt=""><p>Acessibilidade</p></div>
+                    <div onclick="alterar('acess')"><img src="../imgs/acessibilidade.png" alt=""><p>Acessibilidade</p></div>
                     <div><img src="../imgs/sairAluno.png" alt=""><a href="login.php"> Sair</a></p></div>
             </div>
             

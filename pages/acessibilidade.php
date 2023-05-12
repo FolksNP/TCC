@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../styles/css/main.css">
 </head>
 <body>
-<?php include('header.php')?>
-    <div class="principal-acesso">
+<?php // include('header.php')?> -->
+    <div class="principal-acesso" id="acesso">
         <h1 id="dis-acess">ACESSIBILIDADE - PATRONO NEVES - EDUCAÇÃO PARA TODOS</h1>
         <form action="">
             <div class="caixa-acess">
@@ -95,6 +95,6 @@
 
     <script type="module" src="http://localhost:8080/shared"></script>
     <script type="module" src="http://localhost:8080/acessibilidade"></script>
-    <?php include('footer.php')?>
+    <!-- <?php //include('footer.php')?>
 </body>
-</html>
+</html> -->

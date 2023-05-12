@@ -37,6 +37,7 @@
        <?php include('perfilEst.php'); ?>
        <?php include('perfilInfs.php'); ?>
        <?php include('perfilCursos.php'); ?>
+       <?php include('acessibilidade.php'); ?>
         <!-- </div> -->
     </div>
 
