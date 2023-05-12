@@ -1,10 +1,10 @@
-import { verifyConfig, verifyAlterarTema, applyConfig } from "./shared"
+import { verifyConfigAcessibilidade, verifyAlterarTema, applyConfig } from "./shared"
 
-const form = document.querySelector('form')
+const form = document.getElementById('form-acess')
 const button = document.getElementById('alter-button')
 
 
-let config = verifyConfig(form)
+let config = verifyConfigAcessibilidade(form)
 config = {}
 console.log(applyConfig)
 
@@ -33,7 +33,7 @@ function saveConfig() {
     }
 
     try {
-        localStorage.setItem(`userSettings`, JSON.stringify(config))
+        localStorage.setItem('userSettings', JSON.stringify(config))
         console.log('Arquivo gravado com sucesso!')
         document.dispatchEvent(applyConfig)
         return true

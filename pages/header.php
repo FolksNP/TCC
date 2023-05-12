@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-   <script src="../scripts/tema.js"></script>
-   <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
-
+    <script type="module" src="http://localhost:8080/shared"></script>
+    <script type="module" src="http://localhost:8080/tema"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
 <body>
     <div class="navbarAzul" id="navbar">
@@ -16,10 +16,10 @@
 
             <div class="login-perfil">
                 
-            <label class="switch">
-  <input type="checkbox" id="switch-shadow" onclick="darkMode()" >
-  <span class="slider round"></span>
-</label>
+            <!-- <label class="switch">
+    <input type="checkbox" id="switch-shadow" onclick="darkMode()" >
+    <span class="slider round"></span> -->
+<!-- </label> -->
                 <div class="perfil">
                 <?php  require('connect.php');
                 @$cod = $_SESSION['cod'];

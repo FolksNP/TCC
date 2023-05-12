@@ -1,8 +1,20 @@
 export const applyConfig = new CustomEvent('applyConfig') //evento para aplicar as configurações
 
 //verifica se existe um JSON de configurações
-export function verifyConfig(form) {
+export function verifyConfig() {
+    const config = JSON.parse(localStorage.getItem('userSettings'))  
+    console.log(config)
+    if(config != null) {
+        console.log('Arquivo de configuração encontrado!')
+        return config 
+    }
+    return {}
+}
+
+//verifica se existe um JSON de configurações, atualizando a páginan de acessibilidade caso haja
+export function verifyConfigAcessibilidade(form) {
         const config = JSON.parse(localStorage.getItem('userSettings'))  
+        console.log(config)
         if(config != null) {
             console.log('Arquivo de configuração encontrado!')
             refreshConfig(form, config)
@@ -29,16 +41,18 @@ function refreshConfig(form, config) {
 }
 
 //verifica se o tema da página deve ser alterado para modo escuro
-export function verifyAlterarTema(config, formatacao) {
-    if(config != null) {
+export function verifyAlterarTema(config, darkMode, whiteMode) {
+    if(config['alternarTema'] != null) {
         if(config['alternarTema'] == true) {
-            formatacao()
+            darkMode()
+        } else {
+            whiteMode()
         }
     }
 }
 
 export function verifySublinharLink(config, formatacao) {
-    if(config != null) {
+    if(config['sublinharLink'] != null) {
         if(config['sublinharLink'] == true) {
             formatacao()
         }
@@ -58,7 +72,7 @@ export function resolucaoVideo(config, formatacao) {
 } 
 
 export function legendaPadrao(config, formatacao) {
-    if(config != null) {
+    if(config['legendaPadrao'] != null) {
         if(config['legendaPadrao'] == true) {
             formatacao()
         }

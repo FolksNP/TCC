@@ -16,7 +16,7 @@
     var_dump($_GET['codCurso']); 
 
     $codigoCurso = $_GET['codCurso'];
-       echo" <input type=text name=codCurso value=$codigoCurso >";
+       echo" <input type=hidden name=codCurso value=$codigoCurso >";
        ?>
        <input type="file" name="videoAula">
        <input type=submit>

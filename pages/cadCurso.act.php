@@ -21,12 +21,12 @@ $codProfCurso = $_SESSION['codProf'];
     VALUES (NULL,'$codProfCurso', 0.0, '$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso','amei');")){
             $msg = "Curso foi cadastrado com sucesso!";
 
-            $_SESSION['codCurso'] = $curso['codCurso'];  
-            $cursoCodigo= $curso['codCurso'];  
-            $_SESSION['nomeCurso'] = $curso['nomeCurso'];
-            $_SESSION['descCurso'] = $curso['descCurso'];
-            $_SESSION['capaCurso'] = $curso['capaCurso'];
-            $_SESSION['codCurso'] = $curso['codCurso'];
+            @$_SESSION['codCurso'] = $curso['codCurso'];  
+            @$cursoCodigo= $curso['codCurso'];  
+            @$_SESSION['nomeCurso'] = $curso['nomeCurso'];
+            @$_SESSION['descCurso'] = $curso['descCurso'];
+            @$_SESSION['capaCurso'] = $curso['capaCurso'];
+            @$_SESSION['codCurso'] = $curso['codCurso'];
 
 
                 $buscaCursoProf = mysqli_query($con, "Select * from `cursos` where `codCurso` = '$cursoCodigo'");
