@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../styles/css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
     <title>Patrono Neves</title>
-    <script src="../scripts/tema.js"></script>
+    <script type="module" src="http://localhost:8080/shared"></script>
+    <script type="module" src="http://localhost:8080/tema"></script>
 </head>
     <body>
     <?php include('header.php') ?>

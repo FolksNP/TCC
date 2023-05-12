@@ -61,6 +61,10 @@ app.route('/acessibilidade').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/acessibilidade.js'))
 })
 
+app.route('/tema').get((req, res) => {
+    res.sendFile(path.join(__dirname, '/modules/tema.js'))
+})
+
 app.route('/progresso/aula').post((req, res) => {
 
 })

@@ -3,8 +3,6 @@ import { verifyConfig, verifyAlterarTema, applyConfig } from "./shared.js"
 const video = document.querySelector('iframe')
 console.log(video)
 
-
-
 function carregarProg() {
     fetch('http://localhost:8080/video')
         .then(res => JSON.parse(res))
