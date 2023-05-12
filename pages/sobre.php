@@ -98,7 +98,9 @@
             <h2>Empresa Ender Softwares</h2>
             <img src="../imgs/logoEnder2.png" alt="">
             <div class="sobreEnder">
-                <p></p>
+                <p>Neste trabalho, vamos apresentar nossa empresa, a EnderSoftwares. A empresa estabelece um projeto com a finalidade de criar uma nova era para os programadores. O mercado profissional dos técnicos de informática aumentou cerca de 38%, perante a este crescimento, as empresas começaram a ser mais exigentes com a nova demanda de programadores. Uma das dificuldades de alguns desses programadores, é a questão da experiência, logo, a EnderSoftwares ajudará o programador a adquirir prática, network e contato com clientes para assim ter a experiencia desejada pelas empresas.
+Nosso propósito é contribuir para o avanço profissional das pessoas, empresas e da sociedade, utilizando a tecnologia ao nosso favor.
+</p>
             </div>
         </div>
         </div>
@@ -109,11 +111,12 @@
         <!-- Modal content -->
         <div class="modal-content">
         <span class="close2">&times;</span>
-        <div class="teachUpModal">
+        <div class="teachUpModal" style="display: block;">
             <h2>Empresa TeachUp</h2>
             <img src="../imgs/teach-up-logo(cortada).jpg" alt="">
             <div class="sobreTeachUp">
-
+                <p>TeachUp é um projeto com o intuito de facilitar a vida dos jovens. Navegar em uma rede social ao mesmo tempo que se aprende sobre os hobbies que sempre teve interesse, mas nunca encontrou uma plataforma específica para isso.
+Uma rede social no qual você não precisa ser um profissional para ensinar os assuntos nos quais você domina e também não precisa pagar ou estar-se matriculado para aprender assuntos nos quais tenha interesse. Basta ter uma conta no TeachUp! Aprendendo e se divertindo.</p>
             </div>
         </div>
         </div>
