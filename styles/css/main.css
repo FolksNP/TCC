@@ -2536,28 +2536,6 @@ fa-sun .fa-sun {
   cursor: pointer;
 }
 
-.enderModal, .teachUpModal {
-  padding: 10px;
-  border-radius: 20px;
-  color: white;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.enderModal > img, .teachUpModal > img {
-  max-width: 250px;
-  max-height: 400px;
-}
-
-.teachUpModal > img {
-  max-width: 275px;
-  max-height: 600px;
-  margin-top: -10px;
-  margin-left: -18px;
-  height: 100px;
-  width: 1000px;
-}
-
 .container-sobre {
   display: flex;
   flex-direction: column;
@@ -2595,6 +2573,7 @@ fa-sun .fa-sun {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 30px;
+    flex-direction: column;
   }
 }
 @media (max-width: 1280px) {
@@ -2791,11 +2770,24 @@ fa-sun .fa-sun {
   margin: 0 auto;
   display: block;
   width: 1280px;
-  height: 815px;
+  margin-top: 20px;
   background-color: white;
   border-top: 25px solid #020d3f;
   border-radius: 20px;
   box-shadow: 10px 10px 50px #001242;
+  padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .parcerias {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 .parcerias .parceria-cont h2 {
   text-align: center;
@@ -2810,6 +2802,30 @@ fa-sun .fa-sun {
 .parcerias .parceiros {
   margin: 0 auto;
   display: flex;
+}
+@media (max-width: 500px) {
+  .parcerias .parceiros {
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias .parceiros {
+    flex-direction: column;
+  }
+}
+.parcerias .parceiros .parceiro1 {
+  width: 50%;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .parcerias .parceiros .parceiro1 {
+    width: 95%;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias .parceiros .parceiro1 {
+    width: 100%;
+  }
 }
 .parcerias .parceiros .parceiro1 h3 {
   text-align: center;
@@ -2826,6 +2842,31 @@ fa-sun .fa-sun {
 .parcerias .parceiros .parceiro1 button {
   margin-left: 270px;
 }
+@media (max-width: 500px) {
+  .parcerias .parceiros .parceiro1 button {
+    width: 90%;
+    margin-left: 24px;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias .parceiros .parceiro1 button {
+    width: 90%;
+    margin-left: 24px;
+  }
+}
+.parcerias .parceiros .parceiro2 {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .parcerias .parceiros .parceiro2 {
+    width: 95%;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias .parceiros .parceiro2 {
+    width: 100%;
+  }
+}
 .parcerias .parceiros .parceiro2 h3 {
   text-align: center;
   margin-top: 70px;
@@ -2840,6 +2881,77 @@ fa-sun .fa-sun {
 }
 .parcerias .parceiros .parceiro2 button {
   margin-left: 270px;
+}
+@media (max-width: 500px) {
+  .parcerias .parceiros .parceiro2 button {
+    width: 90%;
+    margin-left: 24px;
+  }
+}
+@media (max-width: 900px) {
+  .parcerias .parceiros .parceiro2 button {
+    width: 90%;
+    margin-left: 24px;
+  }
+}
+
+.enderModal, .teachUpModal {
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  width: 90%;
+  justify-content: space-between;
+}
+.enderModal > img, .teachUpModal > img {
+  max-width: 250px;
+  max-height: 400px;
+}
+
+.enderModal .modal-superior-ender {
+  display: flex;
+}
+.enderModal .modal-superior-ender > img {
+  position: relative;
+  right: -270px;
+  top: 100px;
+  transform: rotate(71deg);
+}
+.enderModal .sobreEnder {
+  width: 75%;
+  text-align: justify;
+  line-height: 1.5rem;
+  text-indent: 1.5em;
+}
+
+.teachUpModal .modal-superior-teach {
+  display: flex;
+}
+.teachUpModal .modal-superior-teach > img {
+  position: relative;
+  right: -330px;
+  top: 100px;
+  max-width: 275px;
+  max-height: 600px;
+  height: 100px;
+  width: 1000px;
+  transform: rotate(69deg);
+}
+.teachUpModal .sobreTeachUp {
+  width: 75%;
+  text-align: justify;
+  line-height: 1.5rem;
+  text-indent: 1.5em;
+}
+
+.link-parceiros {
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.link-parceiros:hover {
+  padding: 10px;
+  background: white;
+  color: #116798;
 }
 
 .matriculaPag {

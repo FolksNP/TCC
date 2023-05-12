@@ -361,27 +361,3 @@
     cursor: pointer;
   }
 
-  .enderModal, .teachUpModal{
-    // background-color: $cor-primaria;
-     padding: 10px;
-     border-radius: 20px;
-     color: white;
-     display: flex;
-     width: 100%;
-     justify-content: space-between;
-     >img{
-       max-width: 250px;
-       max-height: 400px;
-     }
-    }
-
-    .teachUpModal{
-      >img{
-        max-width: 275px;
-        max-height: 600px;
-        margin-top: -10px;
-        margin-left: -18px;
-        height: 100px;
-        width: 1000px;
-      }
-    }

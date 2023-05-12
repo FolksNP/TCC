@@ -30,6 +30,7 @@
         width: 90%
         margin: 0 auto
         margin-bottom: 30px
+        flex-direction: column
 
     @include notebook
         width: 90%
@@ -193,11 +194,21 @@
     margin: 0 auto
     display: block
     width: 1280px
-    height: 815px
+    margin-top: 20px
     background-color: white
     border-top: 25px solid #020d3f
     border-radius: 20px
     box-shadow: 10px 10px 50px #001242
+    padding-bottom: 20px
+
+    @include mobile
+        flex-direction: column
+        width: 90%
+
+    @include tablet
+        flex-direction: column
+        width: 90%
+
 
     .parceria-cont
         h2
@@ -216,8 +227,23 @@
     .parceiros
         margin: 0 auto
         display: flex
+
+        @include mobile
+            flex-direction: column
+        
+        @include tablet
+            flex-direction: column
             
         .parceiro1
+            width: 50%
+            justify-content: center
+
+            @include mobile
+                width: 95%
+
+            @include tablet
+                width: 100%
+
             h3
                 text-align: center 
                 margin-top: 70px
@@ -231,7 +257,25 @@
             button
                 margin-left: 270px
 
+                @include mobile
+                    width: 90%
+                    margin-left: 24px
+                
+                @include tablet
+                    width: 90%
+                    margin-left: 24px
+
+
         .parceiro2
+            width: 50%
+
+            @include mobile
+                width: 95%
+            
+            @include tablet
+                width: 100%
+
+
             h3
                 text-align: center 
                 margin-top: 70px
@@ -244,3 +288,70 @@
                 border-radius: 10px
             button
                 margin-left: 270px
+
+                @include mobile
+                    width: 90%
+                    margin-left: 24px
+                
+                @include tablet
+                    width: 90%
+                    margin-left: 24px
+
+.enderModal, .teachUpModal
+    padding: 10px
+    border-radius: 20px
+    color: white
+    width: 90%
+    justify-content: space-between
+    >img
+        max-width: 250px
+        max-height: 400px
+     
+.enderModal
+
+    .modal-superior-ender
+        display: flex
+
+        >img
+            position: relative
+            right: -270px
+            top: 100px
+            transform: rotate(71deg)
+
+    .sobreEnder
+        width: 75%
+        text-align: justify
+        line-height: 1.5rem
+        text-indent: 1.5em
+
+.teachUpModal
+
+    .modal-superior-teach
+        display: flex
+
+        >img
+            position: relative
+            right: -330px
+            top: 100px
+            max-width: 275px
+            max-height: 600px
+            height: 100px
+            width: 1000px
+            transform: rotate(69deg)
+
+    .sobreTeachUp
+        width: 75%
+        text-align: justify
+        line-height: 1.5rem
+        text-indent: 1.5em
+
+.link-parceiros
+    color: #fff
+    margin-top: 10px
+    text-decoration: none
+
+
+    &:hover
+        padding: 10px
+        background: white
+        color: $cor-primaria
