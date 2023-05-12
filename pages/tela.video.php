@@ -115,9 +115,8 @@
         
         //progresso é de onde o código pega os valores para cadastrar no database
         foreach($progresso as $indice => $valor){
-            echo 'indice: '.$indice . ' ----- ' .' valor: '.$valor;
+            //echo 'indice: '.$indice . ' ----- ' .' valor: '.$valor;
             $codProgresso[] = $valor;
-            var_dump($codProgresso);
         }
 
         //no vetor $codProgresso[] temos os seguintes valores e seus indices:
@@ -127,9 +126,9 @@
 
         if ("INSERT INTO `progressos` (`codProgresso`, `matricula`, `seccao`, `dataConclusao`) 
                             VALUES (NULL, '$codProgresso[0]', '$codProgresso[1]', '$codProgresso[2]')"){
-            echo 'sucesso';
+            //echo 'sucesso';
         }else{
-            echo 'ferrou';
+            //echo 'ferrou';
         }
 
     ?>
