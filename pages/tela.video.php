@@ -65,7 +65,8 @@
         <div class="lado-direito">
             <div class="conteudo">
                 <h1 id="titulo-aula">Curso de PHP #001</h1>     
-                <iframe width="1260" height="710" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- 1260 710 -->
+                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="links-inferiores">
                     <ul>
                         <a href="" id="links"><li>Descrição</li></a>
