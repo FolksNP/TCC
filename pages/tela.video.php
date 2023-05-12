@@ -23,41 +23,6 @@
                     <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check" onclick="checked()">1. PHP - Aula #001</Button>
                 </div>
 
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">2. PHP - Aula #002</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">3. PHP - Aula #003</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">4. PHP - Aula #004</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">5. PHP - Aula #005</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">6. PHP - Aula #006</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">7. PHP - Aula #007</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">8. PHP - Aula #008</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">9. PHP - Aula #009</Button>
-                </div>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check">10. PHP - Aula #010</Button>
-                </div>
 
             </div>
         </div>

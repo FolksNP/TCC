@@ -3240,6 +3240,38 @@ fa-sun .fa-sun {
   border-left: 2px solid black;
 }
 
+.formVideoPreview {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  margin: 50px;
+  border-radius: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.formVideoPreview input[type=submit] {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.formVideoPreview input[type=file] {
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+}
+.formVideoPreview h2 {
+  margin: 10px;
+  color: #116798;
+}
+
+#videoPreview {
+  width: 500px;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
 @font-face {
   font-family: "Cocomat";
   src: url("./fonts/CocomatPro-Light.ttf") format("truetype");

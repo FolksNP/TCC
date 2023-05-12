@@ -13,6 +13,7 @@ var_dump($_FILES);
    VALUES (NULL, 5, '$arqVideo','Warner Bros', '$codCurso');")){
            $msg = "aula cadastrada";
            
+           
        } else{
            $msg = "Erro ao se cadastrar";
         }
