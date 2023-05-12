@@ -18,7 +18,7 @@
         $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
     
         while($curso = mysqli_fetch_array($cursos)){
-            echo "<a href=seccoes.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
+            echo "<a href=aula.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
     
         };
     //    $cursos = mysqli_query($con, "SELECT `cursos.capaCurso`
