@@ -609,6 +609,7 @@ body {
   display: flex;
   width: 100%;
   background-color: rgba(214, 214, 214, 0.8235294118);
+  padding-left: 5px;
 }
 .conteiner-video .lado-esquerdo {
   margin-top: 13px;
