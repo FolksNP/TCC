@@ -605,20 +605,17 @@ body {
 
 .conteiner-video {
   margin: 0 auto;
-  padding: 15px 40px;
   margin-top: 10px;
   display: flex;
-  width: 95%;
+  width: 100%;
   background-color: rgba(214, 214, 214, 0.8235294118);
-  border-radius: 5px;
 }
 .conteiner-video .lado-esquerdo {
   margin-top: 13px;
   background-color: #fff;
-  width: 35%;
+  width: 30%;
   border: 2px solid #116798;
   background-color: black;
-  border-radius: 5px;
 }
 .conteiner-video .lado-esquerdo .conteudo h1 {
   background-color: #116798;
@@ -655,12 +652,12 @@ body {
 }
 .conteiner-video .lado-direito {
   background-color: transparent;
-  width: 100%;
+  width: 80%;
 }
 .conteiner-video .lado-direito .conteudo {
   margin: 0 auto;
   margin-top: 0px;
-  width: 1290px;
+  width: 98%;
   padding: 15px;
 }
 .conteiner-video .lado-direito .conteudo #titulo-aula {
