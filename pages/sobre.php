@@ -100,7 +100,7 @@
                 <img src="../imgs/logoEnder2.png" alt="">
             </div>
             <div class="sobreEnder">
-                <p>A EnderSoftwares, estabelece um projeto com a finalidade de criar uma nova era para os programadores. O mercado profissional dos técnicos de informática aumentou cerca de 38%, perante a este crescimento, as empresas começaram a ser mais exigentes com a nova demanda de programadores. Uma das dificuldades de alguns desses programadores, é a questão da experiência, logo, a EnderSoftwares ajudará o programador a adquirir prática, network e contato com clientes para assim ter a experiencia desejada pelas empresas.
+                <p>A EnderSoftwares, estabelece um projeto com a finalidade de criar uma nova era para os programadores. O mercado profissional dos técnicos de informática aumentou cerca de 38%, perante a este crescimento, as empresas começaram a ser mais exigentes com a nova demanda de programadores. Uma das dificuldades de alguns desses programadores, é a questão da experiência, logo, a EnderSoftwares ajudará o programador a adquirir prática, network e contato com clientes para assim ter a experiência desejada pelas empresas.
                 Nosso propósito é contribuir para o avanço profissional das pessoas, empresas e da sociedade, utilizando a tecnologia ao nosso favor.
                 </p>
                 <br>
@@ -132,7 +132,6 @@
     </div>
     <?php include('footer.php');?>
     <script src="../scripts/sobreParcerias.js"></script>
-
 
 </body> 
 </html>

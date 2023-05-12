@@ -62,7 +62,6 @@
             'codProgresso' => '12',
             'matricula' => '1',
             'seccao' => '2'
-
         );
 
         $progressoJSON = json_encode($progresso);
