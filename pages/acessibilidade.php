@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php // include('header.php')?> -->
-    <div class="principal-acesso" id="acesso">
+    <div class="principal-acesso" id="acesso" style="display: none;">
         <h1 id="dis-acess">ACESSIBILIDADE - PATRONO NEVES - EDUCAÇÃO PARA TODOS</h1>
         <form action="">
             <div class="caixa-acess">

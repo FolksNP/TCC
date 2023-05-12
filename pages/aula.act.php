@@ -17,5 +17,5 @@ var_dump($_FILES);
            $msg = "Erro ao se cadastrar";
         }
         echo $msg;
-
+        var_dump($con);
 ?>
