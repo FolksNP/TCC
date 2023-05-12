@@ -92,8 +92,11 @@
     <?php 
 
         // essa variavel $progresso é de onde deve-se tirar todo o progresso do aluno para posteriormente cadastrar no banco de dados.
+        // aonde temos os valores 12 1 2 é onde vai ser implementado variaveis para extrair informações do progresso do alumo
         $progresso = array(
             'codProgresso' => '12',
+            'matricula' => '1',
+            'seccao' => '2'
 
         );
 
