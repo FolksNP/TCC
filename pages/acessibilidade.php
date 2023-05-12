@@ -11,7 +11,7 @@
 <?php // include('header.php')?> -->
     <div class="principal-acesso" id="acesso" style="display: none;">
         <h1 id="dis-acess">ACESSIBILIDADE - PATRONO NEVES - EDUCAÇÃO PARA TODOS</h1>
-        <form action="">
+        <form id="form-acess" action="">
             <div class="caixa-acess">
                 <h1 class="geral-e-video">GERAL</h1>
                 <span class="selecaoUnica"><label for="alternarTema">Alternar Tema</label><input type="checkbox" id="alternarTema"></span>
