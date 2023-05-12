@@ -63,6 +63,25 @@ DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
+-- Table `PatronoNeves`.`Aulas`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Aulas` (
+  `codAula` INT NOT NULL AUTO_INCREMENT,
+  `duracao` TIME NOT NULL,
+  `video` VARCHAR(100) NOT NULL,
+  `referencias` VARCHAR(100) NULL,
+  `codCurso` INT NOT NULL,
+  PRIMARY KEY (`codAula`),
+  INDEX `fkCursoCod_Aulas_idx` (`codCurso` ASC),
+  CONSTRAINT `fkCursoCod_Aulas`
+    FOREIGN KEY (`codCurso`)
+    REFERENCES `PatronoNeves`.`Cursos` (`codCurso`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `PatronoNeves`.`Seccoes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Seccoes` (
@@ -94,24 +113,6 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Conteudos` (
   CONSTRAINT `fkSeccaoCod_Conteudos`
     FOREIGN KEY (`seccao`)
     REFERENCES `PatronoNeves`.`Seccoes` (`codSeccao`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `PatronoNeves`.`Aulas`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Aulas` (
-  `codAula` INT NOT NULL,
-  `duracao` TIME NOT NULL,
-  `video` VARCHAR(100) NOT NULL,
-  `referencias` VARCHAR(100) NULL,
-  PRIMARY KEY (`codAula`),
-  INDEX `fk_Aulas_Conteudos1_idx` (`codAula` ASC),
-  CONSTRAINT `fkConteudoCod_Aulas`
-    FOREIGN KEY (`codAula`)
-    REFERENCES `PatronoNeves`.`Conteudos` (`codConteudos`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -434,11 +435,7 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAtividades` (
   PRIMARY KEY (`codProgressoAtividade`),
   INDEX `fkAtividadeCod_idx` (`atividade` ASC),
   INDEX `fkRespostaCod_idx` (`resposta` ASC),
-  CONSTRAINT `fkProgressoAtividadeCod_ProgressosAtividades`
-    FOREIGN KEY (`codProgressoAtividade`)
-    REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  INDEX `fk_ProgressosAtividades_Progressos1_idx` (`codProgressoAtividade` ASC),
   CONSTRAINT `fkAtividadeCod_ProgressosAtividades`
     FOREIGN KEY (`atividade`)
     REFERENCES `PatronoNeves`.`Atividades` (`codAtividade`)
@@ -448,6 +445,11 @@ CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAtividades` (
     FOREIGN KEY (`resposta`)
     REFERENCES `PatronoNeves`.`Respostas` (`codRespostas`)
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ProgressosAtividades_Progressos1`
+    FOREIGN KEY (`codProgressoAtividade`)
+    REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -456,19 +458,20 @@ ENGINE = InnoDB;
 -- Table `PatronoNeves`.`ProgressosAulas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAulas` (
-  `codProgressoAula` INT NOT NULL,
+  `ProgressoAula` INT NOT NULL,
   `aula` INT NOT NULL,
   `progressaoVideo` FLOAT ZEROFILL NOT NULL,
-  PRIMARY KEY (`codProgressoAula`),
   INDEX `fkAulasCod_idx` (`aula` ASC),
-  CONSTRAINT `fkProgressoAulaCod_ProgressosAulas`
-    FOREIGN KEY (`codProgressoAula`)
-    REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  PRIMARY KEY (`ProgressoAula`),
+  INDEX `fk_ProgressosAulas_Progressos1_idx` (`ProgressoAula` ASC),
   CONSTRAINT `fkAulasCod_ProgressosAulas`
     FOREIGN KEY (`aula`)
     REFERENCES `PatronoNeves`.`Aulas` (`codAula`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ProgressosAulas_Progressos1`
+    FOREIGN KEY (`ProgressoAula`)
+    REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
