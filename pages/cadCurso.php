@@ -52,7 +52,7 @@
           <label for="imgInp">
           <img id="blah" src="../imgs/thumb.jpg" alt="your image" class="thumbCurso" />
           </label>
-          <p><input type="submit" value="Cadastrar Curso" ></p>
+          <p><input type="submit" value="Cadastrar Curso" ></p>      
       </form>
       <img src="../imgs/set.png" alt="">
     </div>

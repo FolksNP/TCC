@@ -10,6 +10,7 @@
     <title>Seu perfil - Patrono Neves</title>
 </head>
 <body>
+
     <?php
         include('header.php');
         @session_start();
@@ -44,6 +45,14 @@
     <?php
     include('footer.php');
     ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
+<script>
+$(document).ready(function(){
+     $('#cpf').mask('000.000.000-00');
+     
+});
+</script>
 </body>
 </html>
