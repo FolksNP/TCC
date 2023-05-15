@@ -17,9 +17,11 @@ app.listen(porta, () => {
 app.use(favicon(path.resolve(__dirname, '..', 'imgs/assets', 'favicon-32x32.png')))
 
 
-//Middleware para armazenar o codProgresso na sessão
+//Middleware para habilitar a sessão
 app.use(session({
-    
+    secret: '5jN&L#3cA*GpIu$7Rv@9tY!QbS6mE1yW4oXq8PwDz2FkVxT',
+    resave: false,
+    saveUninitialized: true
 }))
 
 
@@ -79,14 +81,14 @@ app.route('/progresso').get((req, res) => {
 
 //recebe e atribui a uma variável o valor de codProgresso
 app.route('/progresso').post((req, res) => {
-    const codProgresso = req.body
+    req.session.codProgresso = req.body
 })
 
 //atualiza a data de conclusão de progresso
 app.route('/progresso').patch((req, res) => {
     const dataConclusao = req.body
     connection.query(`UPDATE progressos SET dataConclusao = ? WHERE codProgresso = ?`,
-    [dataConclusao, codProgresso], (err, result) => {
+    [dataConclusao, req.session.codProgresso], (err, result) => {
         if(err) {
             res.status(500).send('Erro ao inserir os dados! ' + err)
             return
