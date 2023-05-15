@@ -1,5 +1,5 @@
 <?php require('sec.php'); ?>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +12,34 @@
     
     <?php
         include ('header.php');
+        require ('connect.php');
+        
     ?>
 
     <div class="conteiner-video">
         <div class="lado-esquerdo">
             <div class="conteudo">
                 <h1>Conteúdo</h1>
-
-                <div class="caixa-cont">
-                    <img src="../imgs/php.jpg" id="thumbAula" alt=""><Button class="video-button-check" onclick="checked()">1. PHP - Aula #001</Button>
-                </div>
-
+                <?php
+                for ($i=1; $i < 10 ; $i++) { 
+                    # code...
+                
+             echo "<div class=caixa-cont>
+            <img src=../imgs/php.jpg id=thumbAula alt=><Button class=video-button-check onclick=checked()>$i. PHP - Aula #00$i</Button>
+                </div>"  ;
+                }
+            ?>
 
             </div>
         </div>
             
         <div class="lado-direito">
             <div class="conteudo">
-                <h1 id="titulo-aula">Curso de PHP #001</h1>     
+                <h1 id="titulo-aula">Curso de PHP #001</h1>                   
                 <!-- 1260 710 -->
                 <!-- <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video> -->
                 <video width="100%" height="500px" controls>
-     <source src="../videos/c79122c0ea12e55e72e4aa1f4108fd1e.mp4" type="video">
+     <source src="../videos/bolinha.mp4" type="video/mp4">
 
 Your browser does not support the video tag.
 </video>

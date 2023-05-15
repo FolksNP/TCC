@@ -14,10 +14,10 @@
     }; ?>
     </div>
 </div>
-<div class="estCursos">
-<div class="estAlunos">
+<div class="estCursos" id="estCursos">
+<div class="estAlunos" id="estAlunos">
     <div class="estAlunosTxt">Alunos</div>
-        <div class="estAlunosInfs">
+        <div class="estAlunosInfs" id="estAlunosInfs">
             
             <div><p>Alunos Ativos</p> <p>0</p></div>
             <div><p>Alunos Graduados</p> <p>0</p></div>
@@ -28,7 +28,7 @@
 </div>
 <div class="estViews">
     <div class="estViewsTxt">Visualizações</div>
-            <div class="estViewsInfs">
+            <div class="estViewsInfs" id="estViewsInfs">
                 <div><p>Total de Visualizações</p><p>0</p></div>
                 <div><p>Média de Visualizações</p><p>0</p></div>
                 <div><p>Visualizações Essa Semana</p><p>0</p></div>
@@ -38,7 +38,7 @@
 
 <div class="estAvaliacoes">
     <div class="estAvaliacoesTxt">Avaliações</div>
-        <div class="estAvaliacoesInfs">
+        <div class="estAvaliacoesInfs" id="estAvaliacoesInfs">
             <div><p>Nota média por Sessão</p><p>0</p></div>
             <div><p>Média Total de Avaliações</p><p>0</p></div>
             <div><p>Avaliações Essa Semana</p><p>0</p></div>
@@ -46,7 +46,7 @@
         </div>
 </div>
 
-<div class="graficos">
+<div class="graficos" id="graficos">
     <p>Gráficos</p>
 </div>
 
