@@ -17,6 +17,7 @@ const patrono_neves = document.getElementById("patrono-neves");
 const fundoPreto = document.getElementById("fundoPreto");
 const videoCurso = document.getElementById("videoCurso");
 const fundoCinza2 = document.getElementById("fundoCinza2");
+const parcerias = document.getElementById("parcerias");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
@@ -81,6 +82,12 @@ function darkMode() {
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark;
     }
+    
+    if (parcerias) {
+        document.getElementById("parcerias").style.backgroundColor= corDark;
+        document.getElementById("parcerias").style.color = corLight;
+        document.getElementById("parceiro1-img").style.backgroundColor = corLight;
+    }
 
     if (lado_direito) {
         document.getElementById("lado-direito").style.backgroundColor = corDark;
@@ -114,6 +121,7 @@ function darkMode() {
             document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
         }
     }
+
 } 
     
 function whiteMode() {
