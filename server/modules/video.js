@@ -6,9 +6,9 @@ console.log(video)
 //obtém o momento em que o vídeo havia parado e inicia à partir daí
 function carregarProg() {
     fetch('http://localhost:8080/progresso')
-        .then(data => {
-            console.log(data)
-            video.currentTime = data
+        .then(progressaoVideo => {
+            console.log(progressaoVideo)
+            video.currentTime = progressaoVideo
         })
         .catch(err => console.error(err))
 }
