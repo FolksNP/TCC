@@ -1,6 +1,6 @@
 
 <div class="direitaPerfil" id="direitaPerfilCursos">
-<div class="cursoTopo">
+<div class="cursoTopo" id="cursoTopo">
     <div class="txtCursos">
         
         <p>Cursos</p>
@@ -47,7 +47,7 @@
 </div>
 
 <div class="conteudosTelaCursos">
-    <div class="topoConteudosCurso">
+    <div class="topoConteudosCurso" id="topoConteudosCurso">
         <p><input type="checkbox">\/</p>
         <p>Adicionar</p>
         <p><input type="text" name="" id="" placeholder="Digite aqui sua pesquisa"><img src="../imgs/lupa.png" alt=""></p>

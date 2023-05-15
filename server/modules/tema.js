@@ -105,6 +105,11 @@ function darkMode() {
         for (let i = 0; i < estAvaliacoesInfs.childElementCount; i++) {
             document.getElementById("estAvaliacoesInfs").children[i].style.backgroundColor = corDark;                        
         }
+
+        document.getElementById("topoConteudosCurso").style.backgroundColor = corDark;
+        document.getElementById("topoConteudosCurso").style.color = corLight;
+        document.getElementById("cursoTopo").style.backgroundColor = corDark;
+        document.getElementById("cursoTopo").style.color = corLight;
     }
     
     if (parcerias) {
