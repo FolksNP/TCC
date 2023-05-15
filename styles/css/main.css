@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 500px) {
   .container .superior .conteudos .sobre, .container .superior .conteudos .listagem, .container .superior .conteudos .links, .container .superior .conteudos .endereco {
-    width: 70%;
+    width: 95%;
     margin-top: 10px;
   }
 }
@@ -3196,11 +3196,26 @@ fa-sun .fa-sun {
   display: flex;
   border: 2px solid black;
 }
+@media (max-width: 500px) {
+  #form-acess {
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  #form-acess {
+    flex-direction: column;
+  }
+}
 
 .caixa-acess, .video-acess {
   position: relative;
   background-color: #fff;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .caixa-acess, .video-acess {
+    width: 100%;
+  }
 }
 .caixa-acess .selecaoUnica, .video-acess .selecaoUnica {
   margin: 10px;

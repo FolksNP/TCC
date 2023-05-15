@@ -21,10 +21,20 @@
     display: flex
     border: 2px solid black
 
+    @include mobile
+        flex-direction: column
+    
+    @include tablet
+        flex-direction: column
+
+
 .caixa-acess, .video-acess
     position: relative
     background-color: #fff
     width: 50%
+
+    @include mobile
+        width: 100%
 
 
     .selecaoUnica

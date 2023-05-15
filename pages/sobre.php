@@ -13,7 +13,6 @@
     <?php include('header.php');?>
 
     <!--
-    Superior: Header Posterior: Footer
     aqui será composto de três conteúdos, o primeiro vai ser sobre o paulo freire, o segundo é sobre a patrono neves e terceiro sobre o projeto
 
     Paulo freire: aqui vamos contar um pouco sobre sua história, e seus trabalhos na educação
@@ -60,7 +59,6 @@
                     <p>•	Incentivo a disciplina</p>
                     <p>•	Interatividade</p>
                     <p>•	Suporte</p>
-
                 </div>
             </div>
             </div>
@@ -71,13 +69,13 @@
     </div>
 
     <div class="parcerias" id="parcerias">
-        <div class="parceria-cont">
+        <div class="parceria-cont" id="parcerias">
         <h1 style="text-align: center; margin-top: 15px;">Conheça nossos Parceiros!</h1> 
         <h2>Aqui estão aqueles que ajudaram a tornar isso possível:</h2> 
         <div class="parceiros">
-            <div class="parceiro1">
+            <div class="parceiro1" >
                 <h3> Ender Softwares: </h3><br>
-                <img src="../imgs/logoEnder2.png" alt="">
+                <img id="parceiro1-img" src="../imgs/logoEnder2.png" alt="">
                 <button id="btnEnder" class="btnEnder">Conhecer</button>
             </div>
             <div class="parceiro2">

@@ -19,5 +19,5 @@ var_dump($_FILES);
         }
         echo $msg;
         var_dump($con);
-        header('location:tela.video.php');
+       // header('location:tela.video.php');
 ?>

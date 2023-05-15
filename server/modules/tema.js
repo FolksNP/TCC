@@ -17,6 +17,10 @@ const patrono_neves = document.getElementById("patrono-neves");
 const fundoPreto = document.getElementById("fundoPreto");
 const videoCurso = document.getElementById("videoCurso");
 const fundoCinza2 = document.getElementById("fundoCinza2");
+const parcerias = document.getElementById("parcerias");
+const estati = document.getElementById("estati");
+const desc = document.getElementById("descPerfil");
+const acesso = document.getElementById("acesso");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
@@ -65,21 +69,45 @@ function darkMode() {
         document.getElementById("nomeEmail").style.backgroundColor= corDark2;
         document.getElementById("estudos").style.backgroundColor= corDark2;
         document.getElementById("estudos").style.color= 'white';
-        nome = document.getElementById("nomePerfil");
-        nome.children[0].style.color= 'white';
-        nome.children[1].style.backgroundColor= corDark;
+        //nome = document.getElementById("nomePerfil");
+        //nome.children[0].style.color= 'white';
+        //nome.children[1].style.backgroundColor= corDark;
         
-        email = document.getElementById("emailPerfil");
-        email.children[0].style.color= 'white';
-        email.children[1].style.backgroundColor= corDark;
+       // email = document.getElementById("emailPerfil");
+        //email.children[0].style.color= 'white';
+        //email.children[1].style.backgroundColor= corDark;
 
-        document.getElementById("resp-perg-aulas-exe").style.backgroundColor= corDark2;
+        document.getElementById("resp-perg-aulas-exe").style.backgroundColor = corDark2;
         document.getElementById("descPerfil").children[1].style.backgroundColor= corDark2;
         document.getElementById("descPerfil").children[1].style.color= 'white';
         document.querySelectorAll(".estPerfil")[0].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[1].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark;
+
+        document.getElementById("nomePerfil").children[1].style.backgroundColor = corDark;
+        document.getElementById("emailPerfil").children[1].style.backgroundColor = corDark;
+    }
+    
+    if (parcerias) {
+        document.getElementById("parcerias").style.backgroundColor = corDark;
+        document.getElementById("parcerias").style.color = corLight;
+        document.getElementById("parceiro1-img").style.backgroundColor = corLight;
+    }
+
+    if (estati) {
+        document.getElementById("estati").style.backgroundColor = corDark;
+        document.getElementById("estati").style.color = corLight;
+    }
+
+    if(acesso){
+        document.querySelector(".caixa-acess").style.backgroundColor = corDark;
+        document.querySelector(".video-acess").style.backgroundColor = corDark;
+    }
+
+    if (desc) {
+        document.getElementById("descPerfil").style.backgroundColor = corDark;
+        document.getElementById("descPerfil").style.color = corLight;
     }
 
     if (lado_direito) {
@@ -114,6 +142,7 @@ function darkMode() {
             document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
         }
     }
+
 } 
     
 function whiteMode() {
