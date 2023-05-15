@@ -21,6 +21,9 @@ const parcerias = document.getElementById("parcerias");
 const estati = document.getElementById("estati");
 const desc = document.getElementById("descPerfil");
 const acesso = document.getElementById("acesso");
+const estAlunosInfs = document.getElementById("estAlunosInfs");
+const estViewsInfs = document.getElementById("estViewsInfs");
+const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
@@ -87,6 +90,21 @@ function darkMode() {
 
         document.getElementById("nomePerfil").children[1].style.backgroundColor = corDark;
         document.getElementById("emailPerfil").children[1].style.backgroundColor = corDark;
+
+        document.getElementById("estAlunosInfs").style.backgroundColor = corDark2;
+        document.getElementById("estViewsInfs").style.backgroundColor = corDark2;
+        document.getElementById("estAvaliacoesInfs").style.backgroundColor = corDark2;
+        document.getElementById("graficos").style.backgroundColor = corDark2;
+
+        for (let i = 0; i < estAlunosInfs.childElementCount; i++) {
+            document.getElementById("estAlunosInfs").children[i].style.backgroundColor = corDark;                        
+        }
+        for (let i = 0; i < estViewsInfs.childElementCount; i++) {
+            document.getElementById("estViewsInfs").children[i].style.backgroundColor = corDark;                        
+        }
+        for (let i = 0; i < estAvaliacoesInfs.childElementCount; i++) {
+            document.getElementById("estAvaliacoesInfs").children[i].style.backgroundColor = corDark;                        
+        }
     }
     
     if (parcerias) {
@@ -202,6 +220,7 @@ function whiteMode() {
         document.querySelectorAll(".estPerfil")[1].style.backgroundColor = corLight;
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corLight;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corLight;   
+
     }
 
     if (lado_direito) {
