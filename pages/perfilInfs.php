@@ -1,12 +1,12 @@
 <div class="direitaPerfil" id="direitaPerfilInfs">
             <div class="nomeEmail" id="nomeEmail">
                 <div class="nomePerfil" id="nomePerfil">
-                    <p>Nome</p>
-                    <?php echo "<p>$_SESSION[nome]</p>";?>
+                    <p id="">Nome</p>
+                    <?php echo "<p id=apres-perf>$_SESSION[nome]</p>";?>
                 </div>
                 <div class="emailPerfil" id="emailPerfil">
-                    <p>Email</p>
-                    <?php echo "<p>$_SESSION[email]</p>";?>
+                    <p id="">Email</p>
+                    <?php echo "<p id=apres-perf>$_SESSION[email]</p>";?>
                 </div>
             </div>
             <div class="estudos" >
@@ -56,7 +56,7 @@
                         </div>
                         </div>
             </div>
-            <div class="estat">
+            <div class="estat" id="estati">
                 <div class="estatTxt">Estatísticas</div>
                 <div class="resp-perg-aulas-exe" id="resp-perg-aulas-exe" >
                     <div class="estPerfil">
@@ -90,3 +90,4 @@
                 <img src="../imgs/twitter.png" alt="">
             </div>
 </div>
+<script type="module" src="http://localhost:8080/tema"></script>
