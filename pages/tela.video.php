@@ -31,7 +31,7 @@
             <div class="conteudo">
                 <h1 id="titulo-aula">Curso de PHP #001</h1>     
                 <!-- 1260 710 -->
-                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/8E-7iPhM3CI" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video>
                 <div class="links-inferiores">
                     <ul>
                         <a href="" id="links"><li>Descrição</li></a>
@@ -66,7 +66,7 @@
 
         $progressoJSON = json_encode($progresso);
 
-        $requestHandle = curl_init('http://localhost:8080/progresso/aula');
+        $requestHandle = curl_init('http://localhost:8080/progresso');
         curl_setopt($requestHandle, CURLOPT_CUSTOMREQUEST, 'PATCH');
         curl_setopt($requestHandle, CURLOPT_POSTFIELDS, $progressoJSON);
         curl_setopt($requestHandle, CURLOPT_HTTPHEADER, array(
@@ -101,6 +101,7 @@
 
     ?>
 
+    <script type="module" src="http://localhost:8080/shared"></script>
     <script type="module" src="http://localhost:8080/video"></script>
     <script>
 

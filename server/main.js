@@ -1,5 +1,6 @@
 const cors = require('cors')
 const express = require('express')
+const session = require('express-session')
 const mysql = require('mysql')
 const path = require('path')
 const favicon = require('serve-favicon')
@@ -14,6 +15,12 @@ app.listen(porta, () => {
 
 //Define um favicon para as URLs do servidor
 app.use(favicon(path.resolve(__dirname, '..', 'imgs/assets', 'favicon-32x32.png')))
+
+
+//Middleware para armazenar o codProgresso na sessão
+app.use(session({
+    
+}))
 
 
 //Permite o uso de qualquer tipo de headers
@@ -39,15 +46,15 @@ const connection = mysql.createConnection({
     database: 'patrononeves'
 }) 
 
-connection.connect((e) => {
-    if(e) throw e
+connection.connect((err) => {
+    if(err) throw err
     console.log('Conectado ao banco de dados!')
 })
 
 //Definição de rotas
 app.get('/', (req, res) => {
-    connection.query('SELECT * FROM alunos', (e, results) => {
-        if(e) throw e
+    connection.query('SELECT * FROM alunos', (err, results) => {
+        if(err) throw err
         res.send(results)
         console.log(results)
     })
@@ -65,8 +72,43 @@ app.route('/tema').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/tema.js'))
 })
 
-app.route('/progresso/aula').post((req, res) => {
+//inicia o progresso do video à partir dessa tabela
+app.route('/progresso').get((req, res) => {
 
+})
+
+//recebe e atribui a uma variável o valor de codProgresso
+app.route('/progresso').post((req, res) => {
+    const codProgresso = req.body
+})
+
+//atualiza a data de conclusão de progresso
+app.route('/progresso').patch((req, res) => {
+    const dataConclusao = req.body
+    connection.query(`UPDATE progressos SET dataConclusao = ? WHERE codProgresso = ?`,
+    [dataConclusao, codProgresso], (err, result) => {
+        if(err) {
+            res.status(500).send('Erro ao inserir os dados! ' + err)
+            return
+        }
+        console.log('Dados inseridos com sucesso!')
+        res.status(200).send('Dados inseridos com sucesso!')
+    })
+})
+
+//atualiza a progressão do vídeo
+app.route('/progresso/aula').patch((req, res) => {
+    const progressaoVideo = req.body
+    //const codProgresso = req.locals
+    connection.query(`UPDATE progressosaulas SET progressaoVideo = ? WHERE codProgressoAula = ?`,
+    [progressaoVideo, codProgresso], (err, result) => {
+        if(err) {
+            res.status(500).send('Erro ao inserir os dados! ' + err)
+            return
+        }
+        console.log('Dados inseridos com sucesso!')
+        res.status(200).send('Dados inseridos com sucesso!')
+    })
 })
 
 app.route('/matricula/atividade').post((req, res) => {
@@ -75,10 +117,6 @@ app.route('/matricula/atividade').post((req, res) => {
 })
 
 app.route('/video').get((req, res) => {
-    res.sendFile(path.join(__dirname, '/modules/video.js'))
-})
-
-app.route('/video').patch((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/video.js'))
 })
 

@@ -36,6 +36,7 @@ function saveConfig() {
         localStorage.setItem('userSettings', JSON.stringify(config))
         console.log('Arquivo gravado com sucesso!')
         document.dispatchEvent(applyConfig)
+        location.reload()
         return true
     } catch(err) {
         console.error(err)
