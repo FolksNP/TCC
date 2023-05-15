@@ -31,7 +31,12 @@
             <div class="conteudo">
                 <h1 id="titulo-aula">Curso de PHP #001</h1>     
                 <!-- 1260 710 -->
-                <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video>
+                <!-- <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video> -->
+                <video width="100%" height="500px" controls>
+     <source src="../videos/c79122c0ea12e55e72e4aa1f4108fd1e.mp4" type="video">
+
+Your browser does not support the video tag.
+</video>
                 <div class="links-inferiores">
                     <ul>
                         <a href="" id="links"><li>Descrição</li></a>
