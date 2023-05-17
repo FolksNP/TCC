@@ -38,12 +38,21 @@
                 echo "<p class=alert>$_SESSION[msg]</p>";
                 unset($_SESSION['msg']);          
         }
+<<<<<<< HEAD
+    //     if(isset($_SESSION['msgCap'])){
+    //     echo $_SESSION['msgCap'];
+    //     unset($_SESSION['msgCap']);
+    // }
+    ?>
+
+=======
 
                 if(isset($_SESSION['msgCap'])){
                 echo $_SESSION['msgCap'];
                 unset($_SESSION['msgCap']);
         }
         ?>
+>>>>>>> d8799a09f0e191dd9862654e7ecc0f935ef63162
                 <div class="floating-label-group">
                     <input type="submit" value="Entrar" class="form-control"/>
                 </div>
@@ -78,18 +87,22 @@
             </div>
 				<label class="floating-label">Confirme Sua Senha</label>
 			</div><p id="confira" style="display: none; color:#FF4343">CONFIRA SUA SENHA</p>
-            <input type="file" name="foto">
+             
+            <input type="file" name="foto" >
 
+<<<<<<< HEAD
+            <!-- <img src="captcha.php" alt="Código captcha">
+            <label>Digite o código</label>
+            <input type="text" name="captcha" required><br> -->
+=======
             <img src="captcha.php" alt="Código captcha">
             <!-- <label>Digite o código</label>
             <input type="text" name="captcha"><br> -->
+>>>>>>> d8799a09f0e191dd9862654e7ecc0f935ef63162
 
             <div class="floating-label-group">
-			<input type="submit" value="Cadastrar-se" class="form-control" id="cadastroBtn"  onclick="btnDisable()"/>
-				
+			<input type="submit" value="Cadastrar-se" class="form-control" id="cadastroBtn"  onclick="btnDisable()"/>	
 			</div>
-
-
             </form>
         </div>  
         

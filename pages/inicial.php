@@ -91,7 +91,7 @@
         <h2>Gestão</h2>
         </div>
         <div class="cardCurso" id="cardCurso3">
-        <h2>Elétronica</h2>
+        <h2>Eletrônica</h2>
         </div>
         <div class="cardCurso" id="cardCurso4">
         <h2>Refrigeração </h2>
