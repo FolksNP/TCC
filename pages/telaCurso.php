@@ -16,6 +16,9 @@
     $cod = $_GET['codCurso'];
     $cursos = mysqli_query($con, "Select * from `cursos` where `codCurso` = $cod");
     $curso = mysqli_fetch_array($cursos);
+
+
+
 ?>
         <div class="fundoCinza">
             <div class="txt">
