@@ -13,6 +13,14 @@
     <?php
         include ('header.php');
         require ('connect.php');
+
+
+        $codVideo =  $_GET['codCurso'];
+        $capaCurso =  $_GET['capaCurso'];
+        $nomeCurso =  $_GET['nomeCurso'];
+        $videos = mysqli_query($con, " SELECT * FROM `aulas` WHERE `codCurso` = '$codVideo'");
+        $video =  mysqli_fetch_array($videos);
+
         
     ?>
 
@@ -25,7 +33,7 @@
                     # code...
                 
              echo "<div class=caixa-cont>
-            <img src=../imgs/php.jpg id=thumbAula alt=><Button class=video-button-check onclick=checked()>$i. PHP - Aula #00$i</Button>
+            <img src=$capaCurso id=thumbAula alt=><Button class=video-button-check onclick=checked()>$i. $nomeCurso - Aula #00$i</Button>
                 </div>"  ;
                 }
             ?>
@@ -39,14 +47,13 @@
                 <!-- 1260 710 -->
                 <!-- <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video> -->
                 <video width="100%" height="500px" controls>
-     <source src="../videos/bolinha.mp4" type="video/mp4">
+    <?php echo " <source src=$video[video] type=video/mp4> "; ?>
 
 Your browser does not support the video tag.
 </video>
                 <div class="links-inferiores">
                     <ul>
                         <a href="" id="links"><li>Descrição</li></a>
-                        <a href="" id="links"><li>Comentários</li></a>
                         <a href="" id="links"><li>Arquivos</li></a>
                         <a href="" id="links"><li>Referências</li></a>
                     </ul>
@@ -70,9 +77,7 @@ Your browser does not support the video tag.
         // essa variavel $progresso é de onde deve-se tirar todo o progresso do aluno para posteriormente cadastrar no banco de dados.
         // aonde temos os valores 12 1 2 é onde vai ser implementado variaveis para extrair informações do progresso do alumo
         $progresso = array(
-            'codProgresso' => '12',
-            'matricula' => '1',
-            'seccao' => '2'
+            'codProgresso' => '2',
         );
 
         $progressoJSON = json_encode($progresso);
@@ -83,7 +88,7 @@ Your browser does not support the video tag.
         curl_setopt($requestHandle, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
             'Content-Length: ' . strlen($progressoJSON)
-          ));
+        ));
         curl_close($requestHandle);
 
         // $codProgresso = $progresso[0];

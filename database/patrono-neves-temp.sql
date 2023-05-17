@@ -458,19 +458,19 @@ ENGINE = InnoDB;
 -- Table `PatronoNeves`.`ProgressosAulas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`ProgressosAulas` (
-  `ProgressoAula` INT NOT NULL,
+  `codProgressoAula` INT NOT NULL,
   `aula` INT NOT NULL,
   `progressaoVideo` FLOAT ZEROFILL NOT NULL,
   INDEX `fkAulasCod_idx` (`aula` ASC),
-  PRIMARY KEY (`ProgressoAula`),
-  INDEX `fk_ProgressosAulas_Progressos1_idx` (`ProgressoAula` ASC),
+  PRIMARY KEY (`codProgressoAula`),
+  INDEX `fk_ProgressosAulas_Progressos1_idx` (`codProgressoAula` ASC),
   CONSTRAINT `fkAulasCod_ProgressosAulas`
     FOREIGN KEY (`aula`)
     REFERENCES `PatronoNeves`.`Aulas` (`codAula`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ProgressosAulas_Progressos1`
-    FOREIGN KEY (`ProgressoAula`)
+    FOREIGN KEY (`codProgressoAula`)
     REFERENCES `PatronoNeves`.`Progressos` (`codProgresso`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)

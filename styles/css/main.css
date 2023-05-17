@@ -1230,6 +1230,11 @@ body {
   transition: 0.3s;
 }
 
+#button-cadcurso {
+  margin: 10px 30px;
+  width: 80%;
+}
+
 .pagTodaPerfil {
   font-family: "Fira Sans", sans-serif;
   margin: 20px;
@@ -1284,6 +1289,7 @@ body {
   width: 100%;
   background-color: #f3f3f3;
   padding-bottom: 5px;
+  margin-top: 5px;
 }
 .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes input {
   background: linear-gradient(45deg, #116798 0%, #116798 50%, rgb(0, 0, 0) 50%);
@@ -1323,7 +1329,6 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 10px;
-  margin-top: 5px;
 }
 .pagTodaPerfil .colunaEsquerdaPerfil .listaAcoes > div {
   align-items: center;
@@ -1347,6 +1352,7 @@ body {
   margin: 10px;
   margin-left: 50px;
   border-radius: 20px;
+  background-color: white;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -3213,6 +3219,11 @@ fa-sun .fa-sun {
   width: 50%;
 }
 @media (max-width: 500px) {
+  .caixa-acess, .video-acess {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
   .caixa-acess, .video-acess {
     width: 100%;
   }

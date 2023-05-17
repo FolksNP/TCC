@@ -20,16 +20,31 @@ const fundoCinza2 = document.getElementById("fundoCinza2");
 const parcerias = document.getElementById("parcerias");
 const estati = document.getElementById("estati");
 const desc = document.getElementById("descPerfil");
-const acesso = document.getElementById("acesso");
+const acesso = document.getElementById("form-acess");
 const estAlunosInfs = document.getElementById("estAlunosInfs");
 const estViewsInfs = document.getElementById("estViewsInfs");
 const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
+const topoConteudosCurso = document.getElementById("topoConteudosCurso");
+const secao = document.querySelectorAll(".secao");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
     document.querySelector('body').style.background = '#293342';
     document.getElementById("footer").style.color='white';  
     document.getElementById("footer").style.backgroundColor= corDark;
+
+    if(linkFooter) {
+        for (let i = 0; i < linkFooter.childElementCount; i++) {
+            document.getElementById("linkFooter").children[i].children[0].style.color = 'white';                        
+        }
+    }
+
+    if(linksUteis) {
+        for (let i = 0; i < linksUteis.childElementCount; i++) {
+            document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
+        }
+    }
+
 
     if(banner) {
         document.getElementById("banner").style.backgroundColor= corDark;  
@@ -105,11 +120,33 @@ function darkMode() {
         for (let i = 0; i < estAvaliacoesInfs.childElementCount; i++) {
             document.getElementById("estAvaliacoesInfs").children[i].style.backgroundColor = corDark;                        
         }
-
+    
         document.getElementById("topoConteudosCurso").style.backgroundColor = corDark;
         document.getElementById("topoConteudosCurso").style.color = corLight;
         document.getElementById("cursoTopo").style.backgroundColor = corDark;
         document.getElementById("cursoTopo").style.color = corLight;
+
+        document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
+
+        
+
+        
+
+        for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
+            document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
+        }
+
+        document.getElementById("txtCursos").style.color = corLight;
+
+        for(let element of acesso) {
+            element.style.color = "#000"
+        }
+
+        for(let element of secao) {
+            element.style.backgroundColor = corDark2;
+            element.style.color = "#fff"
+        }
+
     }
     
     if (parcerias) {
@@ -154,17 +191,6 @@ function darkMode() {
         }
     }
 
-    if(linkFooter) {
-        for (let i = 0; i < linkFooter.childElementCount; i++) {
-            document.getElementById("linkFooter").children[i].children[0].style.color = 'white';                        
-        }
-    }
-
-    if(linksUteis) {
-        for (let i = 0; i < linksUteis.childElementCount; i++) {
-            document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
-        }
-    }
 
 } 
     
