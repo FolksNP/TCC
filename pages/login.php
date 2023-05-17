@@ -44,14 +44,13 @@
                 unset($_SESSION['msgCap']);
         }
         ?>
-
                 <div class="floating-label-group">
                     <input type="submit" value="Entrar" class="form-control"/>
                 </div>
             </form>
         </div> 
         <div class="content1 sign-up-containerRegistro"> 
-            <form class="loginCadastro" action="cadastro.act.php, processa.php" method="post" enctype="multipart/form-data">
+            <form class="loginCadastro" action="cadastro.act.php" method="post" enctype="multipart/form-data">
                 <h2 class="tituloForm2">Crie sua Conta</h2> 
                 
                 <p class="texto">Será um enorme prazer te-lo conosco!</p>
@@ -82,8 +81,8 @@
             <input type="file" name="foto">
 
             <img src="captcha.php" alt="Código captcha">
-            <label>Digite o código</label>
-            <input type="text" name="captcha" required><br>
+            <!-- <label>Digite o código</label>
+            <input type="text" name="captcha"><br> -->
 
             <div class="floating-label-group">
 			<input type="submit" value="Cadastrar-se" class="form-control" id="cadastroBtn"  onclick="btnDisable()"/>

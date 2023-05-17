@@ -110,6 +110,8 @@ function darkMode() {
         document.getElementById("topoConteudosCurso").style.color = corLight;
         document.getElementById("cursoTopo").style.backgroundColor = corDark;
         document.getElementById("cursoTopo").style.color = corLight;
+
+        document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
     }
     
     if (parcerias) {

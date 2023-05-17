@@ -5,7 +5,7 @@
 </div>
 <div class="selecioneCurso">
     <div class="selecioneCursoTxt"><p>Selecione o Curso</p></div>
-    <div class="selecioneCursoImg">
+    <div class="selecioneCursoImg" id="selecioneCursoImg">
     <?php $cursos = mysqli_query($con, "SELECT * FROM `cursos` WHERE `professor` = $codProf ");
     
     while($curso = mysqli_fetch_array($cursos)){
