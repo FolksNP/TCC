@@ -9,7 +9,7 @@
                     # code...
                     if (@$tabProf['codProfessor'] == @$codProf ) {
                       echo "<p class =txtIfProf>Olá Professor $_SESSION[nome]</p>";
-                      echo"<a href=cadCurso.php><input type=button value=\"Cadastrar Curso\"></a>";
+                      echo"<a href=cadCurso.php><input id=button-cadcurso type=button value=\"Cadastrar Curso\"></a>";
                     }else{
                       
                       echo "<button id=btnCadProf class=btnCurso>Tornar-se Professor</button>";

@@ -7,10 +7,11 @@ console.log(video)
 function carregarProg() {
     fetch('http://localhost:8080/progresso')
         .then(progressaoVideo => {
-            console.log(progressaoVideo)
-            video.currentTime = progressaoVideo
+            video.currentTime = (progressaoVideo != undefined || progressaoVideo != null) ? progressaoVideo : 0
         })
-        .catch(err => console.error(err))
+        .catch(err => {
+            video.currentTime = 0
+        })
 }
 
 //atualiza a data de conclusão de progresso
@@ -50,7 +51,7 @@ video.addEventListener('play', () => {
             clearInterval(progressTimer)
             patchProgAula()
         } catch(err) {
-            console.error(err)
+            console.log(err)
         }
     })
 

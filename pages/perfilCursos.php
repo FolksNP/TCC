@@ -1,7 +1,7 @@
 
 <div class="direitaPerfil" id="direitaPerfilCursos">
 <div class="cursoTopo" id="cursoTopo">
-    <div class="txtCursos">
+    <div class="txtCursos" id="txtCursos">
         
         <p>Cursos</p>
         <p>Promoções</p>
@@ -55,35 +55,35 @@
         <p>+</p>
     </div>
     <details>
-        <summary>Sessão 1.Introdução ao Java</summary>
+        <summary class="secao">Sessão 1.Introdução ao Java</summary>
        <div class="scrollCursos"> <p><input type="checkbox"><a href="../pages/inicial.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/telaPerfil.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         </div>
     </details>
     <details>
-        <summary>Sessão 1.1 Atividades </summary>
+        <summary class="secao">Sessão 1.1 Atividades </summary>
         <div class="scrollCursos"> <p><input type="checkbox"><a href="../pages/inicial.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/telaPerfil.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         </div>
     </details>
     <details>
-        <summary>Sessão 2.Java Basico</summary>
+        <summary class="secao">Sessão 2.Java Basico</summary>
         <div class="scrollCursos"> <p><input type="checkbox"><a href="../pages/inicial.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/telaPerfil.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         </div>
     </details>
     <details>
-        <summary>Sessão 3.Variáveis Java</summary>
+        <summary class="secao">Sessão 3.Variáveis Java</summary>
         <div class="scrollCursos"> <p><input type="checkbox"><a href="../pages/inicial.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/telaPerfil.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         </div>
     </details>
     <details>
-        <summary>Sessão 4.Funções Java</summary>
+        <summary class="secao">Sessão 4.Funções Java</summary>
         <div class="scrollCursos"> <p><input type="checkbox"><a href="../pages/inicial.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/telaPerfil.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
