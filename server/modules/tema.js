@@ -20,11 +20,12 @@ const fundoCinza2 = document.getElementById("fundoCinza2");
 const parcerias = document.getElementById("parcerias");
 const estati = document.getElementById("estati");
 const desc = document.getElementById("descPerfil");
-const acesso = document.getElementById("acesso");
+const acesso = document.getElementById("form-acess");
 const estAlunosInfs = document.getElementById("estAlunosInfs");
 const estViewsInfs = document.getElementById("estViewsInfs");
 const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
 const topoConteudosCurso = document.getElementById("topoConteudosCurso");
+const secao = document.querySelectorAll(".secao");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
@@ -127,7 +128,9 @@ function darkMode() {
 
         document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
 
-        document.querySelectorAll(".secao")[0].style.backgroundColor = corDark2;
+        
+
+        
 
         for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
             document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
@@ -135,9 +138,15 @@ function darkMode() {
 
         document.getElementById("txtCursos").style.color = corLight;
 
-        for (let i = 0; i < 100; i++) { // sempre fica por último isso aqui <=
-            document.querySelectorAll(".secao")[i].style.backgroundColor = corDark2;
+        for(let element of acesso) {
+            element.style.color = "#000"
         }
+
+        for(let element of secao) {
+            element.style.backgroundColor = corDark2;
+            element.style.color = "#fff"
+        }
+
     }
     
     if (parcerias) {
@@ -154,7 +163,6 @@ function darkMode() {
     if(acesso){
         document.querySelector(".caixa-acess").style.backgroundColor = corDark;
         document.querySelector(".video-acess").style.backgroundColor = corDark;
-        document.querySelector(".video-acess").style.color = "#000";
     }
 
     if (desc) {
