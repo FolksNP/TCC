@@ -88,7 +88,7 @@ Your browser does not support the video tag.
         curl_setopt($requestHandle, CURLOPT_HTTPHEADER, array(
             'Content-Type: application/json',
             'Content-Length: ' . strlen($progressoJSON)
-          ));
+        ));
         curl_close($requestHandle);
 
         // $codProgresso = $progresso[0];
