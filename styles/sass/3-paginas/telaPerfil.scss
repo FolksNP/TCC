@@ -7,7 +7,8 @@
 }
 
 #button-cadcurso{
-    
+    margin: 10px 30px;
+    width: 80%;
 }
 
 .pagTodaPerfil{
@@ -64,6 +65,8 @@
             width: 100%;
             background-color: #f3f3f3;
             padding-bottom: 5px;
+            margin-top: 5px;
+
             input{
                 background: linear-gradient( 45deg, $cor-primaria  0%, $cor-primaria 50%, rgb(0, 0, 0)50%);
                 width: 100%;
@@ -99,11 +102,9 @@
             .txtIfProf{
                 background-color: #156aaa;
                 text-align: center;
-                //color: white;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 padding: 10px;
-                margin-top: 5px;
             }
             >div{
                 align-items: center;

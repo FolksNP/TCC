@@ -154,6 +154,7 @@ function darkMode() {
     if(acesso){
         document.querySelector(".caixa-acess").style.backgroundColor = corDark;
         document.querySelector(".video-acess").style.backgroundColor = corDark;
+        document.querySelector(".video-acess").style.color = "#000";
     }
 
     if (desc) {
