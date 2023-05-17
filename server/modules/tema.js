@@ -24,12 +24,26 @@ const acesso = document.getElementById("acesso");
 const estAlunosInfs = document.getElementById("estAlunosInfs");
 const estViewsInfs = document.getElementById("estViewsInfs");
 const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
+const topoConteudosCurso = document.getElementById("topoConteudosCurso");
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
     document.querySelector('body').style.background = '#293342';
     document.getElementById("footer").style.color='white';  
     document.getElementById("footer").style.backgroundColor= corDark;
+
+    if(linkFooter) {
+        for (let i = 0; i < linkFooter.childElementCount; i++) {
+            document.getElementById("linkFooter").children[i].children[0].style.color = 'white';                        
+        }
+    }
+
+    if(linksUteis) {
+        for (let i = 0; i < linksUteis.childElementCount; i++) {
+            document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
+        }
+    }
+
 
     if(banner) {
         document.getElementById("banner").style.backgroundColor= corDark;  
@@ -105,13 +119,25 @@ function darkMode() {
         for (let i = 0; i < estAvaliacoesInfs.childElementCount; i++) {
             document.getElementById("estAvaliacoesInfs").children[i].style.backgroundColor = corDark;                        
         }
-
+    
         document.getElementById("topoConteudosCurso").style.backgroundColor = corDark;
         document.getElementById("topoConteudosCurso").style.color = corLight;
         document.getElementById("cursoTopo").style.backgroundColor = corDark;
         document.getElementById("cursoTopo").style.color = corLight;
 
         document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
+
+        document.querySelectorAll(".secao")[0].style.backgroundColor = corDark2;
+
+        for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
+            document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
+        }
+
+        document.getElementById("txtCursos").style.color = corLight;
+
+        for (let i = 0; i < 100; i++) { // sempre fica por último isso aqui <=
+            document.querySelectorAll(".secao")[i].style.backgroundColor = corDark2;
+        }
     }
     
     if (parcerias) {
@@ -156,17 +182,6 @@ function darkMode() {
         }
     }
 
-    if(linkFooter) {
-        for (let i = 0; i < linkFooter.childElementCount; i++) {
-            document.getElementById("linkFooter").children[i].children[0].style.color = 'white';                        
-        }
-    }
-
-    if(linksUteis) {
-        for (let i = 0; i < linksUteis.childElementCount; i++) {
-            document.getElementById("linksUteis").children[i].children[0].style.color = 'white';      
-        }
-    }
 
 } 
     
