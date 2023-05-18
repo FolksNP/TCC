@@ -298,6 +298,7 @@ button:hover {
   background-color: #fff;
   border: 3px solid #116798;
   color: #116798;
+  display: inline;
 }
 
 .button {
