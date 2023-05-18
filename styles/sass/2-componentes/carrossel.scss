@@ -1,17 +1,19 @@
+.caixa-slider{
+    width: 95%;
+    margin: 0 auto;
+}
+
 .swiper {
     width: 100%;
-
+    background-color: #08305a;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-   // background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-   // background-image: linear-gradient(70deg, #ffffff 30%, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 70% );
-    //border: 1px solid black;
     border-radius: 5px;
 
     a{
@@ -62,13 +64,14 @@
     padding: 5px;
 
     img{
-        width: 300px;
-        height: 250px;
+        // width: 300px;
+        // height: 250px;
+        width: 100%;
         margin-top: 5px;
         border-radius: 5px;
         -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     }
     p{
         padding: 10px;
@@ -76,4 +79,3 @@ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
     }
 
 }
-  

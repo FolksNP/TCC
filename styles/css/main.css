@@ -291,7 +291,7 @@ button {
   color: #fff;
   border: 3px solid transparent;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 button:hover {
   cursor: pointer;
@@ -313,8 +313,14 @@ button:hover {
   color: #116798;
 }
 
+.caixa-slider {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .swiper {
   width: 100%;
+  background-color: #08305a;
 }
 
 .swiper-slide {
@@ -372,8 +378,7 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 300px;
-  height: 250px;
+  width: 100%;
   margin-top: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);

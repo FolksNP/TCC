@@ -17,55 +17,55 @@
     
     ?>
      <!-- Swiper -->
-
-  <div #swiperRef="" class="swiper mySwiper">
-    <DIV class="txtCursosSlider"><p>Adicionados Recentemente</p></DIV>
-    <div class="swiper-wrapper">
-      <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
-     
-     while($curso=mysqli_fetch_array($cursos)){
-       echo"
-       <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
-       
-       <div class=container-carrossel>
-       <h3>$curso[nomeCurso] </h3>
-       <img src=$curso[capaCurso]  class=card-imagem> 
-       <p></p>
-       </div></a>
-       </div>";
-       
-      }
+  <div class="caixa-slider">
+    <div #swiperRef="" class="swiper mySwiper">
+      <DIV class="txtCursosSlider"><p>Adicionados Recentemente</p></DIV>
+      <div class="swiper-wrapper">
+        <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
       
-      ?>
-      </div>
+      while($curso=mysqli_fetch_array($cursos)){
+        echo"
+        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
+        
+        <div class=container-carrossel>
+        <h3>$curso[nomeCurso] </h3>
+        <img src=$curso[capaCurso]  class=card-imagem> 
+        <p></p>
+        </div></a>
+        </div>";
+        
+        }
+        
+        ?>
+        </div>
+        
       
-    
-      <!-- <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
+        <!-- <div class="swiper-slide">
+        <div class="container-carrossel">
+              <h1>Titulo</h1>
+              <img src="../imgs/html.jpg" alt="" class="card-imagem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
+        <div class="swiper-slide">
+        <div class="container-carrossel">
+              <h1>Titulo</h1>
+              <img src="../imgs/html.jpg" alt="" class="card-imagem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
+          </div>
         </div>
-      </div>
-      <div class="swiper-slide">
-      <div class="container-carrossel">
-            <h1>Titulo</h1>
-            <img src="../imgs/html.jpg" alt="" class="card-imagem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-        </div>
-      </div> -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+        <div class="container-carrossel">
+              <h1>Titulo</h1>
+              <img src="../imgs/html.jpg" alt="" class="card-imagem">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
+          </div>
+        </div> -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
-
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
