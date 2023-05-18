@@ -3177,6 +3177,10 @@ fa-sun .fa-sun {
   border-radius: 10px;
   background-color: green;
 }
+.botoes .button-pdf:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
 @media (max-width: 500px) {
   .botoes .button-pdf {
     height: 100px;
