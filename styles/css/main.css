@@ -1439,19 +1439,19 @@ body {
   text-align: center;
 }
 .direitaPerfil .estudos .cursando img {
-  width: 100px;
+  width: 85px;
   height: 100px;
   border-radius: 10px;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 .direitaPerfil .estudos .terminados {
   text-align: center;
 }
 .direitaPerfil .estudos .terminados img {
-  width: 100px;
+  width: 85px;
   height: 100px;
   border-radius: 10px;
-  margin: 0 5px;
+  margin: 0 6px;
 }
 .direitaPerfil .estat .estatTxt {
   width: 100%;

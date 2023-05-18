@@ -60,27 +60,25 @@
                 <div class="estatTxt">Estatísticas</div>
                 <div class="resp-perg-aulas-exe" id="resp-perg-aulas-exe" >
                     <div class="estPerfil">
-                        <p>Respostas</p>
+                        <p>Perguntas</p>
                         <p>0</p>
                     </div>
                     <div class="estPerfil">
-                        <p>Mentiras Contadas</p>
-                        <p>21168413</p></div>
+                        <p>Respostas</p>
+                        <p>0</p></div>
                     <div class="estPerfil">
                         <p>Aulas Assistidas</p>
                         <p>0</p></div>
                     <div class="estPerfil">
-                        <p>Exercícios Conluidos</p>
+                        <p>Exercícios Concluídos</p>
                         <p>0</p></div>
 
                     </div>
             </div>
             <div class="desc" id="descPerfil">
                 <p>Descrição</p>
-                <p>Tiringa (apelido de Vicente) é um cabra da peste que mora em Serra Talhada, Pernambuco e que só vive com um pau palito na boca.
-                    É gago, bruto e o maior mentiroso que já existiu, diz que já matou todo tipo de bicho (até um tal de "Chucupira") e já enfrentou
-                    várias criaturas bizonhas mas é mais mole que pinto de velho e morre de medo de "pantarma", as pegadinhas do seu patrão Charlles
-                    Rekson provam isso. Também vale ressaltar que não gosta de tomarbanho e fede igual a um cu de gambá.</p>
+                <p>Olá, seja bem-vindo ao seu perfil! Sinta-se livre para se inscrever em um curso da sua escolha, ou cadastrar um novo caso seja professor. Aqui é onde você conta um pouco mais sobre você, aproveite a estadia!
+                </p>
             </div>
             <div class="redeSociais">
                 <img src="../imgs/facebook.png" alt="">
