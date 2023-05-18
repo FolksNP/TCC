@@ -20,6 +20,15 @@
             $codigoCurso = $_GET['codCurso'];
             echo" <input type=hidden name=codCurso value=$codigoCurso >";
         ?>
+
+        <?php
+            @session_start();
+            if(isset($_SESSION['mensagem'])){
+                echo "<p class=cadAulaMsg>$_SESSION[mensagem]</p>";
+                unset($_SESSION['mensagem']);
+            }
+        ?>
+
         <h3 id="progress-bar"></h3>
         <h2>Insira abaixo a aula do seu curso</h2>
         <input type="file" name="videoAula" id='videoUpload'>

@@ -11,13 +11,13 @@ var_dump($_FILES);
    
     if(mysqli_query($con, "INSERT INTO `aulas` ( `codAula`,`duracao`, `video`, `referencias`, `codCurso`) 
     VALUES (NULL, 5, '$arqVideo','Warner Bros', '$codCurso');")){
-           $msg = "aula cadastrada";
-           
-           
+           $msg = "Aula cadastrada com sucesso!";
         } else{
-           $msg = "Erro ao se cadastrar";
+           $msg = "Erro ao se cadastrar!";
         }
-        echo $msg;
-        var_dump($con);
-       // header('location:tela.video.php');
+        //echo $msg;
+        //var_dump($con);
+        session_start();
+        $_SESSION['mensagem'] = $msg;
+        header('location:aula.php');
 ?>
