@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,65 +19,19 @@
             $codigoCurso = $_GET['codCurso'];
             echo" <input type=hidden name=codCurso value=$codigoCurso >";
         ?>
-
-        <?php
-            @session_start();
-            if(isset($_SESSION['mensagem'])){
-                echo "<p class=cadAulaMsg>$_SESSION[mensagem]</p>";
-                unset($_SESSION['mensagem']);
-            }
-        ?>
-
-        <h3 id="progress-bar"></h3>
-        <h2>Insira abaixo a aula do seu curso</h2>
-        <input type="file" name="videoAula" id='videoUpload'>
+        <div class="videoUpload" style="cursor: pointer; background: lightgray; margin-bottom: 10px;">
+            <h3 id="progress-bar"></h3>
+            <h2>Arraste e solte a aula do seu curso aqui</h2>
+            <input type="file" name="videoAula" id="fileAula" style="opacity: 0;">
+        </div>
         <video id="videoPreview" controls>
             Your browser does not support the video tag.
         </video>
-
-        <input type=submit>
         
+        <input type="submit" value="Cadastrar Aula">
     </form>
 
-    <script>
-        let progressBar = document.getElementById('progress-bar')
-        let upload = new plupload.Uploader({
-            browse_button: 'videoUpload',
-            url: 'aula.act.php',
-            chuck_size: '1mb', // depois implementar um ajuste automático de chuck
-            max_file_size: '120mb',
-            filters: [
-                { title: 'Vídeos', extensions: 'mp4'}
-            ]
-        },
-        init: {
-            FilesAdded: function(up, files) {
-                up.start()
-            }
-
-            UploadProgress: function(up, files) {
-                progressBar.textContent = `Progresso do upload: ${file.percent}%`
-            }
-
-            FileUploaded: function(up, files) {
-                progressBar.textContent = 'Upload concluído'
-            }
-
-            Error: function(up, err) {
-                progressBar.textContent = 'Erro ao realizar o upload'
-                console.error(err)
-            }
-        })
-
-        uploader.init()
-
-        document.getElementById("videoUpload").onchange = function(event) {
-            let file = event.target.files[0];
-            let blobURL = URL.createObjectURL(file);
-            document.querySelector("video").src = blobURL;
-            document.getElementById('videoPreview').style.background = red;
-        }
-    </script>
+    <script src="../scripts/aula.js"></script>
 
     <?php include('footer.php'); ?>
 </body>
