@@ -14,14 +14,11 @@
         include ('header.php');
         require ('connect.php');
 
-
         $codVideo =  $_GET['codCurso'];
         $capaCurso =  $_GET['capaCurso'];
         $nomeCurso =  $_GET['nomeCurso'];
         $videos = mysqli_query($con, " SELECT * FROM `aulas` WHERE `codCurso` = '$codVideo'");
         $video =  mysqli_fetch_array($videos);
-
-        
     ?>
 
     <div class="conteiner-video">
@@ -46,11 +43,21 @@
                 <h1 id="titulo-aula">Curso de PHP #001</h1>                   
                 <!-- 1260 710 -->
                 <!-- <video width="100%" height="50%" src="" title="Aula1 ‐ Introdução a Programação Geral" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></video> -->
-                <video width="100%" height="500px" controls>
-    <?php echo " <source src=$video[video] type=video/mp4> "; ?>
-
-Your browser does not support the video tag.
-</video>
+                <!-- player de video personalizado -->
+                <div class="custom-video-player">
+                    <video width="100%" height="500px" controls>
+                        <?php echo " <source src=$video[video] type=video/mp4> "; ?>
+                        Your browser does not support the video tag.
+                    </video>
+                    <div id="custom-controls">
+                        <button id="play-pause-button"><i class="fa fa-play"></i></button>
+                        <div id="progress-bar">
+                            <div id="progress"></div>
+                        </div>
+                        <button id="fullscreen-button"><i class="fa fa-expand"></i></button>
+                    </div>
+                </div>
+                
                 <div class="links-inferiores">
                     <ul>
                         <a href="" id="links"><li>Descrição</li></a>
