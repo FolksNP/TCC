@@ -1,0 +1,23 @@
+.alertaMat{
+    background-color: aliceblue;
+    font-size: 30px;
+    //width: 100%;
+    
+    margin: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+
+    input[type=button]{
+        width: 300px;
+        height: 40px;
+        margin: 50px;
+        font-size: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(80, 167, 255);
+        box-shadow: 5px 5px 10px 3px black;
+        cursor: pointer;
+    }
+}

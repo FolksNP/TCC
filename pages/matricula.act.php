@@ -24,9 +24,11 @@ require('connect.php');
             }
 
         }else{
-            $msg = "Você já esta matriculado";
+            $msg = "Agrademos o interesse neste curso, porém você já esta matriculado nele, acesse as aulas pelo seu Perfil <a href=telaPerfil.php> clicando aqui</a> ou clicando em 'Dasboard' no menu superior";
+            $target = "location:telaAviso.php?msg=$msg";
         }
-            echo $msg;
+
+            
             header($target);
 
 ?>
