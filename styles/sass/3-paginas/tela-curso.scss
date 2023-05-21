@@ -207,7 +207,7 @@ input[type=button]:hover::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: -20px;
     .btnEntrar{
         input[type=button]{
             padding: 1em 2em;

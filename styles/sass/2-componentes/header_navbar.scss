@@ -96,8 +96,8 @@ input:checked + .slider:before {
               position: relative;
               top: 6px;
               margin-right: 25px;
-              max-width: 70px;
-              max-height: 70px;
+              max-width: 90px;
+              max-height: 90px;
           }
 
           a{
@@ -109,8 +109,8 @@ input:checked + .slider:before {
   }
 
 .perfilImg img{
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: solid 2px #116798;
 
@@ -172,7 +172,7 @@ input:checked + .slider:before {
   overflow: hidden;
   position: relative;
   list-style-type: none;
-
+  
   @mixin aparecer{
     overflow: hidden;
     display: none;
@@ -181,7 +181,12 @@ input:checked + .slider:before {
 }
 
 .topnav #myLinks {
+
   display: none;
+  background-color: $cor-primaria;
+  column-count: 4;
+  column-gap: auto;
+  justify-content: space-between;  
 }
 
 .topnav a {
@@ -213,11 +218,17 @@ input:checked + .slider:before {
 
 #hmb-menu{
   width: 100%;
-  border-radius: 0px;
+  border-radius: 10px;
+  
+  
+ 
 }
 
 #container-hamburguer{
+ 
   @include aparecer{
     display: none;
+  
+    
   }
 }

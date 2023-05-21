@@ -44,7 +44,7 @@
                     if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
                         echo "<a href=login.php>Login</a>";
                     }else{
-                        echo "<a href=logoff.php>Sair</a>";
+                      //  echo "<a href=logoff.php>Sair</a>";
                     }
                 ?>
 
@@ -84,7 +84,7 @@
             <ul>
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
-                <li><a href="../pages/sobre.php">Sobre nós</a></li>
+                <li><a href="../pages/sobre.php">Sobre </a></li>
                 <li><a href="../pages/telaPerfil.php">Dashboard</a></li>
             </ul>
         </div>
@@ -95,7 +95,7 @@
             <div id="myLinks">
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
-                <li><a href="../pages/sobre.php">Sobre nós</a></li>
+                <li><a href="../pages/sobre.php">Sobre </a></li>
                 <li><a href="../pages/telaPerfil.php">Suporte</a></li>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">

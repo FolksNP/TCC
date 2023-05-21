@@ -55,23 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="fundoCinza2" id="fundoCinza2">
-        <div class="comentarios">
-            <h3>Comentários</h3>
-        </div>
-        <div class="coment">
-            <div class="perfilComent"><img src="../imgs/html.jpg" alt=""><p>Benjamin Arola</p></div>
-             <div class="comentP"> <p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, </p></div> 
-        </div>
-        <div class="coment">
-            <div class="perfilComent"><img src="../imgs/html.jpg" alt=""><p>Benjamin Arola</p></div>
-             <div class="comentP"> <p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, </p></div> 
-        </div>
-        <div class="coment">
-            <div class="perfilComent"><img src="../imgs/html.jpg" alt=""><p>Benjamin Arola</p></div>
-             <div class="comentP"> <p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, </p></div> 
-        </div>
-    </div>
+    
 
 
     <div class="fundoPreto2">

@@ -5,6 +5,7 @@ extract($_POST);
 extract($_FILES);
 
  $password = md5($password);
+ 
  $arquivo = "../imgs/".md5(time().$foto['size']). ".jpg";
  move_uploaded_file($foto['tmp_name'],$arquivo);
 

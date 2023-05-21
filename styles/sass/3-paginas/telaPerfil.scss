@@ -544,8 +544,8 @@ p{
         }
         .estAlunosInfs{
 
-            column-count: 2;
-            gap: 150px;
+            
+          
             background-color: white;
             padding: 15px;
             border-radius: 15px;
@@ -574,8 +574,7 @@ p{
         }
         .estViewsInfs{
             // display: flex;
-            column-count: 2;
-            gap: 150px;
+      
             background-color: white;
             padding: 15px;
             border-radius: 15px;
@@ -601,8 +600,7 @@ p{
         }
         .estAvaliacoesInfs{
             // display: flex;
-            column-count: 2;
-            gap: 150px;
+
             background-color: white;
             padding: 15px;
             border-radius: 15px;
@@ -656,21 +654,27 @@ p{
 
 
 @media screen and (max-width: 740px) {
+    
     .pagTodaPerfil{
         display: flex;
         flex-direction: column;
         background:none;
-
+        margin: 0;
+        padding: 5px;
+        border-radius: 0;
         .colunaEsquerdaPerfil{
             justify-content: center;
             height: 100%;
             width: 100%;
             margin: 0;
             justify-content: center;
+           // border-radius: 0;
+  
             .listaAcoes{
                 display: flex;
                 flex-direction: row;
                 background: none;
+
               
                 div{
                     border: none;

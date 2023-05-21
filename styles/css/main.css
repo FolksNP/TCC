@@ -191,8 +191,8 @@ input:checked + .slider:before {
   position: relative;
   top: 6px;
   margin-right: 25px;
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 90px;
+  max-height: 90px;
 }
 .navbarAzul .logoPesquisa .logoImg a {
   display: inline;
@@ -200,8 +200,8 @@ input:checked + .slider:before {
   color: #156aaa;
 }
 .navbarAzul .perfilImg img {
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   border: solid 2px #116798;
 }
@@ -247,6 +247,10 @@ input:checked + .slider:before {
 
 .topnav #myLinks {
   display: none;
+  background-color: #116798;
+  column-count: 4;
+  column-gap: auto;
+  justify-content: space-between;
 }
 
 .topnav a {
@@ -277,7 +281,7 @@ input:checked + .slider:before {
 
 #hmb-menu {
   width: 100%;
-  border-radius: 0px;
+  border-radius: 10px;
 }
 
 @media (min-width: 741px) {
@@ -566,6 +570,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: -20px;
 }
 .fundoPreto2 .btnEntrar input[type=button] {
   padding: 1em 2em;
@@ -1750,8 +1755,6 @@ body {
   margin: 15px 0px;
 }
 .direitaPerfil .estCursos .estAlunos .estAlunosInfs {
-  column-count: 2;
-  gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
@@ -1774,8 +1777,6 @@ body {
   font-size: 20px;
 }
 .direitaPerfil .estCursos .estViews .estViewsInfs {
-  column-count: 2;
-  gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
@@ -1798,8 +1799,6 @@ body {
   font-size: 20px;
 }
 .direitaPerfil .estCursos .estAvaliacoes .estAvaliacoesInfs {
-  column-count: 2;
-  gap: 150px;
   background-color: white;
   padding: 15px;
   border-radius: 15px;
@@ -1842,6 +1841,9 @@ body {
     display: flex;
     flex-direction: column;
     background: none;
+    margin: 0;
+    padding: 5px;
+    border-radius: 0;
   }
   .pagTodaPerfil .colunaEsquerdaPerfil {
     justify-content: center;
