@@ -168,6 +168,21 @@ input:checked + .slider:before {
   font-family: "Fira Sans", sans-serif;
   font-size: 25px;
 }
+.navbarAzul .logoPesquisa .pagPesquisa {
+  display: flex;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: solid 2px #116798;
+}
+.navbarAzul .logoPesquisa .pagPesquisa img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
 @media (max-width: 500px) {
   .navbarAzul .logoPesquisa {
     flex-direction: column;
@@ -324,7 +339,6 @@ button:hover {
 
 .swiper {
   width: 100%;
-  background-color: #08305a;
 }
 
 .swiper-slide {
@@ -382,7 +396,8 @@ button:hover {
   padding: 5px;
 }
 .container-carrossel img {
-  width: 100%;
+  width: 300px;
+  height: 250px;
   margin-top: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -3378,6 +3393,16 @@ fa-sun .fa-sun {
   width: 500px;
   border-radius: 10px;
   max-height: 400px;
+}
+
+.tudoPesquisa {
+  float: left;
+  margin-right: 10px;
+  background-color: antiquewhite;
+}
+.tudoPesquisa img {
+  width: 400px;
+  height: 200px;
 }
 
 @font-face {

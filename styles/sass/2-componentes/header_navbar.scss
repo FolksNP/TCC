@@ -67,7 +67,6 @@ input:checked + .slider:before {
   flex-direction: column;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: white;
-  
   .logoPesquisa{
       display: flex;
       justify-content: space-around;
@@ -75,6 +74,25 @@ input:checked + .slider:before {
       font-family: 'Fira Sans', sans-serif;
      // font-family: 'Genos', sans-serif;
        font-size: 25px;
+       .pagPesquisa{
+         display: flex;
+        // background-color: #19a2f1;
+         padding: 5px 15px;
+         font-size: 20px;
+         border-radius: 10px;
+         align-items: center;
+         color: rgb(0, 0, 0);
+         text-decoration: none;
+         border: solid 2px $cor-primaria;
+
+         img{
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+        }
+         
+         
+       }
       @include mobile{
           flex-direction: column;
       }

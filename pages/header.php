@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <script type="module" src="http://localhost:8080/shared"></script>
     <script type="module" src="http://localhost:8080/tema"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="  crossorigin="anonymous"></script>
+    <script>
+    function pesquisar(texto){
+        $.ajax({
+            type: "post",
+            url: "pesquisar.act.php?texto="+texto,
+            data: "texto",
+            success: function (response) {
+                $('#result').html(response);
+                
+            }
+        });
+    }
+  </script>
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
 <body>
     <div class="navbarAzul" id="navbar">
         <div class="logoPesquisa">
             <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.png" alt="" id="logo-header"></a><a href="inicial.php">Patrono Neves</a></div>
-            <p><input type="text" placeholder="Digite aqui sua pesquisa"></p>
+            <!-- <p><input type="text" placeholder="Digite aqui sua pesquisa"></p> -->
+
+             <a href="pesquisar.php" class="pagPesquisa"><p>Procuro algo especifico</p> <img src="../imgs/lupa.png" alt=""></a>
 
             <div class="login-perfil">
                 
@@ -52,29 +68,6 @@
             </div>
 
 
-
-<!--            <div class="listaMenu">-->
-
-<!--                <div id="myLinks">-->
-<!--                    <a href="#news">News</a>-->
-<!--                    <a href="#contact">Contact</a>-->
-<!--                    <a href="#about">About</a>-->
-<!--                </div>-->
-<!--                <a href="javascript:void(0);" class="icon" onclick="myFunction()">-->
-<!--                    <i class="fa fa-bars"></i>-->
-<!--                </a>-->
-<!---->
-<!---->
-<!--                <div></div>-->
-<!--                <div></div>-->
-<!--                <div></div>-->
-<!--                <ul>-->
-<!--                    <li><a href="../pages/inicial.php">Inicio</a></li>-->
-<!--                    <li><a href="../pages/cursos.php">Cursos</a></li>-->
-<!--                    <li><a href="../pages/sobre.php">Sobre nós</a></li>-->
-<!--                    <li><a href="../pages/telaPerfil.php">Suporte</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
 
         </div>
 
