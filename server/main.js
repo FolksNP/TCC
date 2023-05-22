@@ -91,6 +91,7 @@ app.route('/progresso').get((req, res) => {
 //recebe e atribui a uma variável o valor de codProgresso
 app.route('/progresso').post((req, res) => {
     req.session.codProgresso = req.body
+    res.send(req.body)
 })
 
 //atualiza a data de conclusão de progresso
