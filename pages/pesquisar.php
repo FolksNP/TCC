@@ -23,8 +23,14 @@
 </head>
 <body>
     <?php include('header.php'); ?>
-    <p class="pBusca">Pesquisar produto</p>
-    <input type="text" name="" class="pesquisa " id="txtPesquisar" onkeyup="pesquisar(this.value)">
+
+        <div class="pBusca">
+            <p><img src="../imgs/procurar.png" alt=""></p>
+            <p>Olá <?php echo $_SESSION['nome'] ?>. Insira abaixo sua pesquisa.</p>
+            <input type="text" name="" class="pesquisa" placeholder="Digite aqui" id="txtPesquisar" onkeyup="pesquisar(this.value)">
+        </div>
+
     <div id="result"></div>
+    <?php include('footer.php'); ?>
 </body>
 </html>
