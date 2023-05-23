@@ -7,92 +7,145 @@
 
 const atv = document.getElementById('atv')
 const addQuestao = document.getElementById('addQuestao')
-let i = 0
+let numQuestao = 0
 
 function obtainQuestion() {
     //fetch('localhost:8080/')
 }
 
 function criarQuestao() {
+    //
     const questao = document.createElement('div')
     questao.classList.add('questao')
+    atv.appendChild(questao)
+
+    //
+    const numeracao = document.createElement('label')
+    numeracao.classList.add('numeracao')
+    numeracao.textContent = `${numQuestao+1}.`
+    numQuestao++
+    questao.appendChild(numeracao)
+
+    //
     const pergunta = document.createElement('textarea')
     pergunta.classList.add('pergunta')
     pergunta.placeholder = 'digite a pergunta'
-    atv.appendChild(questao)
-    questao.appendChild(pergunta)
+    pergunta.maxLength = 50
+    numeracao.appendChild(pergunta)
+
+    //TODO: juntar ess função com a abaixo?
     atualizarQuestao()
 }
 
-function criarResposta(questao) {
-    const resposta = document.createElement('input')
-    resposta.type = 'textfield'
-    resposta.classList.add('resposta')
-    questao.appendChild(resposta)
-}
-
+//carregar múltiplas questões
 function carregarQuestoes() {
     const questoes = document.querySelectorAll('.questao')
-    while(i < questoes.length) {
-        questoes[i].id = `questao${i+1}`
+    while(numQuestao < questoes.length) {
+        questoes[numQuestao].id = `questao${numQuestao+1}`
 
-        const numeracao = document.createElement('label')
         const caracteres = document.createElement('label') 
-
         caracteres.textContent = '0/150'
+        questoes[numQuestao].appendChild(caracteres)
 
-        numeracao.htmlFor = questoes[i].id
-        document.body.appendChild(numeracao)
-        questoes[i].appendChild(caracteres)
+        numeracao.textContent = `${numQuestao+1}.`
 
-        numeracao.textContent = `${i+1}.`
-
-        console.log(questoes[i].children[0])
-
-        let pergunta = questoes[i].children[0]
+        let pergunta = questoes[numQuestao].children[0]
 
         pergunta.addEventListener('input', () => {
-            console.log(pergunta.value.length)
             caracteres.textContent = `${pergunta.value.length}/150`
         }) 
         
-        i++
+        numQuestao++
     }
 }
 
+//atualiza uma única questão
 function atualizarQuestao() {
     const questoes = document.querySelectorAll('.questao')
     const posicao = questoes.length
     const questao = questoes[posicao-1]
 
-    console.log(`questao${posicao}`)
-    console.log(questao)
-
     questao.id = `questao${posicao}`
 
-    const numeracao = document.createElement('label')
-    numeracao.textContent = `${posicao}.`
-    console.log(numeracao.textContent)
-    numeracao.htmlFor = questao.id
-
+    //caracteres restantes para a pergunta
     const caracteres = document.createElement('label') 
+    caracteres.classList.add('caracteres')
     caracteres.textContent = '0/150'
-
-    document.body.appendChild(numeracao)
     questao.appendChild(caracteres)
 
-    console.log(questao.children[0])
+    //respostas disponíveis para determinada questão 
+    const respostaDisp = document.createElement('label') 
+    respostaDisp.classList.add('respostaDisp')
+    if(respostaDisp.textContent == '') respostaDisp.textContent = '5'
+    questao.appendChild(respostaDisp)
 
-    let pergunta = questao.children[0]
+    //botão para adicionar nova resposta
+    const addResposta = document.createElement('button') 
+    addResposta.classList.add('addResposta')
+    addResposta.textContent = '+'
+    questao.appendChild(addResposta)
 
+    const pergunta = questao.children[0].children[0]
     pergunta.addEventListener('input', () => {
-        console.log(pergunta.value.length)
         caracteres.textContent = `${pergunta.value.length}/150`
     }) 
+
+    addResposta.addEventListener('click', () => {
+        if(respostaDisp.textContent > 0) {
+            respostaDisp.textContent = criarResposta(questao, respostaDisp.textContent)
+        }
+    })
 }
 
-console.log(document.body)
+//criar uma resposta para uma questão
+function criarResposta(questao, disp) {
+    //
+    const ordem = document.createElement('label')
+    ordem.classList.add('ordemResposta')
+    switch(disp) {
+        case '5': 
+            ordem.textContent = '1.'
+            break
+        case '4':
+            ordem.textContent = '2.'
+            break
+        case '3':
+            ordem.textContent = '3.'
+            break
+        case '2':
+            ordem.textContent = '4.'
+            break
+        case '1':
+            ordem.textContent = '5.'
+            break
+    }
+    questao.appendChild(ordem)
 
-//carregarQuestoes()
+    //textarea que recebe o texto da resposta
+    const resposta = document.createElement('textarea')
+    resposta.classList.add('resposta')
+    resposta.placeholder = 'digite a resposta'
+    resposta.maxLength = 50
+    ordem.appendChild(resposta)
+
+    //número de caracteres disponíveis para a resposta
+    const caracteres = document.createElement('label') 
+    caracteres.textContent = '0/50'
+    ordem.appendChild(caracteres)
+
+    resposta.addEventListener('input', () => {
+        caracteres.textContent = `${resposta.value.length}/50`
+    }) 
+
+    return --disp
+}
+
+//atualiza uma única resposta
+// function atualizarResposta(questao, disp) {
+//     console.log('atualizarRespostas')
+//     //numeracao
+// }
+
+console.log(document.body)
 
 addQuestao.addEventListener('click', criarQuestao)
