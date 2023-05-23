@@ -149,3 +149,7 @@ function criarResposta(questao, disp) {
 console.log(document.body)
 
 addQuestao.addEventListener('click', criarQuestao)
+
+//TODO (local): implementar a seleção específica das respostas e das questões para deletá-las, criar a parte de explicações, criar um marcador para definir qual resposta é verdadeira, praparar o registro dentro de um objeto e então usá-lo para o encode em JSON das informações colocadas nas atividades;
+//TODO (servidor): enviar para o servidor, decodificar as informações no servidor, cadastrar no banco;
+//TODO (renderizar): autentificação utilizando codProfessor, passar essas informações para esse arquivo quando o professor for alterar uma atividade já existente, renderização na parte do aluno.
