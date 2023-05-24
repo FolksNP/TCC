@@ -1,6 +1,6 @@
 @import '1-modulos/variables';
 @import '1-modulos/base-scss.scss';
-@import "1-modulos/responsividade-geral";
+@import '1-modulos/responsividade-geral';
 @import '1-modulos/scrollbar.scss';
 
 @import '2-componentes/footer.scss';
@@ -13,7 +13,7 @@
 @import '3-paginas/inicial.css';
 @import '3-paginas/cursos.scss';
 @import '3-paginas/inicial.scss';
-@import "3-paginas/cadastro";
+@import '3-paginas/cadastro';
 @import '3-paginas/telaPerfil';
 @import '3-paginas/login.scss';
 @import '3-paginas/cadCurso.scss';
@@ -24,6 +24,7 @@
 @import '3-paginas/acessibilidade.sass';
 @import '3-paginas/aula.scss';
 @import '3-paginas/pesquisar.scss';
+@import '3-paginas/pagamento.sass';
 
 @font-face{
   font-family: 'Cocomat';
@@ -31,6 +32,6 @@
 }
 
 @font-face{
-    font-family: 'dance';
-    src: url('./fonts/DancingScript-Regular.otf') format('opentype');
-  }
+  font-family: 'dance';
+  src: url('./fonts/DancingScript-Regular.otf') format('opentype');
+}
