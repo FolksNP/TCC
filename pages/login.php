@@ -81,16 +81,6 @@
              
             <input type="file" name="foto" >
 
-<<<<<<< HEAD
-            <!-- <img src="captcha.php" alt="Código captcha">
-            <label>Digite o código</label>
-            <input type="text" name="captcha" required><br> -->
-=======
-            <img src="captcha.php" alt="Código captcha">
-            <!-- <label>Digite o código</label>
-            <input type="text" name="captcha"><br> -->
->>>>>>> d8799a09f0e191dd9862654e7ecc0f935ef63162
-
             <div class="floating-label-group">
 			<input type="submit" value="Cadastrar-se" class="form-control" id="cadastroBtn"  onclick="btnDisable()"/>	
 			</div>
