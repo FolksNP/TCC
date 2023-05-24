@@ -7,10 +7,14 @@
 
 const atv = document.getElementById('atv')
 const addQuestao = document.getElementById('addQuestao')
+const delQuestao = document.getElementById('delQuestao')
+const salvarAtv = document.getElementById('salvarAtv')
+let atvObj
 let numQuestao = 0
 
-function obtainQuestion() {
-    //fetch('localhost:8080/')
+function convertPosicao(posicao) {
+    const index = posicao.indexOf('.')
+    return posicao.slice(0, index)
 }
 
 function criarQuestao() {
@@ -30,11 +34,49 @@ function criarQuestao() {
     const pergunta = document.createElement('textarea')
     pergunta.classList.add('pergunta')
     pergunta.placeholder = 'digite a pergunta'
-    pergunta.maxLength = 50
+    pergunta.maxLength = 150
     numeracao.appendChild(pergunta)
 
-    //TODO: juntar ess função com a abaixo?
-    atualizarQuestao()
+    //
+    const explicacao = document.createElement('textarea')
+    explicacao.classList.add('explicacao')
+    explicacao.placeholder = 'digite a explicação da resposta'
+    explicacao.maxLength = 150
+    numeracao.appendChild(explicacao)
+
+    const questoes = document.querySelectorAll('.questao')
+    const posicao = questoes.length
+
+    questao.id = `questao${posicao}`
+
+    //caracteres restantes para a pergunta
+    const caracteres = document.createElement('label') 
+    caracteres.classList.add('caracteres')
+    caracteres.textContent = '0/150'
+    questao.appendChild(caracteres)
+
+    //respostas disponíveis para determinada questão 
+    const respostaDisp = document.createElement('label') 
+    respostaDisp.classList.add('respostaDisp')
+    if(respostaDisp.textContent == '') respostaDisp.textContent = '5'
+    questao.appendChild(respostaDisp)
+
+    //botão para adicionar nova resposta
+    const addResposta = document.createElement('button') 
+    addResposta.classList.add('addResposta')
+    addResposta.textContent = '+'
+    questao.appendChild(addResposta)
+
+    pergunta.addEventListener('input', () => {
+        caracteres.textContent = `${pergunta.value.length}/150`
+    }) 
+
+    addResposta.addEventListener('click', () => {
+        if(respostaDisp.textContent > 0) {
+            respostaDisp.textContent = criarResposta(questao, respostaDisp.textContent)
+        }
+    })
+
 }
 
 //carregar múltiplas questões
@@ -61,45 +103,12 @@ function carregarQuestoes() {
 
 //atualiza uma única questão
 function atualizarQuestao() {
-    const questoes = document.querySelectorAll('.questao')
-    const posicao = questoes.length
-    const questao = questoes[posicao-1]
 
-    questao.id = `questao${posicao}`
-
-    //caracteres restantes para a pergunta
-    const caracteres = document.createElement('label') 
-    caracteres.classList.add('caracteres')
-    caracteres.textContent = '0/150'
-    questao.appendChild(caracteres)
-
-    //respostas disponíveis para determinada questão 
-    const respostaDisp = document.createElement('label') 
-    respostaDisp.classList.add('respostaDisp')
-    if(respostaDisp.textContent == '') respostaDisp.textContent = '5'
-    questao.appendChild(respostaDisp)
-
-    //botão para adicionar nova resposta
-    const addResposta = document.createElement('button') 
-    addResposta.classList.add('addResposta')
-    addResposta.textContent = '+'
-    questao.appendChild(addResposta)
-
-    const pergunta = questao.children[0].children[0]
-    pergunta.addEventListener('input', () => {
-        caracteres.textContent = `${pergunta.value.length}/150`
-    }) 
-
-    addResposta.addEventListener('click', () => {
-        if(respostaDisp.textContent > 0) {
-            respostaDisp.textContent = criarResposta(questao, respostaDisp.textContent)
-        }
-    })
 }
 
 //criar uma resposta para uma questão
 function criarResposta(questao, disp) {
-    //
+    //label que armazena a ordem da resposta e os elementos relacionados a isso
     const ordem = document.createElement('label')
     ordem.classList.add('ordemResposta')
     switch(disp) {
@@ -120,6 +129,12 @@ function criarResposta(questao, disp) {
             break
     }
     questao.appendChild(ordem)
+
+    //input radio utilizado para definir qual a resposta correta
+    const radio = document.createElement('input')
+    radio.type = 'radio'
+    radio.classList.add('radioResposta')
+    ordem.prepend(radio)
 
     //textarea que recebe o texto da resposta
     const resposta = document.createElement('textarea')
@@ -149,6 +164,58 @@ function criarResposta(questao, disp) {
 console.log(document.body)
 
 addQuestao.addEventListener('click', criarQuestao)
+delQuestao.addEventListener('click', () => {
+
+})
+salvarAtv.addEventListener('click', () => {
+    const questoes = document.querySelectorAll('.questao')
+    atvObj = {}
+    for(let questao of questoes) {
+        const id = questao.id
+        const numeracao = questao.children[0]
+        const pergunta = numeracao.children[0]
+        const explicacao = numeracao.children[1]
+        const respostas = questao.querySelectorAll('.ordemResposta')
+
+        atvObj[id] = {}
+        atvObj[id]['explicacao'] = explicacao.value
+        atvObj[id]['pergunta'] = pergunta.value
+        atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
+        atvObj[id]['tipo'] = 'radio'
+        atvObj[id]['numRespostas'] = respostas.length
+
+        let respIndex = 1
+        let respostaId
+        let radio
+
+        for(let resposta of respostas) {
+            respostaId = `resposta${respIndex}`
+
+            radio = resposta.querySelector('.radioResposta')
+            radio.name = `resposta${questao.id}`
+            radio.value = respIndex
+            console.log(radio.checked)
+
+            atvObj[id][respostaId] = {}
+            atvObj[id][respostaId]['opcao'] = resposta.querySelector('.resposta').value
+            atvObj[id][respostaId]['ordemResposta'] = convertPosicao(resposta.textContent)
+            atvObj[id][respostaId]['respostaCorreta'] = (radio.checked) ? 1 : 0
+            respIndex++
+        }
+    }
+
+    console.log(atvObj)
+
+    // fetch('localhost:8080/cadQuestao', {
+    //     method: 'POST',
+    //     body: JSON.stringify(atvObj),
+    //     headers: {
+    //         'Content-Type': 'application/json; charset=UTF-8'
+    //     }
+    // })
+    // .then(() => console.log('atividades cadastradas com sucesso'))
+    // .catch((err) => console.error(err))
+})
 
 //TODO (local): implementar a seleção específica das respostas e das questões para deletá-las, criar a parte de explicações, criar um marcador para definir qual resposta é verdadeira, praparar o registro dentro de um objeto e então usá-lo para o encode em JSON das informações colocadas nas atividades;
 //TODO (servidor): enviar para o servidor, decodificar as informações no servidor, cadastrar no banco;
