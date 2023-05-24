@@ -8,10 +8,10 @@
 
 
         <p>Número da sua Agência</p>
-        <input type="text" name="numAgencia" id="" required="required">
+        <input type="text" name="numAgencia" id="agencia" required="required">
 
         <p>Número da Conta</p>
-        <input type="text" name="numConta" id="" required="required"><br><br>
+        <input type="text" name="numConta" id="conta" required="required"><br><br>
 
         <input type="submit" value="Concluir">
 
