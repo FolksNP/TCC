@@ -14,7 +14,7 @@
             <p><input type="file" name="foto" id="arquivo" class="arquivoPerfil">
  
             <div id="img-container">
-            <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$_SESSION['foto'];?>"></label></p>
+            <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$_SESSION  ['foto'];?>"></label></p>
             </div></p>
             <p>Email: <input type="email" name="email" value="<?php echo @$_SESSION['email'];?>"></"></p>
 

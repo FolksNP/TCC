@@ -2,7 +2,10 @@
 <div class="direitaPerfil" id="direitaPerfilCursos">
 <div class="cursoTopo" id="cursoTopo">
     <div class="txtCursos" id="txtCursos">
-        
+    <?php  if(isset($_SESSION['msgCurso'])){
+                echo "<p class=alert>$_SESSION[msgCurso]</p>";
+                unset($_SESSION['msgCurso']);          
+        } ?>
         <p>Cursos</p>
         <p>Promoções</p>
         <button id="btnAula" >Adicionar</button>
@@ -21,19 +24,6 @@
             echo "<a href=aula.php?codCurso=$curso[codCurso] ><img src= $curso[capaCurso]></a>";
     
         };
-    //    $cursos = mysqli_query($con, "SELECT `cursos.capaCurso`
-    //     FROM `cursos` INNER JOIN `professorcurso` ON 'professorcurso.professor' = 'professores.codProfessor' ");
-    //     var_dump($cursos);
-    //    $curso = mysqli_fetch_array($cursos);
-    //    echo $curso[''];
-
-    // $cursos = mysqli_query($con,"SELECT * FROM `professorcurso` where `professor` = '$codProf'");
-    // $curso = mysqli_fetch_array($cursos);
-    // echo $curso['nivelCurso'];
-
-  //echo $tes['codProfCurso'];
-
-
        ?>
   
     </div>

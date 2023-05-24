@@ -126,7 +126,8 @@
 /// hamburguer menu
 .topnav {
   overflow: hidden;
-  position: relative;
+  background-color: #116798;
+  margin: 5px 0;
   list-style-type: none;
   
   @mixin aparecer{
@@ -179,6 +180,7 @@
   
  
 }
+
 
 #container-hamburguer{
  

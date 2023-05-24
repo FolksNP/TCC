@@ -1,5 +1,3 @@
-  
-    <h2>Olá</h2> 
 
     <form action="cadProfessor.act.php" method="post" enctype="multipart/form-data">
 

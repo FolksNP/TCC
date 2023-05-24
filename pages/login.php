@@ -34,14 +34,11 @@
                 <?php  
                 session_start();
                 @$cod= $_SESSION['cod'];
-                if(isset($_SESSION['msg'])){
-                echo "<p class=alert>$_SESSION[msg]</p>";
-                unset($_SESSION['msg']);          
+                if(isset($_SESSION['msgLogin'])){
+                echo "<p class=alert>$_SESSION[msgLogin]</p>";
+                unset($_SESSION['msgLogin']);          
         }
-    //     if(isset($_SESSION['msgCap'])){
-    //     echo $_SESSION['msgCap'];
-    //     unset($_SESSION['msgCap']);
-    // }
+
     ?>
 
                 <div class="floating-label-group">

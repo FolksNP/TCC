@@ -28,7 +28,8 @@
             <div class="fotoPerfil" id="fotoPerfil">
                     <?php echo "<img src= $_SESSION[foto]>";?>
                     <?php echo "<p>$_SESSION[nome]</p>";?>
-                    <p>Desde 01/06/2004</p>
+                    
+                 
             </div>
 
             <?php include('perfilListaAcoes.php') ?>
@@ -51,8 +52,9 @@
 <script>
 $(document).ready(function(){
      $('#cpf').mask('000.000.000-00');
-     $('#cpf').mask('000.000.000-00');
-     $('#cpf').mask('000.000.000-00');
+     $('#agencia').mask('0000-0');
+     $('#conta').mask('00000000000');
+     
      
 });
 </script>

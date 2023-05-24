@@ -16,14 +16,29 @@ $codProfCurso = $_SESSION['codProf'];
  $buscaCurso = mysqli_query($con, "Select * from `cursos`");
  $curso = mysqli_fetch_array($buscaCurso);
 
+switch($tagCurso) {
+    case 'Manutenção':
+        $tagCurso = 1;
+        break;
+    case 'Confeitaria':
+        $tagCurso = 2;
+        break;
+    case 'Arte':
+        $tagCurso = 3;
+        break;
+    case 'Marcenaria':
+        $tagCurso = 4;
+        break;
+}
 
-    if(mysqli_query($con, "INSERT INTO `cursos` ( `codCurso`,`professor`,`avaliacaoMedia`,`nomeCurso`, `descCurso`, `nivelCurso`, `capaCurso`, `comentarios`) 
-    VALUES (NULL,'$codProfCurso', 0.0, '$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso','amei');")){
+
+    if(mysqli_query($con, "INSERT INTO `cursos` ( `codCurso`,`professor`,`avaliacaoMedia`,`nomeCurso`, `descCurso`, `nivelCurso`, `capaCurso`, `tag`) 
+    VALUES (NULL,'$codProfCurso', 0.0, '$nomeCurso', '$descCurso', '$nivelCurso', '$arquivoCurso','$tagCurso');")){
             $msg = "Curso foi cadastrado com sucesso!";
 
             @$_SESSION['codCurso'] = $curso['codCurso'];  
             @$cursoCodigo= $curso['codCurso'];  
-            @$_SESSION['nomeCurso'] = $curso['nomeCurso'];
+            @$_SESSION['nomeCurso'] = $curso['nomeCurso'];  
             @$_SESSION['descCurso'] = $curso['descCurso'];
             @$_SESSION['capaCurso'] = $curso['capaCurso'];
             @$_SESSION['codCurso'] = $curso['codCurso'];
@@ -38,7 +53,7 @@ $codProfCurso = $_SESSION['codProf'];
 
 
 var_dump($con);
-echo $msg;
-//$_SESSION['msg'] = $msg;
-header("location:cursos.php");
+echo @$msg;
+$_SESSION['msgCurso'] = "Adicione uma aula para seu curso ao clicar nele";
+//header("location:telaPerfil.php");
 ?>

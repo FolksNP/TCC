@@ -25,7 +25,7 @@ session_start();
       $_SESSION['codProf'] = $codigoProfessor['codProfessor'];
       
       $target = "location:inicial.php";
-      $msg = "logado";
+      $msg = "Volte logo, sentiremos sua falta.";
       }else{
         $msg = "Email ou senha incorretos!";
         $target = "location:login.php";
@@ -37,6 +37,6 @@ session_start();
         
       }
 
-      $_SESSION['msg'] = $msg;
+      $_SESSION['msgLogin'] = $msg;
       
       header($target);

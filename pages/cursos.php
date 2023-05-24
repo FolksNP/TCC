@@ -21,7 +21,9 @@
     <div #swiperRef="" class="swiper mySwiper">
       <DIV class="txtCursosSlider"><p>Adicionados Recentemente</p></DIV>
       <div class="swiper-wrapper">
-        <?php $cursos = mysqli_query($con, "Select * from `cursos`"); 
+
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` WHERE `tag` = 'tagCurso' "); 
+
       
       while($curso=mysqli_fetch_array($cursos)){
         echo"

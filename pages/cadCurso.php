@@ -48,6 +48,12 @@
             <option value="2"> Intermediário</option>
             <option value="3">Avançado</option>
           </select>
+          <p>Categoria</p><select name="tagCurso" required="required">
+            <option value="Manutenção">Manutenção</option>
+            <option value="Confeitaria">Confeitaria</option>
+            <option value="Arte">Arte</option>
+            <option value="Marcenaria">Marcenaria</option>
+          </select>
           <p><p>Selecione uma capa para o curso</p><input type="file" name="capaCurso" id="imgInp"></p>
           <label for="imgInp">
           <img id="blah" src="../imgs/thumb.jpg" alt="your image" class="thumbCurso" />

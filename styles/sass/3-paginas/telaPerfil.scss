@@ -54,8 +54,8 @@
             justify-content: center;
             text-align: center;
             >img{
-                width: 100px;
-                height: 100px;
+                width: 150px;
+                height: 150px;
                 border-radius: 100%;
             }
         }
@@ -665,6 +665,7 @@ p{
         margin: 0;
         padding: 5px;
         border-radius: 0;
+        background-color: #f3f3f3;
         .colunaEsquerdaPerfil{
             justify-content: center;
             height: 100%;

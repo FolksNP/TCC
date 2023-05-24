@@ -33,4 +33,4 @@ var_dump($arquivo);
 echo $msg;
 $_SESSION['msg'] = $msg;
 $_SESSION['arquivo'] = $arquivo;
-//header("location:telaPerfil.php");
+header("location:telaPerfil.php");
