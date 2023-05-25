@@ -32,6 +32,6 @@ VALUES (NULL,'$email', '$nome', '$password', '$arquivo');")){
     // }
     session_start();
 
-$_SESSION['msg'] = $msg;
+$_SESSION['msgLogin'] = $msg;
 header("location:login.php"); 
 ?>
