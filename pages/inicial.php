@@ -105,7 +105,9 @@
     </div>
     <div class="inputPesquisaInicial">
         <div>
-            <img src="../imgs/lupa.png" alt="lupa" ><input type="text" name="pesquisaCurso" placeholder="Procure um curso" id="lupa"><p><label for="lupa">Buscar</label></p>
+            <a href="pesquisar.php">
+            <img src="../imgs/lupa.png" alt="lupa" ><input type="button" name="pesquisaCurso" value="Procure um curso" id="lupa"><p><label for="lupa">Buscar</label></p>
+            </a>
         </div>
     </div>
     <p><a href="cursos.php">Ver todos os cursos</a></p>
