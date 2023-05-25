@@ -62,14 +62,14 @@
 				<label class="floating-label">Email</label>
 			</div>
             <div class="floating-label-group" id="senhaInput">
-                <input type="password" name="password" id="senha1" class="form-control" autocomplete="off" required="required" />
+                <input type="password" name="password" minlength="8" id="senha1" class="form-control" autocomplete="off" required="required" />
                 <div>
             <img src="../imgs/olho.png" onclick="myFunction('senha1');"  id="olho" class="olho"/>
             </div>
 				<label class="floating-label">Senha</label>
 			</div>
             <div class="floating-label-group" id="senhaInput2">
-                <input type="password" name="password" id="senha2" class="form-control" oninput="validarSenha('senha1','senha2')" autocomplete="off" required="required" />
+                <input type="password" minlength="8" name="password" id="senha2" class="form-control" oninput="validarSenha('senha1','senha2')" autocomplete="off" required="required" />
             <div id="fundoOlho">
             <img src="../imgs/olho.png"  onclick="myFunction('senha2');" id="olho" class="olho"/>
             </div>
