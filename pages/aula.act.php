@@ -19,5 +19,5 @@ var_dump($_FILES);
         //var_dump($con);
         session_start();
         $_SESSION['mensagem'] = $msg;
-        header('location:aula.php');
+        header('location:telaPerfil.php');
 ?>

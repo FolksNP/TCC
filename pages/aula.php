@@ -16,8 +16,8 @@
             @session_start();
             // var_dump($_GET['codCurso']); 
 
-            $codigoCurso = $_GET['codCurso'];
-            echo" <input type=hidden name=codCurso value=$codigoCurso >";
+            @$codigoCurso = $_GET['codCurso'];
+            echo" <input type=hidden name=codCurso value=@$codigoCurso >";
         ?>
         <div class="videoUpload" style="cursor: pointer; background: lightgray; margin-bottom: 10px;">
             <h3 id="progress-bar"></h3>

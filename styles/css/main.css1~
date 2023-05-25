@@ -668,50 +668,6 @@ body {
   color: orange;
 }
 
-.custom-video-player {
-  position: relative;
-  max-width: 800px;
-}
-
-video {
-  width: 100%;
-}
-
-.custom-controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.custom-controls button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 5px;
-  background-color: #555;
-  position: relative;
-  margin: 0 10px;
-}
-
-.progress {
-  height: 100%;
-  background-color: #f00;
-  width: 0%;
-}
-
 /* Estilos para o slider */
 .cardes-sliders {
   display: flex;
@@ -3524,6 +3480,54 @@ hr {
 .pagamento-caixa .pagamento-principal .pagamento #valorpg {
   margin: 20px 0px;
   font-size: 25px;
+}
+
+.caixa-atividades {
+  background-color: #fff;
+  width: 80%;
+  margin: 10px auto;
+  padding: 30px;
+}
+.caixa-atividades #atv-head {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.caixa-atividades #txt-addAtv {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.caixa-atividades .controle-atv {
+  background-color: lightblue;
+  box-shadow: 2px 8px 8px grey;
+  padding: 10px;
+}
+.caixa-atividades .controle-atv #addQuestao, .caixa-atividades .controle-atv #delQuestao, .caixa-atividades .controle-atv #salvarAtv {
+  width: 25%;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.caixa-atividades .controle-atv #selectAll {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+.caixa-atividades #atv {
+  background-color: #113469;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.caixa-atividades #atv .questao .pergunta, .caixa-atividades #atv .questao .explicacao {
+  height: 50px;
+  font-size: 18px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 35%;
+}
+.caixa-atividades #atv .questao .addResposta {
+  position: relative;
+  top: -20px;
 }
 
 @font-face {
