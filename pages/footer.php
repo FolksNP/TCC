@@ -48,7 +48,7 @@
         </div>
 
         <div class="inferior">
-            <h3>2023 - Todos os direitos reservados a Patrono Neves - Monoscode&copy;</h3>
+            <h3>2023 - Todos os direitos reservados a Patrono Neves&copy;</h3>
         </div>
 
     </div>
