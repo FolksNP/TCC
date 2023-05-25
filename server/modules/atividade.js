@@ -1,3 +1,5 @@
+import { selectAllCheckbox, unselectAllCheckbox, verifyAllCheckbox } from './util'
+
 // fetch('localhost:8080/atv/', {
 
 // })
@@ -9,6 +11,8 @@ const atv = document.getElementById('atv')
 const addQuestao = document.getElementById('addQuestao')
 const delQuestao = document.getElementById('delQuestao')
 const salvarAtv = document.getElementById('salvarAtv')
+const selectAll = document.getElementById('selectAll')
+const mensagem = document.getElementById('mensagem')
 let atvObj
 let numQuestao = 0
 
@@ -18,26 +22,45 @@ function convertPosicao(posicao) {
 }
 
 function criarQuestao() {
-    //
+    //questao
     const questao = document.createElement('div')
     questao.classList.add('questao')
     atv.appendChild(questao)
 
-    //
+    //label para checkbox de seleção
+    const lblCheckbox = document.createElement('label')
+    lblCheckbox.classList.add('lblCheckbox')
+    questao.appendChild(lblCheckbox)
+
+    //checkbox para a seleção da questão
+    const checkbox = document.createElement('input')
+    checkbox.type = 'checkbox'
+    checkbox.classList.add('checkboxQuestao')
+    lblCheckbox.appendChild(checkbox)
+    checkbox.addEventListener('change', () => {
+        if(!checkbox.checked) {
+            selectAll.checked = false
+        } else {
+            const checkboxes = document.querySelectorAll('.checkboxQuestao')
+            if(verifyAllCheckbox(checkboxes)) selectAll.checked = true
+        }
+    })
+
+    //numeracao da questao
     const numeracao = document.createElement('label')
     numeracao.classList.add('numeracao')
     numeracao.textContent = `${numQuestao+1}.`
     numQuestao++
     questao.appendChild(numeracao)
 
-    //
+    //texto da questao
     const pergunta = document.createElement('textarea')
     pergunta.classList.add('pergunta')
     pergunta.placeholder = 'digite a pergunta'
     pergunta.maxLength = 150
     numeracao.appendChild(pergunta)
 
-    //
+    //explicacao da resposta correta
     const explicacao = document.createElement('textarea')
     explicacao.classList.add('explicacao')
     explicacao.placeholder = 'digite a explicação da resposta'
@@ -164,6 +187,16 @@ function criarResposta(questao, disp) {
 console.log(document.body)
 
 addQuestao.addEventListener('click', criarQuestao)
+
+selectAll.addEventListener('change', () => {
+    const checkboxes = document.querySelectorAll('.checkboxQuestao')
+    if(selectAll.checked) {
+        selectAllCheckbox(checkboxes)
+    } else {
+        unselectAllCheckbox(checkboxes)
+    }
+})
+
 delQuestao.addEventListener('click', () => {
 
 })
@@ -172,18 +205,25 @@ salvarAtv.addEventListener('click', () => {
     atvObj = {}
     for(let questao of questoes) {
         const id = questao.id
-        const numeracao = questao.children[0]
-        const pergunta = numeracao.children[0]
-        const explicacao = numeracao.children[1]
+        const numeracao = questao.querySelector('.numeracao')
+        const pergunta = numeracao.querySelector('.pergunta')
+        const explicacao = numeracao.querySelector('.explicacao')
         const respostas = questao.querySelectorAll('.ordemResposta')
 
-        atvObj[id] = {}
-        atvObj[id]['explicacao'] = explicacao.value
-        atvObj[id]['pergunta'] = pergunta.value
-        atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
-        atvObj[id]['tipo'] = 'radio'
-        atvObj[id]['numRespostas'] = respostas.length
+        console.log(numeracao)
+        console.log(explicacao)
+        console.log(pergunta)
 
+        if(explicacao.value != '' && pergunta.value != '') {
+            atvObj[id] = {}
+            atvObj[id]['explicacao'] = explicacao.value
+            atvObj[id]['pergunta'] = pergunta.value
+            atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
+            atvObj[id]['tipo'] = 'radio'
+            atvObj[id]['numRespostas'] = respostas.length
+        }
+
+        //movida de dentro para fora, testando radio único antes de salvar
         let respIndex = 1
         let respostaId
         let radio
@@ -206,15 +246,15 @@ salvarAtv.addEventListener('click', () => {
 
     console.log(atvObj)
 
-    // fetch('localhost:8080/cadQuestao', {
-    //     method: 'POST',
-    //     body: JSON.stringify(atvObj),
-    //     headers: {
-    //         'Content-Type': 'application/json; charset=UTF-8'
-    //     }
-    // })
-    // .then(() => console.log('atividades cadastradas com sucesso'))
-    // .catch((err) => console.error(err))
+    fetch('http://localhost:8080/cadQuestao', {
+        method: 'POST',
+        body: JSON.stringify(atvObj),
+        headers: {
+            'Content-Type': 'application/json; charset=UTF-8'
+        }
+    })
+    .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
+    .catch((err) => console.error(err))
 })
 
 //TODO (local): implementar a seleção específica das respostas e das questões para deletá-las, criar a parte de explicações, criar um marcador para definir qual resposta é verdadeira, praparar o registro dentro de um objeto e então usá-lo para o encode em JSON das informações colocadas nas atividades;

@@ -66,12 +66,25 @@ app.route('/shared').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/shared.js'))
 })
 
+app.route('/atividade').get((req, res) => {
+    res.sendFile(path.join(__dirname, '/modules/atividade.js'))
+})
+
+app.route('/util').get((req, res) => {
+    res.sendFile(path.join(__dirname, '/modules/util.js'))
+})
+
 app.route('/acessibilidade').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/acessibilidade.js'))
 })
 
 app.route('/tema').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/tema.js'))
+})
+
+app.route('/cadQuestao').post((req, res) => {
+    const questao = req.body
+    res.send('funcionou? ' + questao)
 })
 
 //inicia o progresso do video à partir dessa tabela
