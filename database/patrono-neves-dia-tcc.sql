@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 26-Maio-2023 às 05:59
+-- Tempo de geração: 26-Maio-2023 às 14:03
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `cursos` (
   UNIQUE KEY `idCurso_UNIQUE` (`codCurso`),
   KEY `fk_idx` (`professor`),
   KEY `fkTagsCod_Cursos_idx` (`tag`)
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `cursos`
@@ -163,7 +163,7 @@ INSERT INTO `cursos` (`codCurso`, `tag`, `professor`, `avaliacaoMedia`, `capaCur
 (40, NULL, 6, '0000000000', '../imgs/ab9ce0c984d99e50cc71e7b906ac2ac8.jpg', 'O curso \"Criação de Bordado de Roupa\" é projetado para ensinar os participantes as habilidades essenciais necessárias para bordar roupas de forma criativa e artística. Seja você um iniciante completo ou alguém com alguma experiência prévia em bordado, este curso oferece uma oportunidade para aprimorar suas técnicas e explorar novas possibilidades no mundo do bordado.', 'Criação de Bordado para Roupa', 1, 'Arte'),
 (41, NULL, 6, '0000000000', '../imgs/d8b827f6a65dce1bcbfd4d0f5b1dc454.jpg', 'O curso de Criação de Churros é projetado para ensinar os participantes a dominar a arte de fazer churros deliciosos e irresistíveis. Durante o curso, os alunos serão conduzidos passo a passo por todo o processo de preparação da massa, recheio e coberturas, resultando em churros autênticos, crocantes por fora e macios por dentro.', 'Criação de churros', 2, 'Confeitaria'),
 (42, NULL, 6, '0000000000', '../imgs/5b89caeab75675f726fc67e95519e47f.jpg', 'O curso de montador de pequenos móveis é projetado para ensinar habilidades práticas relacionadas à montagem e instalação de móveis de menor porte, como estantes, mesas, cadeiras, prateleiras, armários pequenos e outros itens similares. O objetivo principal do curso é capacitar os participantes a realizar a montagem correta e segura desses móveis, seguindo as instruções do fabricante e utilizando as ferramentas adequadas.', 'Montador de Pequenos Móveis', 3, 'Marcenaria'),
-(43, NULL, 6, '0000000000', '../imgs/a2a0c89d1500164b7109e48d9e09cf66.jpg', 'O curso de Reparo de Fones de Ouvido é uma oportunidade para aprender as habilidades necessárias para consertar e solucionar problemas comuns em fones de ouvido. Este curso abrangente e prático oferece conhecimentos essenciais para lidar com os diferentes tipos de fones de ouvido disponíveis no mercado, desde modelos com fio até fones sem fio.', 'Conserto de Fone de Ouvido', 2, 'Manutenção'),
+(43, NULL, 6, '0000000000', '../imgs/ffd893ad8bd6a1483709f287dae6578d.jpg', 'O curso de Introdução à Programação Geral é projetado para fornecer aos alunos uma base sólida no mundo da programação e desenvolvimento de software. Este curso é ideal para iniciantes que desejam aprender os conceitos fundamentais da programação, independentemente da área específica em que desejam se especializar posteriormente.', 'Introdução a Programação Geral', 2, 'Manutenção'),
 (44, NULL, 6, '0000000000', '../imgs/0c75ced14882354f823408f9cbdf3961.jpg', 'Nosso curso de tocar instrumentos musicais é projetado para aqueles que desejam aprender a tocar um instrumento de forma abrangente e eficaz. Seja você um iniciante completo ou alguém que já tenha alguma experiência, nosso curso abrange uma ampla variedade de instrumentos e estilos musicais para atender às suas preferências individuais.', 'Aprenda a Tocar Instrumentos', 1, 'Arte'),
 (45, NULL, 6, '0000000000', '../imgs/b57c060dff68b23b0fc02f20d5450220.jpg', 'O curso de Churros Artesanais é um programa abrangente projetado para ensinar os participantes a dominar a arte de fazer churros deliciosos e irresistíveis. Durante o curso, os alunos serão conduzidos passo a passo por todo o processo de preparação da massa, recheio e coberturas, resultando em churros autênticos, crocantes por fora e macios por dentro.', 'Confecção de Pamonhas', 2, 'Confeitaria'),
 (46, NULL, 6, '0000000000', '../imgs/283e2db65578f680159a52fcd5d404d8.jpg', '\r\nO curso de montador de pequenos móveis é projetado para ensinar habilidades práticas relacionadas à montagem e instalação de móveis de menor porte, como estantes, mesas, cadeiras, prateleiras, armários pequenos e outros itens similares. O objetivo principal do curso é capacitar os participantes a realizar a montagem correta e segura desses móveis, seguindo as instruções do fabricante e utilizando as ferramentas adequadas.', 'Criação de Bancos de Madeira', 1, 'Marcenaria'),
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `matriculas` (
   UNIQUE KEY `Matriculascol_UNIQUE` (`codMatricula`),
   KEY `matriculaAlunos_idx` (`matriculaAlunos`),
   KEY `matriculaCursos_idx` (`matriculaCursos`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
