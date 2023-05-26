@@ -1,3 +1,4 @@
+<?php require('sec.php'); ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,19 +30,19 @@
                         <li class="certificado-info">
                             <span>Certificado: Programação Geral - Básico</span>
                             <span>Horas/Aula: 4 Horas</span>
-                            <span>Instrutor: Bangas Hipolito</span>
+                            <span>Instrutor: Yasmin Hipólito</span>
                             <span>Valor: R$2,00</span>
                         </li>
                         <li class="certificado-info">
                             <span>Certificado: Design Web - Avançado</span>
                             <span>Horas/Aula: 15 Horas</span>
-                            <span>Instrutor: Paula Tejano</span>
+                            <span>Instrutor: Jonathan Ramalho</span>
                             <span>Valor: R$60,00</span>
                         </li>
                         <li class="certificado-info">
                             <span>Certificado: Manicure - Avançado</span>
                             <span>Horas/Aula: 100 Horas</span>
-                            <span>Instrutor: Eren Yeager</span>
+                            <span>Instrutor: Maria Clara</span>
                             <span>Valor: R$250,00</span>
                         </li>
                     </ul>
@@ -68,7 +69,9 @@
 
                         <form action="">
                             <input id="titular" type="text" placeholder="Nome do titular do cartão" maxlength="27px">
+                            <input id="titular" type="text" placeholder="CPF" maxlength="27px">
                             <span id="caixa-numero-card"><label for="numero-card">Número do cartão e Digitos:</label><input id="numero-card" type="text" placeholder="0000 0000 0000 0000" maxlength="16"> <input id="tres-digi" type="text" maxlength="3" placeholder="MMM"></span>
+                            <input id="titular" type="text" placeholder="Senha:" maxlength="27px">
                         </form>
 
                         <p id="valorpg">Valor a  ser pago: R$2,00</p>

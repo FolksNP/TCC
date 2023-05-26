@@ -1,4 +1,4 @@
-import { verifyConfig, verifyAlterarTema } from "./shared"
+import { verifyConfig, verifyAlterarTema, verifyEstiloFonte } from "./shared"
 
 const corDark = "rgb(0, 16, 23)";
 const corDark2 = "#686868";
@@ -27,6 +27,10 @@ const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
 const topoConteudosCurso = document.getElementById("topoConteudosCurso");
 const secao = document.querySelectorAll(".secao");
 const header = document.querySelectorAll("header")
+
+// verifyEstiloFonte(verifyConfig(), () => {
+//     document.style.font
+// })
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';

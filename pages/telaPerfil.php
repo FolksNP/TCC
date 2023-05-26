@@ -18,14 +18,14 @@
         $nome= $_SESSION['nome'];
 
         if(isset($_SESSION['arquivo'])){
-         $_SESSION['foto'] = $_SESSION['arquivo'];
-    }
-    if(isset($_SESSION['nome'])){
-        $_SESSION['nome'] = $perfil['nomeAluno'];
-    }
-    if(isset($_SESSION['email'])){
-        $_SESSION['email'] = $perfil['emailAluno'];
-    }
+            $_SESSION['foto'] = $_SESSION['arquivo'];
+        }
+        if(isset($_SESSION['nome'])){
+            $_SESSION['nome'] = $perfil['nomeAluno'];
+        }
+        if(isset($_SESSION['email'])){
+            $_SESSION['email'] = $perfil['emailAluno'];
+        }
   
         require('connect.php');
         $perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
@@ -45,11 +45,11 @@
             <?php include('perfilListaAcoes.php') ?>
         </div>
         <!-- <div class="direitaPerfi"> -->
-       <?php include('alterarPerfil.php'); ?>
-       <?php include('perfilEst.php'); ?>
-       <?php include('perfilInfs.php'); ?>
-       <?php include('perfilCursos.php'); ?>
-       <?php include('acessibilidade.php'); ?>
+        <?php include('alterarPerfil.php'); ?>
+        <?php include('perfilEst.php'); ?>
+        <?php include('perfilInfs.php'); ?>
+        <?php include('perfilCursos.php'); ?>
+        <?php include('acessibilidade.php'); ?>
         <!-- </div> -->
     </div>
 
@@ -61,9 +61,9 @@
 
 <script>
 $(document).ready(function(){
-     $('#cpf').mask('000.000.000-00');
-     $('#agencia').mask('0000-0');
-     $('#conta').mask('00000000000');
+    $('#cpf').mask('000.000.000-00');
+    $('#agencia').mask('0000-0');
+    $('#conta').mask('00000000000');
      
      
 });

@@ -80,8 +80,9 @@
             <ul>
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
-                <li><a href="../pages/sobre.php">Sobre </a></li>
+                <li><a href="../pages/sobre.php">Sobre Nós</a></li>
                 <li><a href="../pages/telaPerfil.php">Dashboard</a></li>
+                <li><a href="../pages/pagamento.php">Certificados</a></li>
             </ul>
         </div>
     </div>
@@ -92,7 +93,8 @@
                 <li><a href="../pages/inicial.php">Inicio</a></li>
                 <li><a href="../pages/cursos.php">Cursos</a></li>
                 <li><a href="../pages/sobre.php">Sobre </a></li>
-                <li><a href="../pages/telaPerfil.php">Suporte</a></li>
+                <li><a href="../pages/telaPerfil.php">Dashboard</a></li>
+                <li><a href="../pages/pagamento.php">Certificados</a></li>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <button id="hmb-menu">Menu</button>

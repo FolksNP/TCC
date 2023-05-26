@@ -89,28 +89,28 @@
         // $query2 = "INSERT INTO progressosaulas (codProgressoAula, aula) VALUES ($codProgresso, $aula)";
 
         // Verificar se o progresso já existe para a matrícula do aluno
-        $scan = "SELECT codProgresso FROM progressos WHERE matricula = $matricula";
+        @$scan = "SELECT codProgresso FROM progressos WHERE matricula = $matricula";
         $retorno = mysqli_query($con, $scan);
         
-        if (mysqli_num_rows($retorno) == 0) {
+        if (@mysqli_num_rows($retorno) == 0) {
             // Não há progresso existente para a matrícula fornecida
         
             // Inserir um novo registro na tabela "progressos"
-            $query1 = "INSERT INTO progressos (matricula) VALUES ($matricula)";
+            @$query1 = "INSERT INTO progressos (matricula) VALUES ($matricula)";
             mysqli_query($con, $query1);
         
             // Obter o código de progresso gerado
             $codProgresso = mysqli_insert_id($con);
         
             // Inserir um novo registro na tabela "progressosaulas" com base no código de progresso gerado
-            $query2 = "INSERT INTO progressosaulas (codProgressoAula, aula) VALUES ($codProgresso, $aula)";
+            @$query2 = "INSERT INTO progressosaulas (codProgressoAula, aula) VALUES ($codProgresso, $aula)";
             mysqli_query($con, $query2);
         
-            echo "Registros de progresso e progresso de aula criados com sucesso!";
+            //echo "Registros de progresso e progresso de aula criados com sucesso!";
         } else {
-            echo "O progresso já existe para a matrícula fornecida.";
+            //echo "O progresso já existe para a matrícula fornecida.";
         }
-        var_dump($con);
+        //var_dump($con);
 
         // essa variavel $progresso é de onde deve-se tirar todo o progresso do aluno para posteriormente cadastrar no banco de dados.
         // aonde temos os valores 12 1 2 é onde vai ser implementado variaveis para extrair informações do progresso do alumo
@@ -128,14 +128,6 @@
             'Content-Length: ' . strlen($progressoJSON)
         ));
         curl_close($requestHandle);
-
-        if ("INSERT INTO `progressos` (`codProgresso`, `matricula`, `seccao`, `dataConclusao`) 
-                            VALUES (NULL, '$codProgresso[0]', '$codProgresso[1]', '$codProgresso[2]')"){
-            //echo 'sucesso';
-        }else{
-            //echo 'ferrou';
-        }
-
     ?>
 
     <script type="module" src="http://localhost:8080/shared"></script>
