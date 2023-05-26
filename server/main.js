@@ -89,16 +89,17 @@ app.route('/cadQuestao').post((req, res) => {
 
 //inicia o progresso do video à partir dessa tabela
 app.route('/progresso').get((req, res) => {
-    const progressaoVideo = connection.query(`SELECT progressaoVideo FROM progressos WHERE codProgressoAula = ?`,
-    req.session.codProgresso, () => {
-        if(err) {
-            res.status(500).send('Erro ao obter dados! ' + err)
-            return
+    connection.query(
+        `SELECT progressaoVideo FROM progressos WHERE codProgressoAula = ?`,
+        req.session.codProgresso,
+        (err, progressaoVideo) => {
+            if(err) {
+                res.status(500).send('Erro ao obter dados! ' + err)
+            }
+            console.log(progressaoVideo)
+            res.status(200).send(progressaoVideo)
         }
-        console.log(progressaoVideo)
-        res.status(200).send(progressaoVideo)
-    })
-    res.send()
+    )
 })
 
 //recebe e atribui a uma variável o valor de codProgresso

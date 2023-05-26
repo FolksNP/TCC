@@ -119,11 +119,11 @@
             </div>
             
             <div class="perguntasFAQ">
-                <div class="perguntasTxt"><p>Perguntas Frequentes</p></div>
-                    <p><a href="">Posso fazer dois cursos ao mesmo tempo?</a></p>
-                    <p><a href="">Posso fazer dois cursos ao mesmo tempo?</a></p>
-                    <p><a href="">Posso fazer dois cursos ao mesmo tempo?</a></p>
-                    <p><a href="">Posso fazer dois cursos ao mesmo tempo?</a></p>
+                <div class="perguntasTxt"><p>Perguntas que talvez você possa fazer</p></div>
+                    <p><a href="">Posso fazer dois cursos ao mesmo tempo? <strong>R:Sim</strong></a></p>
+                    <p><a href="">Posso fazer algum curso mesmo sendo professor? <strong> R:Sim</strong></a></p>
+                    <p><a href="">É preciso ter conhecimento prévio para fazer os cursos?<strong> R:Não</strong></a></p>
+                    <p><a href="">Os curso possuem prazos para sua conclusão? <strong>R:Não</strong></a></p>
                     
             </div>
         </div>

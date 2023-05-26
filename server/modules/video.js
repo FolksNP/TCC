@@ -1,4 +1,4 @@
-import { verifyConfig, applyConfig } from "./shared"
+import { verifyConfig, applyConfig, legendaPadrao } from "./shared"
 
 const video = document.querySelector('video')
 console.log(video)
@@ -60,6 +60,8 @@ video.addEventListener('play', () => {
             clearInterval(progressTimer)
             patchProgAula()
             patchProg()
+            //condição para verificar se com a conclusão dessa aula o aluno concluiu tudo
+            window.location.href = 'http://localhost:80/TCC/pages/pagamento.php'
         } catch(err) {
             console.error(err)
         } 
@@ -108,3 +110,18 @@ document.addEventListener('keyup', (event) => {
 })
 
 let currentTime = carregarProg()
+
+legendaPadrao(verifyConfig(), () => {
+    const legenda = document.createElement('track')
+    legenda.src = '../legendas/legendaLorem.vtt'
+    legenda.kind = 'subtitles'
+    legenda.srclang = 'pt'
+    legenda.label = 'Português'
+    legenda.default = true
+
+    console.log(legenda)
+
+    const player = document.querySelector('.custom-video-player')
+    player.appendChild(legenda)
+    console.log(player)
+})

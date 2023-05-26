@@ -28,9 +28,9 @@ if(mysqli_query($con,"UPDATE `alunos` SET  `nomeAluno` = '$nome', `fotoAluno` = 
 }else{
         $msg = "Erro ao gravar";
 }
-echo $arquivo;
-var_dump($arquivo);
-echo $msg;
+
+$_SESSION['nome'] = $nome;
+$_SESSION['email'] = $email;
 $_SESSION['msg'] = $msg;
 $_SESSION['arquivo'] = $arquivo;
 header("location:telaPerfil.php");
