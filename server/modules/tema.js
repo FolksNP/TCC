@@ -26,12 +26,17 @@ const estViewsInfs = document.getElementById("estViewsInfs");
 const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
 const topoConteudosCurso = document.getElementById("topoConteudosCurso");
 const secao = document.querySelectorAll(".secao");
+const header = document.querySelectorAll("header")
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
     document.querySelector('body').style.background = '#293342';
     document.getElementById("footer").style.color='white';  
     document.getElementById("footer").style.backgroundColor= corDark;
+
+    if(header){
+        document.getElementById("algo-especifico").style.color = corLight;
+    }
 
     if(linkFooter) {
         for (let i = 0; i < linkFooter.childElementCount; i++) {
@@ -103,6 +108,9 @@ function darkMode() {
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark;
 
+        document.getElementById("sair-btn").style.color = corLight;
+
+
         document.getElementById("nomePerfil").children[1].style.backgroundColor = corDark;
         document.getElementById("emailPerfil").children[1].style.backgroundColor = corDark;
 
@@ -127,10 +135,6 @@ function darkMode() {
         document.getElementById("cursoTopo").style.color = corLight;
 
         document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
-
-        
-
-        
 
         for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
             document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
