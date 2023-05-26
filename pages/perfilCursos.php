@@ -6,9 +6,9 @@
                 echo "<p class=alert>$_SESSION[msgCurso]</p>";
                 unset($_SESSION['msgCurso']);          
         } ?>
-        <p>Cursos</p>
-        <p>Promoções</p>
-        <button id="btnAula" >Adicionar</button>
+        <p style="width: 100%; align-items: center;">Seus Cursos</p>
+        <!-- <p>Promoções</p>
+        <button id="btnAula" >Adicionar</button> -->
         
         <p><img src="../imgs/lixeira.png" alt=""></p>
         
@@ -30,13 +30,13 @@
 
 
 </div>
-<div class="tudo-videos-atvd">
+<!-- <div class="tudo-videos-atvd">
         <p>Todos</p>
         <p>vídeos</p>
         <p>atividades</p>
-</div>
+</div> -->
 
-<div class="conteudosTelaCursos">
+<!-- <div class="conteudosTelaCursos">
     <div class="topoConteudosCurso" id="topoConteudosCurso">
         <p><input type="checkbox">\/</p>
         <p>Adicionar</p>
@@ -79,6 +79,6 @@
         <p><input type="checkbox"><a href="../pages/cursos.php"><img src="../imgs/java.jpg" alt="">galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,</a></p>
         </div>
     </details>
-</div>
+</div> -->
 </div>
 
