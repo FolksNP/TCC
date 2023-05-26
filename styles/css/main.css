@@ -3416,9 +3416,10 @@ hr {
     border: 2px solid black;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 500) {
   .pagamento-caixa .pagamento-principal .lista-certificados {
-    width: 55%;
+    width: 100%;
+    border: 2px solid black;
   }
 }
 .pagamento-caixa .pagamento-principal .lista-certificados #listamento {
@@ -3453,11 +3454,6 @@ hr {
   .pagamento-caixa .pagamento-principal .pagamento {
     width: 100%;
     borde: 2px solid black;
-  }
-}
-@media (max-width: 900px) {
-  .pagamento-caixa .pagamento-principal .pagamento {
-    width: 45%;
   }
 }
 .pagamento-caixa .pagamento-principal .pagamento .caixa-pagamento {
