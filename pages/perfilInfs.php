@@ -43,15 +43,15 @@
                         <p>Terminados</p>
                         <div class="terminadosImgs">
                         <?php
-                          $codProf = $_SESSION['cod'];
-                          @$cursos = $_SESSION['codCurso'];
+        //                   $codProf = $_SESSION['cod'];
+        //                   @$cursos = $_SESSION['codCurso'];
                           
-                          $terminando = mysqli_query($con, "SELECT * FROM `cursos` INNER JOIN `matriculas` 
-                          ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
-                        while($terminado = mysqli_fetch_array($terminando)){
-            echo "<a href=tela.video.php?codCurso=$terminado[codCurso]&capaCurso=$terminado[capaCurso]&nomeCurso=$terminado[nomeCurso] ><img src= $terminado[capaCurso]></a>";
+        //                   $terminando = mysqli_query($con, "SELECT * FROM `cursos` INNER JOIN `matriculas` 
+        //                   ON cursos.codCurso = matriculas.matriculaCursos WHERE matriculas.matriculaAlunos = '$_SESSION[cod]'");
+        //                 while($terminado = mysqli_fetch_array($terminando)){
+        //     echo "<a href=tela.video.php?codCurso=$terminado[codCurso]&capaCurso=$terminado[capaCurso]&nomeCurso=$terminado[nomeCurso] ><img src= $terminado[capaCurso]></a>";
     
-        } 
+        // } 
         ?></div>
                         </div>
                         </div>

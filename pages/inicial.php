@@ -82,19 +82,16 @@
         <div class="cursosAreas" id="cursosArea">
             
             <div class="cardCurso" id="cardCurso0">
-        <h2>Logística</h2>
+        <h2>Tecnologia</h2>
         </div>
         <div class="cardCurso" id="cardCurso1">
-        <h2>Informática</h2>
+        <h2>Marcenaria</h2>
         </div>
         <div class="cardCurso" id="cardCurso2">
-        <h2>Gestão</h2>
+        <h2>Artes</h2>
         </div>
         <div class="cardCurso" id="cardCurso3">
-        <h2>Eletrônica</h2>
-        </div>
-        <div class="cardCurso" id="cardCurso4">
-        <h2>Refrigeração </h2>
+        <h2>Culinária</h2>
         </div>
         </div>
      
