@@ -120,8 +120,8 @@ function darkMode() {
 
         document.getElementById("estAlunosInfs").style.backgroundColor = corDark2;
         document.getElementById("estViewsInfs").style.backgroundColor = corDark2;
-        document.getElementById("estAvaliacoesInfs").style.backgroundColor = corDark2;
-        document.getElementById("graficos").style.backgroundColor = corDark2;
+        // document.getElementById("estAvaliacoesInfs").style.backgroundColor = corDark2;
+        
 
         for (let i = 0; i < estAlunosInfs.childElementCount; i++) {
             document.getElementById("estAlunosInfs").children[i].style.backgroundColor = corDark;                        
@@ -133,16 +133,16 @@ function darkMode() {
             document.getElementById("estAvaliacoesInfs").children[i].style.backgroundColor = corDark;                        
         }
     
-        document.getElementById("topoConteudosCurso").style.backgroundColor = corDark;
-        document.getElementById("topoConteudosCurso").style.color = corLight;
-        document.getElementById("cursoTopo").style.backgroundColor = corDark;
-        document.getElementById("cursoTopo").style.color = corLight;
+        // document.getElementById("topoConteudosCurso").style.backgroundColor = corDark;
+        // document.getElementById("topoConteudosCurso").style.color = corLight;
+        // document.getElementById("cursoTopo").style.backgroundColor = corDark;
+        // document.getElementById("cursoTopo").style.color = corLight;
 
-        document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
+        // document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
 
-        for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
-            document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
-        }
+        // for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
+        //     document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
+        // }
 
         document.getElementById("txtCursos").style.color = corLight;
 
