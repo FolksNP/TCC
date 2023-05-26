@@ -49,7 +49,7 @@
             <option value="3">Avançado</option>
           </select>
           <p>Categoria</p><select name="categoria" required="required">
-            <option value="Manutenção">Manutenção</option>
+            <option value="Manutenção">Tecnologia</option>
             <option value="Confeitaria">Confeitaria</option>
             <option value="Arte">Arte</option>
             <option value="Marcenaria">Marcenaria</option>
