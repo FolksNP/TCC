@@ -27,7 +27,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `PatronoNeves`.`Professores` (
   `codProfessor` INT NOT NULL,
   `cpf` VARCHAR(15) NOT NULL,
-  `numAgencia` VARCHAR(5) NOT NULL,
+  `numAgencia` VARCHAR(6) NOT NULL,
   `numConta` VARCHAR(11) NOT NULL,
   PRIMARY KEY (`codProfessor`),
   CONSTRAINT `fkAlunoCod_Professores`
