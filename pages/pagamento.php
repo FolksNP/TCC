@@ -69,7 +69,9 @@
 
                         <form action="">
                             <input id="titular" type="text" placeholder="Nome do titular do cartão" maxlength="27px">
+                            <input id="titular" type="text" placeholder="CPF" maxlength="27px">
                             <span id="caixa-numero-card"><label for="numero-card">Número do cartão e Digitos:</label><input id="numero-card" type="text" placeholder="0000 0000 0000 0000" maxlength="16"> <input id="tres-digi" type="text" maxlength="3" placeholder="MMM"></span>
+                            <input id="titular" type="text" placeholder="Senha:" maxlength="27px">
                         </form>
 
                         <p id="valorpg">Valor a  ser pago: R$2,00</p>
