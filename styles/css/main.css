@@ -115,6 +115,16 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   border: solid 2px #116798;
 }
+@media (max-width: 500px) {
+  .navbarAzul .logoPesquisa .pagPesquisa {
+    display: none;
+  }
+}
+@media (min-width: 500) {
+  .navbarAzul .logoPesquisa .pagPesquisa {
+    display: none;
+  }
+}
 .navbarAzul .logoPesquisa .pagPesquisa img {
   width: 30px;
   height: 30px;
@@ -3375,14 +3385,31 @@ hr {
   justify-content: space-around;
   width: 80%;
 }
+@media (max-width: 500px) {
+  .pagamento-caixa .pagamento-principal {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .pagamento-caixa .pagamento-principal .pagamento, .pagamento-caixa .pagamento-principal .lista-certificados {
   padding: 30px;
+}
+@media (max-width: 500px) {
+  .pagamento-caixa .pagamento-principal .pagamento, .pagamento-caixa .pagamento-principal .lista-certificados {
+    padding: 10px;
+  }
 }
 .pagamento-caixa .pagamento-principal .lista-certificados {
   border-left: 2px solid black;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   width: 65%;
+}
+@media (max-width: 500px) {
+  .pagamento-caixa .pagamento-principal .lista-certificados {
+    width: 100%;
+    border: 2px solid black;
+  }
 }
 .pagamento-caixa .pagamento-principal .lista-certificados #listamento {
   list-style-type: none;
@@ -3396,6 +3423,11 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .pagamento-caixa .pagamento-principal .lista-certificados .certificado-info {
+    width: 100%;
+  }
+}
 .pagamento-caixa .pagamento-principal .lista-certificados .certificado-info:hover {
   box-shadow: 7px 2px 50px #116798;
 }
@@ -3406,6 +3438,12 @@ hr {
   width: 35%;
   background-color: #116798;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .pagamento-caixa .pagamento-principal .pagamento {
+    width: 100%;
+    borde: 2px solid black;
+  }
 }
 .pagamento-caixa .pagamento-principal .pagamento .caixa-pagamento {
   margin-top: 20px;

@@ -15,14 +15,25 @@ hr
         justify-content: space-around
         width: 80%
 
+        @include mobile
+            flex-direction: column
+            width: 100%
+
         .pagamento, .lista-certificados
             padding: 30px
+
+            @include mobile
+                padding: 10px
 
         .lista-certificados
             border-left: 2px solid black
             border-top: 2px solid black
             border-bottom: 2px solid black
             width: 65%
+
+            @include mobile
+                width: 100%
+                border: 2px solid black
 
             #listamento
                 list-style-type: none
@@ -36,6 +47,8 @@ hr
                 display: flex
                 justify-content: space-between
                 //border: 1px solid black
+                @include mobile
+                    width: 100%
             
                 &:hover
                     box-shadow: 7px 2px 50px $cor-primaria
@@ -47,6 +60,10 @@ hr
             width: 35%
             background-color: $cor-primaria
             color: #fff
+
+            @include mobile
+                width: 100%
+                borde: 2px solid black
         
             .caixa-pagamento
                 margin-top: 20px

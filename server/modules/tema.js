@@ -103,6 +103,9 @@ function darkMode() {
         document.querySelectorAll(".estPerfil")[2].style.backgroundColor = corDark;
         document.querySelectorAll(".estPerfil")[3].style.backgroundColor = corDark;
 
+        document.getElementById("sair-btn").style.color = corLight;
+
+
         document.getElementById("nomePerfil").children[1].style.backgroundColor = corDark;
         document.getElementById("emailPerfil").children[1].style.backgroundColor = corDark;
 
@@ -127,10 +130,6 @@ function darkMode() {
         document.getElementById("cursoTopo").style.color = corLight;
 
         document.getElementById("selecioneCursoImg").style.backgroundColor = corDark2;
-
-        
-
-        
 
         for (let i = 0; i < topoConteudosCurso.childElementCount; i++) {
             document.getElementById("topoConteudosCurso").children[i].style.backgroundColor = corDark2;                        
