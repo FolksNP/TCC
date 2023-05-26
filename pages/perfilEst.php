@@ -46,10 +46,5 @@
         </div>
 </div>
 
-<div class="graficos" id="graficos">
-    <p>Gráficos</p>
-</div>
-
-
 </div>
 </div>

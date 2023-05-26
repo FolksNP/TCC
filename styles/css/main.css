@@ -3483,6 +3483,7 @@ hr {
 }
 
 .caixa-atividades {
+  box-shadow: 8px 8px 8px #8293be;
   background-color: #fff;
   width: 80%;
   margin: 10px auto;
@@ -3498,7 +3499,7 @@ hr {
 }
 .caixa-atividades .controle-atv {
   background-color: lightblue;
-  box-shadow: 2px 8px 8px grey;
+  box-shadow: 8px 8px 8px #8293be;
   padding: 10px;
 }
 .caixa-atividades .controle-atv #addQuestao, .caixa-atividades .controle-atv #delQuestao, .caixa-atividades .controle-atv #salvarAtv {
@@ -3513,9 +3514,19 @@ hr {
 }
 .caixa-atividades #atv {
   background-color: #113469;
+  box-shadow: 8px 8px 8px #8293be;
   color: #fff;
-  border-radius: 5px;
   padding: 10px;
+}
+.caixa-atividades #atv .questao {
+  padding: 10px;
+  border: 3px dashed #000;
+}
+.caixa-atividades #atv .questao .checkboxQuestao, .caixa-atividades #atv .questao .numeracao {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -15px;
 }
 .caixa-atividades #atv .questao .pergunta, .caixa-atividades #atv .questao .explicacao {
   height: 50px;
@@ -3523,11 +3534,35 @@ hr {
   padding: 5px;
   margin-left: 10px;
   border-radius: 5px;
-  width: 35%;
+  width: 30%;
+  position: relative;
+  top: 20px;
 }
 .caixa-atividades #atv .questao .addResposta {
   position: relative;
+  top: -15px;
+}
+.caixa-atividades #atv .questao .caracteres, .caixa-atividades #atv .questao .respostaDisp {
+  font-size: 16px;
+  margin: 5px;
+  position: relative;
   top: -20px;
+}
+.caixa-atividades #atv .questao .radioResposta {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -15px;
+  margin-left: 10px;
+}
+.caixa-atividades #atv .questao .resposta {
+  height: 40px;
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+  position: relative;
+  top: -5px;
 }
 
 @font-face {
