@@ -82,6 +82,7 @@
                 <li><a href="../pages/cursos.php">Cursos</a></li>
                 <li><a href="../pages/sobre.php">Sobre </a></li>
                 <li><a href="../pages/telaPerfil.php">Dashboard</a></li>
+                <li><a href="../pages/pagamento.php">Certificados</a></li>
             </ul>
         </div>
     </div>
