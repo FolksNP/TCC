@@ -28,9 +28,9 @@ const topoConteudosCurso = document.getElementById("topoConteudosCurso");
 const secao = document.querySelectorAll(".secao");
 const header = document.querySelectorAll("header")
 
-verifyEstiloFonte(verifyConfig(), () => {
-    document.style.font
-})
+// verifyEstiloFonte(verifyConfig(), () => {
+//     document.style.font
+// })
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
