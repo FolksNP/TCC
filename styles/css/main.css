@@ -3391,6 +3391,11 @@ hr {
     width: 100%;
   }
 }
+@media (max-width: 900px) {
+  .pagamento-caixa .pagamento-principal {
+    width: 95%;
+  }
+}
 .pagamento-caixa .pagamento-principal .pagamento, .pagamento-caixa .pagamento-principal .lista-certificados {
   padding: 30px;
 }
@@ -3409,6 +3414,11 @@ hr {
   .pagamento-caixa .pagamento-principal .lista-certificados {
     width: 100%;
     border: 2px solid black;
+  }
+}
+@media (max-width: 900px) {
+  .pagamento-caixa .pagamento-principal .lista-certificados {
+    width: 55%;
   }
 }
 .pagamento-caixa .pagamento-principal .lista-certificados #listamento {
@@ -3443,6 +3453,11 @@ hr {
   .pagamento-caixa .pagamento-principal .pagamento {
     width: 100%;
     borde: 2px solid black;
+  }
+}
+@media (max-width: 900px) {
+  .pagamento-caixa .pagamento-principal .pagamento {
+    width: 45%;
   }
 }
 .pagamento-caixa .pagamento-principal .pagamento .caixa-pagamento {

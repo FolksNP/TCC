@@ -19,6 +19,9 @@ hr
             flex-direction: column
             width: 100%
 
+        @include tablet
+            width: 95%
+
         .pagamento, .lista-certificados
             padding: 30px
 
@@ -34,6 +37,9 @@ hr
             @include mobile
                 width: 100%
                 border: 2px solid black
+
+            @include tablet
+                width: 55%
 
             #listamento
                 list-style-type: none
@@ -64,6 +70,9 @@ hr
             @include mobile
                 width: 100%
                 borde: 2px solid black
+
+            @include tablet
+                width: 45%
         
             .caixa-pagamento
                 margin-top: 20px
