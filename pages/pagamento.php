@@ -29,19 +29,19 @@
                         <li class="certificado-info">
                             <span>Certificado: Programação Geral - Básico</span>
                             <span>Horas/Aula: 4 Horas</span>
-                            <span>Instrutor: Bangas Hipolito</span>
+                            <span>Instrutor: Yasmin Hipólito</span>
                             <span>Valor: R$2,00</span>
                         </li>
                         <li class="certificado-info">
                             <span>Certificado: Design Web - Avançado</span>
                             <span>Horas/Aula: 15 Horas</span>
-                            <span>Instrutor: Paula Tejano</span>
+                            <span>Instrutor: Jonathan Ramalho</span>
                             <span>Valor: R$60,00</span>
                         </li>
                         <li class="certificado-info">
                             <span>Certificado: Manicure - Avançado</span>
                             <span>Horas/Aula: 100 Horas</span>
-                            <span>Instrutor: Eren Yeager</span>
+                            <span>Instrutor: Maria Clara</span>
                             <span>Valor: R$250,00</span>
                         </li>
                     </ul>
