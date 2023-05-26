@@ -347,7 +347,7 @@ button:hover {
 }
 .container-carrossel img {
   width: 300px;
-  height: 250px;
+  max-height: 190px;
   margin-top: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
@@ -441,10 +441,10 @@ body {
 }
 .videoCurso > img {
   height: 500px;
-  width: 500px;
+  width: 700px;
   border-radius: 5px;
   border: solid 3px #116798;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .fundoPreto {
@@ -486,6 +486,7 @@ body {
 }
 .fundoPreto .txt h2 {
   margin-bottom: 10px;
+  margin-top: 100px;
 }
 
 .fundoCinza2 {

@@ -46,11 +46,12 @@
       <div class="swiper-pagination"></div>
     </div>
 
+  
     <div #swiperRef="" class="swiper mySwiper">
       <DIV class="txtCursosSlider"><p>Seja um mestre na cozinha</p></DIV>
       <div class="swiper-wrapper">
 
-        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Marcenaria' "); 
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Confeitaria' "); 
 
       
       while($curso=mysqli_fetch_array($cursos)){
@@ -75,10 +76,10 @@
       <div class="swiper-pagination"></div>
     </div>
     <div #swiperRef="" class="swiper mySwiper">
-      <DIV class="txtCursosSlider"><p>Seja um mestre na cozinha</p></DIV>
+      <DIV class="txtCursosSlider"><p>Torne-se um especialista dos equipamentos eletrônicos</p></DIV>
       <div class="swiper-wrapper">
 
-        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Confeitaria' "); 
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Manutenção' "); 
 
       
       while($curso=mysqli_fetch_array($cursos)){
@@ -131,10 +132,10 @@
       <div class="swiper-pagination"></div>
     </div>
     <div #swiperRef="" class="swiper mySwiper">
-      <DIV class="txtCursosSlider"><p>Torne-se um especialista dos equipamentos elétronicos</p></DIV>
+      <DIV class="txtCursosSlider"><p>Desenvolva seus dons de marceneiro</p></DIV>
       <div class="swiper-wrapper">
 
-        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Manutenção' "); 
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Marcenaria' "); 
 
       
       while($curso=mysqli_fetch_array($cursos)){

@@ -41,16 +41,16 @@
         </div>
         <div class="fundoPreto" id="fundoPreto">
             <div class="txt">
-            <h2>Metodologias</h2>
+            <h2>"A educação é o nosso passaporte para o futuro, pois o amanhã pertence às pessoas que se preparam hoje."</h2>
             <div class="interatividades">
                 <div class="imgTxt">
-                <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div>
+                <!-- <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div> -->
                 </div>
                 <div class="imgTxt">
-                <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div>
+                <!-- <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div> -->
                 </div>
                 <div class="imgTxt">
-                <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div>
+                <!-- <img src="../imgs/pica-pau.jpg" alt=""><div class="txtInt"><p>INTERATIVIDADE</p><p>Manoel Jardim Gomes, mais conhecido como Manoel Gomes, é um cantor e compositor brasileiro de brega. É conhecido por criar a música "Caneta Azul", que se tornou um meme da Internet.</p></div> -->
                 </div>
             </div>
         </div>
