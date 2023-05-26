@@ -25,7 +25,7 @@
                     <ul id="linkFooter" >
                         <li><a href="inicial.php">Home</a></li>
                         <li><a href="cursos.php">Cursos</a></li>
-                        <li><a href="certificado.php">Certificados</a></li>
+                        <li><a href="pagamento.php">Certificados</a></li>
                         <li><a href="login.php">Cadastre-se</a></li>
                     </ul>
                 </div>
