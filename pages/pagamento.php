@@ -73,7 +73,7 @@
 
                         <p id="valorpg">Valor a  ser pago: R$2,00</p>
 
-                        <button type="submit" id="btn-pagar">Realizar pagamento</button>
+                        <button type="submit" onclick="window.location.href = 'certificado.php'" id="btn-pagar">Realizar pagamento</button>
                     </div>
                     
                 </div>
