@@ -23,12 +23,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
 </head>
 <body>
-    <div class="navbarAzul" id="navbar">
+    <div class="navbarAzul" id="navbar" id="header">
         <div class="logoPesquisa">
             <div class="logoImg"><a href="inicial.php"><img src="../imgs/logoTCC.png" alt="" id="logo-header"></a><a href="inicial.php">Patrono Neves</a></div>
             <!-- <p><input type="text" placeholder="Digite aqui sua pesquisa"></p> -->
 
-             <a href="pesquisar.php" class="pagPesquisa"><p>Procuro algo especifico</p> <img src="../imgs/lupa.png" alt=""></a>
+             <a href="pesquisar.php" class="pagPesquisa"><p id="algo-especifico">Procuro algo especifico</p> <img src="../imgs/lupa.png" alt=""></a>
 
             <div class="login-perfil">
                 

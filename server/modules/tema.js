@@ -26,12 +26,17 @@ const estViewsInfs = document.getElementById("estViewsInfs");
 const estAvaliacoesInfs = document.getElementById("estAvaliacoesInfs");
 const topoConteudosCurso = document.getElementById("topoConteudosCurso");
 const secao = document.querySelectorAll(".secao");
+const header = document.querySelectorAll("header")
 
 function darkMode() {
     document.getElementById("navbar").style.backgroundColor='#001017';
     document.querySelector('body').style.background = '#293342';
     document.getElementById("footer").style.color='white';  
     document.getElementById("footer").style.backgroundColor= corDark;
+
+    if(header){
+        document.getElementById("algo-especifico").style.color = corLight;
+    }
 
     if(linkFooter) {
         for (let i = 0; i < linkFooter.childElementCount; i++) {
