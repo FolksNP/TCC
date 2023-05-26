@@ -21,7 +21,6 @@
                 <span class="selecaoMultipla">
                     <label for="tamanhoFonte">Tamanho da Fonte</label>
                     <select name="" id="tamanhoFonte">
-                        <option value="16">16px</option>
                         <option value="18">18px</option>
                         <option value="20">20px</option>
                         <option value="22">22px</option>

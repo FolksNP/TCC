@@ -5,14 +5,15 @@
             $busca = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$codigo'");
             $perfil = mysqli_fetch_array($busca);
             $senhaAlterar = md5($_SESSION['senha']);
+           
     ?>
 <div class="direitaPerfil" id="direitaPerfilAlterar">
-         <form class="alterLogin" action="alterarPerfil.act.php" method="post" enctype="multipart/form-data">
+         <form class="alterLogin" action="alterarPerfil.act.php" method="post" enctype="multipart/form-data" id="alterarForm">
             <input type="hidden" name="codigo" value="<?php echo @$perfil['codAluno']; ?>">
-            <input type="hidden" name="foto_anterior" value="<?php echo @$perfil['fotoAluno']; ?>">
+            <input type="hidden" name="foto_anterior" value="<?php echo @$_SESSION  ['foto']; ?>">
             <p>Nome: <input type="text" name="nome" value="<?php echo @$_SESSION['nome'];?>"></p>
+
             <p><input type="file" name="foto" id="arquivo" class="arquivoPerfil">
- 
             <div id="img-container">
             <p><label class="btnFoto" for="arquivo"><img id="previewPerfil" src="<?php echo @$_SESSION  ['foto'];?>"></label></p>
             </div></p>
@@ -36,7 +37,7 @@
             })
         </script>
 
-            <p><input type="submit" value="Alterar"></p>
+            <p><input type="submit" id="alterarBtnPerfil" value="Alterar"></p>
 
 
         </form>

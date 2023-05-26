@@ -40,7 +40,10 @@
                 <?php  require('connect.php');
                 @$cod = $_SESSION['cod'];
                 @$nome = $_SESSION['nome'];
-        
+                if(isset($_SESSION['arquivo'])){
+                    $_SESSION['foto'] = $_SESSION['arquivo'];
+               }
+             
               $perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
               $perfil =mysqli_fetch_array($perfil);
 

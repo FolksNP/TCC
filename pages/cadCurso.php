@@ -48,7 +48,7 @@
             <option value="2"> Intermediário</option>
             <option value="3">Avançado</option>
           </select>
-          <p>Categoria</p><select name="tagCurso" required="required">
+          <p>Categoria</p><select name="categoria" required="required">
             <option value="Manutenção">Manutenção</option>
             <option value="Confeitaria">Confeitaria</option>
             <option value="Arte">Arte</option>

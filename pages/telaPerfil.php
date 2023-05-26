@@ -17,6 +17,16 @@
         $cod= $_SESSION['cod'];
         $nome= $_SESSION['nome'];
 
+        if(isset($_SESSION['arquivo'])){
+         $_SESSION['foto'] = $_SESSION['arquivo'];
+    }
+    if(isset($_SESSION['nome'])){
+        $_SESSION['nome'] = $perfil['nomeAluno'];
+    }
+    if(isset($_SESSION['email'])){
+        $_SESSION['email'] = $perfil['emailAluno'];
+    }
+  
         require('connect.php');
         $perfil = mysqli_query($con, "Select * from `alunos` where `codAluno` = '$cod'");
         $perfil=mysqli_fetch_array($perfil);
@@ -26,7 +36,7 @@
 
             
             <div class="fotoPerfil" id="fotoPerfil">
-                    <?php echo "<img src= $_SESSION[foto]>";?>
+                    <?php echo "<img src= $_SESSION[foto] id=imgPhoto>";?>
                     <?php echo "<p>$_SESSION[nome]</p>";?>
                     
                  

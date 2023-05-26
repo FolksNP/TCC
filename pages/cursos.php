@@ -19,10 +19,10 @@
      <!-- Swiper -->
   <div class="caixa-slider">
     <div #swiperRef="" class="swiper mySwiper">
-      <DIV class="txtCursosSlider"><p>Adicionados Recentemente</p></DIV>
+      <DIV class="txtCursosSlider"><p>Todos os Nossos Cursos</p></DIV>
       <div class="swiper-wrapper">
 
-        <?php $cursos = mysqli_query($con, "Select * from `cursos` WHERE `tag` = 'tagCurso' "); 
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` "); 
 
       
       while($curso=mysqli_fetch_array($cursos)){
@@ -30,8 +30,36 @@
         <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
         
         <div class=container-carrossel>
-        <h3>$curso[nomeCurso] </h3>
         <img src=$curso[capaCurso]  class=card-imagem> 
+        <h3>$curso[nomeCurso] </h3>
+        <p></p>
+        </div></a>
+        </div>";
+        
+        }
+        
+        ?>
+        </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div #swiperRef="" class="swiper mySwiper">
+      <DIV class="txtCursosSlider"><p>Seja um mestre na cozinha</p></DIV>
+      <div class="swiper-wrapper">
+
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Marcenaria' "); 
+
+      
+      while($curso=mysqli_fetch_array($cursos)){
+        echo"
+        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
+        
+        <div class=container-carrossel>
+        <img src=$curso[capaCurso]  class=card-imagem> 
+        <h3>$curso[nomeCurso] </h3>
         <p></p>
         </div></a>
         </div>";
@@ -41,28 +69,91 @@
         ?>
         </div>
         
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div #swiperRef="" class="swiper mySwiper">
+      <DIV class="txtCursosSlider"><p>Seja um mestre na cozinha</p></DIV>
+      <div class="swiper-wrapper">
+
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Confeitaria' "); 
+
       
-        <!-- <div class="swiper-slide">
-        <div class="container-carrossel">
-              <h1>Titulo</h1>
-              <img src="../imgs/html.jpg" alt="" class="card-imagem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-          </div>
+      while($curso=mysqli_fetch_array($cursos)){
+        echo"
+        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
+        
+        <div class=container-carrossel>
+        <img src=$curso[capaCurso]  class=card-imagem> 
+        <h3>$curso[nomeCurso] </h3>
+        <p></p>
+        </div></a>
+        </div>";
+        
+        }
+        
+        ?>
         </div>
-        <div class="swiper-slide">
-        <div class="container-carrossel">
-              <h1>Titulo</h1>
-              <img src="../imgs/html.jpg" alt="" class="card-imagem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-          </div>
+        
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div #swiperRef="" class="swiper mySwiper">
+      <DIV class="txtCursosSlider"><p>Expresse sua arte</p></DIV>
+      <div class="swiper-wrapper">
+
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Arte' "); 
+
+      
+      while($curso=mysqli_fetch_array($cursos)){
+        echo"
+        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
+        
+        <div class=container-carrossel>
+        <img src=$curso[capaCurso]  class=card-imagem> 
+        <h3>$curso[nomeCurso] </h3>
+        <p></p>
+        </div></a>
+        </div>";
+        
+        }
+        
+        ?>
         </div>
-        <div class="swiper-slide">
-        <div class="container-carrossel">
-              <h1>Titulo</h1>
-              <img src="../imgs/html.jpg" alt="" class="card-imagem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem ut voluptatem repellat, reiciendis quas nisi reprehenderit fuga, debitis error alias numquam. Hic quos ipsum repudiandae sapiente rerum eius culpa.</p>
-          </div>
-        </div> -->
+        
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div #swiperRef="" class="swiper mySwiper">
+      <DIV class="txtCursosSlider"><p>Torne-se um especialista dos equipamentos elétronicos</p></DIV>
+      <div class="swiper-wrapper">
+
+        <?php $cursos = mysqli_query($con, "Select * from `cursos` where `categoria` = 'Manutenção' "); 
+
+      
+      while($curso=mysqli_fetch_array($cursos)){
+        echo"
+        <div class=swiper-slide><a href=telaCurso.php?codCurso=$curso[codCurso]>
+        
+        <div class=container-carrossel>
+        <img src=$curso[capaCurso]  class=card-imagem> 
+        <h3>$curso[nomeCurso] </h3>
+        <p></p>
+        </div></a>
+        </div>";
+        
+        }
+        
+        ?>
+        </div>
+        
+
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
