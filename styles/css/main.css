@@ -3524,6 +3524,11 @@ hr {
   height: 50px;
   font-size: 20px;
 }
+@media (max-width: 900px) {
+  .pagamento-caixa .pagamento-principal .pagamento #btn-pagar {
+    height: 70px;
+  }
+}
 .pagamento-caixa .pagamento-principal .pagamento #btn-pagar:hover {
   background-color: white;
   border: 2px solid green;
