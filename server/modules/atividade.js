@@ -149,24 +149,29 @@ function criarResposta(respostas, questao, disp) {
     //label que armazena a ordem da resposta e os elementos relacionados a isso
     const ordem = document.createElement('span')
     ordem.classList.add('ordemResposta')
+
+    const numeracao = document.createElement('p')
+    numeracao.classList.add('numResp')
+
     switch(disp) {
         case '5': 
-            ordem.textContent = '1.'
+            numeracao.textContent = '1.'
             break
         case '4':
-            ordem.textContent = '2.'
+            numeracao.textContent = '2.'
             break
         case '3':
-            ordem.textContent = '3.'
+            numeracao.textContent = '3.'
             break
         case '2':
-            ordem.textContent = '4.'
+            numeracao.textContent = '4.'
             break
         case '1':
-            ordem.textContent = '5.'
+            numeracao.textContent = '5.'
             break
     }
     respostas.appendChild(ordem)
+    ordem.appendChild(numeracao)
 
     //input radio utilizado para definir qual a resposta correta
     const radio = document.createElement('input')
@@ -217,6 +222,7 @@ selectAll.addEventListener('change', () => {
 delQuestao.addEventListener('click', () => {
 
 })
+
 salvarAtv.addEventListener('click', () => {
     const questoes = document.querySelectorAll('.questao')
     atvObj = {}
