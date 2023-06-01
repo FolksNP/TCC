@@ -57,7 +57,7 @@ function criarQuestao() {
     const pergunta = document.createElement('textarea')
     pergunta.classList.add('pergunta')
     pergunta.placeholder = 'digite a pergunta'
-    pergunta.maxLength = 150
+    pergunta.maxLength = 300
     numeracao.appendChild(pergunta)
 
     const questoes = document.querySelectorAll('.questao')
@@ -67,8 +67,8 @@ function criarQuestao() {
 
     //caracteres restantes para a pergunta
     const caracteres = document.createElement('label') 
-    caracteres.classList.add('caracteres')
-    caracteres.textContent = '0/150'
+    caracteres.classList.add('contCaractQuestao')
+    caracteres.textContent = '0/300'
     questao.appendChild(caracteres)
 
     //respostas disponíveis para determinada questão 
@@ -92,18 +92,27 @@ function criarQuestao() {
     const explicacao = document.createElement('textarea')
     explicacao.classList.add('explicacao')
     explicacao.placeholder = 'digite a explicação da resposta'
-    explicacao.maxLength = 150
+    explicacao.maxLength = 300
     questao.appendChild(explicacao)
 
+    //contagem de caracteres questao
+    const caracteresExplicacao = document.createElement('label')
+    caracteresExplicacao.classList.add('contCaractExplicacao')
+    caracteresExplicacao.textContent = '0/300'
+    questao.appendChild(caracteresExplicacao)
 
     //listeners    
     pergunta.addEventListener('input', () => {
-        caracteres.textContent = `${pergunta.value.length}/150`
+        caracteres.textContent = `${pergunta.value.length}/300`
+    }) 
+
+    explicacao.addEventListener('input', () => {
+        caracteresExplicacao.textContent = `${explicacao.value.length}/300`
     }) 
 
     addResposta.addEventListener('click', () => {
         if(respostaDisp.textContent > 0) {
-            respostaDisp.textContent = criarResposta(respostas, respostaDisp.textContent)
+            respostaDisp.textContent = criarResposta(respostas, questao, respostaDisp.textContent)
         }
     })
 }
@@ -136,7 +145,7 @@ function atualizarQuestao() {
 }
 
 //criar uma resposta para uma questão
-function criarResposta(respostas, disp) {
+function criarResposta(respostas, questao, disp) {
     //label que armazena a ordem da resposta e os elementos relacionados a isso
     const ordem = document.createElement('span')
     ordem.classList.add('ordemResposta')
@@ -169,16 +178,18 @@ function criarResposta(respostas, disp) {
     const resposta = document.createElement('textarea')
     resposta.classList.add('resposta')
     resposta.placeholder = 'digite a resposta'
-    resposta.maxLength = 50
+    resposta.maxLength = 100
+    radio.name = `resposta${questao.id}`
     ordem.appendChild(resposta)
 
     //número de caracteres disponíveis para a resposta
     const caracteres = document.createElement('label') 
-    caracteres.textContent = '0/50'
+    caracteres.classList.add('contCaractResp')
+    caracteres.textContent = '0/100'
     ordem.appendChild(caracteres)
 
     resposta.addEventListener('input', () => {
-        caracteres.textContent = `${resposta.value.length}/50`
+        caracteres.textContent = `${resposta.value.length}/100`
     }) 
 
     return --disp
