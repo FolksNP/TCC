@@ -3569,6 +3569,8 @@ hr {
   width: 30px;
   height: 30px;
   margin: 5px;
+  position: relative;
+  top: 8px;
 }
 .caixa-atividades #atv {
   background-color: #113469;
@@ -3578,13 +3580,13 @@ hr {
 }
 .caixa-atividades #atv .questao {
   padding: 10px;
-  border: 3px dashed #000;
+  border: 3px dashed #5a5acb;
+  margin-bottom: 8px;
 }
 .caixa-atividades #atv .questao .checkboxQuestao, .caixa-atividades #atv .questao .numeracao {
   width: 30px;
   height: 30px;
   position: relative;
-  top: -15px;
 }
 .caixa-atividades #atv .questao .pergunta, .caixa-atividades #atv .questao .explicacao {
   height: 50px;
@@ -3592,35 +3594,55 @@ hr {
   padding: 5px;
   margin-left: 10px;
   border-radius: 5px;
-  width: 30%;
+  width: 80%;
   position: relative;
   top: 20px;
 }
+.caixa-atividades #atv .questao .explicacao {
+  margin-left: 48px;
+  margin-bottom: 15px;
+}
+.caixa-atividades #atv .questao .contCaractExplicacao {
+  position: relative;
+  top: -10px;
+  margin-left: 5px;
+}
 .caixa-atividades #atv .questao .addResposta {
   position: relative;
-  top: -15px;
+  top: -5px;
 }
-.caixa-atividades #atv .questao .caracteres, .caixa-atividades #atv .questao .respostaDisp {
+.caixa-atividades #atv .questao .contCaractQuestao, .caixa-atividades #atv .questao .contCaractResp {
   font-size: 16px;
   margin: 5px;
   position: relative;
-  top: -20px;
 }
 .caixa-atividades #atv .questao .radioResposta {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: relative;
-  top: -15px;
   margin-left: 10px;
+  position: relative;
+  top: 15px;
+}
+.caixa-atividades #atv .questao .numResp {
+  display: none;
 }
 .caixa-atividades #atv .questao .resposta {
+  width: 50%;
   height: 40px;
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px;
   margin-left: 10px;
+  display: block;
+  margin-top: 10px;
   border-radius: 5px;
   position: relative;
   top: -5px;
+}
+.caixa-atividades #atv .questao .ordemResposta {
+  display: flex;
+  margin: 10px 10px;
+  padding: 5px;
 }
 
 @font-face {

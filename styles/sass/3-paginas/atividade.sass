@@ -28,6 +28,8 @@
             width: 30px
             height: 30px
             margin: 5px
+            position: relative
+            top: 8px
 
     #atv
         background-color: #113469
@@ -38,13 +40,13 @@
 
         .questao
             padding: 10px
-            border: 3px dashed #000
+            border: 3px dashed #5a5acb
+            margin-bottom: 8px
 
             .checkboxQuestao, .numeracao
                 width: 30px
                 height: 30px
                 position: relative
-                top: -15px
 
             .pergunta, .explicacao
                 height: 50px
@@ -52,32 +54,53 @@
                 padding: 5px
                 margin-left: 10px
                 border-radius: 5px
-                width: 30%
+                width: 80%
                 position:  relative
                 top: 20px
 
+            .explicacao
+                margin-left: 48px
+                margin-bottom: 15px
+
+            .contCaractExplicacao
+                position: relative
+                top: -10px
+                margin-left: 5px
+
             .addResposta
                 position: relative
-                top: -15px
+                top: -5px
 
-            .caracteres, .respostaDisp
+            .contCaractQuestao, .contCaractResp
                 font-size: 16px
                 margin: 5px
                 position: relative
-                top: -20px
+                //top: -20px
         
             .radioResposta
-                width: 20px
-                height: 20px
+                width: 25px
+                height: 25px
                 position: relative
-                top: -15px
                 margin-left: 10px
+                position: relative
+                top: 15px
+
+            .numResp
+                display: none
 
             .resposta
+                width: 50%
                 height: 40px
-                font-size: 16px
+                font-size: 18px
                 padding: 5px
                 margin-left: 10px
+                display: block
+                margin-top: 10px
                 border-radius: 5px
                 position:  relative
                 top: -5px
+
+            .ordemResposta
+                display: flex
+                margin: 10px 10px
+                padding: 5px

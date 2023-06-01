@@ -28,22 +28,10 @@
                     <h2>Seus certificados disponíveis:</h2>
                     <ul id="listamento">
                         <li class="certificado-info">
-                            <span>Certificado: Programação Geral - Básico</span>
+                            <span>Certificado: Introdução a Programação Geral - Básico</span>
                             <span>Horas/Aula: 4 Horas</span>
-                            <span>Instrutor: Yasmin Hipólito</span>
-                            <span>Valor: R$2,00</span>
-                        </li>
-                        <li class="certificado-info">
-                            <span>Certificado: Design Web - Avançado</span>
-                            <span>Horas/Aula: 15 Horas</span>
-                            <span>Instrutor: Jonathan Ramalho</span>
-                            <span>Valor: R$60,00</span>
-                        </li>
-                        <li class="certificado-info">
-                            <span>Certificado: Manicure - Avançado</span>
-                            <span>Horas/Aula: 100 Horas</span>
-                            <span>Instrutor: Maria Clara</span>
-                            <span>Valor: R$250,00</span>
+                            <span>Instrutor: Felipe Silva</span>
+                            <span>Valor: R$8,00</span>
                         </li>
                     </ul>
                 </div>
@@ -53,11 +41,7 @@
                     <p>Selecione um certificado:</p>
                     <select name="" id="certificados-disponiveis">
                         <option value="">Certificado: Programação Geral - Básico</option>
-                        <option value="">Certificado: Design Web - Avançado</option>
-                        <option value="">Certificado: Manicure - Avançado</option>
                     </select>
-
-                    <input type="text" name="" id="nome-certi" placeholder="Nome para o titular do certificado:">
 
                     <div class="caixa-pagamento">
 
@@ -74,7 +58,7 @@
                             <input id="titular" type="text" placeholder="Senha:" maxlength="27px">
                         </form>
 
-                        <p id="valorpg">Valor a  ser pago: R$2,00</p>
+                        <p id="valorpg">Valor a  ser pago: R$8,00</p>
 
                         <button type="submit" onclick="window.location.href = 'certificado.php'" id="btn-pagar">Realizar pagamento</button>
                     </div>
