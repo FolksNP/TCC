@@ -3583,10 +3583,14 @@ hr {
   border: 3px dashed #5a5acb;
   margin-bottom: 8px;
 }
-.caixa-atividades #atv .questao .checkboxQuestao, .caixa-atividades #atv .questao .numeracao {
+.caixa-atividades #atv .questao .checkboxQuestao {
   width: 30px;
   height: 30px;
   position: relative;
+}
+.caixa-atividades #atv .questao .numeracao {
+  position: relative;
+  width: 5px;
 }
 .caixa-atividades #atv .questao .pergunta, .caixa-atividades #atv .questao .explicacao {
   height: 50px;

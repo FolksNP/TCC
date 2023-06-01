@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/css/main.css">
 </head>
 <body>
-    <div class="caixa-atividades">
+    <div class="caixa-atividades" id="atividades">
         <h1 id="atv-head">Atividades - Patrono Neves, Exercitar para aprender.</h1>
         <p id="txt-addAtv">Adicione atividades abaixo:</p>
         <div id="mensagem"></div>
