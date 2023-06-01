@@ -49,9 +49,14 @@ function criarQuestao() {
     //numeracao da questao
     const numeracao = document.createElement('label')
     numeracao.classList.add('numeracao')
-    numeracao.textContent = `${numQuestao+1}.`
-    numQuestao++
     questao.appendChild(numeracao)
+
+    //numero questao
+    const numeroQuestao = document.createElement('label')
+    //numeroQuestao.classList.add('')
+    numeroQuestao.textContent = `${numQuestao+1}.`
+    numQuestao++
+    numeracao.appendChild(numeroQuestao)
 
     //texto da questao
     const pergunta = document.createElement('textarea')
@@ -153,6 +158,8 @@ function criarResposta(respostas, questao, disp) {
     const numeracao = document.createElement('p')
     numeracao.classList.add('numResp')
 
+    const respostaDisp = questao.querySelector('.respostaDisp')
+
     switch(disp) {
         case '5': 
             numeracao.textContent = '1.'
@@ -193,11 +200,42 @@ function criarResposta(respostas, questao, disp) {
     caracteres.textContent = '0/100'
     ordem.appendChild(caracteres)
 
+    //botão para remover nova resposta
+    const btnRemoveResposta = document.createElement('button') 
+    btnRemoveResposta.classList.add('removeResposta')
+    btnRemoveResposta.textContent = '-'
+    ordem.appendChild(btnRemoveResposta)    
+
     resposta.addEventListener('input', () => {
         caracteres.textContent = `${resposta.value.length}/100`
     }) 
 
+    btnRemoveResposta.addEventListener('click', () => {
+        console.log('testes')
+        if(respostaDisp.textContent > 0) {
+            console.log('respDisp é maior que 0')
+            respostaDisp.textContent = removeResposta(document.querySelectorAll('.respostas'), convertPosicao(numeracao.textContent))
+        }
+    })
+
     return --disp
+}
+
+function removeResposta(respostas, chavePergunta) {
+    console.log('removeResposta:')
+
+    //chavePergunta - 1
+
+    //console.log(respostas[chavePergunta])
+    //respostas[chavePergunta] = null
+    console.log(chavePergunta)
+    console.log(respostas[chavePergunta+1])
+    let resposta = respostas[chavePergunta+1]
+
+    if(resposta != undefined) {
+        console.log(resposta.children[0])
+        //respostas[chavePergunta] = resposta
+    }
 }
 
 //atualiza uma única resposta
