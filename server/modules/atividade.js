@@ -138,7 +138,7 @@ function atualizarQuestao() {
 //criar uma resposta para uma questão
 function criarResposta(respostas, disp) {
     //label que armazena a ordem da resposta e os elementos relacionados a isso
-    const ordem = document.createElement('label')
+    const ordem = document.createElement('span')
     ordem.classList.add('ordemResposta')
     switch(disp) {
         case '5': 
@@ -213,7 +213,7 @@ salvarAtv.addEventListener('click', () => {
         const id = questao.id
         const numeracao = questao.querySelector('.numeracao')
         const pergunta = numeracao.querySelector('.pergunta')
-        const explicacao = numeracao.querySelector('.explicacao')
+        const explicacao = questao.querySelector('.explicacao')
         const respostas = questao.querySelectorAll('.ordemResposta')
 
         console.log(numeracao)
@@ -238,7 +238,6 @@ salvarAtv.addEventListener('click', () => {
             respostaId = `resposta${respIndex}`
 
             radio = resposta.querySelector('.radioResposta')
-            radio.name = `resposta${questao.id}`
             radio.value = respIndex
             console.log(radio.checked)
 
