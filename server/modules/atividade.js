@@ -60,13 +60,6 @@ function criarQuestao() {
     pergunta.maxLength = 150
     numeracao.appendChild(pergunta)
 
-    //explicacao da resposta correta
-    const explicacao = document.createElement('textarea')
-    explicacao.classList.add('explicacao')
-    explicacao.placeholder = 'digite a explicação da resposta'
-    explicacao.maxLength = 150
-    numeracao.appendChild(explicacao)
-
     const questoes = document.querySelectorAll('.questao')
     const posicao = questoes.length
 
@@ -90,16 +83,29 @@ function criarQuestao() {
     addResposta.textContent = '+'
     questao.appendChild(addResposta)
 
+    //div onde as respostas são armazenadas
+    const respostas = document.createElement('div')
+    respostas.classList.add('respostas')
+    questao.appendChild(respostas)
+
+    //explicacao da resposta correta
+    const explicacao = document.createElement('textarea')
+    explicacao.classList.add('explicacao')
+    explicacao.placeholder = 'digite a explicação da resposta'
+    explicacao.maxLength = 150
+    questao.appendChild(explicacao)
+
+
+    //listeners    
     pergunta.addEventListener('input', () => {
         caracteres.textContent = `${pergunta.value.length}/150`
     }) 
 
     addResposta.addEventListener('click', () => {
         if(respostaDisp.textContent > 0) {
-            respostaDisp.textContent = criarResposta(questao, respostaDisp.textContent)
+            respostaDisp.textContent = criarResposta(respostas, respostaDisp.textContent)
         }
     })
-
 }
 
 //carregar múltiplas questões
@@ -130,7 +136,7 @@ function atualizarQuestao() {
 }
 
 //criar uma resposta para uma questão
-function criarResposta(questao, disp) {
+function criarResposta(respostas, disp) {
     //label que armazena a ordem da resposta e os elementos relacionados a isso
     const ordem = document.createElement('label')
     ordem.classList.add('ordemResposta')
@@ -151,7 +157,7 @@ function criarResposta(questao, disp) {
             ordem.textContent = '5.'
             break
     }
-    questao.appendChild(ordem)
+    respostas.appendChild(ordem)
 
     //input radio utilizado para definir qual a resposta correta
     const radio = document.createElement('input')
