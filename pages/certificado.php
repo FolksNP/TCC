@@ -143,8 +143,10 @@
             <h3 id="conc"><i>DE CONCLUSÃO DE CURSO</i></h3>
 
             <p id="dedicacao">Dedicamos este certificado a</p>
-
-            <h1 id="nome-aluno">Marcelo Barbosa</h1>
+            <?php
+                @session_start();
+                echo "<h1 id=nome-aluno>$_SESSION[nome]</h1>";
+            ?>
             <hr>
             <p id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</p>
 
