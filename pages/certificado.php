@@ -143,8 +143,10 @@
             <h3 id="conc"><i>DE CONCLUSÃO DE CURSO</i></h3>
 
             <p id="dedicacao">Dedicamos este certificado a</p>
-
-            <h1 id="nome-aluno">Marcelo Barbosa</h1>
+            <?php
+                @session_start();
+                echo "<h1 id=nome-aluno>$_SESSION[nome]</h1>";
+            ?>
             <hr>
             <p id="concli">Por concluir o curso de Introdução a Programação Geral de 5 Horas</p>
 
@@ -174,7 +176,7 @@
             <div class="bloco-inferior"></div>
         </div>
     </div>
-    
+
     <!-- gerador btn = gerarPDF -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js" integrity="sha512-d5Jr3NflEZmFDdFHZtxeJtBzk0eB+kkRXWFQqEc1EKmolXjHm2IKCA7kTvXBNjIYzjXfD5XzIjaaErpkZHCkBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
