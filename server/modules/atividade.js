@@ -228,14 +228,14 @@ function removeResposta(respostas, chavePergunta) {
 
     //console.log(respostas[chavePergunta])
     //respostas[chavePergunta] = null
-    console.log(chavePergunta)
-    console.log(respostas[chavePergunta+1])
-    let resposta = respostas[chavePergunta]
+    console.log(chavePergunta-1)
+    console.log(respostas[chavePergunta])
+    const resposta = respostas[chavePergunta]
 
     if(resposta != undefined) {
         console.log(resposta.children[0])
-        respostas[chavePergunta].replaceChild(resposta)
-        console.log(respostas[chavePergunta])
+        respostas[chavePergunta-1].replaceChild(resposta)
+        console.log(respostas[chavePergunta-1])
         //TODO verificação de JSON e callback próprio
     }
 }
