@@ -14,9 +14,9 @@
         <div id="mensagem"></div>
         <div class="controle-atv">
             <input type="checkbox" id="selectAll">
-            <button id="addQuestao">Adicionar</button>
-            <button id="delQuestao">Deletar</button>
-            <button id="salvarAtv">Salvar</button>
+            <button type="button" id="addQuestao">Adicionar</button>
+            <button type="button" id="delQuestao">Deletar</button>
+            <button type="button" id="salvarAtv">Salvar</button>
         </div>
         <div id="atv">
 

@@ -162,19 +162,19 @@ function criarResposta(respostas, questao, disp) {
 
     switch(disp) {
         case '5': 
-            numeracao.textContent = '1.'
+            numeracao.textContent = '1'
             break
         case '4':
-            numeracao.textContent = '2.'
+            numeracao.textContent = '2'
             break
         case '3':
-            numeracao.textContent = '3.'
+            numeracao.textContent = '3'
             break
         case '2':
-            numeracao.textContent = '4.'
+            numeracao.textContent = '4'
             break
         case '1':
-            numeracao.textContent = '5.'
+            numeracao.textContent = '5'
             break
     }
     respostas.appendChild(ordem)
@@ -212,32 +212,35 @@ function criarResposta(respostas, questao, disp) {
 
     btnRemoveResposta.addEventListener('click', () => {
         console.log('testes')
-        if(respostaDisp.textContent > 0) {
+        if(respostaDisp.textContent >= 0) {
             console.log('respDisp é maior que 0')
-            respostaDisp.textContent = removeResposta(document.querySelectorAll('.respostas'), convertPosicao(numeracao.textContent))
+            disp = removeResposta(questao.querySelector('.respostas'), numeracao.textContent, disp)
         }
     })
 
     return --disp
 }
 
-function removeResposta(respostas, chavePergunta) {
-    console.log('removeResposta:')
+function removeResposta(respostas, chavePergunta, disp) {
+    const respostaNova = respostas.children[chavePergunta]
 
-    //chavePergunta - 1
-
-    //console.log(respostas[chavePergunta])
-    //respostas[chavePergunta] = null
-    console.log(chavePergunta-1)
-    console.log(respostas[chavePergunta])
-    const resposta = respostas[chavePergunta]
-
-    if(resposta != undefined) {
-        console.log(resposta.children[0])
-        respostas[chavePergunta-1].replaceChild(resposta)
-        console.log(respostas[chavePergunta-1])
-        //TODO verificação de JSON e callback próprio
+    if(respostaNova != undefined) {
+        const respostaAntiga = respostas.children[chavePergunta-1]
+        respostas.replaceChild(respostaNova, respostaAntiga)
+        respostaNova.querySelector('.numResp').textContent = respostaAntiga.querySelector('.numResp').textContent
+        let i = Number(chavePergunta) + 1
+        console.log(i)
+        while(respostas.children[i] != undefined) {
+            console.log(respostas.children[i].querySelector('.numResp').textContent)
+            console.log(respostas.children[i-1].querySelector('.numResp').textContent)
+            respostas.children[i].querySelector('.numResp').textContent = i-1
+            console.log(i)
+            i++
+            console.log(i)
+        }
     }
+
+    return ++disp
 }
 
 //atualiza uma única resposta
@@ -300,7 +303,7 @@ salvarAtv.addEventListener('click', () => {
 
             atvObj[id][respostaId] = {}
             atvObj[id][respostaId]['opcao'] = resposta.querySelector('.resposta').value
-            atvObj[id][respostaId]['ordemResposta'] = convertPosicao(resposta.textContent)
+            atvObj[id][respostaId]['ordemResposta'] = resposta.textContent
             atvObj[id][respostaId]['respostaCorreta'] = (radio.checked) ? 1 : 0
             respIndex++
         }
