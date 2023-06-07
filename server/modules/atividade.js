@@ -1,4 +1,4 @@
-import { selectAllCheckbox, unselectAllCheckbox, verifyAllCheckbox } from './util'
+import { errors, selectAllCheckbox, unselectAllCheckbox, verifyAllCheckbox } from './util'
 
 // fetch('localhost:8080/atv/', {
 
@@ -222,6 +222,10 @@ function criarResposta(respostas, questao, disp) {
 }
 
 function removeResposta(respostas, chavePergunta, disp) {
+    //se só tive um resposta
+    //votar o número de questões disponíveis 
+    //limite de questão (50)
+
     const respostaNova = respostas.children[chavePergunta]
 
     if(respostaNova != undefined) {
@@ -267,59 +271,95 @@ delQuestao.addEventListener('click', () => {
 })
 
 salvarAtv.addEventListener('click', () => {
-    const questoes = document.querySelectorAll('.questao')
-    atvObj = {}
-    for(let questao of questoes) {
-        const id = questao.id
-        const numeracao = questao.querySelector('.numeracao')
-        const pergunta = numeracao.querySelector('.pergunta')
-        const explicacao = questao.querySelector('.explicacao')
-        const respostas = questao.querySelectorAll('.ordemResposta')
+    try {
+        const questoes = document.querySelectorAll('.questao')
+        atvObj = {}
+        for(let questao of questoes) {
+            const id = questao.id
+            const numeracao = questao.querySelector('.numeracao')
+            const pergunta = numeracao.querySelector('.pergunta')
+            const explicacao = questao.querySelector('.explicacao')
+            const respostas = questao.querySelectorAll('.ordemResposta')
 
-        console.log(numeracao)
-        console.log(explicacao)
-        console.log(pergunta)
+            console.log(numeracao)
+            console.log(explicacao)
+            console.log(pergunta)
 
-        if(explicacao.value != '' && pergunta.value != '') {
-            atvObj[id] = {}
-            atvObj[id]['explicacao'] = explicacao.value
-            atvObj[id]['pergunta'] = pergunta.value
-            atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
-            atvObj[id]['tipo'] = 'radio'
-            atvObj[id]['numRespostas'] = respostas.length
+            if(explicacao.value != '' && pergunta.value != '') {
+                atvObj[id] = {}
+                atvObj[id]['explicacao'] = explicacao.value
+                atvObj[id]['pergunta'] = pergunta.value
+                atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
+                atvObj[id]['tipo'] = 'radio'
+                atvObj[id]['numRespostas'] = respostas.length
+                atvObj[id]['respostas'] = {}
+                
+                let respIndex = 0
+                let radio
+                let respCorretaIsSet = 0
+
+                for(let resposta of respostas) {
+                    respIndex++
+
+                    if(resposta.querySelector('.resposta').value != '') {
+                        radio = resposta.querySelector('.radioResposta')
+                        radio.value = respIndex
+        
+                        atvObj[id]['respostas'][`resposta${respIndex}`] = {}
+                        atvObj[id]['respostas'][`resposta${respIndex}`]['opcao'] = resposta.querySelector('.resposta').value
+                        atvObj[id]['respostas'][`resposta${respIndex}`]['ordemResposta'] = resposta.querySelector('.numResp').textContent
+                        atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = (radio.checked) ? 1 : 0
+
+                        if(radio.checked) {
+                            atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 1
+                            respCorretaIsSet++
+                        } else {
+                            atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 0
+                        }
+
+                    } else {
+                        alert(`A resposta ${respIndex} na questao ${id} está vazia!`)
+                        console.error(errors['emptyResponse'])
+                    }
+                }
+
+                if(respCorretaIsSet === 1) {
+                    fetch('http://localhost:8080/cadQuestao', {
+                        method: 'POST',
+                        body: JSON.stringify(atvObj),
+                        headers: {
+                            'Content-Type': 'application/json; charset=UTF-8'
+                        }
+                    })
+                    .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
+                    .catch((err) => console.error(err))
+
+                } else {
+                    if(respCorretaIsSet > 1) {
+                        alert(`Muitas respostas marcadas na questao ${id} como verdadeira!`)
+                        console.error(errors['tooManyResponsesMarked'])
+                    } else {
+                        alert(`Nenhuma resposta foi marcada na questao ${id} como verdadeira!`)
+                        console.error(errors['noResponsesMarked'])
+                    }
+                }
+
+            } else {
+                if(explicacao.value === '') {
+                    alert(`A explicação na questao ${id} está vazia!`)
+                    console.error(errors['emptyExplanation'])
+                } else {
+                    alert(`A pergunta na questao ${id} está vazia!!`)
+                    console.error(errors['emptyQuestion'])
+                }
+            }
         }
+        console.log(atvObj)
 
-        //movida de dentro para fora, testando radio único antes de salvar
-        let respIndex = 1
-        let respostaId
-        let radio
-
-        for(let resposta of respostas) {
-            respostaId = `resposta${respIndex}`
-
-            radio = resposta.querySelector('.radioResposta')
-            radio.value = respIndex
-            console.log(radio.checked)
-
-            atvObj[id][respostaId] = {}
-            atvObj[id][respostaId]['opcao'] = resposta.querySelector('.resposta').value
-            atvObj[id][respostaId]['ordemResposta'] = resposta.textContent
-            atvObj[id][respostaId]['respostaCorreta'] = (radio.checked) ? 1 : 0
-            respIndex++
-        }
+    } catch(err) {
+        alert('Ocorreu um erro! Não foi possível salvar o arquivo!')
+        console.error(err)
     }
-
-    console.log(atvObj)
-
-    fetch('http://localhost:8080/cadQuestao', {
-        method: 'POST',
-        body: JSON.stringify(atvObj),
-        headers: {
-            'Content-Type': 'application/json; charset=UTF-8'
-        }
-    })
-    .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
-    .catch((err) => console.error(err))
 })
 
 //TODO (local): implementar a seleção específica das respostas e das questões para deletá-las, criar a parte de explicações, criar um marcador para definir qual resposta é verdadeira, praparar o registro dentro de um objeto e então usá-lo para o encode em JSON das informações colocadas nas atividades;

@@ -1,3 +1,12 @@
+export const errors = {
+    'noResponsesMarked': new Error('NO_RESPONSES_MARKED'),
+    'tooManyResponsesMarked': new Error('TOO_MANY_RESPONSES_MARKED'),
+    'emptyResponse': new Error('EMPTY_RESPONSE'),
+    'emptyQuestion': new Error('EMPTY_QUESTION'),
+    'emptyExplanation': new Error('EMPTY_EXPLANATION'),
+    '': new Error(''),
+}
+
 export function selectAllCheckbox(checkboxes) {
     if(checkboxes != undefined || checkboxes != null){
         for(let checkbox of checkboxes) {
