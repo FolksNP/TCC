@@ -4,6 +4,12 @@ export const errors = {
     'emptyResponse': new Error('EMPTY_RESPONSE'),
     'emptyQuestion': new Error('EMPTY_QUESTION'),
     'emptyExplanation': new Error('EMPTY_EXPLANATION'),
+    'invalidType': new Error('INVALID_TYPE'),
+    'invalidObject': new Error('INVALID_OBJECT'),
+    '': new Error(''),
+    '': new Error(''),
+    '': new Error(''),
+    '': new Error(''),
     '': new Error(''),
 }
 

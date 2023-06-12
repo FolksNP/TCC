@@ -16,12 +16,14 @@ const mensagem = document.getElementById('mensagem')
 let atvObj
 let numQuestao = 0
 
-function convertPosicao(posicao) {
+function convertPosicao(posicao = '') {
     const index = posicao.indexOf('.')
-    return posicao.slice(0, index)
+    return posicao.slice(index+1)
 }
 
 function criarQuestao() {
+    //limite de questão (50)
+
     //questao
     const questao = document.createElement('div')
     questao.classList.add('questao')
@@ -120,6 +122,8 @@ function criarQuestao() {
             respostaDisp.textContent = criarResposta(respostas, questao, respostaDisp.textContent)
         }
     })
+
+    selectAll.checked = false
 }
 
 //carregar múltiplas questões
@@ -142,11 +146,6 @@ function carregarQuestoes() {
         
         numQuestao++
     }
-}
-
-//atualiza uma única questão
-function atualizarQuestao() {
-
 }
 
 //criar uma resposta para uma questão
@@ -211,47 +210,93 @@ function criarResposta(respostas, questao, disp) {
     }) 
 
     btnRemoveResposta.addEventListener('click', () => {
-        console.log('testes')
         if(respostaDisp.textContent >= 0) {
-            console.log('respDisp é maior que 0')
-            disp = removeResposta(questao.querySelector('.respostas'), numeracao.textContent, disp)
+            try {
+                removeItem(questao.querySelector('.respostas'), numeracao.textContent, '.numResp')
+                ++disp
+            } catch(err) {
+                console.error(err)
+            }
         }
     })
-
+    
     return --disp
 }
 
-function removeResposta(respostas, chavePergunta, disp) {
-    //se só tive um resposta
-    //votar o número de questões disponíveis 
-    //limite de questão (50)
+function removeItem(itens, index, numItem) {
+    let itemNovo, itemAntigo
+    let labelItemNovo, labelItemAntigo
 
-    const respostaNova = respostas.children[chavePergunta]
-
-    if(respostaNova != undefined) {
-        const respostaAntiga = respostas.children[chavePergunta-1]
-        respostas.replaceChild(respostaNova, respostaAntiga)
-        respostaNova.querySelector('.numResp').textContent = respostaAntiga.querySelector('.numResp').textContent
-        let i = Number(chavePergunta) + 1
-        console.log(i)
-        while(respostas.children[i] != undefined) {
-            console.log(respostas.children[i].querySelector('.numResp').textContent)
-            console.log(respostas.children[i-1].querySelector('.numResp').textContent)
-            respostas.children[i].querySelector('.numResp').textContent = i-1
-            console.log(i)
-            i++
-            console.log(i)
+    if(typeof itens === 'object') {
+        if(itens instanceof NodeList) {
+            itemNovo = itens[index+1]
+            itemAntigo = itens[index]
+        } else if(itens instanceof HTMLElement) {
+            itemNovo = itens.children[index]
+            itemAntigo = itens.children[index-1]
+        } else {
+            throw errors.invalidObject
         }
+    } else {
+        throw errors.invalidType
     }
 
-    return ++disp
+    if(itemNovo != undefined) {
+        if(itens instanceof HTMLElement) {
+            itens.replaceChild(itemNovo, itemAntigo)
+            labelItemNovo = itemNovo.querySelector(numItem)
+            labelItemAntigo = itemNovo.querySelector(numItem)
+
+            labelItemNovo.textContent = (labelItemNovo.textContent.includes('.')) ? convertPosicao(labelItemAntigo.textContent) : labelItemAntigo.textContent
+    
+            let i = Number(index) + 1
+    
+            while(itens.children[i] != undefined) {
+                itens.children[i].querySelector(numItem).textContent = i-1
+                i++
+            }
+        } else {
+            atv.replaceChild(itemNovo, itemAntigo)
+            labelItemNovo = itemNovo.querySelector(numItem).querySelector('label')
+            labelItemAntigo = itemAntigo.querySelector(numItem).querySelector('label')
+
+            labelItemNovo.textContent = labelItemAntigo.textContent
+            itemNovo.id = itemAntigo.id
+
+            let i = Number(index) + 1
+    
+            while(itens[i] != undefined) {
+                itens[i].querySelector(numItem).querySelector('label').textContent = `${i}.`
+                itens[i].id = `questao${i}`
+                i++
+            }
+        }
+    } else {
+        if(itens instanceof HTMLElement) itemAntigo.remove()
+    }
 }
 
-//atualiza uma única resposta
-// function atualizarResposta(questao, disp) {
-//     console.log('atualizarRespostas')
-//     //numeracao
-// }
+function removeItens(indexes, numItem) {
+    const indexesOriginal = indexes.length
+    let questoes
+    for(let i = 0; i < indexesOriginal; i++) {
+        questoes = atv.querySelectorAll('.questao')
+        removeItem(questoes, indexes[0], numItem)
+        indexes.shift() //remove o indice do item que acabou de ser removido
+        for(let index of indexes) {
+            index--
+        }
+        numQuestao--
+    }
+    unselectAllCheckbox(document.querySelectorAll('input[type=checkbox]'))
+    console.log('removeItens terminou!')
+}
+
+function removeAll(itens) {
+    for(let item of itens) {
+        item.remove()
+    }
+}
 
 console.log(document.body)
 
@@ -267,99 +312,115 @@ selectAll.addEventListener('change', () => {
 })
 
 delQuestao.addEventListener('click', () => {
+    const questoesCheckbox = document.querySelectorAll('.checkboxQuestao')
+    const questoes = document.querySelectorAll('.questao')
 
+    console.log(questoesCheckbox)
+
+    if(questoesCheckbox.length > 0) {
+        console.log('questoesCheckbox nao é indefinido')
+        let questoesCheckboxSelecionadas
+        if(selectAll.checked) {
+            removeAll(questoes)
+        } else {
+            questoesCheckboxSelecionadas = []
+            for(let i = 0; i < questoesCheckbox.length; i++) {
+                if(questoesCheckbox[i].checked) questoesCheckboxSelecionadas.push(i)
+            }
+
+            questoesCheckboxSelecionadas.reverse()
+
+            console.log(questoesCheckboxSelecionadas)
+            removeItens(questoesCheckboxSelecionadas, '.numeracao')
+        }
+    }
+    selectAll.checked = false
 })
 
 salvarAtv.addEventListener('click', () => {
-    try {
-        const questoes = document.querySelectorAll('.questao')
-        atvObj = {}
-        for(let questao of questoes) {
-            const id = questao.id
-            const numeracao = questao.querySelector('.numeracao')
-            const pergunta = numeracao.querySelector('.pergunta')
-            const explicacao = questao.querySelector('.explicacao')
-            const respostas = questao.querySelectorAll('.ordemResposta')
+    const questoes = document.querySelectorAll('.questao')
+    atvObj = {}
+    for(let questao of questoes) {
+        const id = questao.id
+        const numeracao = questao.querySelector('.numeracao')
+        const pergunta = numeracao.querySelector('.pergunta')
+        const explicacao = questao.querySelector('.explicacao')
+        const respostas = questao.querySelectorAll('.ordemResposta')
 
-            console.log(numeracao)
-            console.log(explicacao)
-            console.log(pergunta)
+        console.log(numeracao)
+        console.log(explicacao)
+        console.log(pergunta)
 
-            if(explicacao.value != '' && pergunta.value != '') {
-                atvObj[id] = {}
-                atvObj[id]['explicacao'] = explicacao.value
-                atvObj[id]['pergunta'] = pergunta.value
-                atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
-                atvObj[id]['tipo'] = 'radio'
-                atvObj[id]['numRespostas'] = respostas.length
-                atvObj[id]['respostas'] = {}
-                
-                let respIndex = 0
-                let radio
-                let respCorretaIsSet = 0
+        if(explicacao.value != '' && pergunta.value != '') {
+            atvObj[id] = {}
+            atvObj[id]['explicacao'] = explicacao.value
+            atvObj[id]['pergunta'] = pergunta.value
+            atvObj[id]['ordemQuestao'] = convertPosicao(numeracao.textContent)
+            atvObj[id]['tipo'] = 'radio'
+            atvObj[id]['numRespostas'] = respostas.length
+            atvObj[id]['respostas'] = {}
+            
+            let respIndex = 0
+            let radio
+            let respCorretaIsSet = 0
 
-                for(let resposta of respostas) {
-                    respIndex++
+            for(let resposta of respostas) {
+                respIndex++
 
-                    if(resposta.querySelector('.resposta').value != '') {
-                        radio = resposta.querySelector('.radioResposta')
-                        radio.value = respIndex
-        
-                        atvObj[id]['respostas'][`resposta${respIndex}`] = {}
-                        atvObj[id]['respostas'][`resposta${respIndex}`]['opcao'] = resposta.querySelector('.resposta').value
-                        atvObj[id]['respostas'][`resposta${respIndex}`]['ordemResposta'] = resposta.querySelector('.numResp').textContent
-                        atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = (radio.checked) ? 1 : 0
+                if(resposta.querySelector('.resposta').value != '') {
+                    radio = resposta.querySelector('.radioResposta')
+                    radio.value = respIndex
+    
+                    atvObj[id]['respostas'][`resposta${respIndex}`] = {}
+                    atvObj[id]['respostas'][`resposta${respIndex}`]['opcao'] = resposta.querySelector('.resposta').value
+                    atvObj[id]['respostas'][`resposta${respIndex}`]['ordemResposta'] = resposta.querySelector('.numResp').textContent
+                    atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = (radio.checked) ? 1 : 0
 
-                        if(radio.checked) {
-                            atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 1
-                            respCorretaIsSet++
-                        } else {
-                            atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 0
-                        }
-
+                    if(radio.checked) {
+                        atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 1
+                        respCorretaIsSet++
                     } else {
-                        alert(`A resposta ${respIndex} na questao ${id} está vazia!`)
-                        console.error(errors['emptyResponse'])
+                        atvObj[id]['respostas'][`resposta${respIndex}`]['respostaCorreta'] = 0
                     }
-                }
-
-                if(respCorretaIsSet === 1) {
-                    fetch('http://localhost:8080/cadQuestao', {
-                        method: 'POST',
-                        body: JSON.stringify(atvObj),
-                        headers: {
-                            'Content-Type': 'application/json; charset=UTF-8'
-                        }
-                    })
-                    .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
-                    .catch((err) => console.error(err))
 
                 } else {
-                    if(respCorretaIsSet > 1) {
-                        alert(`Muitas respostas marcadas na questao ${id} como verdadeira!`)
-                        console.error(errors['tooManyResponsesMarked'])
-                    } else {
-                        alert(`Nenhuma resposta foi marcada na questao ${id} como verdadeira!`)
-                        console.error(errors['noResponsesMarked'])
-                    }
-                }
-
-            } else {
-                if(explicacao.value === '') {
-                    alert(`A explicação na questao ${id} está vazia!`)
-                    console.error(errors['emptyExplanation'])
-                } else {
-                    alert(`A pergunta na questao ${id} está vazia!!`)
-                    console.error(errors['emptyQuestion'])
+                    alert(`A resposta ${respIndex} na questao ${id} está vazia!`)
+                    throw errors.emptyResponse
                 }
             }
-        }
-        console.log(atvObj)
 
-    } catch(err) {
-        alert('Ocorreu um erro! Não foi possível salvar o arquivo!')
-        console.error(err)
+            if(respCorretaIsSet === 1) {
+                fetch('http://localhost:8080/cadQuestao', {
+                    method: 'POST',
+                    body: JSON.stringify(atvObj),
+                    headers: {
+                        'Content-Type': 'application/json; charset=UTF-8'
+                    }
+                })
+                .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
+                .catch((err) => console.error(err))
+
+            } else {
+                if(respCorretaIsSet > 1) {
+                    alert(`Muitas respostas marcadas na questao ${id} como verdadeira!`)
+                    throw errors.tooManyResponsesMarked
+                } else {
+                    alert(`Nenhuma resposta foi marcada na questao ${id} como verdadeira!`)
+                    throw errors.noResponsesMarked
+                }
+            }
+
+        } else {
+            if(explicacao.value === '') {
+                alert(`A explicação na questao ${id} está vazia!`)
+                throw errors.emptyExplanation
+            } else {
+                alert(`A pergunta na questao ${id} está vazia!!`)
+                throw errors.emptyQuestion
+            }
+        }
     }
+    console.log(atvObj)
 })
 
 //TODO (local): implementar a seleção específica das respostas e das questões para deletá-las, criar a parte de explicações, criar um marcador para definir qual resposta é verdadeira, praparar o registro dentro de um objeto e então usá-lo para o encode em JSON das informações colocadas nas atividades;
