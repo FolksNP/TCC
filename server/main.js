@@ -82,9 +82,39 @@ app.route('/tema').get((req, res) => {
     res.sendFile(path.join(__dirname, '/modules/tema.js'))
 })
 
-app.route('/cadQuestao').post((req, res) => {
-    const questao = req.body
-    res.send('funcionou? ' + questao)
+app.route('/cadAtividade').post((req, res) => {
+    const questao = JSON.stringify(req.body)
+    const queryQuestao = 'INSERT INTO questoes (codQuestao, atividade, explicacao, ordemQuestao, pergunta, tipo, imagem) VALUES ?' 
+    console.log(questao)
+    connection.query(queryQuestao, (
+            null, 
+            1,
+            questao['explicacao'],
+            questao['ordemQuestao'],
+            questao['pergunta'],
+            questao['tipo'],
+            null
+        ), (err, results) => {
+            if(err) res.send('Erro ao inserir dados:' + err)
+            else res.send('Dados inseridos com sucesso!')
+        }
+    )
+
+    const queryRespostas = 'INSERT INTO respostas (codRespostas, questao, opcao, ordemResposta, respostaCorreta) VALUES ?'
+    const respostas = questao['respostas']
+    for(let resposta of respostas) {
+        connection.query(queryRespostas, (
+            null,
+            1,
+            resposta['opcao'],
+            resposta['ordemResposta'],
+            resposta['respostaCorreta']
+            ), (err, results) => {
+                if(err) res.send('Erro ao inserir dados:' + err)
+                else res.send('Dados inseridos com sucesso!')
+            }
+        )
+    }
 })
 
 //inicia o progresso do video à partir dessa tabela

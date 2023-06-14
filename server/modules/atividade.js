@@ -212,8 +212,10 @@ function criarResposta(respostas, questao, disp) {
     btnRemoveResposta.addEventListener('click', () => {
         if(respostaDisp.textContent >= 0) {
             try {
+                console.log(numeracao)
                 removeItem(questao.querySelector('.respostas'), numeracao.textContent, '.numResp')
-                ++disp
+                console.log(questao.querySelector('.respostaDisp'))
+                questao.querySelector('.respostaDisp').textContent = ++disp
             } catch(err) {
                 console.error(err)
             }
@@ -232,8 +234,11 @@ function removeItem(itens, index, numItem) {
             itemNovo = itens[index+1]
             itemAntigo = itens[index]
         } else if(itens instanceof HTMLElement) {
-            itemNovo = itens.children[index]
-            itemAntigo = itens.children[index-1]
+            itemNovo = itens.children[index-1]
+            itemAntigo = itens.children[index]
+            console.log(index)
+            console.log(itemNovo)
+            console.log(itemAntigo)
         } else {
             throw errors.invalidObject
         }
@@ -245,16 +250,21 @@ function removeItem(itens, index, numItem) {
         if(itens instanceof HTMLElement) {
             itens.replaceChild(itemNovo, itemAntigo)
             labelItemNovo = itemNovo.querySelector(numItem)
-            labelItemAntigo = itemNovo.querySelector(numItem)
+            labelItemAntigo = itemAntigo.querySelector(numItem)
 
-            labelItemNovo.textContent = (labelItemNovo.textContent.includes('.')) ? convertPosicao(labelItemAntigo.textContent) : labelItemAntigo.textContent
+            console.log(labelItemNovo)
+            console.log(labelItemAntigo)
+
+            labelItemNovo.textContent = Number(labelItemAntigo.textContent) - 1
     
-            let i = Number(index) + 1
-    
+            let i = Number(index)
+            console.log(i)
+            console.log(itens.children[i])
             while(itens.children[i] != undefined) {
-                itens.children[i].querySelector(numItem).textContent = i-1
+                itens.children[i].querySelector(numItem).textContent = i+1
                 i++
             }
+        
         } else {
             atv.replaceChild(itemNovo, itemAntigo)
             labelItemNovo = itemNovo.querySelector(numItem).querySelector('label')
@@ -272,7 +282,7 @@ function removeItem(itens, index, numItem) {
             }
         }
     } else {
-        if(itens instanceof HTMLElement) itemAntigo.remove()
+        itemAntigo.remove()
     }
 }
 
@@ -342,8 +352,8 @@ salvarAtv.addEventListener('click', () => {
     atvObj = {}
     for(let questao of questoes) {
         const id = questao.id
-        const numeracao = questao.querySelector('.numeracao')
-        const pergunta = numeracao.querySelector('.pergunta')
+        const numeracao = questao.querySelector('.numeracao').querySelector('label')
+        const pergunta = questao.querySelector('.numeracao').querySelector('.pergunta')
         const explicacao = questao.querySelector('.explicacao')
         const respostas = questao.querySelectorAll('.ordemResposta')
 
@@ -390,7 +400,7 @@ salvarAtv.addEventListener('click', () => {
             }
 
             if(respCorretaIsSet === 1) {
-                fetch('http://localhost:8080/cadQuestao', {
+                fetch('http://localhost:8080/cadAtividade', {
                     method: 'POST',
                     body: JSON.stringify(atvObj),
                     headers: {
