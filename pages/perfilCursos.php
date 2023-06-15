@@ -9,7 +9,7 @@
         <p style="width: 100%; align-items: center;">Seus Cursos</p>
         <!-- <p>Promoções</p>
         <button id="btnAula" >Adicionar</button> -->
-        
+        <a href="atividade.php"><button id="btnAtv">Adicionar</button></a>
         <p><img src="../imgs/lixeira.png" alt=""></p>
         
     </div>

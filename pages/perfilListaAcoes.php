@@ -27,7 +27,7 @@
                         if (@$tabProf['codProfessor'] == @$codProf ) {
 
                             echo "<div onclick=\"alterar('est')\"><img src=\"../imgs/est.png\" ><p> Estatísticas</p></div>";
-                            echo "<div onclick=\"alterar('atv')\"><img src=\"../imgs/est.png\" ><p> Atividades</p></div>";
+                            // echo "<div onclick=\"alterar('atv')\"><img src=\"../imgs/est.png\" ><p> Atividades</p></div>";
                        }
                     ?>
                     <!-- <div onclick="alterar('est')"><img src="../imgs/est.png" alt=""><p>Estatísticas</p></div> -->
