@@ -4,6 +4,7 @@ const session = require('express-session')
 const mysql = require('mysql')
 const path = require('path')
 const favicon = require('serve-favicon')
+const bodyParser = require('body-parser')
 
 const app = express()
 
@@ -16,6 +17,8 @@ app.listen(porta, () => {
 //Define um favicon para as URLs do servidor
 app.use(favicon(path.resolve(__dirname, '..', 'imgs/assets', 'favicon-32x32.png')))
 
+//Middleware para converter o body das requisições
+app.use(bodyParser.json())
 
 //Middleware para habilitar a sessão
 app.use(session({
@@ -83,10 +86,11 @@ app.route('/tema').get((req, res) => {
 })
 
 app.route('/cadAtividade').post((req, res) => {
-    const questao = JSON.stringify(req.body)
+    let questao = req.body
     const queryQuestao = 'INSERT INTO questoes (codQuestao, atividade, explicacao, ordemQuestao, pergunta, tipo, imagem) VALUES ?' 
+    console.log('questao:')
     console.log(questao)
-    connection.query(queryQuestao, (
+    connection.query(queryQuestao, [
             null, 
             1,
             questao['explicacao'],
@@ -94,7 +98,7 @@ app.route('/cadAtividade').post((req, res) => {
             questao['pergunta'],
             questao['tipo'],
             null
-        ), (err, results) => {
+        ], (err, results) => {
             if(err) res.send('Erro ao inserir dados:' + err)
             else res.send('Dados inseridos com sucesso!')
         }
@@ -102,14 +106,17 @@ app.route('/cadAtividade').post((req, res) => {
 
     const queryRespostas = 'INSERT INTO respostas (codRespostas, questao, opcao, ordemResposta, respostaCorreta) VALUES ?'
     const respostas = questao['respostas']
-    for(let resposta of respostas) {
-        connection.query(queryRespostas, (
+    console.log(respostas)
+    for(let resposta in respostas) {
+        console.log('teste resposta')
+        console.log(resposta)
+        connection.query(queryRespostas, [
             null,
             1,
             resposta['opcao'],
             resposta['ordemResposta'],
             resposta['respostaCorreta']
-            ), (err, results) => {
+        ], (err, results) => {
                 if(err) res.send('Erro ao inserir dados:' + err)
                 else res.send('Dados inseridos com sucesso!')
             }

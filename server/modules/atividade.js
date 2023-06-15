@@ -18,7 +18,7 @@ let numQuestao = 0
 
 function convertPosicao(posicao = '') {
     const index = posicao.indexOf('.')
-    return posicao.slice(index+1)
+    return posicao.slice(0, index)
 }
 
 function criarQuestao() {
@@ -400,14 +400,15 @@ salvarAtv.addEventListener('click', () => {
             }
 
             if(respCorretaIsSet === 1) {
+                console.log(atvObj)
                 fetch('http://localhost:8080/cadAtividade', {
                     method: 'POST',
-                    body: JSON.stringify(atvObj),
                     headers: {
                         'Content-Type': 'application/json; charset=UTF-8'
-                    }
+                    },
+                    body: JSON.stringify(atvObj)
                 })
-                .then((result) => console.log('atividades cadastradas com sucesso! result: ' + result))
+                .then((result) => {console.log('atividades cadastradas com sucesso! result: ' + result); console.log(result)})
                 .catch((err) => console.error(err))
 
             } else {
